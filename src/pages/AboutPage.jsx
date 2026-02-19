@@ -1,0 +1,203 @@
+﻿import { Link } from 'react-router-dom'
+import image7 from '../assets/7.webp'
+import image8 from '../assets/8.jpg'
+import image18 from '../assets/18.jpg'
+import image19 from '../assets/19.webp'
+import image20 from '../assets/20.jpg'
+import image20Alt from '../assets/20.webp'
+
+const businessAreas = [
+  {
+    title: 'Rapatriement International',
+    text: 'Organisation complete du rapatriement depuis et vers le Maroc.',
+  },
+  {
+    title: 'Pompes Funebres Non Musulmanes',
+    text: 'Ceremonies civiles et religieuses avec coordination complete.',
+  },
+  {
+    title: 'Pompes Funebres Musulmanes',
+    text: 'Prise en charge conforme aux rites et aux volontes familiales.',
+  },
+  {
+    title: 'Ambulance et Assistance Medicale',
+    text: 'Intervention rapide et transport medicalise 24h/24.',
+  },
+  {
+    title: 'Depannage et Remorquage',
+    text: 'Assistance technique et remorquage selon les besoins urgents.',
+  },
+  {
+    title: 'Fleurs',
+    text: 'Compositions florales et hommages personnalises.',
+  },
+  {
+    title: 'Marbrerie Non Musulmane',
+    text: 'Monuments funeraires sur mesure avec finitions de qualite.',
+  },
+  {
+    title: 'Marbrerie Musulmane',
+    text: 'Realisation de tombes et marbrerie selon les normes religieuses.',
+  },
+  {
+    title: 'Nettoyage et fleurissement',
+    text: 'Entretien regulier des sepultures avec bilan photo.',
+  },
+  {
+    title: 'Renovation de sepultures',
+    text: 'Restauration des monuments anciens avec devis prealable.',
+  },
+]
+
+const pillars = [
+  {
+    title: 'Organisation precise',
+    text: "Coordination complete des demarches, du premier appel jusqu'a la finalisation du dossier.",
+  },
+  {
+    title: 'Intervention rapide',
+    text: 'Mobilisation immediate des equipes sur le terrain partout au Maroc, 24h/24 et 7j/7.',
+  },
+  {
+    title: 'Qualite constante',
+    text: 'Procedures maitrisees, suivi continu et haut niveau de service pour chaque famille.',
+  },
+  {
+    title: 'Accompagnement humain',
+    text: 'Ecoute, discretion et respect des volontes dans les moments les plus sensibles.',
+  },
+]
+
+function AboutPage() {
+  return (
+    <div className="about-page">
+      <section className="section about-hero-section">
+        <div className="container about-hero reveal-on-scroll">
+          <div className="about-hero-copy">
+            <span className="about-eyebrow">Qui sommes-nous</span>
+            <h1>CMPF, reference africaine des services funeraires professionnels</h1>
+            <p>
+              CMPF est le premier organisme en Afrique specialise dans les services funeraires.
+              Forte de 75 annees d experience, elle occupe une position eminente grace a la
+              diversite et a la qualite de ses prestations.
+            </p>
+            <p>
+              Initialement active dans le secteur funeraire, CMPF a progressivement elargi son
+              champ d action avec de nouveaux creneaux de services au service des familles et des
+              partenaires.
+            </p>
+            <div className="about-hero-actions">
+              <Link to="/contact" className="btn btn-primary">
+                Contacter CMPF
+              </Link>
+              <Link to="/#nos-agences" className="btn btn-secondary about-btn-agences">
+                Nos agences
+              </Link>
+            </div>
+          </div>
+
+          <div className="about-hero-media">
+            <div className="about-hero-image-main">
+              <img src={image20} alt="Equipe CMPF" />
+            </div>
+            <div className="about-hero-image-overlay">
+              <img src={image20Alt} alt="Service CMPF" />
+            </div>
+            <div className="about-hero-image-mini about-hero-image-mini-left">
+              <img src={image7} alt="Coordination CMPF" />
+            </div>
+            <div className="about-hero-image-mini about-hero-image-mini-right">
+              <img src={image8} alt="Accompagnement CMPF" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-story-section">
+        <div className="container about-story-grid reveal-on-scroll">
+          <div className="about-story-media-wrap">
+            <div className="about-story-media about-story-media-main">
+              <img src={image18} alt="Transport funeraire CMPF" />
+            </div>
+            <div className="about-story-media about-story-media-side">
+              <img src={image19} alt="Intervention terrain CMPF" />
+            </div>
+          </div>
+
+          <div className="about-story-copy">
+            <span className="about-eyebrow">Notre evolution</span>
+            <h2>75 ans d experience au service des familles</h2>
+            <p>
+              La force de CMPF repose sur une methode claire: disponibilite permanente, coordination
+              rigoureuse et accompagnement complet. Notre organisation permet une prise en charge
+              rapide, humaine et parfaitement structuree.
+            </p>
+            <p>
+              Nous adaptons chaque intervention aux attentes des familles, aux obligations
+              administratives et aux exigences de qualite qui font la reputation de CMPF.
+            </p>
+            <div className="about-story-stats">
+              <article>
+                <strong>75+</strong>
+                <span>Annees d experience</span>
+              </article>
+              <article>
+                <strong>24/7</strong>
+                <span>Disponibilite nationale</span>
+              </article>
+              <article>
+                <strong>12</strong>
+                <span>Agences au Maroc</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-areas-section">
+        <div className="container about-areas-wrap reveal-on-scroll">
+          <div className="about-areas-head">
+            <span className="about-eyebrow">Domaines d activite</span>
+            <h2>Des prestations completes pour tous les besoins</h2>
+          </div>
+
+          <div className="about-areas-grid">
+            {businessAreas.map((item, index) => (
+              <article key={item.title} className="about-area-card card reveal-on-scroll">
+                <span className="about-area-index">{String(index + 1).padStart(2, '0')}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-pillars-section">
+        <div className="container about-pillars-wrap reveal-on-scroll">
+          <div className="about-pillars-media">
+            <img src={image7} alt="Qualite de service CMPF" />
+            <div className="about-pillars-media-overlay">
+              <img src={image8} alt="Equipe terrain CMPF" />
+            </div>
+          </div>
+
+          <div className="about-pillars-copy">
+            <span className="about-eyebrow">L engagement CMPF</span>
+            <h2>Une methode exigeante, fiable et rassurante</h2>
+            <div className="about-pillars-grid">
+              {pillars.map((item) => (
+                <article key={item.title} className="about-pillar-card">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default AboutPage
