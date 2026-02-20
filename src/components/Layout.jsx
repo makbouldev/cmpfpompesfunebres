@@ -4,22 +4,13 @@ import logoImage from '../assets/cmpflogo.png'
 
 const groupedLinks = [
   {
-    label: 'Assistance',
-    items: [
-      { to: '/assistance', label: 'Assistance immediate' },
-      { to: '/faq', label: 'Questions frequentes' },
-    ],
-  },
-  {
     label: 'Nos services',
     items: [
       { to: '/services-entreprises', label: 'Services aux Entreprises', featured: true },
-      { to: '/pompes-funebres/musulmanes', label: 'Pompes Funèbres Musulmanes' },
-      { to: '/pompes-funebres/non-musulmanes', label: 'Pompes Funèbres Non Musulmanes' },
-      { to: '/produits/cercueils-musulmans', label: 'Cercueils Musulmans' },
-      { to: '/produits/cercueils-non-musulmans', label: 'Cercueils Non Musulmans' },
+      { to: '/pompes-funebres/musulmanes', label: 'Pompes Fun\u00E8bres Musulmanes' },
+      { to: '/pompes-funebres/non-musulmanes', label: 'Pompes Fun\u00E8bres Non Musulmanes' },
       { to: '/produits/fleurs', label: 'Fleurs' },
-      { to: '/produits/plaques', label: 'Plaques' },
+      { to: '/produits/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
       { to: '/produits/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
       { to: '/produits/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
     ],
@@ -27,10 +18,8 @@ const groupedLinks = [
   {
     label: 'Catalogues',
     items: [
-      { to: '/produits/cercueils-musulmans', label: 'Cercueils Musulmans' },
-      { to: '/produits/cercueils-non-musulmans', label: 'Cercueils Non Musulmans' },
       { to: '/produits/fleurs', label: 'Fleurs' },
-      { to: '/produits/plaques', label: 'Plaques' },
+      { to: '/produits/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
       { to: '/produits/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
       { to: '/produits/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
     ],
@@ -161,7 +150,7 @@ function Layout({ children }) {
                 </span>
                 <div className="brand-block">
                   <span className="brand-name">CMPF Assistance</span>
-                  <span className="brand-sub">CMPF répond à tous vos besoins</span>
+                  <span className="brand-sub">{'CMPF r\u00E9pond \u00E0 tous vos besoins'}</span>
                 </div>
               </Link>
             </div>
@@ -243,6 +232,14 @@ function Layout({ children }) {
               >
                 Accueil
               </NavLink>
+              <NavLink
+                to="/assistance"
+                className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
+                onClick={closeMenu}
+              >
+                Assistance immédiate
+              </NavLink>
+
               <NavLink
                 to="/qui-sommes-nous"
                 className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
@@ -384,4 +381,8 @@ function Layout({ children }) {
 }
 
 export default Layout
+
+
+
+
 

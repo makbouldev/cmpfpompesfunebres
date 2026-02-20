@@ -22,9 +22,9 @@ const faqItems = [
       'Oui, nous gerons les declarations, autorisations et documents necessaires avec un suivi clair.',
   },
   {
-    question: 'Proposez-vous des cercueils, plaques, fleurs et marbrerie ?',
+    question: 'Proposez-vous des fleurs et services de marbrerie ?',
     answer:
-      'Oui, notre catalogue inclut cercueils, fleurs, plaques et marbrerie avec plusieurs options de personnalisation.',
+      'Oui, nous proposons des fleurs funeraires, la marbrerie et des prestations personnalisees selon votre besoin.',
   },
   {
     question: 'Intervenez-vous dans toutes les villes du Maroc ?',

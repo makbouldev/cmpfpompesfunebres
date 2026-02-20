@@ -1,28 +1,32 @@
 ﻿import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import transportMusulmanes from '../assets/1.png'
-import transportNonMusulmanes from '../assets/2.png'
-import imageFleurs from '../assets/3.png'
-import imagePlaques from '../assets/4.png'
-import imageMarbrerie from '../assets/5.png'
-import imageMarbrerieMusulmane from '../assets/6.png'
-import imageEquipeA from '../assets/7.webp'
-import imageEquipeB from '../assets/8.jpg'
-import imageNettoyage from '../assets/9.webp'
-import imageTransportMusulman from '../assets/10.jpeg'
-import imageInterieurCorbillard from '../assets/11.jpg'
-import imageFlotteCMPF from '../assets/12.jpg'
-import imageFleursConvoi from '../assets/13.jpg'
-import imageCimetiere from '../assets/14.jpg'
-import imageCercueilsEquipe from '../assets/2.png'
-import imageTransportCercueil from '../assets/18.jpg'
-import imagePreparationEquipe from '../assets/1.png'
+import transportMusulmanes from '../assets/images/1.png'
+import transportNonMusulmanes from '../assets/images/2.png'
+import imageFleurs from '../assets/images/3.png'
+import imageMarbrerie from '../assets/images/5.png'
+import imageMarbrerieMusulmane from '../assets/images/6.png'
+import imageEquipeA from '../assets/images/7.webp'
+import imageEquipeB from '../assets/images/8.jpg'
+import imageNettoyage from '../assets/images/9.webp'
+import imageTransportMusulman from '../assets/images/10.jpeg'
+import imageInterieurCorbillard from '../assets/images/11.jpg'
+import imageFlotteCMPF from '../assets/images/12.jpg'
+import imageFleursConvoi from '../assets/images/13.jpg'
+import imageCimetiere from '../assets/images/14.jpg'
+import imageCercueilsEquipe from '../assets/images/2.png'
+import imageTransportCercueil from '../assets/images/18.jpg'
+import imagePreparationEquipe from '../assets/images/1.png'
 import { agencies } from '../data/agencies'
+import logoAxa from '../assets/partners/axa.svg'
+import logoRma from '../assets/partners/rma.svg'
+import logoSaham from '../assets/partners/saham.svg'
+import logoSanlam from '../assets/partners/sanlam.svg'
+import logoWafaIma from '../assets/partners/wafa-ima.svg'
 
 const heroSlides = [
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Funèbres Musulmanes Avec Accompagnement Complet',
+    titleMain: 'Pompes Fun\u00E8bres Musulmanes Avec Accompagnement Complet',
     description:
       'Prise en charge complete des rites musulmans avec accompagnement humain et discret.',
     cta: 'Service Musulman',
@@ -31,7 +35,7 @@ const heroSlides = [
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Funèbres non Musulmanes Pour Toutes Les Familles',
+    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Pour Toutes Les Familles',
     description:
       'Organisation de ceremonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
@@ -46,15 +50,6 @@ const heroSlides = [
     cta: 'Voir Fleurs',
     to: '/produits/fleurs',
     image: imageFleurs,
-  },
-  {
-    titleTop: 'Nos services',
-    titleMain: 'Plaques Funeraires Elegantes Et Personnalisees',
-    description:
-      'Plaques funeraires personnalisees avec differents styles, couleurs et finitions.',
-    cta: 'Voir Plaques',
-    to: '/produits/plaques',
-    image: imagePlaques,
   },
   {
     titleTop: 'Nos services',
@@ -99,7 +94,7 @@ const servicesHighlights = [
     title: 'Un seul interlocuteur de A a Z',
     text: 'Administratif, transport, ceremonie et coordination complete avec un suivi humain permanent.',
     image: imageEquipeA,
-    to: '/produits/cercueils-musulmans',
+    to: '/contact',
   },
 ]
 
@@ -117,11 +112,11 @@ const servicesOverview = [
   {
     icon: 'shield',
     title: 'Catalogue funeraire personnalise',
-    text: 'Cercueils, fleurs, plaques et marbrerie avec des solutions adaptees a votre budget.',
+    text: 'Fleurs, marbrerie et services funeraires avec des solutions adaptees a votre budget.',
   },
   {
     icon: 'team',
-    title: 'Assistance immediate 24h/24',
+    title: 'Assistance immédiate 24h/24',
     text: 'Un conseiller disponible a tout moment pour orienter la famille et lancer les procedures sans delai.',
   },
 ]
@@ -157,9 +152,47 @@ const repatriementPillars = [
     image: imageEquipeB,
   },
   {
-    title: 'Nettoyage et fleurissement des sepultures',
-    text: 'Service dedie pour maintenir les sepultures propres, dignes et soignees avec bilan photo avant/apres.',
-    image: imageNettoyage,
+    title: 'Transport mortuaire national et international',
+    text: 'Organisation du transfert du defunt par voie terrestre ou aerienne, avec preparation complete du dossier de rapatriement.',
+    image: imageTransportMusulman,
+  },
+]
+
+const trustedCompanies = [
+  {
+    logoUrl: logoAxa,
+    name: 'AXA Assistance',
+    sector: 'Assurance et assistance internationale',
+    detail:
+      'CMPF assure la coordination terrain, la preparation administrative et l execution du rapatriement dans les delais.',
+  },
+  {
+    logoUrl: logoRma,
+    name: 'RMA Assistance',
+    sector: 'Assurance et protection familiale',
+    detail:
+      'Traitement des dossiers urgents, liaison continue avec les gestionnaires et suivi operationnel complet.',
+  },
+  {
+    logoUrl: logoSaham,
+    name: 'SAHAM Assistance',
+    sector: 'Assurance et assistance deces',
+    detail:
+      'Gestion des formalites consulaires, organisation logistique et transfert du defunt vers la destination finale.',
+  },
+  {
+    logoUrl: logoSanlam,
+    name: 'SANLAM Assistance',
+    sector: 'Assurance sante et vie',
+    detail:
+      'Dispositif d intervention 24h/24 avec suivi clair entre la compagnie, CMPF et la famille.',
+  },
+  {
+    logoUrl: logoWafaIma,
+    name: 'Wafa IMA Assistance',
+    sector: 'Assistance et services internationaux',
+    detail:
+      'Prise en charge terrain de A a Z avec un interlocuteur unique pour fluidifier chaque etape du dossier.',
   },
 ]
 
@@ -231,9 +264,9 @@ const homeFaqItems = [
       'Oui, nous gerons les declarations, autorisations et documents necessaires avec un suivi clair.',
   },
   {
-    question: 'Proposez-vous des cercueils, plaques, fleurs et marbrerie ?',
+    question: 'Proposez-vous des fleurs et services de marbrerie ?',
     answer:
-      'Oui, notre catalogue inclut cercueils, fleurs, plaques et marbrerie avec plusieurs options de personnalisation.',
+      'Oui, notre catalogue inclut Fleurs, marbrerie et services funeraires avec plusieurs options de personnalisation.',
   },
   {
     question: 'Intervenez-vous dans toutes les villes du Maroc ?',
@@ -412,15 +445,29 @@ function HomePage() {
               <p className="hero-info-text">{currentSlide.description}</p>
               <div className="hero-highlight hero-info-badge">
                 <span className="hero-highlight-icon">!</span>
-                Service d'urgence 24h/24 - Intervention immediate
+                Service d urgence 24h/24 - Intervention immediate
               </div>
 
               <div className="hero-actions hero-actions-main hero-info-actions">
                 <a href="tel:+212522491616" className="btn hero-btn-call">
-                  Appel immediat
+                  <span className="hero-btn-content">
+                    <span className="hero-btn-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                        <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
+                      </svg>
+                    </span>
+                    <span>Appel immediat</span>
+                  </span>
                 </a>
                 <a href="https://wa.me/212661502763" className="btn hero-btn-wa">
-                  WhatsApp immediat
+                  <span className="hero-btn-content">
+                    <span className="hero-btn-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                        <path d="M12 3.3a8.7 8.7 0 0 0-7.5 13l-1 4 4.1-1a8.7 8.7 0 1 0 4.4-16Zm0 15.8a7.1 7.1 0 0 1-3.6-1l-.3-.2-2.5.6.7-2.4-.2-.4a7.1 7.1 0 1 1 5.9 3.4Zm3.9-5.3-.5-.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.6-1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.3-.4.2-.3c.1-.1.1-.3 0-.4l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.2 3.6 2.5 1 2.5.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z" />
+                      </svg>
+                    </span>
+                    <span>WhatsApp immediat</span>
+                  </span>
                 </a>
               </div>
               <div className="hero-actions hero-actions-secondary hero-info-actions">
@@ -591,8 +638,9 @@ function HomePage() {
             <div className="home-creative-content reveal-on-scroll">
               <h2>Rapatriement de corps et accompagnement des familles de A a Z</h2>
               <p className="home-creative-lead">
-                CMPF prend en charge les etapes sensibles: accueil des familles, liaison avec les
-                autorites, traduction documentaire et organisation logistique complete.
+                CMPF prend en charge exclusivement le rapatriement de corps: formalites consulaires,
+                autorisations administratives, coordination aeroportuaire et transfert du defunt vers
+                la destination finale dans les meilleurs delais.
               </p>
               <div className="home-creative-cards">
                 {repatriementPillars.map((item) => (
@@ -615,6 +663,49 @@ function HomePage() {
                 <img src={imageEquipeB} alt="Bureau administratif CMPF" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section home-partners-section">
+        <div className="container home-services-wrap">
+          <div className="home-partners-head reveal-on-scroll">
+            <span>Partenariats de confiance</span>
+            <h2>Des compagnies majeures font confiance a CMPF</h2>
+            <p>
+              Notre equipe collabore quotidiennement avec des compagnies d assurance et d assistance
+              pour executer les rapatriements de corps avec rapidite, conformite et transparence.
+            </p>
+          </div>
+
+          <div className="home-partners-stats reveal-on-scroll">
+            <article>
+              <strong>25+</strong>
+              <span>Compagnies partenaires actives</span>
+            </article>
+            <article>
+              <strong>24h/24</strong>
+              <span>Interface operationnelle continue</span>
+            </article>
+            <article>
+              <strong>12</strong>
+              <span>Agences mobilisables au Maroc</span>
+            </article>
+          </div>
+
+          <div className="home-partners-grid">
+            {trustedCompanies.map((company) => (
+              <article key={company.name} className="home-partner-card reveal-on-scroll">
+                <div className="home-partner-logo" aria-hidden="true">
+                  <img src={company.logoUrl} alt={`Embleme ${company.name}`} loading="lazy" />
+                </div>
+                <div className="home-partner-copy">
+                  <h3>{company.name}</h3>
+                  <p className="home-partner-sector">{company.sector}</p>
+                  <p>{company.detail}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -834,7 +925,7 @@ function HomePage() {
                 >
                   Localiser
                 </a>
-                <Link to={`/villes/${selectedAgency.slug}`}>Voir details</Link>
+                <Link to={`/villes/${selectedAgency.slug}`}>Voir les details</Link>
               </div>
             </aside>
           </div>
@@ -870,7 +961,7 @@ function HomePage() {
                     </li>
                   ))}
                   <li>
-                    <strong>Email:</strong> cmpfcasa@cmpfassistance.ma
+                    <strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma
                   </li>
                   <li>
                     <strong>Adresse:</strong> {selectedAgency.address}
@@ -985,3 +1076,9 @@ function HomePage() {
 }
 
 export default HomePage
+
+
+
+
+
+

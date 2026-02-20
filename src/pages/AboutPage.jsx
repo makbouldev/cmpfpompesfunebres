@@ -1,10 +1,16 @@
 ﻿import { Link } from 'react-router-dom'
-import image7 from '../assets/7.webp'
-import image8 from '../assets/8.jpg'
-import image18 from '../assets/18.jpg'
-import image19 from '../assets/19.webp'
-import image20 from '../assets/20.jpg'
-import image20Alt from '../assets/20.webp'
+import image7 from '../assets/images/7.webp'
+import image8 from '../assets/images/8.jpg'
+import image18 from '../assets/images/18.jpg'
+import image19 from '../assets/images/19.webp'
+import image20 from '../assets/images/20.jpg'
+import image20Alt from '../assets/images/20.webp'
+import EditorialShowcase from '../components/EditorialShowcase'
+import logoAxa from '../assets/partners/axa.svg'
+import logoRma from '../assets/partners/rma.svg'
+import logoSaham from '../assets/partners/saham.svg'
+import logoSanlam from '../assets/partners/sanlam.svg'
+import logoWafaIma from '../assets/partners/wafa-ima.svg'
 
 const businessAreas = [
   {
@@ -12,11 +18,11 @@ const businessAreas = [
     text: 'Organisation complete du rapatriement depuis et vers le Maroc.',
   },
   {
-    title: 'Pompes Funebres Non Musulmanes',
+    title: 'Pompes Funèbres Non Musulmanes',
     text: 'Ceremonies civiles et religieuses avec coordination complete.',
   },
   {
-    title: 'Pompes Funebres Musulmanes',
+    title: 'Pompes Funèbres Musulmanes',
     text: 'Prise en charge conforme aux rites et aux volontes familiales.',
   },
   {
@@ -66,6 +72,64 @@ const pillars = [
     title: 'Accompagnement humain',
     text: 'Ecoute, discretion et respect des volontes dans les moments les plus sensibles.',
   },
+]
+
+const partnerTrustItems = [
+  {
+    logoUrl: logoAxa,
+    company: 'AXA Assistance',
+    detail:
+      'Partenaire operationnel pour la gestion des dossiers de rapatriement et la coordination terrain.',
+  },
+  {
+    logoUrl: logoRma,
+    company: 'RMA Assistance',
+    detail:
+      'Confiance continue sur les interventions urgentes et le suivi administratif de bout en bout.',
+  },
+  {
+    logoUrl: logoSaham,
+    company: 'SAHAM Assistance',
+    detail:
+      'Collaboration sur les formalites consulaires, la logistique aeroportuaire et le transfert final.',
+  },
+  {
+    logoUrl: logoSanlam,
+    company: 'SANLAM Assistance',
+    detail:
+      'Pilotage commun des dossiers internationaux avec suivi clair et delais maitrises.',
+  },
+  {
+    logoUrl: logoWafaIma,
+    company: 'Wafa IMA Assistance',
+    detail:
+      'Dispositif de confiance pour les dossiers sensibles avec coordination administrative et operationnelle.',
+  },
+]
+
+const aboutShowcasePoints = [
+  {
+    title: 'Presence nationale continue',
+    text: 'CMPF intervient dans les principales villes du Maroc avec une organisation stable.',
+  },
+  {
+    title: 'Experience historique',
+    text: 'Plus de 75 annees de savoir-faire au service des familles et des entreprises.',
+  },
+  {
+    title: 'Confiance des compagnies',
+    text: 'Les acteurs majeurs de l assistance s appuient sur notre execution terrain.',
+  },
+  {
+    title: 'Qualite professionnelle',
+    text: 'Des procedures claires, un suivi humain et une coordination rigoureuse.',
+  },
+]
+
+const aboutShowcaseCards = [
+  { title: 'Rapatriement', image: image18, alt: 'Rapatriement de corps CMPF' },
+  { title: 'Intervention', image: image19, alt: 'Intervention terrain CMPF' },
+  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles CMPF' },
 ]
 
 function AboutPage() {
@@ -154,6 +218,41 @@ function AboutPage() {
         </div>
       </section>
 
+      <EditorialShowcase
+        className="editorial-showcase-about"
+        heading="Rapatriement, intervention, accompagnement :"
+        accent="la signature CMPF"
+        points={aboutShowcasePoints}
+        cards={aboutShowcaseCards}
+      />
+
+      <section className="section about-trust-section">
+        <div className="container about-trust-wrap reveal-on-scroll">
+          <div className="about-trust-head">
+            <span className="about-eyebrow">Confiance des entreprises</span>
+            <h2>Des compagnies de reference font confiance a CMPF</h2>
+            <p>
+              Notre credibilite operationnelle est renforcee par des partenariats durables avec des
+              compagnies d assurance et d assistance qui nous confient la gestion de dossiers sensibles.
+            </p>
+          </div>
+
+          <div className="about-trust-grid">
+            {partnerTrustItems.map((item) => (
+              <article key={item.company} className="about-trust-card">
+                <div className="about-trust-logo" aria-hidden="true">
+                  <img src={item.logoUrl} alt={`Embleme ${item.company}`} loading="lazy" />
+                </div>
+                <div>
+                  <h3>{item.company}</h3>
+                  <p>{item.detail}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section about-areas-section">
         <div className="container about-areas-wrap reveal-on-scroll">
           <div className="about-areas-head">
@@ -201,3 +300,6 @@ function AboutPage() {
 }
 
 export default AboutPage
+
+
+

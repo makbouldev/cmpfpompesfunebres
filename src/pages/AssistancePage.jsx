@@ -1,8 +1,9 @@
-import { Link, useLocation } from 'react-router-dom'
-import imageHeroOne from '../assets/1.png'
-import imageHeroTwo from '../assets/2.png'
-import imageOperation from '../assets/18.jpg'
-import imageTeam from '../assets/20.jpg'
+﻿import { Link, useLocation } from 'react-router-dom'
+import imageHeroOne from '../assets/images/1.png'
+import imageHeroTwo from '../assets/images/2.png'
+import imageOperation from '../assets/images/18.jpg'
+import imageTeam from '../assets/images/20.jpg'
+import EditorialShowcase from '../components/EditorialShowcase'
 
 const keyServices = [
   {
@@ -58,7 +59,7 @@ const enterpriseServices = [
   'Assistance medicale pour evenements et congres',
   'Dispositif d ambulance pour sites industriels',
   'Coordination de transport medical et evacuation',
-  'Cellule de supervision et reporting operationnel',
+  'Cellule de supervision et suivi operationnel',
 ]
 
 const commitments = [
@@ -83,13 +84,38 @@ const coverageCities = [
   'Tetouan',
 ]
 
+const assistanceShowcasePoints = [
+  {
+    title: 'Toujours disponible pour vous',
+    text: 'Cellule active 24h/24 et 7j/7 pour lancer l intervention sans delai.',
+  },
+  {
+    title: 'Intervention claire et rapide',
+    text: 'Chaque action est planifiee pour reduire les blocages et rassurer la famille.',
+  },
+  {
+    title: 'Conseils professionnels',
+    text: 'Un conseiller explique les etapes pour faciliter les decisions importantes.',
+  },
+  {
+    title: 'Respect de chaque situation',
+    text: 'Approche humaine, discrete et adaptee aux rites et aux attentes familiales.',
+  },
+]
+
+const assistanceShowcaseCards = [
+  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation CMPF' },
+  { title: 'Transfert', image: imageOperation, alt: 'Transfert de corps CMPF' },
+  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement des familles CMPF' },
+]
+
 function AssistancePage() {
   const location = useLocation()
   const isEnterpriseView = location.pathname === '/services-entreprises'
 
   const pageTitle = isEnterpriseView
-    ? 'Services aux entreprises - assistance immediate et coordination operationnelle'
-    : 'Assistance immediate 24h/24 - 7j/7'
+    ? 'Services aux entreprises - Assistance immédiate et coordination operationnelle'
+    : 'Assistance immédiate 24h/24 - 7j/7'
 
   const pageIntro = isEnterpriseView
     ? 'CMPF met en place des dispositifs rapides pour les entreprises: assistance medicale, coordination terrain et suivi continu.'
@@ -142,10 +168,10 @@ function AssistancePage() {
 
           <div className="ai-hero-media">
             <div className="ai-hero-media-item">
-              <img src={imageHeroOne} alt="Pompes Funebres musulmanes" />
+              <img src={imageHeroOne} alt="Pompes Funèbres musulmanes" />
             </div>
             <div className="ai-hero-media-item">
-              <img src={imageHeroTwo} alt="Pompes Funebres non musulmanes" />
+              <img src={imageHeroTwo} alt="Pompes Funèbres non musulmanes" />
             </div>
           </div>
         </div>
@@ -162,6 +188,14 @@ function AssistancePage() {
           ))}
         </div>
       </section>
+
+      <EditorialShowcase
+        className="editorial-showcase-assistance"
+        heading="Inhumation, transfert, accompagnement :"
+        accent="notre eclairage immediate"
+        points={assistanceShowcasePoints}
+        cards={assistanceShowcaseCards}
+      />
 
       <section className="section ai-commitments-section">
         <div className="container ai-commitments reveal-on-scroll">
@@ -286,3 +320,5 @@ function AssistancePage() {
 }
 
 export default AssistancePage
+
+

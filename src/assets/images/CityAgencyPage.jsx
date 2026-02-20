@@ -1,21 +1,21 @@
 import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { agencies, agenciesBySlug } from '../data/agencies'
-import img7 from '../assets/images/7.webp'
-import img8 from '../assets/images/8.jpg'
-import img9 from '../assets/images/9.webp'
-import img10 from '../assets/images/10.jpeg'
-import img11 from '../assets/images/11.jpg'
-import img12 from '../assets/images/12.jpg'
-import img13 from '../assets/images/13.jpg'
-import img14 from '../assets/images/14.jpg'
-import img15 from '../assets/images/15.jpg'
-import img16 from '../assets/images/16.jpg'
-import img17 from '../assets/images/17.jpeg'
-import img18 from '../assets/images/18.jpg'
-import img19 from '../assets/images/19.webp'
-import img20 from '../assets/images/20.jpg'
-import img20Webp from '../assets/images/20.webp'
+import { agencies, agenciesBySlug } from '../../data/agencies'
+import img7 from '../assets/7.webp'
+import img8 from '../assets/8.jpg'
+import img9 from '../assets/9.webp'
+import img10 from '../assets/10.jpeg'
+import img11 from '../assets/11.jpg'
+import img12 from '../assets/12.jpg'
+import img13 from '../assets/13.jpg'
+import img14 from '../assets/14.jpg'
+import img15 from '../assets/15.jpg'
+import img16 from '../assets/16.jpg'
+import img17 from '../assets/17.jpeg'
+import img18 from '../assets/18.jpg'
+import img19 from '../assets/19.webp'
+import img20 from '../assets/20.jpg'
+import img20Webp from '../assets/20.webp'
 
 const cityThemes = {
   agadir: {
@@ -183,7 +183,7 @@ function CityAgencyPage() {
                 Appeler l'agence
               </a>
               <a className="btn btn-secondary" href={mapsQuery} target="_blank" rel="noreferrer">
-                Ouvrir la carte
+                Ouvrir Google Maps
               </a>
             </div>
             <div className="city-metrics">
@@ -252,7 +252,7 @@ function CityAgencyPage() {
 
             <article className="city-card city-banner-card">
               <div>
-                <h3>Assistance complete et coordonnee</h3>
+                <h3>Assistance creative et complete</h3>
                 <p>
                   Notre equipe de {agency.label} coordonne formalites, transport, ceremonie et
                   accompagnement familial avec un suivi clair a chaque etape.
@@ -295,7 +295,7 @@ function CityAgencyPage() {
             <a href={`tel:${normalizeTel(leadPhone)}`}>Ligne principale</a>
             <a href={`tel:${normalizeTel(agency.mobile)}`}>Mobile urgence</a>
             <a href={mapsQuery} target="_blank" rel="noreferrer">
-              Itineraire
+              Itineraire Maps
             </a>
 
             {sameRegionAgencies.length > 0 && (
@@ -318,4 +318,3 @@ function CityAgencyPage() {
 }
 
 export default CityAgencyPage
-
