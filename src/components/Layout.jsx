@@ -18,6 +18,9 @@ const groupedLinks = [
   {
     label: 'Catalogues',
     items: [
+      { to: '/produits/plaques', label: 'Plaques' },
+      { to: '/produits/cercueils-musulmans', label: 'Cercueils musulmans' },
+      { to: '/produits/cercueils-non-musulmans', label: 'Cercueils non musulmans' },
       { to: '/produits/fleurs', label: 'Fleurs' },
       { to: '/produits/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
       { to: '/produits/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
@@ -146,11 +149,11 @@ function Layout({ children }) {
             <div className="top-brand">
               <Link to="/" className="brand-home-link" onClick={closeMenu}>
                 <span className="brand-logo">
-                  <img src={logoImage} alt="CMPF Assistance" className="brand-logo-img" />
+                  <img src={logoImage} alt="PFM Assistance" className="brand-logo-img" />
                 </span>
                 <div className="brand-block">
-                  <span className="brand-name">CMPF Assistance</span>
-                  <span className="brand-sub">{'CMPF r\u00E9pond \u00E0 tous vos besoins'}</span>
+                  <span className="brand-name">PFM</span>
+                  <span className="brand-sub">{'Pompes fun\u00E9bres Marocaine'}</span>
                 </div>
               </Link>
             </div>
@@ -327,9 +330,9 @@ function Layout({ children }) {
         <div className="container footer-creative">
           <div className="footer-topline">
             <div className="footer-topline-brand">
-              <img src={logoImage} alt="CMPF Assistance" />
+              <img src={logoImage} alt="PFM Assistance" />
               <div>
-                <h3>CMPF Assistance</h3>
+                <h3>PFM Assistance</h3>
                 <p>Service funeraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
               </div>
             </div>
@@ -343,7 +346,7 @@ function Layout({ children }) {
             <div className="footer-card footer-card-brand">
               <h4>A propos</h4>
               <p>
-                CMPF accompagne chaque famille avec respect des rites, qualite de service et organisation
+                PFM accompagne chaque famille avec respect des rites, qualite de service et organisation
                 complete.
               </p>
             </div>
@@ -351,13 +354,13 @@ function Layout({ children }) {
             <div className="footer-card">
               <h4>Telephones</h4>
               <a href="tel:+212522491616">+212 522 49 16 16</a>
-              <a href="tel:+212522207111">+212 522 20 71 11</a>
+              <a href="tel:+212522207111">+212   522 20 71 11</a>
               <a href="tel:+212661502763">+212 661 502 763</a>
             </div>
 
             <div className="footer-card">
               <h4>Contact</h4>
-              <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
+              <a href="mailto:pfmcasa@pfmassistance.ma">pfmcasa@pfmassistance.ma</a>
               <a href="https://wa.me/212661502763">WhatsApp direct</a>
               <Link to="/contact">Formulaire de contact</Link>
             </div>
@@ -371,7 +374,7 @@ function Layout({ children }) {
           </div>
 
           <div className="footer-bottom-note">
-            <span>CMPF Assistance</span>
+            <span>PFM Assistance</span>
             <span>Respect - Discretion - Disponibilite immediate</span>
           </div>
         </div>
@@ -381,8 +384,4 @@ function Layout({ children }) {
 }
 
 export default Layout
-
-
-
-
 

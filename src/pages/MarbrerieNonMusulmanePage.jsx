@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/nonmuslimanes/1.webp'
 import imageOverlay from '../assets/nonmuslimanes/2.webp'
 import imageTeam from '../assets/nonmuslimanes/7.jpg'
@@ -17,7 +17,7 @@ function MarbrerieNonMusulmanePage() {
               proches.
             </p>
             <p>
-              A la CMPF, nous vous proposons une large selection de monuments de haute qualite,
+              A la PFM, nous vous proposons une large selection de monuments de haute qualite,
               concus pour resister au temps.
             </p>
             <p>
@@ -36,10 +36,10 @@ function MarbrerieNonMusulmanePage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Monument marbrerie non musulmane CMPF" />
+              <img src={imageHero} alt="Monument marbrerie non musulmane PFM" />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageOverlay} alt="Finition marbrerie non musulmane CMPF" />
+              <img src={imageOverlay} alt="Finition marbrerie non musulmane PFM" />
             </figure>
           </div>
         </div>
@@ -63,11 +63,11 @@ function MarbrerieNonMusulmanePage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Conseillers marbrerie CMPF" />
-            <img src={imageWorkshop} alt="Atelier marbrerie CMPF" />
+            <img src={imageTeam} alt="Conseillers marbrerie PFM" />
+            <img src={imageWorkshop} alt="Atelier marbrerie PFM" />
           </div>
           <div className="mf-banner-copy">
-            <h2>CMPF vous accompagne du conseil a la realisation</h2>
+            <h2>PFM vous accompagne du conseil a la realisation</h2>
             <p>
               De la premiere orientation jusqu a la pose finale, notre equipe reste a vos cotes pour
               garantir qualite, clarte et respect.
@@ -88,3 +88,4 @@ function MarbrerieNonMusulmanePage() {
 }
 
 export default MarbrerieNonMusulmanePage
+

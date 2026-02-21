@@ -9,7 +9,7 @@ const keyServices = [
   {
     icon: '☎',
     title: 'Reponse immediate 24h/24',
-    text: "Un conseiller CMPF repond immediatement et declenche la procedure adaptee a votre situation.",
+    text: "Un conseiller PFM repond immediatement et declenche la procedure adaptee a votre situation.",
   },
   {
     icon: '🧭',
@@ -32,7 +32,7 @@ const interventionSteps = [
   {
     icon: '02',
     title: 'Activation des equipes',
-    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative CMPF.',
+    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative PFM.',
   },
   {
     icon: '03',
@@ -104,9 +104,9 @@ const assistanceShowcasePoints = [
 ]
 
 const assistanceShowcaseCards = [
-  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation CMPF' },
-  { title: 'Transfert', image: imageOperation, alt: 'Transfert de corps CMPF' },
-  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement des familles CMPF' },
+  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation PFM' },
+  { title: 'Transfert', image: imageOperation, alt: 'Transfert de corps PFM' },
+  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement des familles PFM' },
 ]
 
 function AssistancePage() {
@@ -118,7 +118,7 @@ function AssistancePage() {
     : 'Assistance immédiate 24h/24 - 7j/7'
 
   const pageIntro = isEnterpriseView
-    ? 'CMPF met en place des dispositifs rapides pour les entreprises: assistance medicale, coordination terrain et suivi continu.'
+    ? 'PFM met en place des dispositifs rapides pour les entreprises: assistance medicale, coordination terrain et suivi continu.'
     : "En cas d urgence, un conseiller vous repond immediatement et declenche la prise en charge funeraire, le transfert ou le rapatriement."
 
   return (
@@ -126,7 +126,7 @@ function AssistancePage() {
       <section className="section ai-hero-section">
         <div className="container ai-hero reveal-on-scroll">
           <div className="ai-hero-copy">
-            <span className="ai-eyebrow">Assistance CMPF</span>
+            <span className="ai-eyebrow">Assistance PFM</span>
             <h1>{pageTitle}</h1>
             <p>{pageIntro}</p>
             <p>
@@ -203,7 +203,7 @@ function AssistancePage() {
             <span className="ai-eyebrow">Engagements</span>
             <h2>Une assistance organisee avec exigence et clarte</h2>
             <p>
-              CMPF maintient des standards eleves de qualite operationnelle afin de garantir une
+              PFM maintient des standards eleves de qualite operationnelle afin de garantir une
               prise en charge fiable dans toutes les situations.
             </p>
           </div>
@@ -228,7 +228,7 @@ function AssistancePage() {
 
           <div className="ai-process-layout">
             <div className="ai-process-image">
-              <img src={imageOperation} alt="Intervention rapide CMPF" />
+              <img src={imageOperation} alt="Intervention rapide PFM" />
             </div>
 
             <div className="ai-process-steps">
@@ -250,7 +250,7 @@ function AssistancePage() {
             <h2>Documents a preparer</h2>
             <p>
               Pour accelerer le traitement du dossier, notre equipe recommande de preparer ces
-              elements. CMPF vous accompagne ensuite pour valider et completer chaque piece.
+              elements. PFM vous accompagne ensuite pour valider et completer chaque piece.
             </p>
             <ul>
               {requiredDocuments.map((doc) => (
@@ -260,7 +260,7 @@ function AssistancePage() {
           </div>
 
           <div className="ai-team-card">
-            <img src={imageTeam} alt="Equipe de coordination CMPF" />
+            <img src={imageTeam} alt="Equipe de coordination PFM" />
             <div>
               <h3>Coordination continue</h3>
               <p>
@@ -268,7 +268,7 @@ function AssistancePage() {
                 rapidite d execution.
               </p>
               <p>
-                Un referent CMPF reste disponible pour informer la famille et confirmer les etapes
+                Un referent PFM reste disponible pour informer la famille et confirmer les etapes
                 valides.
               </p>
             </div>
@@ -320,5 +320,6 @@ function AssistancePage() {
 }
 
 export default AssistancePage
+
 
 

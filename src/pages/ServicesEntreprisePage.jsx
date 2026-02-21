@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHeroOne from '../assets/images/12.jpg'
 import imageHeroTwo from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
@@ -28,7 +28,7 @@ const enterpriseOffers = [
   {
     tag: 'Referent',
     title: 'Interface operationnelle unique',
-    text: 'Un referent CMPF pour fluidifier les echanges entre entreprise, assistance, famille et autorites.',
+    text: 'Un referent PFM pour fluidifier les echanges entre entreprise, assistance, famille et autorites.',
   },
 ]
 
@@ -78,7 +78,7 @@ const enterpriseShowcasePoints = [
   },
   {
     title: 'Coordination de bout en bout',
-    text: 'CMPF organise les etapes du dossier avec vos equipes et partenaires.',
+    text: 'PFM organise les etapes du dossier avec vos equipes et partenaires.',
   },
   {
     title: 'Conseil operationnel clair',
@@ -91,9 +91,9 @@ const enterpriseShowcasePoints = [
 ]
 
 const enterpriseShowcaseCards = [
-  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation entreprise CMPF' },
-  { title: 'Rapatriement', image: imageHeroTwo, alt: 'Rapatriement entreprise CMPF' },
-  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement famille et entreprise CMPF' },
+  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation entreprise PFM' },
+  { title: 'Rapatriement', image: imageHeroTwo, alt: 'Rapatriement entreprise PFM' },
+  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement famille et entreprise PFM' },
 ]
 
 const trustCompanies = [
@@ -111,14 +111,14 @@ function ServicesEntreprisePage() {
         <div className="container se-hero reveal-on-scroll">
           <div className="se-hero-copy">
             <span className="se-eyebrow">Services-entreprises</span>
-            <h1>Dispositif CMPF pour entreprises, institutions et assureurs</h1>
+            <h1>Dispositif PFM pour entreprises, institutions et assureurs</h1>
             <p>
               Page dediee exclusivement aux services-entreprises: coordination operationnelle,
               gestion des rapatriements, formalites administratives et execution terrain sous
               pilotage professionnel.
             </p>
             <p>
-              Reconnue parmi les structures funeraires les plus implantees au Maroc, CMPF s appuie
+              Reconnue parmi les structures funeraires les plus implantees au Maroc, PFM s appuie
               sur une experience historique, un reseau national et une capacite de mobilisation
               immediate pour les dossiers sensibles des entreprises.
             </p>
@@ -143,7 +143,7 @@ function ServicesEntreprisePage() {
               <strong>Telephone:</strong> +212 522 49 16 16
             </p>
             <p>
-              <strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma
+              <strong>E-mail:</strong> PFMcasa@PFMassistance.ma
             </p>
             <p>
               <strong>Disponibilite:</strong> 24h/24 et 7j/7
@@ -178,7 +178,7 @@ function ServicesEntreprisePage() {
             <span className="se-eyebrow">Offre operationnelle</span>
             <h2>Services-entreprises structurees pour execution rapide</h2>
             <p>
-              CMPF propose une organisation professionnelle orientee resultat: traitement des urgences,
+              PFM propose une organisation professionnelle orientee resultat: traitement des urgences,
               maitrise administrative, coordination multi-intervenants et standard de qualite constant.
             </p>
           </div>
@@ -220,10 +220,10 @@ function ServicesEntreprisePage() {
         <div className="container se-trust-wrap reveal-on-scroll">
           <div className="se-head">
             <span className="se-eyebrow">Partenariats</span>
-            <h2>Des compagnies majeures font confiance a CMPF</h2>
+            <h2>Des compagnies majeures font confiance a PFM</h2>
             <p>
               Notre presence operationnelle aux cotes des compagnies d assurance et d assistance
-              confirme la fiabilite de CMPF sur les dossiers entreprises a forte exigence.
+              confirme la fiabilite de PFM sur les dossiers entreprises a forte exigence.
             </p>
           </div>
           <div className="se-trust-grid">
@@ -243,7 +243,7 @@ function ServicesEntreprisePage() {
             <span className="se-eyebrow">Secteurs accompagnes</span>
             <h2>Couverture multi-secteurs pour les besoins des entreprises</h2>
             <p>
-              De l assurance au secteur public, CMPF intervient avec le meme niveau d exigence:
+              De l assurance au secteur public, PFM intervient avec le meme niveau d exigence:
               reactivite, conformite, tracabilite et qualite de service.
             </p>
           </div>
@@ -260,7 +260,7 @@ function ServicesEntreprisePage() {
           <div className="se-banner-copy">
             <h2>Besoin d un dispositif services-entreprises adapte a votre structure ?</h2>
             <p>
-              CMPF construit avec vous un mode operatoire clair, avec referent unique, engagement
+              PFM construit avec vous un mode operatoire clair, avec referent unique, engagement
               de delai de reponse, suivi regulier et engagement qualite mesurable.
             </p>
             <p>
@@ -283,5 +283,6 @@ function ServicesEntreprisePage() {
 }
 
 export default ServicesEntreprisePage
+
 
 

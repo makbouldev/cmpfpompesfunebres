@@ -116,7 +116,7 @@ const familyDocs = [
   'Pieces afferentes au cimetiere si necessaire.',
 ]
 
-const cmpfFormalities = [
+const PFMFormalities = [
   "Autorisation d inhumation.",
   'Fourniture du cercueil selon le choix de la famille.',
   'Mise en biere.',
@@ -142,7 +142,7 @@ function NonMuslimFuneralPage() {
               beneficient d une prise en charge claire, complete et rassurante.
             </p>
             <p>
-              CMPF assure une organisation professionnelle de chaque intervention, du rapatriement a
+              PFM assure une organisation professionnelle de chaque intervention, du rapatriement a
               l inhumation, avec une coordination administrative rigoureuse et une disponibilite
               permanente.
             </p>
@@ -158,10 +158,10 @@ function NonMuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres non musulmanes CMPF" />
+              <img src={imageHero} alt="Pompes Funèbres non musulmanes PFM" />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageRite} alt="Ceremonie non musulmane CMPF" />
+              <img src={imageRite} alt="Ceremonie non musulmane PFM" />
             </figure>
           </div>
         </div>
@@ -189,7 +189,7 @@ function NonMuslimFuneralPage() {
           <span className="mf-eyebrow">Rapatriement de corps</span>
           <h2>Assistance specifique pour deces a l etranger</h2>
           <p>
-            La perte d un etre cher dans un pays etranger est une epreuve douloureuse. CMPF organise
+            La perte d un etre cher dans un pays etranger est une epreuve douloureuse. PFM organise
             toutes les etapes du rapatriement avec methode, rigueur et coordination internationale.
           </p>
           <p>
@@ -209,7 +209,7 @@ function NonMuslimFuneralPage() {
           </ul>
           <p>
             De nombreux organismes d assistance et d assurance marocains et etrangers confient a
-            CMPF l execution des prestations obseques de leurs assures.
+            PFM l execution des prestations obseques de leurs assures.
           </p>
         </div>
       </section>
@@ -267,7 +267,7 @@ function NonMuslimFuneralPage() {
           <span className="mf-eyebrow">Marbrerie</span>
           <h2>Monuments funeraires, restauration et entretien</h2>
           <p>
-            Le monument funeraire est un repere essentiel pour les familles. CMPF accompagne le
+            Le monument funeraire est un repere essentiel pour les familles. PFM accompagne le
             choix, la pose, la restauration et l entretien avec un savoir-faire reconnu.
           </p>
           <h3>Choix proposes aux familles</h3>
@@ -309,14 +309,14 @@ function NonMuslimFuneralPage() {
       <section className="section mf-rich-section">
         <div className="container mf-rich-wrap reveal-on-scroll">
           <span className="mf-eyebrow">Details de la prestation</span>
-          <h2>CMPF prend en charge l ensemble du parcours</h2>
+          <h2>PFM prend en charge l ensemble du parcours</h2>
           <ul className="mf-rich-list">
             {prestationDetails.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <p>
-            Les seules pieces demandees aux familles sont les elements suivants, puis CMPF s occupe
+            Les seules pieces demandees aux familles sont les elements suivants, puis PFM s occupe
             du reste avec les autorites et services concernes.
           </p>
           <ul className="mf-rich-list">
@@ -324,9 +324,9 @@ function NonMuslimFuneralPage() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <h3>Formalites realisees par CMPF</h3>
+          <h3>Formalites realisees par PFM</h3>
           <ul className="mf-rich-list">
-            {cmpfFormalities.map((item) => (
+            {PFMFormalities.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
@@ -336,14 +336,14 @@ function NonMuslimFuneralPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Equipe CMPF non musulmane" />
+            <img src={imageTeam} alt="Equipe PFM non musulmane" />
             <img src={imageTransport} alt="Transport funeraire non musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>CMPF, partenaire fiable pour les pompes Funèbres non musulmanes</h2>
+            <h2>PFM, partenaire fiable pour les pompes Funèbres non musulmanes</h2>
             <p>
               Avec une presence nationale, des ressources professionnelles et une organisation
-              rigoureuse, CMPF accompagne familles, organismes d assurance et institutions avec
+              rigoureuse, PFM accompagne familles, organismes d assurance et institutions avec
               reactivite, clarte et respect.
             </p>
             <p>
@@ -366,4 +366,5 @@ function NonMuslimFuneralPage() {
 }
 
 export default NonMuslimFuneralPage
+
 

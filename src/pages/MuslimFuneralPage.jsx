@@ -78,7 +78,7 @@ function MuslimFuneralPage() {
             <span className="mf-eyebrow">Pompes Funèbres musulmanes</span>
             <h1>Pompes Funèbres Musulmanes</h1>
             <p>
-              <strong>CMPF repond a tous vos besoins.</strong>
+              <strong>PFM repond a tous vos besoins.</strong>
             </p>
             <p>
               Les rituels des funerailles se deroulent dans le plus grand respect des rites islamiques.
@@ -100,10 +100,10 @@ function MuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres musulmanes CMPF" />
+              <img src={imageHero} alt="Pompes Funèbres musulmanes PFM" />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageRite} alt="Toilette rituelle et accompagnement musulman CMPF" />
+              <img src={imageRite} alt="Toilette rituelle et accompagnement musulman PFM" />
             </figure>
           </div>
         </div>
@@ -133,7 +133,7 @@ function MuslimFuneralPage() {
           <h2>Une assistance funeraire specifique pour les deces a l etranger</h2>
           <p>
             La perte d un etre cher dans un pays etranger est d autant plus douloureuse que
-            perturbante. Consciente de cette realite, la CMPF organise toutes les etapes du
+            perturbante. Consciente de cette realite, la PFM organise toutes les etapes du
             rapatriement de corps avec une methode claire, humaine et rigoureuse.
           </p>
           <p>
@@ -153,7 +153,7 @@ function MuslimFuneralPage() {
           </ul>
           <p>
             De nombreux organismes d assistance et d assurance marocains et etrangers confient a la
-            CMPF l execution des prestations obseques de leurs assures.
+            PFM l execution des prestations obseques de leurs assures.
           </p>
         </div>
       </section>
@@ -217,13 +217,13 @@ function MuslimFuneralPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Equipe CMPF musulmane" />
+            <img src={imageTeam} alt="Equipe PFM musulmane" />
             <img src={imageTransport} alt="Transport funeraire musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>CMPF, une reference majeure des Pompes Funèbres Musulmanes au Maroc</h2>
+            <h2>PFM, une reference majeure des Pompes Funèbres Musulmanes au Maroc</h2>
             <p>
-              Avec une presence nationale, une disponibilite 24h/24 et une expertise reconnue, CMPF
+              Avec une presence nationale, une disponibilite 24h/24 et une expertise reconnue, PFM
               accompagne les familles musulmanes dans toutes les etapes des obseques, du rapatriement
               jusqu a l inhumation et a la marbrerie.
             </p>
@@ -247,4 +247,5 @@ function MuslimFuneralPage() {
 }
 
 export default MuslimFuneralPage
+
 

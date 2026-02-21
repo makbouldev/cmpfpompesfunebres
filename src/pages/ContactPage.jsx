@@ -28,8 +28,8 @@ function ContactPage() {
 
     const payload = {
       access_key: accessKey,
-      subject: 'Nouvelle demande depuis le site CMPF',
-      from_name: 'Formulaire Contact CMPF',
+      subject: 'Nouvelle demande depuis le site PFM',
+      from_name: 'Formulaire Contact PFM',
       fullName: formData.fullName,
       phone: formData.phone,
       ville: formData.ville,
@@ -143,3 +143,4 @@ function ContactPage() {
 }
 
 export default ContactPage
+

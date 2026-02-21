@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/images/9.webp'
 import imageOverlay from '../assets/images/13.jpg'
 import imageTeam from '../assets/images/20.jpg'
@@ -56,7 +56,7 @@ function NettoyageFleurissementPage() {
             <span className="mf-eyebrow">Nettoyage et fleurissement</span>
             <h1>Nettoyage et Fleurissement</h1>
             <p>
-              CMPF vous accompagne et vous aide a rendre le plus bel hommage a votre proche en vous
+              PFM vous accompagne et vous aide a rendre le plus bel hommage a votre proche en vous
               proposant le service nettoyage et fleurissement.
             </p>
             <p>
@@ -75,10 +75,10 @@ function NettoyageFleurissementPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Nettoyage de sepulture CMPF" />
+              <img src={imageHero} alt="Nettoyage de sepulture PFM" />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageOverlay} alt="Fleurissement de tombe CMPF" />
+              <img src={imageOverlay} alt="Fleurissement de tombe PFM" />
             </figure>
           </div>
         </div>
@@ -136,13 +136,13 @@ function NettoyageFleurissementPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Equipe entretien CMPF" />
-            <img src={imageCimetiere} alt="Entretien cimetiere CMPF" />
+            <img src={imageTeam} alt="Equipe entretien PFM" />
+            <img src={imageCimetiere} alt="Entretien cimetiere PFM" />
           </div>
           <div className="mf-banner-copy">
             <h2>Un hommage durable, propre et respectueux</h2>
             <p>
-              CMPF vous accompagne pour maintenir les sepultures propres, fleuries et dignes tout au
+              PFM vous accompagne pour maintenir les sepultures propres, fleuries et dignes tout au
               long de l annee.
             </p>
             <div className="mf-hero-actions">
@@ -161,3 +161,4 @@ function NettoyageFleurissementPage() {
 }
 
 export default NettoyageFleurissementPage
+

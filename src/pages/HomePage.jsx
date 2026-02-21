@@ -7,12 +7,12 @@ import imageMarbrerie from '../assets/images/5.png'
 import imageMarbrerieMusulmane from '../assets/images/6.png'
 import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
-import imageNettoyage from '../assets/images/9.webp'
+import imageNettoyage from '../assets/images/13.jpg'
 import imageTransportMusulman from '../assets/images/10.jpeg'
 import imageInterieurCorbillard from '../assets/images/11.jpg'
-import imageFlotteCMPF from '../assets/images/12.jpg'
+import imageFlottePFM from '../assets/images/1.png'
 import imageFleursConvoi from '../assets/images/13.jpg'
-import imageCimetiere from '../assets/images/14.jpg'
+import imageCimetiere from '../assets/images/2.png'
 import imageCercueilsEquipe from '../assets/images/2.png'
 import imageTransportCercueil from '../assets/images/18.jpg'
 import imagePreparationEquipe from '../assets/images/1.png'
@@ -75,7 +75,7 @@ const servicesHighlights = [
   {
     title: 'Urgence 24h/24 en moins de quelques minutes',
     text: "Des le premier appel, un conseiller declenche immediatement l'intervention et la prise en charge.",
-    image: imageFlotteCMPF,
+    image: imageFlottePFM,
     to: '/assistance',
   },
   {
@@ -124,7 +124,7 @@ const servicesOverview = [
 const careProcessSteps = [
   {
     title: '1. Appel et orientation immediate',
-    text: "Un conseiller CMPF repond tout de suite, evalue l'urgence et declenche la prise en charge 24h/24.",
+    text: "Un conseiller PFM repond tout de suite, evalue l'urgence et declenche la prise en charge 24h/24.",
   },
   {
     title: '2. Dossier et coordination administrative',
@@ -143,7 +143,7 @@ const careProcessSteps = [
 const repatriementPillars = [
   {
     title: 'Equipe de coordination disponible 24h/24',
-    text: 'Back-office CMPF mobilise en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
+    text: 'Back-office PFM mobilise en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
     image: imageEquipeA,
   },
   {
@@ -164,7 +164,7 @@ const trustedCompanies = [
     name: 'AXA Assistance',
     sector: 'Assurance et assistance internationale',
     detail:
-      'CMPF assure la coordination terrain, la preparation administrative et l execution du rapatriement dans les delais.',
+      'PFM assure la coordination terrain, la preparation administrative et l execution du rapatriement dans les delais.',
   },
   {
     logoUrl: logoRma,
@@ -185,7 +185,7 @@ const trustedCompanies = [
     name: 'SANLAM Assistance',
     sector: 'Assurance sante et vie',
     detail:
-      'Dispositif d intervention 24h/24 avec suivi clair entre la compagnie, CMPF et la famille.',
+      'Dispositif d intervention 24h/24 avec suivi clair entre la compagnie, PFM et la famille.',
   },
   {
     logoUrl: logoWafaIma,
@@ -219,7 +219,7 @@ const clientReviews = [
   {
     name: 'Mme Ait Ali',
     city: 'Marrakech',
-    text: "Un grand merci a CMPF Assistance pour la qualite du suivi et le respect complet de nos volontes.",
+    text: "Un grand merci a PFM Assistance pour la qualite du suivi et le respect complet de nos volontes.",
     avatar: 'https://i.pravatar.cc/160?img=47',
   },
   {
@@ -237,7 +237,7 @@ const clientReviews = [
   {
     name: 'Mme Zahra',
     city: 'Fes',
-    text: "CMPF a gere toutes les formalites avec clarte et respect. Equipe tres disponible.",
+    text: "PFM a gere toutes les formalites avec clarte et respect. Equipe tres disponible.",
     avatar: 'https://i.pravatar.cc/160?img=5',
   },
 ]
@@ -280,7 +280,7 @@ const homeFaqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez CMPF par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
+      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
   },
 ]
 
@@ -393,7 +393,7 @@ function HomePage() {
     ? `212${selectedAgencyMobileDigits.slice(1)}`
     : selectedAgencyMobileDigits
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
-    `Bonjour CMPF, je souhaite une assistance a ${selectedAgency.label}.`,
+    `Bonjour PFM, je souhaite une assistance a ${selectedAgency.label}.`,
   )}`
   const renderServiceIcon = (icon) => {
     if (icon === 'pulse') {
@@ -437,7 +437,7 @@ function HomePage() {
             key={activeSlide}
             className="hero-banner"
             style={{
-              backgroundImage: `linear-gradient(90deg, rgba(3, 28, 66, 0.78), rgba(8, 56, 110, 0.34)), url('${currentSlide.image}')`,
+              backgroundImage: `linear-gradient(0deg, rgba(8, 44, 90, 0.58), rgba(8, 44, 90, 0.58)), url('${currentSlide.image}')`,
             }}
           >
             <div className="hero-banner-content">
@@ -522,7 +522,7 @@ function HomePage() {
                 <span>Nos services</span>
                 <h2>Un accompagnement funeraire clair, humain et professionnel</h2>
                 <p>
-                  CMPF Assistance propose une prise en charge complete pour soulager les familles,
+                  PFM Assistance propose une prise en charge complete pour soulager les familles,
                   avec une organisation rapide et une qualite de service constante.
                 </p>
                 <p>
@@ -544,7 +544,7 @@ function HomePage() {
 
             <div className="home-services-intro-images reveal-on-scroll">
               <div className="home-services-intro-image home-services-intro-image-main reveal-on-scroll">
-                <img src={imagePreparationEquipe} alt="Services funeraires CMPF" />
+                <img src={imagePreparationEquipe} alt="Services funeraires PFM" />
               </div>
               <div className="home-services-intro-image home-services-intro-image-overlay reveal-on-scroll">
                 <img src={imageCercueilsEquipe} alt="Accompagnement des familles" />
@@ -557,7 +557,7 @@ function HomePage() {
       <section className="section home-process-section">
         <div className="container home-process-wrap reveal-on-scroll">
           <div className="home-process-head">
-            <span>Parcours CMPF</span>
+            <span>Parcours PFM</span>
             <h2>Une methode claire, rapide et rassurante pour chaque famille</h2>
           </div>
           <div className="home-process-stage">
@@ -589,7 +589,7 @@ function HomePage() {
         <div className="container home-guide-wrap reveal-on-scroll">
           <div className="home-guide-head">
             <h2>
-              Les coulisses CMPF: <em>precision, reactivite et controle terrain</em>
+              Les coulisses PFM: <em>precision, reactivite et controle terrain</em>
             </h2>
             <p>
               Coordination interne, transport geolocalise, gestion assurance et suivi dossier:
@@ -638,7 +638,7 @@ function HomePage() {
             <div className="home-creative-content reveal-on-scroll">
               <h2>Rapatriement de corps et accompagnement des familles de A a Z</h2>
               <p className="home-creative-lead">
-                CMPF prend en charge exclusivement le rapatriement de corps: formalites consulaires,
+                PFM prend en charge exclusivement le rapatriement de corps: formalites consulaires,
                 autorisations administratives, coordination aeroportuaire et transfert du defunt vers
                 la destination finale dans les meilleurs delais.
               </p>
@@ -657,10 +657,10 @@ function HomePage() {
 
             <div className="home-creative-visual reveal-on-scroll">
               <div className="home-creative-main-image">
-                <img src={imageEquipeA} alt="Equipe CMPF en coordination" />
+                <img src={imageEquipeA} alt="Equipe PFM en coordination" />
               </div>
               <div className="home-creative-side-image">
-                <img src={imageEquipeB} alt="Bureau administratif CMPF" />
+                <img src={imageEquipeB} alt="Bureau administratif PFM" />
               </div>
             </div>
           </div>
@@ -671,7 +671,7 @@ function HomePage() {
         <div className="container home-services-wrap">
           <div className="home-partners-head reveal-on-scroll">
             <span>Partenariats de confiance</span>
-            <h2>Des compagnies majeures font confiance a CMPF</h2>
+            <h2>Des compagnies majeures font confiance a PFM</h2>
             <p>
               Notre equipe collabore quotidiennement avec des compagnies d assurance et d assistance
               pour executer les rapatriements de corps avec rapidite, conformite et transparence.
@@ -712,14 +712,14 @@ function HomePage() {
 
       <section className="section home-services-showcase">
         <div className="container home-services-wrap">
-          <h2>Pourquoi choisir CMPF Assistance</h2>
+          <h2>Pourquoi choisir PFM Assistance</h2>
           <p className="home-services-intro">
             Des services essentiels presentes de maniere claire pour aider les familles a choisir rapidement.
           </p>
           <div className="home-services-layout">
             <div className="home-services-visual">
               <div className="home-services-visual-main">
-                <img src={imageTransportMusulman} alt="Intervention CMPF" />
+                <img src={imageTransportMusulman} alt="Intervention PFM" />
               </div>
               <div className="home-services-visual-side">
                 <img src={imageFleursConvoi} alt="Services funeraires" />
@@ -819,14 +819,14 @@ function HomePage() {
                 Demander une intervention
               </Link>
               <Link to="/contact" className="btn home-trust-btn-secondary">
-                Contacter CMPF
+                Contacter PFM
               </Link>
             </div>
           </div>
 
           <div className="home-concept-images">
             <div className="home-concept-image home-concept-image-top">
-              <img src={imageCimetiere} alt="Qualite de service CMPF" />
+              <img src={imageCimetiere} alt="Qualite de service PFM" />
             </div>
             <div className="home-concept-image home-concept-image-bottom">
               <img src={imageNettoyage} alt="Nettoyage et entretien des sepultures" />
@@ -838,10 +838,10 @@ function HomePage() {
       <section className="section home-cta-section">
         <div className="container home-cta-wrap reveal-on-scroll">
           <div className="home-cta-media">
-            <img src={imageInterieurCorbillard} alt="Equipe CMPF Assistance" />
+            <img src={imageInterieurCorbillard} alt="Equipe PFM Assistance" />
           </div>
           <div className="home-cta-content">
-            <span>Engagement CMPF</span>
+            <span>Engagement PFM</span>
             <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
             <p>
               Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
@@ -852,7 +852,7 @@ function HomePage() {
                 Demander un conseiller
               </Link>
               <a href="tel:+212522491616" className="btn hero-btn-view">
-                Appeler CMPF
+                Appeler PFM
               </a>
             </div>
           </div>
@@ -902,7 +902,7 @@ function HomePage() {
                 <strong>Adresse:</strong> {selectedAgency.address}
               </p>
               <p>
-                <strong>Contact:</strong> cmpfcasa@cmpfassistance.ma
+                <strong>Contact:</strong> PFMcasa@PFMassistance.ma
               </p>
               <ul>
                 {selectedAgency.phones.map((phone) => (
@@ -948,7 +948,7 @@ function HomePage() {
                   x
                 </button>
 
-                <h3>CMPF Agence {selectedAgency.code} - {selectedAgency.label}</h3>
+                <h3>PFM Agence {selectedAgency.code} - {selectedAgency.label}</h3>
                 <p>
                   Notre equipe locale a {selectedAgency.label} est disponible 24h/24 et 7j/7 pour
                   accompagner les familles avec rapidite et discretion.
@@ -961,7 +961,7 @@ function HomePage() {
                     </li>
                   ))}
                   <li>
-                    <strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma
+                    <strong>E-mail:</strong> PFMcasa@PFMassistance.ma
                   </li>
                   <li>
                     <strong>Adresse:</strong> {selectedAgency.address}
@@ -970,7 +970,7 @@ function HomePage() {
                     <strong>Mobile:</strong> {selectedAgency.mobile}
                   </li>
                   <li>
-                    <strong>Message:</strong> Bonjour CMPF, je souhaite une assistance a{' '}
+                    <strong>Message:</strong> Bonjour PFM, je souhaite une assistance a{' '}
                     {selectedAgency.label}.
                   </li>
                 </ul>
@@ -981,7 +981,7 @@ function HomePage() {
                 </div>
 
                 <p className="agency-modal-note">
-                  Chaque minute compte. CMPF repond avec rapidite, qualite et humanite.
+                  Chaque minute compte. PFM repond avec rapidite, qualite et humanite.
                 </p>
               </div>
             </div>
@@ -993,7 +993,7 @@ function HomePage() {
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
             <span>Clients satisfaits</span>
-            <h2>Ce que disent les familles accompagnees par CMPF</h2>
+            <h2>Ce que disent les familles accompagnees par PFM</h2>
             <p>
               Des retours reels sur la qualite de notre accompagnement funeraire.
             </p>

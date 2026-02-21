@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez CMPF par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
+      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
   },
 ]
 
@@ -78,4 +78,5 @@ function FaqPage() {
 }
 
 export default FaqPage
+
 

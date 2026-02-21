@@ -110,7 +110,7 @@ const partnerTrustItems = [
 const aboutShowcasePoints = [
   {
     title: 'Presence nationale continue',
-    text: 'CMPF intervient dans les principales villes du Maroc avec une organisation stable.',
+    text: 'PFM intervient dans les principales villes du Maroc avec une organisation stable.',
   },
   {
     title: 'Experience historique',
@@ -127,9 +127,9 @@ const aboutShowcasePoints = [
 ]
 
 const aboutShowcaseCards = [
-  { title: 'Rapatriement', image: image18, alt: 'Rapatriement de corps CMPF' },
-  { title: 'Intervention', image: image19, alt: 'Intervention terrain CMPF' },
-  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles CMPF' },
+  { title: 'Rapatriement', image: image18, alt: 'Rapatriement de corps PFM' },
+  { title: 'Intervention', image: image19, alt: 'Intervention terrain PFM' },
+  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles PFM' },
 ]
 
 function AboutPage() {
@@ -139,20 +139,20 @@ function AboutPage() {
         <div className="container about-hero reveal-on-scroll">
           <div className="about-hero-copy">
             <span className="about-eyebrow">Qui sommes-nous</span>
-            <h1>CMPF, reference africaine des services funeraires professionnels</h1>
+            <h1>PFM, reference africaine des services funeraires professionnels</h1>
             <p>
-              CMPF est le premier organisme en Afrique specialise dans les services funeraires.
+              PFM est le premier organisme en Afrique specialise dans les services funeraires.
               Forte de 75 annees d experience, elle occupe une position eminente grace a la
               diversite et a la qualite de ses prestations.
             </p>
             <p>
-              Initialement active dans le secteur funeraire, CMPF a progressivement elargi son
+              Initialement active dans le secteur funeraire, PFM a progressivement elargi son
               champ d action avec de nouveaux creneaux de services au service des familles et des
               partenaires.
             </p>
             <div className="about-hero-actions">
               <Link to="/contact" className="btn btn-primary">
-                Contacter CMPF
+                Contacter PFM
               </Link>
               <Link to="/#nos-agences" className="btn btn-secondary about-btn-agences">
                 Nos agences
@@ -162,16 +162,16 @@ function AboutPage() {
 
           <div className="about-hero-media">
             <div className="about-hero-image-main">
-              <img src={image20} alt="Equipe CMPF" />
+              <img src={image20} alt="Equipe PFM" />
             </div>
             <div className="about-hero-image-overlay">
-              <img src={image20Alt} alt="Service CMPF" />
+              <img src={image20Alt} alt="Service PFM" />
             </div>
             <div className="about-hero-image-mini about-hero-image-mini-left">
-              <img src={image7} alt="Coordination CMPF" />
+              <img src={image7} alt="Coordination PFM" />
             </div>
             <div className="about-hero-image-mini about-hero-image-mini-right">
-              <img src={image8} alt="Accompagnement CMPF" />
+              <img src={image8} alt="Accompagnement PFM" />
             </div>
           </div>
         </div>
@@ -181,10 +181,10 @@ function AboutPage() {
         <div className="container about-story-grid reveal-on-scroll">
           <div className="about-story-media-wrap">
             <div className="about-story-media about-story-media-main">
-              <img src={image18} alt="Transport funeraire CMPF" />
+              <img src={image18} alt="Transport funeraire PFM" />
             </div>
             <div className="about-story-media about-story-media-side">
-              <img src={image19} alt="Intervention terrain CMPF" />
+              <img src={image19} alt="Intervention terrain PFM" />
             </div>
           </div>
 
@@ -192,13 +192,13 @@ function AboutPage() {
             <span className="about-eyebrow">Notre evolution</span>
             <h2>75 ans d experience au service des familles</h2>
             <p>
-              La force de CMPF repose sur une methode claire: disponibilite permanente, coordination
+              La force de PFM repose sur une methode claire: disponibilite permanente, coordination
               rigoureuse et accompagnement complet. Notre organisation permet une prise en charge
               rapide, humaine et parfaitement structuree.
             </p>
             <p>
               Nous adaptons chaque intervention aux attentes des familles, aux obligations
-              administratives et aux exigences de qualite qui font la reputation de CMPF.
+              administratives et aux exigences de qualite qui font la reputation de PFM.
             </p>
             <div className="about-story-stats">
               <article>
@@ -221,7 +221,7 @@ function AboutPage() {
       <EditorialShowcase
         className="editorial-showcase-about"
         heading="Rapatriement, intervention, accompagnement :"
-        accent="la signature CMPF"
+        accent="la signature PFM"
         points={aboutShowcasePoints}
         cards={aboutShowcaseCards}
       />
@@ -230,7 +230,7 @@ function AboutPage() {
         <div className="container about-trust-wrap reveal-on-scroll">
           <div className="about-trust-head">
             <span className="about-eyebrow">Confiance des entreprises</span>
-            <h2>Des compagnies de reference font confiance a CMPF</h2>
+            <h2>Des compagnies de reference font confiance a PFM</h2>
             <p>
               Notre credibilite operationnelle est renforcee par des partenariats durables avec des
               compagnies d assurance et d assistance qui nous confient la gestion de dossiers sensibles.
@@ -275,14 +275,14 @@ function AboutPage() {
       <section className="section about-pillars-section">
         <div className="container about-pillars-wrap reveal-on-scroll">
           <div className="about-pillars-media">
-            <img src={image7} alt="Qualite de service CMPF" />
+            <img src={image7} alt="Qualite de service PFM" />
             <div className="about-pillars-media-overlay">
-              <img src={image8} alt="Equipe terrain CMPF" />
+              <img src={image8} alt="Equipe terrain PFM" />
             </div>
           </div>
 
           <div className="about-pillars-copy">
-            <span className="about-eyebrow">L engagement CMPF</span>
+            <span className="about-eyebrow">L engagement PFM</span>
             <h2>Une methode exigeante, fiable et rassurante</h2>
             <div className="about-pillars-grid">
               {pillars.map((item) => (
@@ -300,6 +300,7 @@ function AboutPage() {
 }
 
 export default AboutPage
+
 
 
 

@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+﻿import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { agencies, agenciesBySlug } from '../../data/agencies'
 import img7 from '../assets/7.webp'
@@ -100,7 +100,7 @@ const cityThemes = {
   },
   tanger: {
     eyebrow: 'Agence Detroit',
-    pitch: 'CMPF Tanger accompagne les familles avec un dispositif adapte aux flux nationaux et internationaux.',
+    pitch: 'PFM Tanger accompagne les familles avec un dispositif adapte aux flux nationaux et internationaux.',
     highlights: ['Coordination portuaire et aeroportuaire', 'Prise en charge rapide des urgences', 'Equipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
     images: [img20Webp, img16, img8],
@@ -146,7 +146,7 @@ function CityAgencyPage() {
                 Retour a l'accueil
               </Link>
               <Link className="btn btn-secondary" to="/contact">
-                Contacter CMPF
+                Contacter PFM
               </Link>
             </div>
           </div>
@@ -169,7 +169,7 @@ function CityAgencyPage() {
       <div className="container city-agency-shell">
         <div className="city-agency-hero">
           <div className="city-hero-copy">
-            <p className="city-eyebrow">{theme?.eyebrow || 'Agence CMPF'}</p>
+            <p className="city-eyebrow">{theme?.eyebrow || 'Agence PFM'}</p>
             <h1>
               Agence {agency.code} - {agency.label}
             </h1>
@@ -318,3 +318,4 @@ function CityAgencyPage() {
 }
 
 export default CityAgencyPage
+
