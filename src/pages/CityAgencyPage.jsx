@@ -120,8 +120,28 @@ function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
 }
 
-function formatCoordinate(value) {
-  return Number(value).toFixed(4)
+function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M6.62 10.79a15.54 15.54 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.8 11.8 0 0 0 3.71.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.47a1 1 0 0 1 1 1 11.8 11.8 0 0 0 .59 3.71 1 1 0 0 1-.24 1Z" />
+    </svg>
+  )
+}
+
+function MailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M4 5h16a2 2 0 0 1 2 2v.2l-10 6.25L2 7.2V7a2 2 0 0 1 2-2Zm18 4.55V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.55l9.47 5.92a1 1 0 0 0 1.06 0Z" />
+    </svg>
+  )
+}
+
+function MapIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 2a7 7 0 0 1 7 7c0 4.9-5.3 10.88-6.2 11.86a1 1 0 0 1-1.6 0C10.3 19.88 5 13.9 5 9a7 7 0 0 1 7-7Zm0 9.5A2.5 2.5 0 1 0 12 6a2.5 2.5 0 0 0 0 5.5Z" />
+    </svg>
+  )
 }
 
 function CityAgencyPage() {
@@ -169,7 +189,6 @@ function CityAgencyPage() {
       <div className="container city-agency-shell">
         <div className="city-agency-hero">
           <div className="city-hero-copy">
-            <p className="city-eyebrow">{theme?.eyebrow || 'Agence PFM'}</p>
             <h1>
               Agence {agency.code} - {agency.label}
             </h1>
@@ -190,10 +209,6 @@ function CityAgencyPage() {
               <article>
                 <strong>{agency.region}</strong>
                 <span>Region couverte</span>
-              </article>
-              <article>
-                <strong>{agency.phones.length + 1}</strong>
-                <span>Lignes de contact</span>
               </article>
               <article>
                 <strong>24h/24</strong>
@@ -225,14 +240,29 @@ function CityAgencyPage() {
               <ul className="city-phone-list">
                 {agency.phones.map((phone) => (
                   <li key={phone}>
-                    <a href={`tel:${normalizeTel(phone)}`}>{phone}</a>
+                    <a className="city-contact-link" href={`tel:${normalizeTel(phone)}`}>
+                      <span className="city-contact-icon">
+                        <PhoneIcon />
+                      </span>
+                      <span>{phone}</span>
+                    </a>
                   </li>
                 ))}
                 <li>
-                  <a href={`tel:${normalizeTel(agency.mobile)}`}>{agency.mobile}</a>
+                  <a className="city-contact-link" href={`tel:${normalizeTel(agency.mobile)}`}>
+                    <span className="city-contact-icon">
+                      <PhoneIcon />
+                    </span>
+                    <span>{agency.mobile}</span>
+                  </a>
                 </li>
                 <li>
-                  <a href={`mailto:${agency.email}`}>{agency.email}</a>
+                  <a className="city-contact-link" href={`mailto:${agency.email}`}>
+                    <span className="city-contact-icon">
+                      <MailIcon />
+                    </span>
+                    <span>{agency.email}</span>
+                  </a>
                 </li>
               </ul>
             </article>
@@ -266,14 +296,6 @@ function CityAgencyPage() {
 
             <article className="city-card">
               <h3>Localisation precise</h3>
-              <div className="city-coordinates">
-                <p>
-                  <strong>Latitude:</strong> {formatCoordinate(agency.lat)}
-                </p>
-                <p>
-                  <strong>Longitude:</strong> {formatCoordinate(agency.lng)}
-                </p>
-              </div>
               <iframe
                 className="city-map-frame"
                 src={embeddedMap}
@@ -290,16 +312,31 @@ function CityAgencyPage() {
               <strong>Ville:</strong> {agency.label}
             </p>
             <p>
-              <strong>Code agence:</strong> {agency.code}
-            </p>
-            <p>
               <strong>Region:</strong> {agency.region}
             </p>
-            <a href={`tel:${normalizeTel(leadPhone)}`}>Ligne principale</a>
-            <a href={`tel:${normalizeTel(agency.mobile)}`}>Mobile urgence</a>
-            <a href={`mailto:${agency.email}`}>E-mail agence</a>
+            <a className="city-contact-link" href={`tel:${normalizeTel(leadPhone)}`}>
+              <span className="city-contact-icon">
+                <PhoneIcon />
+              </span>
+              <span>Ligne principale</span>
+            </a>
+            <a className="city-contact-link" href={`tel:${normalizeTel(agency.mobile)}`}>
+              <span className="city-contact-icon">
+                <PhoneIcon />
+              </span>
+              <span>Mobile urgence</span>
+            </a>
+            <a className="city-contact-link" href={`mailto:${agency.email}`}>
+              <span className="city-contact-icon">
+                <MailIcon />
+              </span>
+              <span>E-mail agence</span>
+            </a>
             <a href={mapsQuery} target="_blank" rel="noreferrer">
-              Itineraire
+              <span className="city-contact-icon">
+                <MapIcon />
+              </span>
+              <span>Itineraire</span>
             </a>
 
             {sameRegionAgencies.length > 0 && (

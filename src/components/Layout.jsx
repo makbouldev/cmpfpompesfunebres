@@ -360,6 +360,7 @@ function Layout({ children }) {
               <a href="tel:+212522207111">+212   522 20 71 11</a>
               <a href="tel:+212661502763">+212 661 502 763</a>
             </div>
+
             <div className="footer-card">
               <h4>Contact</h4>
               <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>

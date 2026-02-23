@@ -120,10 +120,6 @@ function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
 }
 
-function formatCoordinate(value) {
-  return Number(value).toFixed(4)
-}
-
 function CityAgencyPage() {
   const { slug } = useParams()
   const agency = useMemo(() => agenciesBySlug[slug], [slug])
@@ -169,7 +165,6 @@ function CityAgencyPage() {
       <div className="container city-agency-shell">
         <div className="city-agency-hero">
           <div className="city-hero-copy">
-            <p className="city-eyebrow">{theme?.eyebrow || 'Agence PFM'}</p>
             <h1>
               Agence {agency.code} - {agency.label}
             </h1>
@@ -190,10 +185,6 @@ function CityAgencyPage() {
               <article>
                 <strong>{agency.region}</strong>
                 <span>Region couverte</span>
-              </article>
-              <article>
-                <strong>{agency.phones.length + 1}</strong>
-                <span>Lignes de contact</span>
               </article>
               <article>
                 <strong>24h/24</strong>
@@ -263,14 +254,6 @@ function CityAgencyPage() {
 
             <article className="city-card">
               <h3>Localisation precise</h3>
-              <div className="city-coordinates">
-                <p>
-                  <strong>Latitude:</strong> {formatCoordinate(agency.lat)}
-                </p>
-                <p>
-                  <strong>Longitude:</strong> {formatCoordinate(agency.lng)}
-                </p>
-              </div>
               <iframe
                 className="city-map-frame"
                 src={embeddedMap}
@@ -285,9 +268,6 @@ function CityAgencyPage() {
             <h3>Infos rapides</h3>
             <p>
               <strong>Ville:</strong> {agency.label}
-            </p>
-            <p>
-              <strong>Code agence:</strong> {agency.code}
             </p>
             <p>
               <strong>Region:</strong> {agency.region}
