@@ -423,7 +423,7 @@ function HomePage() {
             key={activeSlide}
             className="hero-banner"
             style={{
-              backgroundImage: `linear-gradient(0deg, rgba(8, 44, 90, 0.58), rgba(8, 44, 90, 0.58)), url('${currentSlide.image}')`,
+              backgroundImage: `url('${currentSlide.image}')`,
             }}
           >
             <div className="hero-banner-content">

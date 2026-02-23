@@ -93,8 +93,6 @@ function Layout({ children }) {
   useEffect(() => {
     const revealTargets = document.querySelectorAll(
       [
-        '.section',
-        '.section img',
         '.card',
         '.price-card',
         '.info-panel',

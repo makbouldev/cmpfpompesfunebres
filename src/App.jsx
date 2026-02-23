@@ -35,6 +35,7 @@ function App() {
 
         <Route path="/produits/fleurs" element={<FleursPage />} />
         <Route path="/service/fleurs" element={<FleursPage />} />
+        <Route path="/catalogue/fleurs" element={<FleursCataloguePage />} />
         <Route path="/catalogues/fleurs" element={<FleursCataloguePage />} />
         <Route path="/produits/plaques" element={<PlaquesPage />} />
         <Route path="/catalogues/plaques" element={<PlaquesPage />} />

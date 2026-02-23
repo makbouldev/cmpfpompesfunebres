@@ -560,6 +560,15 @@ a {
     heroImagePan 5.6s ease-in-out both;
 }
 
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(8, 44, 90, 0.58), rgba(8, 44, 90, 0.58));
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-banner-content {
   width: min(980px, 94%);
   height: 100%;
@@ -571,6 +580,8 @@ a {
   border-right: none;
   backdrop-filter: none;
   margin-left: clamp(1.2rem, 7vw, 6rem);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-info-title {
@@ -702,6 +713,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   backdrop-filter: blur(3px);
+  z-index: 1;
 }
 
 .hero-grid {
@@ -1394,6 +1406,13 @@ h2 {
   color: #0e5d95;
   font-size: 0.95rem;
   line-height: 1;
+}
+
+.contact-info-icon svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+  fill: currentColor;
 }
 
 .contact-info-card p {
@@ -4108,7 +4127,7 @@ textarea {
     width: min(92%, 680px);
     padding: 2rem 1.2rem 4.3rem;
     border-right: none;
-    background: linear-gradient(180deg, rgba(6, 23, 40, 0.58), rgba(6, 23, 40, 0.18));
+    background: transparent;
     margin-left: clamp(0.4rem, 3vw, 2rem);
   }
 

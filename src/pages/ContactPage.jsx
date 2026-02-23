@@ -79,11 +79,19 @@ function ContactPage() {
             <article className="contact-info-card">
               <h3>Ligne directe</h3>
               <a href="tel:+212522491616" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">ðŸ“ž</span>
+                <span className="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
+                  </svg>
+                </span>
                 <span>+212 522 49 16 16</span>
               </a>
               <a href="tel:+212522207111" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">ðŸ“ž</span>
+                <span className="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
+                  </svg>
+                </span>
                 <span>+212 522 20 71 11</span>
               </a>
               <p>Disponibilite permanente pour urgences et orientation immediate.</p>
@@ -92,11 +100,19 @@ function ContactPage() {
             <article className="contact-info-card">
               <h3>WhatsApp et E-mail</h3>
               <a href="https://wa.me/212661502763" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">ðŸŸ¢</span>
+                <span className="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M12 3.3a8.7 8.7 0 0 0-7.5 13l-1 4 4.1-1a8.7 8.7 0 1 0 4.4-16Zm0 15.8a7.1 7.1 0 0 1-3.6-1l-.3-.2-2.5.6.7-2.4-.2-.4a7.1 7.1 0 1 1 5.9 3.4Zm3.9-5.3-.5-.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.6-1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.3-.4.2-.3c.1-.1.1-.3 0-.4l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.2 3.6 2.5 1 2.5.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z" />
+                  </svg>
+                </span>
                 <span>+212 661 502 763</span>
               </a>
               <a href="mailto:cmpfcasa@cmpfassistance.ma" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">âœ‰</span>
+                <span className="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm8 6.2L5 8v8h14V8l-7 4.2Zm0-1.7L19 6H5l7 4.5Z" />
+                  </svg>
+                </span>
                 <span>cmpfcasa@cmpfassistance.ma</span>
               </a>
               <p>Envoi de documents et suivi rapide de votre dossier.</p>
