@@ -208,7 +208,15 @@ function Layout({ children }) {
               aria-expanded={isNavOpen}
               aria-controls="main-navigation"
               aria-label={isNavOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-              onClick={() => setIsNavOpen((value) => !value)}
+              onClick={() => {
+                setIsNavOpen((current) => {
+                  const next = !current
+                  if (!next) {
+                    setOpenGroupKey('')
+                  }
+                  return next
+                })
+              }}
             >
               <span className="mobile-menu-icon" aria-hidden="true" />
             </button>
@@ -253,6 +261,7 @@ function Layout({ children }) {
                   <button
                     type="button"
                     className="nav-link nav-group-trigger"
+                    aria-expanded={openGroupKey === group.label}
                     onClick={() => toggleGroup(group.label)}
                   >
                     {group.label} <span className="nav-caret" aria-hidden="true" />
@@ -351,7 +360,6 @@ function Layout({ children }) {
               <a href="tel:+212522207111">+212   522 20 71 11</a>
               <a href="tel:+212661502763">+212 661 502 763</a>
             </div>
-
             <div className="footer-card">
               <h4>Contact</h4>
               <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
