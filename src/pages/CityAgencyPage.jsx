@@ -231,6 +231,9 @@ function CityAgencyPage() {
                 <li>
                   <a href={`tel:${normalizeTel(agency.mobile)}`}>{agency.mobile}</a>
                 </li>
+                <li>
+                  <a href={`mailto:${agency.email}`}>{agency.email}</a>
+                </li>
               </ul>
             </article>
 
@@ -294,6 +297,7 @@ function CityAgencyPage() {
             </p>
             <a href={`tel:${normalizeTel(leadPhone)}`}>Ligne principale</a>
             <a href={`tel:${normalizeTel(agency.mobile)}`}>Mobile urgence</a>
+            <a href={`mailto:${agency.email}`}>E-mail agence</a>
             <a href={mapsQuery} target="_blank" rel="noreferrer">
               Itineraire
             </a>

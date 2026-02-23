@@ -456,11 +456,6 @@ function HomePage() {
                   </span>
                 </a>
               </div>
-              <div className="hero-actions hero-actions-secondary hero-info-actions">
-                <Link to={currentSlide.to} className="btn hero-btn-view">
-                  Voir services
-                </Link>
-              </div>
             </div>
 
             <div className="hero-slider-controls">
@@ -771,7 +766,8 @@ function HomePage() {
                 <strong>Adresse:</strong> {selectedAgency.address}
               </p>
               <p>
-                <strong>Contact:</strong> PFMcasa@PFMassistance.ma
+                <strong>Contact:</strong>{' '}
+                <a href={`mailto:${selectedAgency.email}`}>{selectedAgency.email}</a>
               </p>
               <ul>
                 {selectedAgency.phones.map((phone) => (
@@ -830,7 +826,7 @@ function HomePage() {
                     </li>
                   ))}
                   <li>
-                    <strong>E-mail:</strong> PFMcasa@PFMassistance.ma
+                    <strong>E-mail:</strong> {selectedAgency.email}
                   </li>
                   <li>
                     <strong>Adresse:</strong> {selectedAgency.address}

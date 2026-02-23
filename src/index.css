@@ -69,8 +69,8 @@ a {
 }
 
 .brand-logo {
-  width: 82px;
-  height: 82px;
+  width: 168px;
+  height: 54px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -94,14 +94,30 @@ a {
 }
 
 .brand-name {
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  font-size: 0.95rem;
+  display: inline-block;
+  width: fit-content;
+  color: #0f6da8;
+  font-family: 'Arial Black', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.09em;
+  font-size: 1.12rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  border-top: 1px solid #98c4e0;
+  border-bottom: 3px solid #f0a542;
+  transform: skewX(-8deg);
+  padding: 0.1rem 0.18rem 0.08rem;
 }
 
 .brand-sub {
-  font-size: 0.72rem;
-  color: #8e66a8;
+  margin-top: 0.16rem;
+  font-size: 0.6rem;
+  color: #4f7592;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .top-contact,
@@ -1555,6 +1571,52 @@ h2 {
   margin-bottom: 0.38rem;
 }
 
+.plaques-contact-link {
+  display: flex !important;
+  align-items: center;
+  gap: 0.58rem;
+  color: #184f78 !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.plaques-contact-link:hover {
+  color: #0f3f63 !important;
+  transform: translateX(2px);
+}
+
+.plaques-contact-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  flex: 0 0 1.65rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #114b74;
+}
+
+.plaques-contact-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+.plaques-side-panel a[href^='tel:'] .plaques-contact-icon {
+  color: #14763b;
+}
+
+.plaques-side-panel a[href*='wa.me'] .plaques-contact-icon {
+  color: #11863f;
+}
+
+.plaques-side-panel a[href^='mailto:'] .plaques-contact-icon {
+  color: #1e5c9c;
+}
+
 .plaques-side-btn {
   margin-top: 0.35rem;
   text-align: center;
@@ -1596,6 +1658,29 @@ h2 {
 
 .plaques-card:hover .plaques-media img {
   transform: scale(1.05);
+}
+
+.cercueils-musulmans-section .plaques-media,
+.cercueils-non-musulmans-section .plaques-media,
+.plaques-catalogue-section .plaques-media,
+.marbrerie-musulmane-section .plaques-media {
+  aspect-ratio: 16 / 9;
+  background: #f7fafc;
+}
+
+.cercueils-musulmans-section .plaques-media img,
+.cercueils-non-musulmans-section .plaques-media img,
+.plaques-catalogue-section .plaques-media img,
+.marbrerie-musulmane-section .plaques-media img {
+  object-fit: contain;
+  padding: 0.6rem;
+}
+
+.cercueils-musulmans-section .plaques-card:hover .plaques-media img,
+.cercueils-non-musulmans-section .plaques-card:hover .plaques-media img,
+.plaques-catalogue-section .plaques-card:hover .plaques-media img,
+.marbrerie-musulmane-section .plaques-card:hover .plaques-media img {
+  transform: scale(1.02);
 }
 
 .plaques-body {
@@ -1783,8 +1868,8 @@ textarea {
 }
 
 .footer-topline-brand img {
-  width: 62px;
-  height: 62px;
+  width: 176px;
+  height: 56px;
   object-fit: contain;
   filter: none;
 }
@@ -3869,7 +3954,8 @@ textarea {
   }
 
   .brand-name {
-    font-size: 0.9rem;
+    font-size: 0.98rem;
+    letter-spacing: 0.08em;
     line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
@@ -3884,8 +3970,8 @@ textarea {
   }
 
   .brand-logo {
-    width: 68px;
-    height: 68px;
+    width: 144px;
+    height: 44px;
   }
 
   .top-contact,
@@ -4269,12 +4355,13 @@ textarea {
   }
 
   .brand-logo {
-    width: 72px;
-    height: 72px;
+    width: 128px;
+    height: 40px;
   }
 
   .brand-name {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
   }
 
   .brand-sub {

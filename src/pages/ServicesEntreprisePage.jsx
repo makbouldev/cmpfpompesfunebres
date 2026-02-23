@@ -143,7 +143,7 @@ function ServicesEntreprisePage() {
               <strong>Telephone:</strong> +212 522 49 16 16
             </p>
             <p>
-              <strong>E-mail:</strong> PFMcasa@PFMassistance.ma
+              <strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma
             </p>
             <p>
               <strong>Disponibilite:</strong> 24h/24 et 7j/7
@@ -283,6 +283,7 @@ function ServicesEntreprisePage() {
 }
 
 export default ServicesEntreprisePage
+
 
 
 

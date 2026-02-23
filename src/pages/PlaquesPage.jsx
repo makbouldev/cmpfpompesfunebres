@@ -1,64 +1,78 @@
 import { useState } from 'react'
-import plaque1 from '../assets/images/1.png'
-import plaque2 from '../assets/images/2.png'
-import plaque3 from '../assets/images/3.png'
-import plaque4 from '../assets/images/4.png'
-import plaque5 from '../assets/images/5.png'
-import plaque6 from '../assets/images/6.png'
-import plaque7 from '../assets/images/11.jpg'
-import plaque8 from '../assets/images/13.jpg'
-import plaque9 from '../assets/images/14.jpg'
-import plaque10 from '../assets/images/IMG-20260221-WA0025.jpg'
-import plaque11 from '../assets/images/IMG-20260221-WA0026.jpg'
-import plaque12 from '../assets/images/s.png'
-import plaque13 from '../assets/images/ss.png'
-import plaque14 from '../assets/images/a.jpeg'
-import plaque15 from '../assets/images/12.jpg'
+import QuickContactLinks from '../components/QuickContactLinks'
+
+import plaque1 from '../assets/plaques/Plaque-funeraire-bronze-feuille-fleur-300x237.png'
+import plaque2 from '../assets/plaques/Plaque-funeraire-bronze-livre-colombes-300x263.png'
+import plaque3 from '../assets/plaques/Plaque-funeraire-bronze-pensee-fleur-300x259.png'
+import plaque4 from '../assets/plaques/Plaque-funeraire-bronze-duo-fleurs-300x248.png'
+import plaque5 from '../assets/plaques/Plaque-funeraire-bronze-livre-epis-de-ble-300x256.png'
+import plaque6 from '../assets/plaques/Plaque-funeraire-bronze-nuage-fleur-300x258.png'
+import plaque7 from '../assets/plaques/Plaque-funeraire-bronze-parchemin-fleur-300x225.png'
+import plaque8 from '../assets/plaques/Plaque-funeraire-bronze-main-colombe-300x252.png'
+import plaque9 from '../assets/plaques/Plaque-funeraire-bronze-oiseau-300x255.png'
+import plaque10 from '../assets/plaques/Plaque-funeraire-bronze-livre-fleuri-300x241.png'
+import plaque11 from '../assets/plaques/Plaque-funeraire-bronze-feuille-papillon-300x255.png'
+import plaque12 from '../assets/plaques/Plaque-funeraire-bronze-carre-epis-de-ble-300x242.png'
+import plaque13 from '../assets/plaques/Plaque-funeraire-coeur-sur-presentoire-300x237.png'
+import plaque14 from '../assets/plaques/Plaque-funeraire-bronze-livre-avec-fleur-300x243.png'
+import plaque15 from '../assets/plaques/Plaque-funeraire-bronze-bouquet-garni-300x231.png'
+import plaque16 from '../assets/plaques/Plaque-funeraire-bronze-bouquet-fleuri-300x234.png'
+import plaque17 from '../assets/plaques/Plaque-funeraire-feuille-musique-300x208.png'
+import plaque18 from '../assets/plaques/Plaque-funeraire-bronze-Colombe-300x203.png'
+import plaque19 from '../assets/plaques/Plaque-funeraire-bronze-Fleur-300x259.png'
+import plaque20 from '../assets/plaques/Plaque-funeraire-bronze-nuage-Vierge-Marie-300x258.png'
+import plaque21 from '../assets/plaques/Nouveau-projet-1-300x256.png'
+import plaque22 from '../assets/plaques/Plaque-funeraire-Bronze-bouquet-epis-de-ble-300x262.png'
+import plaque23 from '../assets/plaques/Plaque-funeraire-Bonze-nuage-300x249.png'
 
 const plaquesData = [
-  { title: 'Plaque funeraire bronze feuille fleur', price: '980,00 DH', category: 'Bronze', image: plaque1 },
-  { title: 'Plaque funeraire bronze livre colombes', price: '2.000,00 DH', category: 'Bronze', image: plaque2 },
-  { title: 'Plaque funeraire bronze pensee fleur', price: '1.780,00 DH', category: 'Bronze', image: plaque3 },
-  { title: 'Plaque funeraire bronze duo fleurs', price: '1.050,00 DH', category: 'Bronze', image: plaque4 },
-  { title: 'Plaque funeraire bronze epi de ble', price: '800,00 DH', category: 'Bronze', image: plaque5 },
-  { title: 'Plaque funeraire bronze nuage fleur', price: '1.250,00 DH', category: 'Bronze', image: plaque6 },
-  { title: 'Plaque funeraire bronze parchemin', price: '980,00 DH', category: 'Bronze', image: plaque7 },
-  { title: 'Plaque funeraire bronze main colombe', price: '1.400,00 DH', category: 'Bronze', image: plaque8 },
-  { title: 'Plaque funeraire bronze oiseau', price: '1.650,00 DH', category: 'Bronze', image: plaque9 },
-  { title: 'Plaque funeraire granit noir', price: '1.180,00 DH', category: 'Granit', image: plaque10 },
-  { title: 'Plaque funeraire bronze feuille papillon', price: '980,00 DH', category: 'Bronze', image: plaque11 },
-  { title: 'Plaque funeraire bronze carre epi de ble', price: '550,00 DH', category: 'Bronze', image: plaque12 },
-  { title: 'Plaque funeraire personnalisee premium', price: '1.950,00 DH', category: 'Personnalisee', image: plaque13 },
-  { title: 'Plaque funeraire gravure doree', price: '1.320,00 DH', category: 'Personnalisee', image: plaque14 },
-  { title: 'Plaque funeraire granit classique', price: '880,00 DH', category: 'Granit', image: plaque15 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « FEUILLE FLEUR »', price: '980,00 DH', image: plaque1 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE COLOMBES »', price: '2.000,00 DH', image: plaque2 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « PENSEE FLEUR »', price: '1.780,00 DH', image: plaque3 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « DUO FLEURS »', price: '1.050,00 DH', image: plaque4 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE EPIS DE BLE »', price: '800,00 DH', image: plaque5 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « NUAGE FLEUR »', price: '1.250,00 DH', image: plaque6 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « PARCHEMIN FLEUR »', price: '980,00 DH', image: plaque7 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « MAIN COLOMBE »', price: '1.400,00 DH', image: plaque8 },
+  { title: 'PLAQUE FUNERAIRE « BRONZE OISEAU »', price: '1.650,00 DH', image: plaque9 },
+  { title: 'PLAQUE FUNERAIRE » BRONZE LIVRE FLEURI »', price: '1.180,00 DH', image: plaque10 },
+  { title: 'PLAQUE FUNERAIRE » BRONZE FEUILLE PAPILLON »', price: '980,00 DH', image: plaque11 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « CARRE EPIS DE BLE »', price: '550,00 DH', image: plaque12 },
+  { title: 'PLAQUE FUNERAIRE « COEUR SUR PRESENTOIRE »', price: '1.350,00 DH', image: plaque13 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE AVEC FLEUR »', price: '1.600,00 DH', image: plaque14 },
+  { title: 'PLAQUE FUNERAIRE « BRONZE BOUQUET GARNI »', price: '1.250,00 DH', image: plaque15 },
+  { title: 'PLAQUE FUNERAIRE « BRONZE BOUQUET FLEURI »', price: '1.500,00 DH', image: plaque16 },
+  { title: 'PLAQUE FUNERAIRE « FEUILLE MUSIQUE »', price: '1.780,00 DH', image: plaque17 },
+  { title: 'PLAQUE FUNERAIRE « BRONZE COLOMBE »', price: '980,00 DH', image: plaque18 },
+  { title: 'PLAQUE FUNERAIRE « BRONZE FLEUR »', price: '790,00 DH', image: plaque19 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « NUAGE VIERGE MARIE »', price: '1.170,00 DH', image: plaque20 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « VIERGE MARIE »', price: '900,00 DH', image: plaque21 },
+  { title: 'PLAQUE FUNERAIRE BRONZE « BOUQUET EPIS DE BLE »', price: '800,00 DH', image: plaque22 },
+  { title: 'PLAQUE FUNERAIRE BONZE « NUAGE »', price: '1.480,00 DH', image: plaque23 },
 ]
 
 function PlaquesPage() {
   const [page, setPage] = useState(1)
   const perPage = 12
 
-  const filteredPlaques = plaquesData
-
-  const totalPages = Math.max(1, Math.ceil(filteredPlaques.length / perPage))
+  const totalPages = Math.max(1, Math.ceil(plaquesData.length / perPage))
   const safePage = Math.min(page, totalPages)
   const startIndex = (safePage - 1) * perPage
-  const visiblePlaques = filteredPlaques.slice(startIndex, startIndex + perPage)
+  const visiblePlaques = plaquesData.slice(startIndex, startIndex + perPage)
 
   return (
-    <section className="section plaques-section">
+    <section className="section plaques-section plaques-catalogue-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
           <span>Catalogue PFM</span>
           <h1>Plaques funeraires</h1>
-          <p>
-            Selection de plaques funeraires avec finitions bronze, granit et gravures personnalisees.
-          </p>
+          <p>Selection de plaques funeraires en bronze et granit avec gravures et finitions variees.</p>
         </div>
 
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
-            Affichage de {filteredPlaques.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visiblePlaques.length, filteredPlaques.length)} sur {filteredPlaques.length} resultats
+            Affichage de {plaquesData.length === 0 ? 0 : startIndex + 1}-
+            {Math.min(startIndex + visiblePlaques.length, plaquesData.length)} sur {plaquesData.length} resultats
           </p>
         </div>
 
@@ -109,10 +123,8 @@ function PlaquesPage() {
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
             <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
-            <a href="tel:+212522491616">📞 +212 522 49 16 16</a>
-            <a href="tel:+212522207111">📞 +212 522 20 71 11</a>
-            <a href="https://wa.me/212661502763">🟢 WhatsApp: +212 661 502 763</a>
-            <a href="mailto:pfmcasa@pfmassistance.ma">✉ pfmcasa@pfmassistance.ma</a>
+            <QuickContactLinks />
+
             <a className="plaques-side-btn" href="/contact">Demander un devis</a>
           </aside>
         </div>
@@ -122,3 +134,5 @@ function PlaquesPage() {
 }
 
 export default PlaquesPage
+
+

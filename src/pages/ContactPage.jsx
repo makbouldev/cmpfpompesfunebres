@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -79,11 +79,11 @@ function ContactPage() {
             <article className="contact-info-card">
               <h3>Ligne directe</h3>
               <a href="tel:+212522491616" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">📞</span>
+                <span className="contact-info-icon" aria-hidden="true">ðŸ“ž</span>
                 <span>+212 522 49 16 16</span>
               </a>
               <a href="tel:+212522207111" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">📞</span>
+                <span className="contact-info-icon" aria-hidden="true">ðŸ“ž</span>
                 <span>+212 522 20 71 11</span>
               </a>
               <p>Disponibilite permanente pour urgences et orientation immediate.</p>
@@ -92,12 +92,12 @@ function ContactPage() {
             <article className="contact-info-card">
               <h3>WhatsApp et E-mail</h3>
               <a href="https://wa.me/212661502763" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">🟢</span>
+                <span className="contact-info-icon" aria-hidden="true">ðŸŸ¢</span>
                 <span>+212 661 502 763</span>
               </a>
-              <a href="mailto:pfmcasa@pfmassistance.ma" className="contact-info-link">
-                <span className="contact-info-icon" aria-hidden="true">✉</span>
-                <span>pfmcasa@pfmassistance.ma</span>
+              <a href="mailto:cmpfcasa@cmpfassistance.ma" className="contact-info-link">
+                <span className="contact-info-icon" aria-hidden="true">âœ‰</span>
+                <span>cmpfcasa@cmpfassistance.ma</span>
               </a>
               <p>Envoi de documents et suivi rapide de votre dossier.</p>
             </article>
@@ -181,3 +181,4 @@ function ContactPage() {
 }
 
 export default ContactPage
+

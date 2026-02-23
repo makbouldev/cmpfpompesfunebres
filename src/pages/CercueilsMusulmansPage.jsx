@@ -1,39 +1,46 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import c1 from '../assets/muslimanes/1.png'
-import c2 from '../assets/muslimanes/2.webp'
-import c3 from '../assets/muslimanes/3.webp'
-import c4 from '../assets/muslimanes/4.webp'
-import c5 from '../assets/images/10.jpeg'
-import c6 from '../assets/images/11.jpg'
-import c7 from '../assets/images/12.jpg'
-import c8 from '../assets/images/17.jpeg'
-import c9 from '../assets/images/18.jpg'
-import c10 from '../assets/images/1.png'
+import QuickContactLinks from '../components/QuickContactLinks'
+import c1 from '../assets/cercueils-musulmans/POMOY-1-300x158.png'
+import c2 from '../assets/cercueils-musulmans/TAULIS-ACAJOU-1-300x158.png'
+import c3 from '../assets/cercueils-musulmans/TEILLET-1-300x158.png'
+import c4 from '../assets/cercueils-musulmans/TREVILLE-BLANC-1-300x158.png'
+import c5 from '../assets/cercueils-musulmans/TREVILLE-CLAIRE-1-300x158.png'
+import c6 from '../assets/cercueils-musulmans/TALLER-1-300x158.png'
+import c7 from '../assets/cercueils-musulmans/PANNEAUX-DE-FRANCE-3-COUVERCLES1-1-300x158.png'
+import c8 from '../assets/cercueils-musulmans/TERROU1-1-300x158.png'
+import c9 from '../assets/cercueils-musulmans/PANNEAUX-DE-FRANCE-2-COUVERCLES-1-300x158.png'
+import c10 from '../assets/cercueils-musulmans/POINTEL-1-300x158.png'
+import c11 from '../assets/cercueils-musulmans/BOIS-BLANC-TEINTE-1-300x158.png'
+import c12 from '../assets/cercueils-musulmans/EXTRA-CHENE-1-300x158.png'
+import c13 from '../assets/cercueils-musulmans/RBATI-CHENE-1-300x158.png'
 
 const products = [
-  { title: 'Cercueil musulman classique', image: c1 },
-  { title: 'Cercueil musulman transport aerien', image: c2 },
-  { title: 'Cercueil musulman avec plaque identification', image: c3 },
-  { title: 'Cercueil musulman finition sobre', image: c4 },
-  { title: 'Cercueil musulman renforce', image: c5 },
-  { title: 'Cercueil musulman transport national', image: c6 },
-  { title: 'Cercueil musulman format standard', image: c7 },
-  { title: 'Cercueil musulman premium', image: c8 },
-  { title: 'Cercueil musulman grand format', image: c9 },
-  { title: 'Cercueil musulman preparation rapide', image: c10 },
+  { title: 'POMOY', image: c1 },
+  { title: 'TAULIS ACAJOU', image: c2 },
+  { title: 'TEILLET', image: c3 },
+  { title: 'TREVILLE BLANC', image: c4 },
+  { title: 'TREVILLE CLAIRE', image: c5 },
+  { title: 'TALLER', image: c6 },
+  { title: 'PANNEAUX DE FRANCE 3 COUVERCLES', image: c7 },
+  { title: 'TERROU', image: c8 },
+  { title: 'PANNEAUX DE FRANCE 2 COUVERCLES', image: c9 },
+  { title: 'POINTEL', image: c10 },
+  { title: 'BOIS BLANC TEINTE', image: c11 },
+  { title: 'EXTRA CHENE', image: c12 },
+  { title: 'RBATI CHENE', image: c13 },
 ]
 
 function CercueilsMusulmansPage() {
   const [page, setPage] = useState(1)
-  const perPage = 9
+  const perPage = 12
   const totalPages = Math.max(1, Math.ceil(products.length / perPage))
   const safePage = Math.min(page, totalPages)
   const startIndex = (safePage - 1) * perPage
   const visibleProducts = products.slice(startIndex, startIndex + perPage)
 
   return (
-    <section className="section plaques-section">
+    <section className="section plaques-section cercueils-musulmans-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
           <span>Catalogue PFM</span>
@@ -97,10 +104,8 @@ function CercueilsMusulmansPage() {
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
             <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
-            <a href="tel:+212522491616">?? +212 522 49 16 16</a>
-            <a href="tel:+212522207111">?? +212 522 20 71 11</a>
-            <a href="https://wa.me/212661502763">?? WhatsApp: +212 661 502 763</a>
-            <a href="mailto:pfmcasa@pfmassistance.ma">? pfmcasa@pfmassistance.ma</a>
+            <QuickContactLinks />
+
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
           </aside>
         </div>
@@ -110,3 +115,5 @@ function CercueilsMusulmansPage() {
 }
 
 export default CercueilsMusulmansPage
+
+

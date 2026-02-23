@@ -1,6 +1,5 @@
 ﻿import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import logoImage from '../assets/cmpflogo.png'
 
 const groupedLinks = [
   {
@@ -147,9 +146,7 @@ function Layout({ children }) {
           <div className="top-header-bar">
             <div className="top-brand">
               <Link to="/" className="brand-home-link" onClick={closeMenu}>
-                <span className="brand-logo">
-                  <img src={logoImage} alt="PFM Assistance" className="brand-logo-img" />
-                </span>
+
                 <div className="brand-block">
                   <span className="brand-name">PFM</span>
                   <span className="brand-sub">{'Pompes fun\u00E9bres Marocaine'}</span>
@@ -329,7 +326,7 @@ function Layout({ children }) {
         <div className="container footer-creative">
           <div className="footer-topline">
             <div className="footer-topline-brand">
-              <img src={logoImage} alt="PFM Assistance" />
+
               <div>
                 <h3>PFM Assistance</h3>
                 <p>Service funeraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
@@ -359,7 +356,7 @@ function Layout({ children }) {
 
             <div className="footer-card">
               <h4>Contact</h4>
-              <a href="mailto:pfmcasa@pfmassistance.ma">pfmcasa@pfmassistance.ma</a>
+              <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
               <a href="https://wa.me/212661502763">WhatsApp direct</a>
               <Link to="/contact">Formulaire de contact</Link>
             </div>
@@ -383,3 +380,6 @@ function Layout({ children }) {
 }
 
 export default Layout
+
+
+

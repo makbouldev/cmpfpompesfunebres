@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import QuickContactLinks from '../components/QuickContactLinks'
 import n1 from '../assets/nonmuslimanes/1.webp'
 import n2 from '../assets/nonmuslimanes/2.webp'
 import n3 from '../assets/nonmuslimanes/3.png'
@@ -97,10 +98,8 @@ function MarbrerieNonMusulmanePage() {
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
             <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
-            <a href="tel:+212522491616">?? +212 522 49 16 16</a>
-            <a href="tel:+212522207111">?? +212 522 20 71 11</a>
-            <a href="https://wa.me/212661502763">?? WhatsApp: +212 661 502 763</a>
-            <a href="mailto:pfmcasa@pfmassistance.ma">? pfmcasa@pfmassistance.ma</a>
+            <QuickContactLinks />
+
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
           </aside>
         </div>
@@ -110,3 +109,5 @@ function MarbrerieNonMusulmanePage() {
 }
 
 export default MarbrerieNonMusulmanePage
+
+
