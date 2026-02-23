@@ -67,7 +67,7 @@ const enterpriseSectors = [
 const enterpriseKpis = [
   { value: '24/7', label: 'Permanence entreprises' },
   { value: '< 15 min', label: 'Temps de prise en charge initiale' },
-  { value: '12', label: 'Agences mobilisables' },
+  { value: '13+', label: 'Villes mobilisables' },
   { value: '1', label: 'Referent dossier unique' },
 ]
 

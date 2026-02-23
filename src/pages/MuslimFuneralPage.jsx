@@ -1,14 +1,15 @@
 ﻿import { Link } from 'react-router-dom'
-import imageHero from '../assets/images/12.jpg'
-import imageRite from '../assets/images/11.jpg'
+import imageHero from '../assets/hero/1.png'
+import imageRite from '../assets/images/Rapatriement.jpeg'
 import imageTeam from '../assets/images/7.webp'
-import imageTransport from '../assets/images/18.jpg'
-import imageStone from '../assets/images/14.jpg'
+import imageTransport from '../assets/images/Rapatriement.jpeg'
+import imageInhumationCard from '../assets/hero/1.png'
+import imageMarbrerieCard from '../assets/hero/6.png'
 
 const muslimServiceCards = [
   { title: 'Rapatriement de corps', image: imageTransport },
-  { title: 'Inhumation musulmane', image: imageRite },
-  { title: 'Marbrerie musulmane', image: imageStone },
+  { title: 'Inhumation musulmane', image: imageInhumationCard },
+  { title: 'Marbrerie musulmane', image: imageMarbrerieCard },
 ]
 
 const repatriementPoints = [
@@ -247,5 +248,3 @@ function MuslimFuneralPage() {
 }
 
 export default MuslimFuneralPage
-
-

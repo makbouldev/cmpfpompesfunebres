@@ -2,7 +2,7 @@
 import imageHero from '../assets/images/2.png'
 import imageRite from '../assets/images/8.jpg'
 import imageTeam from '../assets/images/20.jpg'
-import imageTransport from '../assets/images/18.jpg'
+import imageTransport from '../assets/images/Rapatriement.jpeg'
 import imageStone from '../assets/images/14.jpg'
 
 const nonMuslimServiceCards = [

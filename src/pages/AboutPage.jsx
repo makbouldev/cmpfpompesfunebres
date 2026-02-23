@@ -210,8 +210,8 @@ function AboutPage() {
                 <span>Disponibilite nationale</span>
               </article>
               <article>
-                <strong>12</strong>
-                <span>Agences au Maroc</span>
+                <strong>13+</strong>
+                <span>Villes au Maroc</span>
               </article>
             </div>
           </div>

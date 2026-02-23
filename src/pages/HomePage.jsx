@@ -184,7 +184,7 @@ const trustedCompanies = [
 
 const homeMetrics = [
   { value: '24/7', label: 'Disponibilite continue', icon: 'clock', target: 24, suffix: '/7' },
-  { value: '12', label: 'Agences au Maroc', icon: 'pin', target: 12, suffix: '' },
+  { value: '13+', label: 'Villes au Maroc', icon: 'pin', target: 13, suffix: '+' },
   { value: '75ans+', label: "Annees d'experience", icon: 'calendar', target: 75, suffix: 'ans+' },
   { value: '300+', label: 'Transferts de depouilles', icon: 'transport', target: 300, suffix: '+' },
 ]
@@ -669,8 +669,8 @@ function HomePage() {
               <span>Interface operationnelle continue</span>
             </article>
             <article>
-              <strong>12</strong>
-              <span>Agences mobilisables au Maroc</span>
+              <strong>13+</strong>
+              <span>Villes couvertes au Maroc</span>
             </article>
           </div>
 
