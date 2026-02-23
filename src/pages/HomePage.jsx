@@ -1,10 +1,11 @@
 ﻿import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import transportMusulmanes from '../assets/images/1.png'
-import transportNonMusulmanes from '../assets/images/2.png'
-import imageFleurs from '../assets/images/3.png'
-import imageMarbrerie from '../assets/images/5.png'
-import imageMarbrerieMusulmane from '../assets/images/6.png'
+import heroSlide1 from '../assets/hero/1.png'
+import heroSlide2 from '../assets/hero/2.png'
+import heroSlide3 from '../assets/hero/3.png'
+import heroSlide4 from '../assets/hero/4.png'
+import heroSlide5 from '../assets/hero/5.png'
+import heroSlide6 from '../assets/hero/6.png'
 import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
 import imageNettoyage from '../assets/images/13.jpg'
@@ -31,7 +32,7 @@ const heroSlides = [
       'Prise en charge complete des rites musulmans avec accompagnement humain et discret.',
     cta: 'Service Musulman',
     to: '/pompes-funebres/musulmanes',
-    image: transportMusulmanes,
+    image: heroSlide1,
   },
   {
     titleTop: 'Nos services',
@@ -40,7 +41,7 @@ const heroSlides = [
       'Organisation de ceremonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
     to: '/pompes-funebres/non-musulmanes',
-    image: transportNonMusulmanes,
+    image: heroSlide2,
   },
   {
     titleTop: 'Nos services',
@@ -49,7 +50,7 @@ const heroSlides = [
       'Compositions florales, gerbes et couronnes adaptees a toutes les ceremonies.',
     cta: 'Voir Fleurs',
     to: '/produits/fleurs',
-    image: imageFleurs,
+    image: heroSlide4,
   },
   {
     titleTop: 'Nos services',
@@ -58,7 +59,7 @@ const heroSlides = [
       'Realisation de monuments funeraires musulmans dans le respect des normes et des rites.',
     cta: 'Marbrerie musulmane',
     to: '/produits/marbrerie-musulmane',
-    image: imageMarbrerieMusulmane,
+    image: heroSlide6,
   },
   {
     titleTop: 'Nos services',
@@ -67,32 +68,32 @@ const heroSlides = [
       'Solutions de marbrerie sur mesure pour ceremonies non musulmanes et civiles.',
     cta: 'Marbrerie non musulmane',
     to: '/produits/marbrerie-non-musulmane',
-    image: imageMarbrerie,
+    image: heroSlide3,
   },
 ]
 
 const servicesHighlights = [
   {
-    title: 'Urgence 24h/24 en moins de quelques minutes',
-    text: "Des le premier appel, un conseiller declenche immediatement l'intervention et la prise en charge.",
+    title: 'Intervention rapide 24h/24',
+    text: "Nous repondons vite a votre appel et nous lancons l'intervention sans attendre.",
     image: imageFlottePFM,
     to: '/assistance',
   },
   {
-    title: 'Respect total des rites et des volontes',
-    text: 'Organisation musulmane et non musulmane avec un protocole clair, discret et conforme.',
+    title: 'Respect des rites et de la famille',
+    text: 'Nous organisons les ceremonies avec respect, discretion et serieux.',
     image: imageTransportMusulman,
     to: '/pompes-funebres/musulmanes',
   },
   {
-    title: 'Transparence des tarifs sans surprise',
-    text: 'Devis detaille, explications simples et accompagnement budgetaire adapte a chaque famille.',
+    title: 'Prix clairs et devis simple',
+    text: 'Vous recevez un devis clair, avec des explications faciles a comprendre.',
     image: imageEquipeB,
     to: '/contact',
   },
   {
-    title: 'Un seul interlocuteur de A a Z',
-    text: 'Administratif, transport, ceremonie et coordination complete avec un suivi humain permanent.',
+    title: 'Un seul contact du debut a la fin',
+    text: 'Un conseiller suit votre dossier a chaque etape, jusqu a la fin.',
     image: imageEquipeA,
     to: '/contact',
   },
@@ -162,37 +163,22 @@ const trustedCompanies = [
   {
     logoUrl: logoAxa,
     name: 'AXA Assistance',
-    sector: 'Assurance et assistance internationale',
-    detail:
-      'PFM assure la coordination terrain, la preparation administrative et l execution du rapatriement dans les delais.',
   },
   {
     logoUrl: logoRma,
     name: 'RMA Assistance',
-    sector: 'Assurance et protection familiale',
-    detail:
-      'Traitement des dossiers urgents, liaison continue avec les gestionnaires et suivi operationnel complet.',
   },
   {
     logoUrl: logoSaham,
     name: 'SAHAM Assistance',
-    sector: 'Assurance et assistance deces',
-    detail:
-      'Gestion des formalites consulaires, organisation logistique et transfert du defunt vers la destination finale.',
   },
   {
     logoUrl: logoSanlam,
     name: 'SANLAM Assistance',
-    sector: 'Assurance sante et vie',
-    detail:
-      'Dispositif d intervention 24h/24 avec suivi clair entre la compagnie, PFM et la famille.',
   },
   {
     logoUrl: logoWafaIma,
     name: 'Wafa IMA Assistance',
-    sector: 'Assistance et services internationaux',
-    detail:
-      'Prise en charge terrain de A a Z avec un interlocuteur unique pour fluidifier chaque etape du dossier.',
   },
 ]
 
@@ -205,40 +191,40 @@ const homeMetrics = [
 
 const clientReviews = [
   {
-    name: 'Famille B.',
+    name: 'Yassine',
     city: 'Casablanca',
     text: "Service tres professionnel, equipe respectueuse et disponible a tout moment. Tout a ete bien organise.",
-    avatar: 'https://i.pravatar.cc/160?img=32',
+    avatar: 'https://i.pravatar.cc/160?img=11',
   },
   {
-    name: 'M. Rahimi',
+    name: 'Amina',
     city: 'Rabat',
     text: "Intervention rapide et accompagnement humain. Les demarches ont ete simplifiees du debut a la fin.",
-    avatar: 'https://i.pravatar.cc/160?img=12',
-  },
-  {
-    name: 'Mme Ait Ali',
-    city: 'Marrakech',
-    text: "Un grand merci a PFM Assistance pour la qualite du suivi et le respect complet de nos volontes.",
     avatar: 'https://i.pravatar.cc/160?img=47',
   },
   {
-    name: 'Famille K.',
+    name: 'Soukaina',
+    city: 'Marrakech',
+    text: "Un grand merci a PFM Assistance pour la qualite du suivi et le respect complet de nos volontes.",
+    avatar: 'https://i.pravatar.cc/160?img=44',
+  },
+  {
+    name: 'Anas',
     city: 'Agadir',
     text: "Accueil tres humain, assistance rapide et equipe serieuse. Nous avons ete bien accompagnes.",
-    avatar: 'https://i.pravatar.cc/160?img=21',
+    avatar: 'https://i.pravatar.cc/160?img=14',
   },
   {
-    name: 'M. Idrissi',
+    name: 'Hajar',
     city: 'Tanger',
     text: "Un service de qualite, tres bien organise et transparent. Merci pour votre professionnalisme.",
-    avatar: 'https://i.pravatar.cc/160?img=59',
+    avatar: 'https://i.pravatar.cc/160?img=32',
   },
   {
-    name: 'Mme Zahra',
+    name: 'Mehdi',
     city: 'Fes',
     text: "PFM a gere toutes les formalites avec clarte et respect. Equipe tres disponible.",
-    avatar: 'https://i.pravatar.cc/160?img=5',
+    avatar: 'https://i.pravatar.cc/160?img=8',
   },
 ]
 
@@ -701,8 +687,6 @@ function HomePage() {
                 </div>
                 <div className="home-partner-copy">
                   <h3>{company.name}</h3>
-                  <p className="home-partner-sector">{company.sector}</p>
-                  <p>{company.detail}</p>
                 </div>
               </article>
             ))}
@@ -739,121 +723,6 @@ function HomePage() {
                   </Link>
                 </article>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section home-metrics-section">
-        <div className="container home-metrics-grid">
-          {homeMetrics.map((item, index) => (
-            <article key={item.label} className="home-metric-item">
-              <span className="home-metric-icon" aria-hidden="true">
-                {item.icon === 'clock' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <circle cx="12" cy="12" r="8" />
-                    <path d="M12 8v5l3 2" />
-                  </svg>
-                )}
-                {item.icon === 'pin' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M12 21s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10Z" />
-                    <circle cx="12" cy="11" r="2.3" />
-                  </svg>
-                )}
-                {item.icon === 'team' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <circle cx="9" cy="10" r="2.4" />
-                    <circle cx="15.4" cy="10.8" r="2" />
-                    <path d="M4.8 17c0-2.1 1.8-3.8 4.2-3.8s4.2 1.7 4.2 3.8" />
-                    <path d="M13.1 17c.1-1.5 1.3-2.8 3.2-2.8 1.8 0 3 1.2 3 2.8" />
-                  </svg>
-                )}
-                {item.icon === 'shield' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M12 3.8 6 6v4.7c0 4 2.4 7.4 6 8.9 3.6-1.5 6-4.9 6-8.9V6l-6-2.2Z" />
-                    <path d="m9.3 12.1 1.9 1.9 3.4-3.6" />
-                  </svg>
-                )}
-                {item.icon === 'calendar' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <rect x="4" y="5.8" width="16" height="14" rx="2" />
-                    <path d="M8 4v3M16 4v3M4 10h16" />
-                  </svg>
-                )}
-                {item.icon === 'transport' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M3.5 7.5h11v8.5h-11zM14.5 10h3.6l2.4 2.7v3.3h-6z" />
-                    <circle cx="7" cy="18" r="1.8" />
-                    <circle cx="17.6" cy="18" r="1.8" />
-                  </svg>
-                )}
-              </span>
-              <strong>{formatMetricValue(item, index)}</strong>
-              <span>{item.label}</span>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section home-concept-section">
-        <div className="container home-concept-layout">
-          <div className="home-concept-text home-concept-text-card">
-            <span className="home-concept-eyebrow">Qualite de service</span>
-            <h2>Une methode claire pour accompagner chaque famille</h2>
-            <p>
-              Notre priorite est la qualite de service: ecoute, rapidite d'execution, respect des rites
-              et suivi humain a chaque etape.
-            </p>
-            <p>
-              Nous appliquons une organisation rigoureuse pour garantir une prise en charge
-              professionnelle, transparente et rassurante.
-            </p>
-            <div className="home-concept-points">
-              <span>Qualite de service controlee</span>
-              <span>Equipe experimentee et coordonnee</span>
-              <span>Intervention rapide et securisee</span>
-            </div>
-            <div className="home-concept-actions">
-              <Link to="/assistance" className="btn btn-primary">
-                Demander une intervention
-              </Link>
-              <Link to="/contact" className="btn home-trust-btn-secondary">
-                Contacter PFM
-              </Link>
-            </div>
-          </div>
-
-          <div className="home-concept-images">
-            <div className="home-concept-image home-concept-image-top">
-              <img src={imageCimetiere} alt="Qualite de service PFM" />
-            </div>
-            <div className="home-concept-image home-concept-image-bottom">
-              <img src={imageNettoyage} alt="Nettoyage et entretien des sepultures" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section home-cta-section">
-        <div className="container home-cta-wrap reveal-on-scroll">
-          <div className="home-cta-media">
-            <img src={imageInterieurCorbillard} alt="Equipe PFM Assistance" />
-          </div>
-          <div className="home-cta-content">
-            <span>Engagement PFM</span>
-            <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
-            <p>
-              Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
-              coordination administrative dans un meme niveau de qualite.
-            </p>
-            <div className="home-cta-actions">
-              <Link to="/contact" className="btn hero-btn-call">
-                Demander un conseiller
-              </Link>
-              <a href="tel:+212522491616" className="btn hero-btn-view">
-                Appeler PFM
-              </a>
             </div>
           </div>
         </div>
@@ -989,6 +858,122 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="section home-metrics-section">
+        <div className="container home-metrics-grid">
+          {homeMetrics.map((item, index) => (
+            <article key={item.label} className="home-metric-item">
+              <span className="home-metric-icon" aria-hidden="true">
+                {item.icon === 'clock' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <circle cx="12" cy="12" r="8" />
+                    <path d="M12 8v5l3 2" />
+                  </svg>
+                )}
+                {item.icon === 'pin' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M12 21s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10Z" />
+                    <circle cx="12" cy="11" r="2.3" />
+                  </svg>
+                )}
+                {item.icon === 'team' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <circle cx="9" cy="10" r="2.4" />
+                    <circle cx="15.4" cy="10.8" r="2" />
+                    <path d="M4.8 17c0-2.1 1.8-3.8 4.2-3.8s4.2 1.7 4.2 3.8" />
+                    <path d="M13.1 17c.1-1.5 1.3-2.8 3.2-2.8 1.8 0 3 1.2 3 2.8" />
+                  </svg>
+                )}
+                {item.icon === 'shield' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M12 3.8 6 6v4.7c0 4 2.4 7.4 6 8.9 3.6-1.5 6-4.9 6-8.9V6l-6-2.2Z" />
+                    <path d="m9.3 12.1 1.9 1.9 3.4-3.6" />
+                  </svg>
+                )}
+                {item.icon === 'calendar' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <rect x="4" y="5.8" width="16" height="14" rx="2" />
+                    <path d="M8 4v3M16 4v3M4 10h16" />
+                  </svg>
+                )}
+                {item.icon === 'transport' && (
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path d="M3.5 7.5h11v8.5h-11zM14.5 10h3.6l2.4 2.7v3.3h-6z" />
+                    <circle cx="7" cy="18" r="1.8" />
+                    <circle cx="17.6" cy="18" r="1.8" />
+                  </svg>
+                )}
+              </span>
+              <strong>{formatMetricValue(item, index)}</strong>
+              <span>{item.label}</span>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section home-concept-section">
+        <div className="container home-concept-layout">
+          <div className="home-concept-text home-concept-text-card">
+            <span className="home-concept-eyebrow">Qualite de service</span>
+            <h2>Une methode claire pour accompagner chaque famille</h2>
+            <p>
+              Notre priorite est la qualite de service: ecoute, rapidite d'execution, respect des rites
+              et suivi humain a chaque etape.
+            </p>
+            <p>
+              Nous appliquons une organisation rigoureuse pour garantir une prise en charge
+              professionnelle, transparente et rassurante.
+            </p>
+            <div className="home-concept-points">
+              <span>Qualite de service controlee</span>
+              <span>Equipe experimentee et coordonnee</span>
+              <span>Intervention rapide et securisee</span>
+            </div>
+            <div className="home-concept-actions">
+              <Link to="/assistance" className="btn btn-primary">
+                Demander une intervention
+              </Link>
+              <Link to="/contact" className="btn home-trust-btn-secondary">
+                Contacter PFM
+              </Link>
+            </div>
+          </div>
+
+          <div className="home-concept-images">
+            <div className="home-concept-image home-concept-image-top">
+              <img src={imageCimetiere} alt="Qualite de service PFM" />
+            </div>
+            <div className="home-concept-image home-concept-image-bottom">
+              <img src={imageNettoyage} alt="Nettoyage et entretien des sepultures" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section home-cta-section">
+        <div className="container home-cta-wrap reveal-on-scroll">
+          <div className="home-cta-media">
+            <img src={imageCimetiere} alt="Qualite de service PFM" />
+          </div>
+          <div className="home-cta-content">
+            <span>Engagement PFM</span>
+            <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
+            <p>
+              Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
+              coordination administrative dans un meme niveau de qualite.
+            </p>
+            <div className="home-cta-actions">
+              <Link to="/contact" className="btn hero-btn-call">
+                Demander un conseiller
+              </Link>
+              <a href="tel:+212522491616" className="btn hero-btn-view">
+                Appeler PFM
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="section home-testimonials-section">
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
@@ -1076,9 +1061,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-
-
-
-
-

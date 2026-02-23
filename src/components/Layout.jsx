@@ -6,25 +6,24 @@ const groupedLinks = [
   {
     label: 'Nos services',
     items: [
-      { to: '/services-entreprises', label: 'Services aux Entreprises', featured: true },
-      { to: '/pompes-funebres/musulmanes', label: 'Pompes Fun\u00E8bres Musulmanes' },
-      { to: '/pompes-funebres/non-musulmanes', label: 'Pompes Fun\u00E8bres Non Musulmanes' },
-      { to: '/produits/fleurs', label: 'Fleurs' },
-      { to: '/produits/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
-      { to: '/produits/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
-      { to: '/produits/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
+      { to: '/service/services-entreprises', label: 'Services aux Entreprises', featured: true },
+      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Fun\u00E8bres Musulmanes' },
+      { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes Fun\u00E8bres Non Musulmanes' },
+      { to: '/service/fleurs', label: 'Fleurs' },
+      { to: '/service/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
+      { to: '/service/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
+      { to: '/service/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
     ],
   },
   {
     label: 'Catalogues',
     items: [
-      { to: '/produits/plaques', label: 'Plaques' },
-      { to: '/produits/cercueils-musulmans', label: 'Cercueils musulmans' },
-      { to: '/produits/cercueils-non-musulmans', label: 'Cercueils non musulmans' },
-      { to: '/produits/fleurs', label: 'Fleurs' },
-      { to: '/produits/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
-      { to: '/produits/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
-      { to: '/produits/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
+      { to: '/catalogues/plaques', label: 'Plaques' },
+      { to: '/catalogues/cercueils-musulmans', label: 'Cercueils musulmans' },
+      { to: '/catalogues/cercueils-non-musulmans', label: 'Cercueils non musulmans' },
+      { to: '/catalogues/fleurs', label: 'Fleurs' },
+      { to: '/catalogues/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
+      { to: '/catalogues/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
     ],
   },
   {
@@ -384,4 +383,3 @@ function Layout({ children }) {
 }
 
 export default Layout
-

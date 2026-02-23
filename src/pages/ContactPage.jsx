@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -63,84 +63,121 @@ function ContactPage() {
   }
 
   return (
-    <section className="section">
-      <div className="container split-layout">
-        <div>
-          <h1>Contact et demande de devis</h1>
-          <p className="page-intro">Reponse rapide en moins de 15 minutes pour les demandes urgentes.</p>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <label>
-              Nom complet
-              <input
-                type="text"
-                name="fullName"
-                placeholder="Votre nom"
-                value={formData.fullName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Telephone
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+212 ..."
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Ville
-              <input
-                type="text"
-                name="ville"
-                placeholder="Votre Ville"
-                value={formData.ville}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              E-mail
-              <input
-                type="email"
-                name="email"
-                placeholder="votre@email.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Message
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Expliquez votre besoin"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <button type="submit" className="btn btn-primary">Envoyer la demande</button>
-            {status ? <p className="page-intro">{status}</p> : null}
-          </form>
+    <section className="section contact-creative-section">
+      <div className="container contact-creative-wrap">
+        <div className="contact-hero-head">
+          <span>Contact PFM</span>
+          <h1>Parlez a notre equipe, nous vous rappelons rapidement</h1>
+          <p>
+            Une equipe dediee repond 24h/24 et 7j/7 pour organiser les interventions,
+            informer la famille et lancer les demarches administratives sans delai.
+          </p>
         </div>
-        <aside className="info-panel">
-          <h3>Coordonnees directes</h3>
-          <p>Tel: +212 522 49 16 16</p>
-          <p>Tel: +212 522 20 71 11</p>
-          <p>WhatsApp: +212 661 502 763</p>
-          <p>E-mail: noureddinemakboul03@gmail.com</p>
-          <p>Adresse: Casablanca, Maroc</p>
-          <p>Horaires: 24h/24, 7j/7</p>
-        </aside>
+
+        <div className="contact-creative-layout">
+          <aside className="contact-creative-info">
+            <article className="contact-info-card">
+              <h3>Ligne directe</h3>
+              <a href="tel:+212522491616" className="contact-info-link">
+                <span className="contact-info-icon" aria-hidden="true">📞</span>
+                <span>+212 522 49 16 16</span>
+              </a>
+              <a href="tel:+212522207111" className="contact-info-link">
+                <span className="contact-info-icon" aria-hidden="true">📞</span>
+                <span>+212 522 20 71 11</span>
+              </a>
+              <p>Disponibilite permanente pour urgences et orientation immediate.</p>
+            </article>
+
+            <article className="contact-info-card">
+              <h3>WhatsApp et E-mail</h3>
+              <a href="https://wa.me/212661502763" className="contact-info-link">
+                <span className="contact-info-icon" aria-hidden="true">🟢</span>
+                <span>+212 661 502 763</span>
+              </a>
+              <a href="mailto:pfmcasa@pfmassistance.ma" className="contact-info-link">
+                <span className="contact-info-icon" aria-hidden="true">✉</span>
+                <span>pfmcasa@pfmassistance.ma</span>
+              </a>
+              <p>Envoi de documents et suivi rapide de votre dossier.</p>
+            </article>
+
+            <article className="contact-info-card">
+              <h3>Adresse agence principale</h3>
+              <p>56, Avenue Mers Sultan - Casablanca</p>
+              <p>Accueil des familles avec un accompagnement humain et discret.</p>
+            </article>
+          </aside>
+
+          <div className="contact-form-panel">
+            <h2>Demande de devis ou d'assistance</h2>
+            <p className="contact-form-note">
+              Completez ce formulaire. Un conseiller PFM vous contacte tres rapidement.
+            </p>
+            <form className="contact-form contact-creative-form" onSubmit={handleSubmit}>
+              <label>
+                Nom complet
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Votre nom"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+              <label>
+                Telephone
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+212 ..."
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+              <label>
+                Ville
+                <input
+                  type="text"
+                  name="ville"
+                  placeholder="Votre ville"
+                  value={formData.ville}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+              <label>
+                E-mail
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+              <label className="contact-form-message">
+                Message
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Expliquez votre besoin"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </label>
+              <button type="submit" className="btn btn-primary">Envoyer la demande</button>
+              {status ? <p className="contact-status">{status}</p> : null}
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   )
 }
 
 export default ContactPage
-

@@ -13,7 +13,12 @@ import AssistancePage from './pages/AssistancePage'
 import ServicesEntreprisePage from './pages/ServicesEntreprisePage'
 import FaqPage from './pages/FaqPage'
 import ContactPage from './pages/ContactPage'
-import ProductCategoryPage from './pages/ProductCategoryPage'
+import PlaquesPage from './pages/PlaquesPage'
+import CercueilsMusulmansPage from './pages/CercueilsMusulmansPage'
+import CercueilsNonMusulmansPage from './pages/CercueilsNonMusulmansPage'
+import FleursCataloguePage from './pages/FleursCataloguePage'
+import MarbrerieMusulmaneCataloguePage from './pages/MarbrerieMusulmaneCataloguePage'
+import MarbrerieNonMusulmaneCataloguePage from './pages/MarbrerieNonMusulmaneCataloguePage'
 
 function App() {
   return (
@@ -23,68 +28,38 @@ function App() {
         <Route path="/qui-sommes-nous" element={<AboutPage />} />
 
         <Route path="/pompes-funebres/musulmanes" element={<MuslimFuneralPage />} />
+        <Route path="/service/pompes-funebres-musulmanes" element={<MuslimFuneralPage />} />
 
         <Route path="/pompes-funebres/non-musulmanes" element={<NonMuslimFuneralPage />} />
+        <Route path="/service/pompes-funebres-non-musulmanes" element={<NonMuslimFuneralPage />} />
 
         <Route path="/produits/fleurs" element={<FleursPage />} />
-        <Route
-          path="/produits/plaques"
-          element={
-            <ProductCategoryPage
-              title="Plaques funeraires"
-              description="Plaques funeraires personnalisees avec gravure soignee, formats varies et finitions elegantes."
-              highlights={[
-                'Plaques en granit, marbre, verre ou metal',
-                'Personnalisation du texte, des motifs et de la typographie',
-                'Pose et fixation sur monument ou stele',
-                'Conseil sur la durabilite et le rendu visuel',
-              ]}
-              extraSections={[
-                {
-                  title: 'Options de personnalisation',
-                  items: [
-                    'Choix de dimensions et de formes',
-                    'Gravure classique ou doree',
-                    'Insertion de symbole ou photo ceramique',
-                    'Maquette validee avant fabrication',
-                  ],
-                },
-              ]}
-            />
-          }
-        />
+        <Route path="/service/fleurs" element={<FleursPage />} />
+        <Route path="/catalogues/fleurs" element={<FleursCataloguePage />} />
+        <Route path="/produits/plaques" element={<PlaquesPage />} />
+        <Route path="/catalogues/plaques" element={<PlaquesPage />} />
         <Route
           path="/produits/cercueils-musulmans"
-          element={
-            <ProductCategoryPage
-              title="Cercueils musulmans"
-              description="Une gamme de cercueils musulmans adaptes aux exigences du transport et au respect des rites."
-              highlights={[
-                'Modeles conformes pour transport national et international',
-                'Plaque d identification funeraire',
-                'Options avec hublot selon le choix de la famille',
-                'Disponibilite rapide 24h/24',
-              ]}
-            />
-          }
+          element={<CercueilsMusulmansPage />}
+        />
+        <Route
+          path="/catalogues/cercueils-musulmans"
+          element={<CercueilsMusulmansPage />}
         />
         <Route
           path="/produits/cercueils-non-musulmans"
-          element={
-            <ProductCategoryPage
-              title="Cercueils non musulmans"
-              description="Collection de cercueils non musulmans du modele sobre au modele haut de gamme."
-              highlights={[
-                'Cercueils en bois et autres finitions',
-                'Interieur capitonne selon preferences',
-                'Formats adaptes aux contraintes de transport',
-                'Accompagnement par un conseiller dedie',
-              ]}
-            />
-          }
+          element={<CercueilsNonMusulmansPage />}
+        />
+        <Route
+          path="/catalogues/cercueils-non-musulmans"
+          element={<CercueilsNonMusulmansPage />}
         />
         <Route
           path="/produits/nettoyage-fleurissement"
+          element={<NettoyageFleurissementPage />}
+        />
+        <Route
+          path="/service/nettoyage-fleurissement"
           element={<NettoyageFleurissementPage />}
         />
 
@@ -92,15 +67,32 @@ function App() {
           path="/produits/marbrerie-musulmane"
           element={<MarbrerieMusulmanePage />}
         />
+        <Route
+          path="/service/marbrerie-musulmane"
+          element={<MarbrerieMusulmanePage />}
+        />
+        <Route
+          path="/catalogues/marbrerie-musulmane"
+          element={<MarbrerieMusulmaneCataloguePage />}
+        />
 
         <Route
           path="/produits/marbrerie-non-musulmane"
           element={<MarbrerieNonMusulmanePage />}
         />
+        <Route
+          path="/service/marbrerie-non-musulmane"
+          element={<MarbrerieNonMusulmanePage />}
+        />
+        <Route
+          path="/catalogues/marbrerie-non-musulmane"
+          element={<MarbrerieNonMusulmaneCataloguePage />}
+        />
 
         <Route path="/villes/:slug" element={<CityAgencyPage />} />
         <Route path="/assistance" element={<AssistancePage />} />
         <Route path="/services-entreprises" element={<ServicesEntreprisePage />} />
+        <Route path="/service/services-entreprises" element={<ServicesEntreprisePage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
 
