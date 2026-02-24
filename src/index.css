@@ -25,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .container {
   width: min(1240px, 94vw);
   margin: 0 auto;
@@ -684,6 +691,8 @@ a {
   font-size: clamp(3rem, 5.8vw, 5rem);
   line-height: 1.1;
   max-width: none;
+  overflow-wrap: anywhere;
+  word-break: normal;
   color: #ffffff;
   text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
   font-weight: 800;
@@ -1378,6 +1387,13 @@ h2 {
   border-radius: 16px;
   background: #f8fcff;
   border: 1px solid #d6e7f4;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-2px);
+  border-color: #b8d4ea;
+  box-shadow: 0 16px 28px rgba(19, 72, 112, 0.12);
 }
 
 .contact-info-card h3 {
@@ -1397,6 +1413,11 @@ h2 {
   display: inline-flex !important;
   align-items: center;
   gap: 0.5rem;
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.contact-info-link:hover {
+  transform: translateX(2px);
 }
 
 .contact-info-link.is-whatsapp {
@@ -1424,6 +1445,11 @@ h2 {
   color: #0e5d95;
   font-size: 0.95rem;
   line-height: 1;
+  transition: transform 0.22s ease, background-color 0.22s ease, color 0.22s ease;
+}
+
+.contact-info-link:hover .contact-info-icon {
+  transform: scale(1.08);
 }
 
 .contact-info-icon svg {
@@ -1494,6 +1520,12 @@ h2 {
   color: #0d5e95;
   font-weight: 700;
   font-size: 0.84rem;
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.contact-agency-map:hover {
+  transform: translateY(-1px);
+  background: #dceefe;
 }
 
 .contact-form-panel {
@@ -1501,6 +1533,13 @@ h2 {
   background: linear-gradient(160deg, #ffffff, #f3f9ff);
   border: 1px solid #d4e5f3;
   padding: 1.15rem 1.05rem;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.contact-form-panel:hover {
+  transform: translateY(-2px);
+  border-color: #b9d5ea;
+  box-shadow: 0 16px 30px rgba(17, 69, 108, 0.12);
 }
 
 .contact-form-panel h2 {
@@ -1580,13 +1619,35 @@ h2 {
   grid-column: 1 / -1;
   min-height: 48px;
   border-radius: 12px;
+  transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.contact-creative-form button:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.05);
 }
 
 .contact-status {
   grid-column: 1 / -1;
-  margin: 0;
+  margin: 0.2rem 0 0;
   color: #1a4c6e;
-  font-weight: 600;
+  font-weight: 700;
+  background: #eef7ff;
+  border: 1px solid #cfe4f5;
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  animation: contactStatusIn 0.35s ease;
+}
+
+@keyframes contactStatusIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .plaques-section {

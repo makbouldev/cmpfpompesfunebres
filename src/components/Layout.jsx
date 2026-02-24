@@ -91,22 +91,38 @@ function Layout({ children }) {
   }, [location.pathname, location.hash])
 
   useEffect(() => {
-    const revealTargets = document.querySelectorAll(
-      [
-        '.card',
-        '.price-card',
-        '.info-panel',
-        '.faq-item',
-        '.home-service-card',
-        '.footer-card',
-        '.home-guide-content',
-        '.home-agencies-display',
-        '.home-testimonials-grid',
-        '.reveal-on-scroll',
-      ].join(', '),
-    )
+    const revealSelectors = [
+      'main .reveal-on-scroll',
+      'main .section > .container',
+      'main .card',
+      'main .price-card',
+      'main .info-panel',
+      'main .faq-item',
+      'main .home-service-card',
+      'main .home-guide-content',
+      'main .home-agencies-display',
+      'main .home-testimonials-grid',
+      'main .city-card',
+      'main .plaques-card',
+      'main .plaques-side-panel',
+      'main .mf-banner',
+      'main .mf-rich-wrap',
+      '.site-footer .footer-card',
+    ]
+
+    const uniqueTargets = new Set()
+    revealSelectors.forEach((selector) => {
+      document.querySelectorAll(selector).forEach((target) => {
+        if (!target.classList.contains('reveal-skip')) {
+          uniqueTargets.add(target)
+        }
+      })
+    })
+
+    const revealTargets = Array.from(uniqueTargets)
 
     revealTargets.forEach((target, index) => {
+      target.classList.remove('reveal-visible')
       target.classList.add('reveal-ready')
       target.style.setProperty('--reveal-delay', `${(index % 6) * 45}ms`)
     })
@@ -135,6 +151,37 @@ function Layout({ children }) {
     handleScroll()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const blockImageContextMenu = (event) => {
+      if (event.target instanceof HTMLElement && event.target.closest('img')) {
+        event.preventDefault()
+      }
+    }
+
+    const blockImageDrag = (event) => {
+      if (event.target instanceof HTMLElement && event.target.closest('img')) {
+        event.preventDefault()
+      }
+    }
+
+    const blockShortcuts = (event) => {
+      const key = String(event.key || '').toLowerCase()
+      if ((event.ctrlKey || event.metaKey) && (key === 's' || key === 'u')) {
+        event.preventDefault()
+      }
+    }
+
+    document.addEventListener('contextmenu', blockImageContextMenu, true)
+    document.addEventListener('dragstart', blockImageDrag, true)
+    document.addEventListener('keydown', blockShortcuts, true)
+
+    return () => {
+      document.removeEventListener('contextmenu', blockImageContextMenu, true)
+      document.removeEventListener('dragstart', blockImageDrag, true)
+      document.removeEventListener('keydown', blockShortcuts, true)
+    }
   }, [])
 
   return (
@@ -387,6 +434,4 @@ function Layout({ children }) {
 }
 
 export default Layout
-
-
 

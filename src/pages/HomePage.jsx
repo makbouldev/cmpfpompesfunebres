@@ -36,7 +36,7 @@ const heroSlides = [
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Avec\u00A0Accompagnement\u00A0Complet',
+    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Avec Accompagnement Complet',
     description:
       'Organisation de ceremonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
@@ -282,8 +282,8 @@ const homeGuideTabs = [
       'Suivi en continu des dossiers administratifs et operationnels.',
       'Communication claire avec la famille a chaque phase.',
     ],
-    to: '/assistance',
-    cta: 'Voir la coordination',
+    to: '/contact',
+    cta: 'Contact PFM',
     image: imageEquipeA,
   },
   {
@@ -297,8 +297,8 @@ const homeGuideTabs = [
       'Transport local, national et international selon le besoin.',
       'Preparation logistique complete avant ceremonie et inhumation.',
     ],
-    to: '/pompes-funebres/musulmanes',
-    cta: 'Voir le transport',
+    to: '/contact',
+    cta: 'Contact PFM',
     image: imageTransportCercueil,
   },
   {
@@ -313,7 +313,7 @@ const homeGuideTabs = [
       'Interface unique entre famille, administration et operateurs terrain.',
     ],
     to: '/contact',
-    cta: 'Voir la prise en charge',
+    cta: 'Contact PFM',
     image: imageEquipeB,
   },
 ]

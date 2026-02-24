@@ -119,7 +119,7 @@ function ContactPage() {
   return (
     <section className="section contact-creative-section">
       <div className="container contact-creative-wrap">
-        <div className="contact-hero-head">
+        <div className="contact-hero-head reveal-on-scroll">
           <span>Contact PFM</span>
           <h1>Parlez a notre equipe, nous vous rappelons rapidement</h1>
           <p>
@@ -130,7 +130,7 @@ function ContactPage() {
 
         <div className="contact-creative-layout">
           <aside className="contact-creative-info">
-            <article className="contact-info-card">
+            <article className="contact-info-card reveal-on-scroll">
               <h3>Trouver votre agence</h3>
               <label className="contact-agency-picker">
                 <span>Choisissez une ville</span>
@@ -191,7 +191,7 @@ function ContactPage() {
 
           </aside>
 
-          <div className="contact-form-panel">
+          <div className="contact-form-panel reveal-on-scroll">
             <h2>Demande de devis ou d'assistance</h2>
             <p className="contact-form-note">
               Completez ce formulaire. Un conseiller PFM vous contacte tres rapidement.
