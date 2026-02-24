@@ -19,6 +19,14 @@ const products = [
   { title: 'Marbre Gris – 1 Pièce', image: n2 },
   { title: 'Marbre Blanc – 1 Pièce', image: n3 },
   { title: 'Mosaïque – 2 Pièces', image: n4 },
+  { title: 'Marbre Gris – 2 Pièces', image: n5 },
+  { title: 'Marbre Blanc – 2 Pièces', image: n6 },
+  { title: 'Mosaïque – 3 Pièces', image: n7 },
+  { title: 'Marbre Gris – 3 Pièces', image: n8 },
+  { title: 'Marbre Blanc – 3 Pièces', image: n9},
+  { title: 'Granite Gris – 1 Pièce', image: n10},
+  { title: 'Granite Gris – 2 Pièces', image: n11},
+  { title: 'Granite Gris – 3 Pièces', image: n12},
 ]
 
 function MarbrerieNonMusulmanePage() {
