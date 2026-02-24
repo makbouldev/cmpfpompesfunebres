@@ -939,9 +939,6 @@ function HomePage() {
           </div>
 
           <div className="home-concept-images">
-            <div className="home-concept-image home-concept-image-top">
-              <img src={imageCimetiere} alt="Qualite de service PFM" />
-            </div>
             <div className="home-concept-image home-concept-image-bottom">
               <img src={imageNettoyage} alt="Nettoyage et entretien des sepultures" />
             </div>
