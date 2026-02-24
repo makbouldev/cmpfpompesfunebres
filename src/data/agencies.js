@@ -8,8 +8,10 @@
     phones: ['+212 5 28 84 06 26', '+212 5 28 82 44 96', '+212 5 28 84 78 94'],
     mobile: '+212 6 62 02 82 49',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 30.4278,
-    lng: -9.5981,
+    mapUrl:
+      'https://www.google.com/maps/place/الشركة+المغربية+لنقل+اموات+المسلمين%E2%80%AD/@30.4223426,-11.9020827,8z/data=!4m10!1m2!2m1!1scmpf+agadir!3m6!1s0xdb3b7e34d78cc81:0x24dc1feb7f2f9641!8m2!3d30.4223426!4d-9.5949538!15sCgtjbXBmIGFnYWRpcpIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11g10gr6k2?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 30.4223426,
+    lng: -9.5949538,
   },
   {
     code: '02',
@@ -20,8 +22,10 @@
     phones: ['+212 5 22 49 16 16'],
     mobile: '+212 6 61 50 27 63',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 33.5731,
-    lng: -7.5898,
+    mapUrl:
+      'https://www.google.com/maps/place/compagnie+marocaine+de+pompes+fun%C3%A8bres/@33.5892341,-7.6187862,19z/data=!4m10!1m2!2m1!1scmpf!3m6!1s0xda7d2f387ccca17:0x48d7090f4b71244f!8m2!3d33.5892341!4d-7.6187862!15sCgRjbXBmkgEMZnVuZXJhbF9ob21l4AEA!16s%2Fg%2F11b6hxdn57',
+    lat: 33.5892341,
+    lng: -7.6187862,
   },
   {
     code: '03',
@@ -32,8 +36,10 @@
     phones: ['+212 5 35 73 42 38', '+212 5 35 76 66 32'],
     mobile: '+212 6 61 79 95 69',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 34.0181,
-    lng: -5.0078,
+    mapUrl:
+      'https://www.google.com/maps/place/CMPF+FES/@34.0143078,-4.9857601,17z/data=!3m1!4b1!4m6!3m5!1s0xd9f8b7be80d1827:0xda191e70e2143211!8m2!3d34.0143078!4d-4.9831852!16s%2Fg%2F11c2p9ph98?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 34.0143078,
+    lng: -4.9831852,
   },
   {
     code: '04',
@@ -68,8 +74,10 @@
     phones: ['+212 5 35 52 09 14', '+212 5 35 51 73 87', '+212 5 35 52 01 94'],
     mobile: '+212 6 62 03 14 97',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 33.8935,
-    lng: -5.5473,
+    mapUrl:
+      'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA%E2%80%AD/@33.899277,-9.7682086,7z/data=!4m10!1m2!2m1!1scmpf+meknes!3m6!1s0xda045c26bd2c623:0x5291cfc32a3ec4a3!8m2!3d33.899277!4d-5.5494586!15sCgtjbXBmIG1la25lc5IBDGZ1bmVyYWxfaG9tZeABAA!16s%2Fg%2F11fnkvgsj0?hl=fr-FR&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 33.899277,
+    lng: -5.5494586,
   },
   {
     code: '07',
@@ -92,8 +100,10 @@
     phones: ['+212 5 24 88 56 67', '+212 5 24 88 44 31', '+212 5 24 88 56 68'],
     mobile: '+212 6 61 85 65 13',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 30.9335,
-    lng: -6.937,
+    mapUrl:
+      'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA%E2%80%AD/@33.899277,-9.7682086,7z/data=!4m10!1m2!2m1!1scmpf+meknes!3m6!1s0xda045c26bd2c623:0x5291cfc32a3ec4a3!8m2!3d33.899277!4d-5.5494586!15sCgtjbXBmIG1la25lc5IBDGZ1bmVyYWxfaG9tZeABAA!16s%2Fg%2F11fnkvgsj0?hl=fr-FR&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 33.899277,
+    lng: -5.5494586,
   },
   {
     code: '09',
@@ -116,8 +126,10 @@
     phones: ['+212 5 37 70 60 17', '+212 5 37 73 61 01', '+212 5 37 73 47 02'],
     mobile: '+212 6 61 08 84 44',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 34.0209,
-    lng: -6.8416,
+    mapUrl:
+      'https://www.google.com/maps/place/CMPF/@33.8443799,-6.3366141,10z/data=!4m6!3m5!1s0xda0e80374846203:0x570bdcf2b9e41fd0!8m2!3d33.8347912!4d-6.0638441!16s%2Fg%2F11cn7rn4gs?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 33.8347912,
+    lng: -6.0638441,
   },
   {
     code: '11',
@@ -128,8 +140,10 @@
     phones: ['+212 5 39 94 10 27', '+212 5 39 94 11 97'],
     mobile: '+212 6 60 88 44 40',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 35.7595,
-    lng: -5.834,
+    mapUrl:
+      'https://www.google.com/maps/place/Compagnie+Marocaine+de+Pompes+Funebres+(CMPF)/@35.7764783,-5.8107673,17z/data=!3m1!4b1!4m6!3m5!1s0xd0c7f16c855cd93:0xef08df1b833f3f80!8m2!3d35.7764783!4d-5.8107673!16s%2Fg%2F11mmpdpl0c?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 35.7764783,
+    lng: -5.8107673,
   },
   {
     code: '12',
@@ -140,8 +154,10 @@
     phones: ['+212 5 39 97 40 88', '+212 5 39 99 18 18', '+212 5 39 97 14 82'],
     mobile: '+212 6 62 02 21 08',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 35.5889,
-    lng: -5.3626,
+    mapUrl:
+      'https://www.google.com/maps/place/RABIE+CMPF+Assistance+Ambulance+Tetouan/@35.5654548,-5.3498635,17z/data=!3m1!4b1!4m6!3m5!1s0xd0b43dc2796ef95:0x928a21fd1412be28!8m2!3d35.5654548!4d-5.3472886!16s%2Fg%2F11zjb5_qzz?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+    lat: 35.5654548,
+    lng: -5.3472886,
   },
 ]
 

@@ -6,11 +6,11 @@ import image19 from '../assets/images/19.webp'
 import image20 from '../assets/images/20.jpg'
 import image20Alt from '../assets/images/20.webp'
 import EditorialShowcase from '../components/EditorialShowcase'
-import logoAxa from '../assets/partners/axa.svg'
-import logoRma from '../assets/partners/rma.svg'
-import logoSaham from '../assets/partners/saham.svg'
-import logoSanlam from '../assets/partners/sanlam.svg'
-import logoWafaIma from '../assets/partners/wafa-ima.svg'
+import logoAxa from '../assets/partners/AXA_Logo.svg.png'
+import logoRma from '../assets/partners/rma.png'
+import logoSaham from '../assets/partners/Saham_assurance.png'
+import logoSanlam from '../assets/partners/sanlam-logo-vector-removebg-preview.png'
+import logoWafaIma from '../assets/partners/wafaima.png'
 
 const businessAreas = [
   {

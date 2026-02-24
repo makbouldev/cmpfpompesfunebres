@@ -152,7 +152,9 @@ function CityAgencyPage() {
   }
 
   const leadPhone = agency.phones[0] || agency.mobile
-  const mapsQuery = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(agency.address)}`
+  const mapsQuery =
+    agency.mapUrl ||
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(agency.address)}`
   const embeddedMap = `https://www.google.com/maps?q=${agency.lat},${agency.lng}&z=14&output=embed`
   const cssVars = {
     '--city-primary': theme?.tones?.[0] || '#1b4e7f',

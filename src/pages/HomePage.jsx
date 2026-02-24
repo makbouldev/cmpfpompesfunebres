@@ -18,11 +18,11 @@ import imageCercueilsEquipe from '../assets/images/2.png'
 import imageTransportCercueil from '../assets/images/18.jpg'
 import imagePreparationEquipe from '../assets/images/1.png'
 import { agencies } from '../data/agencies'
-import logoAxa from '../assets/partners/axa.svg'
-import logoRma from '../assets/partners/rma.svg'
-import logoSaham from '../assets/partners/saham.svg'
-import logoSanlam from '../assets/partners/sanlam.svg'
-import logoWafaIma from '../assets/partners/wafa-ima.svg'
+import logoAxa from '../assets/partners/AXA_Logo.svg.png'
+import logoRma from '../assets/partners/rma.png'
+import logoSaham from '../assets/partners/Saham_assurance.png'
+import logoSanlam from '../assets/partners/sanlam-logo-vector-removebg-preview.png'
+import logoWafaIma from '../assets/partners/wafaima.png'
 
 const heroSlides = [
   {
@@ -36,7 +36,7 @@ const heroSlides = [
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Pour Toutes Les Familles',
+    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Avec\u00A0Accompagnement\u00A0Complet',
     description:
       'Organisation de ceremonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
@@ -371,6 +371,10 @@ function HomePage() {
   const visibleReviews = clientReviews.slice(reviewsStartIndex, reviewsStartIndex + REVIEWS_VISIBLE)
   const selectedAgency =
     agencies.find((city) => city.slug === selectedAgencySlug) ?? agencies[0]
+  const selectedAgencyMapUrl =
+    selectedAgency.mapUrl ||
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selectedAgency.address)}`
+  const selectedAgencyEmbeddedMap = `https://maps.google.com/maps?q=${selectedAgency.lat},${selectedAgency.lng}&z=11&output=embed`
   const activeGuide = homeGuideTabs.find((tab) => tab.key === activeGuideTab) ?? homeGuideTabs[0]
   const selectedAgencyMainPhone = selectedAgency.phones[0] ?? '+212 5 22 49 16 16'
   const selectedAgencyPhoneHref = `tel:${selectedAgencyMainPhone.replace(/\s+/g, '')}`
@@ -753,7 +757,7 @@ function HomePage() {
                 title={`Carte ${selectedAgency.label}`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                src={`https://maps.google.com/maps?q=${selectedAgency.lat},${selectedAgency.lng}&z=11&output=embed`}
+                src={selectedAgencyEmbeddedMap}
               />
             </div>
 
@@ -784,7 +788,7 @@ function HomePage() {
                   Appeler l'agence
                 </button>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selectedAgency.address)}`}
+                  href={selectedAgencyMapUrl}
                   target="_blank"
                   rel="noreferrer"
                 >

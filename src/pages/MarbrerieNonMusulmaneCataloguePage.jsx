@@ -1,28 +1,24 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import QuickContactLinks from '../components/QuickContactLinks'
-import n1 from '../assets/nonmuslimanes/1.webp'
-import n2 from '../assets/nonmuslimanes/2.webp'
-import n3 from '../assets/nonmuslimanes/3.png'
-import n4 from '../assets/nonmuslimanes/4.jpg'
-import n5 from '../assets/nonmuslimanes/5.jpg'
-import n6 from '../assets/nonmuslimanes/6.jpg'
-import n7 from '../assets/nonmuslimanes/7.jpg'
-import n8 from '../assets/nonmuslimanes/8.jpg'
-import n9 from '../assets/images/20.jpg'
-import n10 from '../assets/images/20.webp'
+import n1 from '../assets/marbrerie-non-musulmanes/1-3-300x283.png'
+import n2 from '../assets/marbrerie-non-musulmanes/1-2-300x283.png'
+import n3 from '../assets/marbrerie-non-musulmanes/1-1-300x283.png'
+import n4 from '../assets/marbrerie-non-musulmanes/2-3-300x283.png'
+import n5 from '../assets/marbrerie-non-musulmanes/2-2-300x283.png'
+import n6 from '../assets/marbrerie-non-musulmanes/2-1-300x283.png'
+import n7 from '../assets/marbrerie-non-musulmanes/3-3-300x283.png'
+import n8 from '../assets/marbrerie-non-musulmanes/3-2-300x283.png'
+import n9 from '../assets/marbrerie-non-musulmanes/3-1-300x283.png'
+import n10 from '../assets/marbrerie-non-musulmanes/1-300x283.png'
+import n11 from '../assets/marbrerie-non-musulmanes/2-300x283.png'
+import n12 from '../assets/marbrerie-non-musulmanes/3-300x283.png'
 
 const products = [
-  { title: 'Monument marbrerie non musulmane classique', image: n1 },
-  { title: 'Monument non musulman finition granit', image: n2 },
-  { title: 'Stele non musulmane gravure personnalisee', image: n3 },
-  { title: 'Monument non musulman style contemporain', image: n4 },
-  { title: 'Marbrerie non musulmane pose complete', image: n5 },
-  { title: 'Marbrerie non musulmane finition premium', image: n6 },
-  { title: 'Monument non musulman haut de gamme', image: n7 },
-  { title: 'Stele non musulmane design sobre', image: n8 },
-  { title: 'Marbrerie non musulmane gravure fine', image: n9 },
-  { title: 'Monument funeraire non musulman durable', image: n10 },
+  { title: 'Mosaïque – 1 Pièce', image: n1 },
+  { title: 'Marbre Gris – 1 Pièce', image: n2 },
+  { title: 'Marbre Blanc – 1 Pièce', image: n3 },
+  { title: 'Mosaïque – 2 Pièces', image: n4 },
 ]
 
 function MarbrerieNonMusulmanePage() {
@@ -109,5 +105,4 @@ function MarbrerieNonMusulmanePage() {
 }
 
 export default MarbrerieNonMusulmanePage
-
 
