@@ -3,19 +3,9 @@ import { Link, useParams } from 'react-router-dom'
 import { agencies, agenciesBySlug } from '../data/agencies'
 import img7 from '../assets/images/7.webp'
 import img8 from '../assets/images/8.jpg'
-import img9 from '../assets/images/9.webp'
 import img10 from '../assets/images/10.jpeg'
-import img11 from '../assets/images/11.jpg'
-import img12 from '../assets/images/12.jpg'
-import img13 from '../assets/images/13.jpg'
-import img14 from '../assets/images/14.jpg'
-import img15 from '../assets/images/15.jpg'
-import img16 from '../assets/images/16.jpg'
-import img17 from '../assets/images/17.jpeg'
-import img18 from '../assets/images/18.jpg'
-import img19 from '../assets/images/19.webp'
-import img20 from '../assets/images/20.jpg'
-import img20Webp from '../assets/images/20.webp'
+import img2 from '../assets/images/2.png'
+import imgRapatriement from '../assets/images/Rapatriement.jpeg'
 
 const cityThemes = {
   agadir: {
@@ -23,7 +13,7 @@ const cityThemes = {
     pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complete.',
     highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dedie'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
-    images: [img8, img12, img19],
+    images: [imgRapatriement, img10, img8],
     mood: 'Flux oceanique et accompagnement fluide',
   },
   casablanca: {
@@ -31,7 +21,7 @@ const cityThemes = {
     pitch: 'Equipe senior basee a Casablanca pour les urgences, ceremonies et transferts immediats.',
     highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hopitaux et cliniques', 'Assistance familles locales et expatriees'],
     tones: ['#2f3854', '#4a7ab7', '#edf3ff'],
-    images: [img10, img13, img18],
+    images: [img10, img2, img7],
     mood: 'Rythme urbain, execution rapide',
   },
   fes: {
@@ -39,7 +29,7 @@ const cityThemes = {
     pitch: 'Service de proximite a Fes avec respect des rites et organisation personnalisee.',
     highlights: ['Preparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
-    images: [img11, img14, img20Webp],
+    images: [img8, imgRapatriement, img2],
     mood: 'Elegance sobre et traditions preservees',
   },
   laayoune: {
@@ -47,7 +37,7 @@ const cityThemes = {
     pitch: 'Couverture de Laayoune et des provinces du sud avec logistique longue distance.',
     highlights: ['Gestion des formalites locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
-    images: [img15, img9, img17],
+    images: [img7, img10, imgRapatriement],
     mood: 'Logistique etendue, precision terrain',
   },
   marrakech: {
@@ -55,7 +45,7 @@ const cityThemes = {
     pitch: 'Accompagnement premium a Marrakech pour ceremonies, transfert et assistance administrative.',
     highlights: ['Interlocuteur unique de la famille', 'Prise en charge ceremonie complete', 'Support administratif integral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
-    images: [img12, img16, img20],
+    images: [img2, img8, img7],
     mood: 'Presence humaine et coordination complete',
   },
   meknes: {
@@ -63,7 +53,7 @@ const cityThemes = {
     pitch: 'Agence Meknes active 24h/24 pour intervention domicile, hopital et cimetiere.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
-    images: [img7, img13, img18],
+    images: [imgRapatriement, img2, img10],
     mood: 'Disponibilite immediate et maitrise locale',
   },
   nador: {
@@ -71,7 +61,7 @@ const cityThemes = {
     pitch: 'Equipe locale a Nador avec prise en charge des demarches et transport specialise.',
     highlights: ['Support deces et inhumation', 'Coordination administrative regionale', 'Disponibilite permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
-    images: [img19, img11, img14],
+    images: [img8, img7, imgRapatriement],
     mood: 'Service de proximite sur toute la zone nord-est',
   },
   ouarzazate: {
@@ -79,7 +69,7 @@ const cityThemes = {
     pitch: 'Solutions funeraires a Ouarzazate avec couverture des zones etendues de la region.',
     highlights: ['Organisation logistique longue distance', 'Transport adapte a chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
-    images: [img15, img20, img8],
+    images: [img10, img8, img2],
     mood: 'Grandes distances, meme exigence',
   },
   oujda: {
@@ -87,7 +77,7 @@ const cityThemes = {
     pitch: 'Agence Oujda pour assistance immediate, transfert et coordination des formalites.',
     highlights: ['Prise en charge administrative complete', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
-    images: [img17, img19, img9],
+    images: [img7, imgRapatriement, img10],
     mood: 'Reactif, organise, accessible',
   },
   rabat: {
@@ -95,7 +85,7 @@ const cityThemes = {
     pitch: 'Intervention professionnelle a Rabat avec reactivite, discretion et suivi permanent.',
     highlights: ['Assistance deces 24h/24', 'Gestion de ceremonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
-    images: [img18, img10, img12],
+    images: [img2, img7, img8],
     mood: 'Standard eleve et execution rigoureuse',
   },
   tanger: {
@@ -103,7 +93,7 @@ const cityThemes = {
     pitch: 'PFM Tanger accompagne les familles avec un dispositif adapte aux flux nationaux et internationaux.',
     highlights: ['Coordination portuaire et aeroportuaire', 'Prise en charge rapide des urgences', 'Equipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
-    images: [img20Webp, img16, img8],
+    images: [imgRapatriement, img8, img2],
     mood: 'Connexion nationale et internationale',
   },
   tetouan: {
@@ -111,10 +101,24 @@ const cityThemes = {
     pitch: 'Service funeraires a Tetouan avec respect, precision et assistance humaine de proximite.',
     highlights: ['Accompagnement des formalites officielles', 'Transport et inhumation organises', 'Suivi 7j/7'],
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
-    images: [img14, img7, img13],
+    images: [img10, img7, imgRapatriement],
     mood: 'Accompagnement detaille et rassurant',
   },
 }
+
+const unifiedMainServices = [
+  'Organisation complete des obseques (musulmanes et non musulmanes)',
+  'Rapatriement national et international',
+  'Transport mortuaire et logistique funeraire',
+  'Assistance administrative et formalites officielles',
+  'Coordination avec hopitaux, consulats et assurances',
+  'Marbrerie, plaques funeraires et personnalisation',
+  'Fleurs, entretien et fleurissement des sepultures',
+  'Disponibilite immediate 24h/24 et 7j/7',
+]
+
+const unifiedAssistanceText =
+  'PFM assure une prise en charge complete et coordonnee: declaration, formalites, transport, ceremonie, inhumation et suivi de la famille. Nos equipes interviennent avec la meme exigence de qualite dans toutes les villes.'
 
 function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
@@ -148,7 +152,7 @@ function CityAgencyPage() {
   const { slug } = useParams()
   const agency = useMemo(() => agenciesBySlug[slug], [slug])
   const theme = cityThemes[slug]
-  const [heroImage, collageA, collageB] = theme?.images || [img8, img12, img19]
+  const [heroImage, collageA, collageB] = theme?.images || [imgRapatriement, img10, img8]
   const sameRegionAgencies = useMemo(
     () => agencies.filter((item) => item.region === agency?.region && item.slug !== agency?.slug),
     [agency],
@@ -272,26 +276,16 @@ function CityAgencyPage() {
             <article className="city-card">
               <h3>Prestations principales</h3>
               <ul className="city-highlight-list">
-                {(theme?.highlights || []).map((item) => (
+                {unifiedMainServices.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
-                {!theme?.highlights?.length && (
-                  <>
-                    <li>Organisation complete des obseques</li>
-                    <li>Assistance administrative et formalites</li>
-                    <li>Disponibilite immediate 7j/7</li>
-                  </>
-                )}
               </ul>
             </article>
 
             <article className="city-card city-banner-card">
               <div>
                 <h3>Assistance complete et coordonnee</h3>
-                <p>
-                  Notre equipe de {agency.label} coordonne formalites, transport, ceremonie et
-                  accompagnement familial avec un suivi clair a chaque etape.
-                </p>
+                <p>{unifiedAssistanceText}</p>
               </div>
               <img src={collageA} alt={`Equipe assistance ${agency.label}`} />
             </article>
