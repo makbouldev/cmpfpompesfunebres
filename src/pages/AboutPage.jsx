@@ -4,7 +4,6 @@ import image8 from '../assets/images/8.jpg'
 import image18 from '../assets/images/18.jpg'
 import image19 from '../assets/images/19.webp'
 import image20 from '../assets/images/20.jpg'
-import image20Alt from '../assets/images/20.webp'
 import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import EditorialShowcase from '../components/EditorialShowcase'
 import logoAxa from '../assets/partners/AXA_Logo.svg.png'
@@ -162,17 +161,8 @@ function AboutPage() {
           </div>
 
           <div className="about-hero-media">
-            <div className="about-hero-image-main">
+            <div className="about-hero-image-single">
               <img src={image20} alt="Equipe PFM" />
-            </div>
-            <div className="about-hero-image-overlay">
-              <img src={image20Alt} alt="Service PFM" />
-            </div>
-            <div className="about-hero-image-mini about-hero-image-mini-left">
-              <img src={image7} alt="Coordination PFM" />
-            </div>
-            <div className="about-hero-image-mini about-hero-image-mini-right">
-              <img src={image8} alt="Accompagnement PFM" />
             </div>
           </div>
         </div>
@@ -183,9 +173,6 @@ function AboutPage() {
           <div className="about-story-media-wrap">
             <div className="about-story-media about-story-media-main">
               <img src={image18} alt="Transport funeraire PFM" />
-            </div>
-            <div className="about-story-media about-story-media-side">
-              <img src={image19} alt="Intervention terrain PFM" />
             </div>
           </div>
 

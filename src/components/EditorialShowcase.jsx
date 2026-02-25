@@ -6,7 +6,15 @@ function EditorialShowcase({ heading, accent, points, cards, className = '' }) {
           {points.map((item) => (
             <article key={item.title} className="editorial-showcase-point">
               <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              {Array.isArray(item.items) && item.items.length > 0 ? (
+                <ul>
+                  {item.items.map((line) => (
+                    <li key={`${item.title}-${line}`}>{line}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{item.text}</p>
+              )}
             </article>
           ))}
         </div>

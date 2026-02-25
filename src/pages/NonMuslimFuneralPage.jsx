@@ -1,6 +1,6 @@
 ﻿import { Link } from 'react-router-dom'
-import imageHero from '../assets/images/2.png'
-import imageRite from '../assets/images/8.jpg'
+import imageHero from '../assets/nonmuslimanes/4.jpg'
+import imageRite from '../assets/hero/2.png'
 import imageTeam from '../assets/images/20.jpg'
 import imageTransport from '../assets/images/Rapatriement.jpeg'
 import imageStone from '../assets/images/14.jpg'

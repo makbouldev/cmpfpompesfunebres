@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
-import imageHeroOne from '../assets/images/12.jpg'
+import imageHeroOne from '../assets/images/7.webp'
 import imageHeroTwo from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
 import EditorialShowcase from '../components/EditorialShowcase'
@@ -62,13 +62,6 @@ const enterpriseSectors = [
   'Groupes industriels et sites de production',
   'Entreprises de transport, tourisme et mobilite',
   'Collectivites et administrations',
-]
-
-const enterpriseKpis = [
-  { value: '24/7', label: 'Permanence entreprises' },
-  { value: '< 15 min', label: 'Temps de prise en charge initiale' },
-  { value: '13+', label: 'Villes mobilisables' },
-  { value: '1', label: 'Referent dossier unique' },
 ]
 
 const enterpriseShowcasePoints = [
@@ -139,16 +132,23 @@ function ServicesEntreprisePage() {
 
           <aside className="se-hero-panel">
             <h3>Cellule entreprises</h3>
-            <p>
-              <strong>Telephone:</strong> +212 522 49 16 16
-            </p>
-            <p>
-              <strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma
-            </p>
-            <p>
-              <strong>Disponibilite:</strong> 24h/24 et 7j/7
-            </p>
-            <a href="https://wa.me/212661502763">WhatsApp entreprise</a>
+            <div className="se-panel-list">
+              <p>
+                <span>Telephone</span>
+                <a href="tel:+212522491616">+212 522 49 16 16</a>
+              </p>
+              <p>
+                <span>E-mail</span>
+                <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
+              </p>
+              <p>
+                <span>Disponibilite</span>
+                <strong>24h/24 et 7j/7</strong>
+              </p>
+            </div>
+            <Link className="se-panel-wa" to="/contact">
+              Contactez-nous
+            </Link>
           </aside>
         </div>
       </section>
@@ -160,17 +160,6 @@ function ServicesEntreprisePage() {
         points={enterpriseShowcasePoints}
         cards={enterpriseShowcaseCards}
       />
-
-      <section className="section se-kpi-section">
-        <div className="container se-kpi-grid">
-          {enterpriseKpis.map((item) => (
-            <article key={item.label} className="se-kpi-item reveal-on-scroll">
-              <strong>{item.value}</strong>
-              <span>{item.label}</span>
-            </article>
-          ))}
-        </div>
-      </section>
 
       <section className="section se-offers-section">
         <div className="container se-offers-wrap reveal-on-scroll">

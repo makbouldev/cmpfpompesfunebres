@@ -152,7 +152,7 @@ function CityAgencyPage() {
   const { slug } = useParams()
   const agency = useMemo(() => agenciesBySlug[slug], [slug])
   const theme = cityThemes[slug]
-  const [heroImage, collageA, collageB] = theme?.images || [imgRapatriement, img10, img8]
+  const [heroImage, collageA] = theme?.images || [imgRapatriement, img10, img8]
   const sameRegionAgencies = useMemo(
     () => agencies.filter((item) => item.region === agency?.region && item.slug !== agency?.slug),
     [agency],
@@ -227,14 +227,6 @@ function CityAgencyPage() {
             <figure className="city-hero-main">
               <img src={heroImage} alt={`Agence ${agency.label} - visuel principal`} />
             </figure>
-            <div className="city-hero-gallery">
-              <figure>
-                <img src={collageA} alt={`Agence ${agency.label} - visuel 1`} />
-              </figure>
-              <figure>
-                <img src={collageB} alt={`Agence ${agency.label} - visuel 2`} />
-              </figure>
-            </div>
           </div>
         </div>
 

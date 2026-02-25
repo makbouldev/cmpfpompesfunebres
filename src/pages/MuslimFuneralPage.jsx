@@ -1,6 +1,5 @@
-ï»¿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import imageHero from '../assets/hero/1.png'
-import imageRite from '../assets/images/Rapatriement.jpeg'
 import imageTeam from '../assets/images/7.webp'
 import imageTransport from '../assets/images/Rapatriement.jpeg'
 import imageInhumationCard from '../assets/hero/1.png'
@@ -19,7 +18,7 @@ const repatriementPoints = [
   'Coordination entre les differents intervenants (assistance, assurance, famille, ambassade, consulat, etc.).',
   'Transcription du deces aupres du consulat.',
   'Liaison avec le ministere des Affaires etrangeres et le notaire si necessaire.',
-  'Liaison avec les directeurs de pompes FunÃ¨bres d accueil a l etranger.',
+  'Liaison avec les directeurs de pompes Funèbres d accueil a l etranger.',
   'Traduction de documents.',
   'Obtention des actes de deces pour la succession aupres du consulat et des autorites marocaines.',
   'Soins de conservation.',
@@ -45,10 +44,8 @@ const transferPoints = [
 
 const inhumationPoints = [
   'Demarches administratives completes pour l inhumation.',
-  'Toilette rituelle assuree dans les conditions fondamentales du rite musulman.',
   'Transport de corps par avion ou par route.',
   'Fourniture du cercueil musulman avec plaque d identification et hublot si la famille le souhaite.',
-  'Fourniture du linceul et des articles necessaires a la toilette mortuaire.',
   'Fourgons mortuaires neufs avec inscription religieuse.',
   'Chauffeurs experimentes, respectueux des rites musulmans et de la dignite des morts.',
   'Travaux de marbrerie et construction de tombes musulmanes.',
@@ -76,8 +73,8 @@ function MuslimFuneralPage() {
       <section className="section mf-hero-section">
         <div className="container mf-hero reveal-on-scroll">
           <div className="mf-hero-copy">
-            <span className="mf-eyebrow">Pompes FunÃ¨bres musulmanes</span>
-            <h1>Pompes FunÃ¨bres Musulmanes</h1>
+            <span className="mf-eyebrow">Pompes Funèbres musulmanes</span>
+            <h1>Pompes Funèbres Musulmanes</h1>
             <p>
               <strong>PFM repond a tous vos besoins.</strong>
             </p>
@@ -101,10 +98,7 @@ function MuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes FunÃ¨bres musulmanes PFM" />
-            </figure>
-            <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageRite} alt="Toilette rituelle et accompagnement musulman PFM" />
+              <img src={imageHero} alt="Pompes Funèbres musulmanes PFM" />
             </figure>
           </div>
         </div>
@@ -222,7 +216,7 @@ function MuslimFuneralPage() {
             <img src={imageTransport} alt="Transport funeraire musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>PFM, une reference majeure des Pompes FunÃ¨bres Musulmanes au Maroc</h2>
+            <h2>PFM, une reference majeure des Pompes Funèbres Musulmanes au Maroc</h2>
             <p>
               Avec une presence nationale, une disponibilite 24h/24 et une expertise reconnue, PFM
               accompagne les familles musulmanes dans toutes les etapes des obseques, du rapatriement
@@ -248,3 +242,4 @@ function MuslimFuneralPage() {
 }
 
 export default MuslimFuneralPage
+

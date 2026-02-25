@@ -86,19 +86,31 @@ const coverageCities = [
 const assistanceShowcasePoints = [
   {
     title: 'Toujours disponible pour vous',
-    text: 'Cellule active 24h/24 et 7j/7 pour lancer l intervention sans delai.',
+    items: [
+      'Cellule active 24h/24 et 7j/7.',
+      'Intervention lancee sans delai.',
+    ],
   },
   {
     title: 'Intervention claire et rapide',
-    text: 'Chaque action est planifiee pour reduire les blocages et rassurer la famille.',
+    items: [
+      'Plan d action simple et structure.',
+      'Blocages reduits, famille rassuree.',
+    ],
   },
   {
     title: 'Conseils professionnels',
-    text: 'Un conseiller explique les etapes pour faciliter les decisions importantes.',
+    items: [
+      'Explication claire de chaque etape.',
+      'Aide a la decision en temps utile.',
+    ],
   },
   {
     title: 'Respect de chaque situation',
-    text: 'Approche humaine, discrete et adaptee aux rites et aux attentes familiales.',
+    items: [
+      'Approche humaine et discrete.',
+      'Adaptation aux rites et volontes familiales.',
+    ],
   },
 ]
 
