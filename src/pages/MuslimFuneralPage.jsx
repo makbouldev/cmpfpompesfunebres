@@ -18,7 +18,7 @@ const repatriementPoints = [
   'Coordination entre les differents intervenants (assistance, assurance, famille, ambassade, consulat, etc.).',
   'Transcription du deces aupres du consulat.',
   'Liaison avec le ministere des Affaires etrangeres et le notaire si necessaire.',
-  'Liaison avec les directeurs de pompes Funèbres d accueil a l etranger.',
+  'Liaison avec les directeurs de pompes FunÃ¨bres d accueil a l etranger.',
   'Traduction de documents.',
   'Obtention des actes de deces pour la succession aupres du consulat et des autorites marocaines.',
   'Soins de conservation.',
@@ -73,8 +73,8 @@ function MuslimFuneralPage() {
       <section className="section mf-hero-section">
         <div className="container mf-hero reveal-on-scroll">
           <div className="mf-hero-copy">
-            <span className="mf-eyebrow">Pompes Funèbres musulmanes</span>
-            <h1>Pompes Funèbres Musulmanes</h1>
+            <span className="mf-eyebrow">Pompes FunÃ¨bres musulmanes</span>
+            <h1>Pompes FunÃ¨bres Musulmanes</h1>
             <p>
               <strong>PFM repond a tous vos besoins.</strong>
             </p>
@@ -98,7 +98,7 @@ function MuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres musulmanes PFM" />
+              <img src={imageHero} alt="Pompes FunÃ¨bres musulmanes PFM" />
             </figure>
           </div>
         </div>
@@ -216,7 +216,7 @@ function MuslimFuneralPage() {
             <img src={imageTransport} alt="Transport funeraire musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>PFM, une reference majeure des Pompes Funèbres Musulmanes au Maroc</h2>
+            <h2>PFM, une reference majeure des Pompes FunÃ¨bres Musulmanes au Maroc</h2>
             <p>
               Avec une presence nationale, une disponibilite 24h/24 et une expertise reconnue, PFM
               accompagne les familles musulmanes dans toutes les etapes des obseques, du rapatriement
@@ -242,4 +242,5 @@ function MuslimFuneralPage() {
 }
 
 export default MuslimFuneralPage
+
 

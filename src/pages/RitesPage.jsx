@@ -12,7 +12,7 @@ function RitesPage() {
             <li>Ghusl et kafan realises avec pudeur et competence.</li>
             <li>Coordination avec imam et mosquee pour salat janaza.</li>
             <li>Organisation rapide de l'inhumation selon les contraintes locales.</li>
-            <li>Accompagnement administratif pour carrés confessionnels.</li>
+            <li>Accompagnement administratif pour carrÃ©s confessionnels.</li>
           </ul>
         </div>
         <aside className="info-panel">
