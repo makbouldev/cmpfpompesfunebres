@@ -5,6 +5,7 @@ import image18 from '../assets/images/18.jpg'
 import image19 from '../assets/images/19.webp'
 import image20 from '../assets/images/20.jpg'
 import image20Alt from '../assets/images/20.webp'
+import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import EditorialShowcase from '../components/EditorialShowcase'
 import logoAxa from '../assets/partners/AXA_Logo.svg.png'
 import logoRma from '../assets/partners/rma.png'
@@ -127,7 +128,7 @@ const aboutShowcasePoints = [
 ]
 
 const aboutShowcaseCards = [
-  { title: 'Rapatriement', image: image18, alt: 'Rapatriement de corps PFM' },
+  { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps PFM' },
   { title: 'Intervention', image: image19, alt: 'Intervention terrain PFM' },
   { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles PFM' },
 ]

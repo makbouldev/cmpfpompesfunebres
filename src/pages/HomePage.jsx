@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import heroSlide1 from '../assets/hero/1.png'
 import heroSlide2 from '../assets/hero/2.png'
@@ -14,7 +14,6 @@ import imageInterieurCorbillard from '../assets/images/11.jpg'
 import imageFlottePFM from '../assets/images/1.png'
 import imageFleursConvoi from '../assets/images/13.jpg'
 import imageCimetiere from '../assets/images/2.png'
-import imageCercueilsEquipe from '../assets/images/2.png'
 import imageTransportCercueil from '../assets/images/18.jpg'
 import imagePreparationEquipe from '../assets/images/1.png'
 import { agencies } from '../data/agencies'
@@ -321,11 +320,13 @@ const homeGuideTabs = [
 function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [animatedMetrics, setAnimatedMetrics] = useState(() => homeMetrics.map(() => 0))
+  const [metricsStarted, setMetricsStarted] = useState(false)
   const [selectedAgencySlug, setSelectedAgencySlug] = useState(agencies[0].slug)
   const [isAgencyModalOpen, setIsAgencyModalOpen] = useState(false)
   const [openHomeFaqIndex, setOpenHomeFaqIndex] = useState(0)
   const [reviewsStartIndex, setReviewsStartIndex] = useState(0)
   const [activeGuideTab, setActiveGuideTab] = useState(homeGuideTabs[0].key)
+  const metricsSectionRef = useRef(null)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -336,6 +337,30 @@ function HomePage() {
   }, [])
 
   useEffect(() => {
+    if (!metricsSectionRef.current || metricsStarted) {
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        if (entry?.isIntersecting) {
+          setMetricsStarted(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.35 },
+    )
+
+    observer.observe(metricsSectionRef.current)
+    return () => observer.disconnect()
+  }, [metricsStarted])
+
+  useEffect(() => {
+    if (!metricsStarted) {
+      return undefined
+    }
+
     const duration = 1400
     const startTime = performance.now()
 
@@ -352,7 +377,7 @@ function HomePage() {
 
     const rafId = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(rafId)
-  }, [])
+  }, [metricsStarted])
 
   const formatMetricValue = (metric, index) => {
     const count = animatedMetrics[index] ?? 0
@@ -530,9 +555,6 @@ function HomePage() {
             <div className="home-services-intro-images reveal-on-scroll">
               <div className="home-services-intro-image home-services-intro-image-main reveal-on-scroll">
                 <img src={imagePreparationEquipe} alt="Services funeraires PFM" />
-              </div>
-              <div className="home-services-intro-image home-services-intro-image-overlay reveal-on-scroll">
-                <img src={imageCercueilsEquipe} alt="Accompagnement des familles" />
               </div>
             </div>
           </div>
@@ -858,7 +880,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section home-metrics-section">
+      <section ref={metricsSectionRef} className="section home-metrics-section">
         <div className="container home-metrics-grid">
           {homeMetrics.map((item, index) => (
             <article key={item.label} className="home-metric-item">
@@ -946,31 +968,6 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section home-cta-section">
-        <div className="container home-cta-wrap reveal-on-scroll">
-          <div className="home-cta-media">
-            <img src={imageCimetiere} alt="Qualite de service PFM" />
-          </div>
-          <div className="home-cta-content">
-            <span>Engagement PFM</span>
-            <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
-            <p>
-              Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
-              coordination administrative dans un meme niveau de qualite.
-            </p>
-            <div className="home-cta-actions">
-              <Link to="/contact" className="btn hero-btn-call">
-                Demander un conseiller
-              </Link>
-              <a href="tel:+212522491616" className="btn hero-btn-view">
-                Appeler PFM
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
       <section className="section home-testimonials-section">
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
@@ -1053,8 +1050,34 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="section home-cta-section">
+        <div className="container home-cta-wrap reveal-on-scroll">
+          <div className="home-cta-media">
+            <img src={imageCimetiere} alt="Qualite de service PFM" />
+          </div>
+          <div className="home-cta-content">
+            <span>Engagement PFM</span>
+            <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
+            <p>
+              Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
+              coordination administrative dans un meme niveau de qualite.
+            </p>
+            <div className="home-cta-actions">
+              <Link to="/contact" className="btn hero-btn-call">
+                Demander un conseiller
+              </Link>
+              <a href="tel:+212522491616" className="btn hero-btn-view">
+                Appeler PFM
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
 
 export default HomePage
+
+

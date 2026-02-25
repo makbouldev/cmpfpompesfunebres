@@ -1,6 +1,5 @@
 ﻿import { Link, useLocation } from 'react-router-dom'
 import imageHeroOne from '../assets/images/1.png'
-import imageHeroTwo from '../assets/images/2.png'
 import imageOperation from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
 import EditorialShowcase from '../components/EditorialShowcase'
@@ -169,9 +168,6 @@ function AssistancePage() {
           <div className="ai-hero-media">
             <div className="ai-hero-media-item">
               <img src={imageHeroOne} alt="Pompes Funèbres musulmanes" />
-            </div>
-            <div className="ai-hero-media-item">
-              <img src={imageHeroTwo} alt="Pompes Funèbres non musulmanes" />
             </div>
           </div>
         </div>

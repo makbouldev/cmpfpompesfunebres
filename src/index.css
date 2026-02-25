@@ -27,7 +27,6 @@ a {
 
 img {
   -webkit-user-drag: none;
-  user-drag: none;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -435,10 +434,11 @@ img {
   --home-text-soft: #4d667d;
   --home-card-border: #cfe0ee;
   --home-card-bg: #f8fcff;
-  background:
+  background-color: white;
+  /* background:
     radial-gradient(circle at 8% 18%, rgba(114, 201, 255, 0.26), transparent 36%),
     radial-gradient(circle at 88% 24%, rgba(139, 232, 202, 0.22), transparent 32%),
-    linear-gradient(140deg, #edf6ff 0%, #e8f2ff 46%, #eef8f5 100%);
+    linear-gradient(140deg, #edf6ff 0%, #e8f2ff 46%, #eef8f5 100%); */
 }
 
 .home-page .section {
@@ -2235,7 +2235,7 @@ textarea {
 
 .home-services-intro-images {
   position: relative;
-  min-height: 390px;
+  min-height: 320px;
 }
 
 .home-services-intro-image {
@@ -2246,7 +2246,7 @@ textarea {
 }
 
 .home-services-intro-image-main {
-  inset: 3% 24% 15% 8%;
+  inset: 8% 14%;
 }
 
 .home-services-intro-image-overlay {
@@ -4410,11 +4410,11 @@ textarea {
   }
 
   .home-services-intro-images {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .home-services-intro-image-main {
-    inset: 3% 26% 14% 8%;
+    inset: 7% 14%;
   }
 
   .home-services-intro-image-overlay {
@@ -4767,12 +4767,12 @@ textarea {
   }
 
   .home-services-intro-images {
-    min-height: 260px;
+    min-height: 220px;
   }
 
   .home-services-intro-image-main {
     border-radius: 18px;
-    inset: 3% 24% 14% 8%;
+    inset: 8% 12%;
   }
 
   .home-services-intro-image-overlay {
@@ -6284,8 +6284,8 @@ textarea {
   min-height: 250px;
   max-height: 320px;
   align-self: start;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+   display: grid;
+  grid-template-rows: 1fr;
   gap: 0.5rem;
 }
 
@@ -9019,4 +9019,3 @@ textarea {
     width: 100%;
   }
 }
-
