@@ -6202,7 +6202,7 @@ textarea {
 
 .ai-hero {
   display: grid;
-  grid-template-columns: 1.45fr 0.55fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 0.8rem;
   border: 1px solid #d8e5ef;
   border-radius: 16px;
@@ -6281,10 +6281,10 @@ textarea {
 }
 
 .ai-hero-media {
-  min-height: 250px;
-  max-height: 320px;
+  min-height: 340px;
+  max-height: 460px;
   align-self: start;
-   display: grid;
+  display: grid;
   grid-template-rows: 1fr;
   gap: 0.5rem;
 }
@@ -6432,7 +6432,35 @@ textarea {
 }
 
 .ai-team-card {
+  position: relative;
   overflow: hidden;
+  border-radius: 18px;
+  background: #fdfefe !important;
+}
+
+.ai-team-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1.5px;
+  background: linear-gradient(135deg, #5ba7de, #9fc9ea 45%, #d9ebf9);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.ai-team-card::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 62px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1a78be, #68a9db);
+  pointer-events: none;
 }
 
 .ai-team-card img {
@@ -6440,6 +6468,7 @@ textarea {
   height: 185px;
   object-fit: cover;
   display: block;
+  border-bottom: 1px solid #dceaf6;
 }
 
 .ai-team-card div {
@@ -8435,7 +8464,7 @@ textarea {
 
 /* Assistance redesign v3 */
 .ai-page.ai-refresh {
-  --ai-bg: #f3f8ff;
+  --ai-bg: #ffffff;
   --ai-ink: #12324d;
   --ai-muted: #48657d;
   --ai-primary: #0d67ad;
@@ -8443,10 +8472,7 @@ textarea {
   --ai-soft: #dcecff;
   --ai-card: #ffffff;
   --ai-border: #cfe0ef;
-  background:
-    radial-gradient(70% 40% at 8% -5%, rgba(53, 138, 205, 0.18), transparent 65%),
-    radial-gradient(70% 45% at 95% 6%, rgba(19, 96, 158, 0.14), transparent 68%),
-    var(--ai-bg);
+  background-color: white;
 }
 
 .ai-page.ai-refresh .section {
@@ -8551,6 +8577,11 @@ textarea {
   border: 1px solid var(--ai-border);
   border-radius: 18px;
   box-shadow: 0 12px 26px rgba(16, 52, 82, 0.08);
+}
+
+.ai-page.ai-refresh .ai-team-card {
+  border: 2px solid #6aa9d8 !important;
+  box-shadow: 0 14px 28px rgba(20, 74, 117, 0.14) !important;
 }
 
 .ai-page.ai-refresh .ai-point-card h3,
