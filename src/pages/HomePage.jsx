@@ -317,6 +317,54 @@ const homeGuideTabs = [
   },
 ]
 
+const homeExpertiseTabs = [
+  {
+    key: 'company',
+    label: 'A propos PFM',
+    title: 'Une entreprise structuree pour accompagner chaque famille',
+    intro:
+      "PFM s'appuie sur une organisation claire, des equipes formees et un pilotage terrain permanent pour garantir un service fiable.",
+    points: [
+      'Presence nationale avec coordination locale dans les principales villes.',
+      'Un seul interlocuteur dedie du premier appel jusqu a la cloture du dossier.',
+      'Standards de qualite appliques pour chaque intervention.',
+    ],
+    to: '/qui-sommes-nous',
+    cta: 'Decouvrir la societe',
+    image: imageEquipeB,
+  },
+  {
+    key: 'muslim',
+    label: 'Pompes Funebres Musulmanes',
+    title: 'Organisation complete des obseques musulmanes avec respect des rites',
+    intro:
+      'Nos equipes assurent la prise en charge complete en conformite avec les rites islamiques et les attentes de la famille.',
+    points: [
+      'Preparation rituelle et accompagnement de la famille avec discretion.',
+      'Coordination administrative, transport et inhumation.',
+      'Disponibilite 24h/24 pour les urgences au Maroc et a l international.',
+    ],
+    to: '/service/pompes-funebres-musulmanes',
+    cta: 'Voir le service musulman',
+    image: imageTransportMusulman,
+  },
+  {
+    key: 'non-muslim',
+    label: 'Pompes Funebres non Musulmanes',
+    title: 'Ceremonies non musulmanes organisees avec dignite et precision',
+    intro:
+      'PFM organise les ceremonies civiles et confessionnelles non musulmanes avec une preparation detaillee a chaque etape.',
+    points: [
+      'Coordination complete de la ceremonie selon les volontes familiales.',
+      'Logistique, transport et formalites prises en charge.',
+      'Suivi constant avec un conseiller unique et reactif.',
+    ],
+    to: '/service/pompes-funebres-non-musulmanes',
+    cta: 'Voir le service non musulman',
+    image: imageInterieurCorbillard,
+  },
+]
+
 function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [animatedMetrics, setAnimatedMetrics] = useState(() => homeMetrics.map(() => 0))
@@ -326,6 +374,7 @@ function HomePage() {
   const [openHomeFaqIndex, setOpenHomeFaqIndex] = useState(0)
   const [reviewsStartIndex, setReviewsStartIndex] = useState(0)
   const [activeGuideTab, setActiveGuideTab] = useState(homeGuideTabs[0].key)
+  const [activeExpertiseTab, setActiveExpertiseTab] = useState(homeExpertiseTabs[0].key)
   const metricsSectionRef = useRef(null)
 
   useEffect(() => {
@@ -401,6 +450,8 @@ function HomePage() {
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selectedAgency.address)}`
   const selectedAgencyEmbeddedMap = `https://maps.google.com/maps?q=${selectedAgency.lat},${selectedAgency.lng}&z=11&output=embed`
   const activeGuide = homeGuideTabs.find((tab) => tab.key === activeGuideTab) ?? homeGuideTabs[0]
+  const activeExpertise =
+    homeExpertiseTabs.find((tab) => tab.key === activeExpertiseTab) ?? homeExpertiseTabs[0]
   const selectedAgencyMainPhone = selectedAgency.phones[0] ?? '+212 5 22 49 16 16'
   const selectedAgencyPhoneHref = `tel:${selectedAgencyMainPhone.replace(/\s+/g, '')}`
   const selectedAgencyMobileDigits = selectedAgency.mobile.replace(/\D/g, '')
@@ -639,6 +690,7 @@ function HomePage() {
         </div>
       </section>
 
+
       <section className="section home-creative-section">
         <div className="container home-services-wrap">
           <div className="home-creative-grid">
@@ -664,9 +716,6 @@ function HomePage() {
 
             <div className="home-creative-visual reveal-on-scroll">
               <div className="home-creative-main-image">
-                <img src={imageEquipeA} alt="Equipe PFM en coordination" />
-              </div>
-              <div className="home-creative-side-image">
                 <img src={imageEquipeB} alt="Bureau administratif PFM" />
               </div>
             </div>
@@ -1079,5 +1128,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-

@@ -1,6 +1,5 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import imageHero from '../assets/images/9.webp'
-import imageOverlay from '../assets/images/13.jpg'
 import imageTeam from '../assets/images/20.jpg'
 import imageCimetiere from '../assets/images/14.jpg'
 
@@ -76,9 +75,6 @@ function NettoyageFleurissementPage() {
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
               <img src={imageHero} alt="Nettoyage de sepulture PFM" />
-            </figure>
-            <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageOverlay} alt="Fleurissement de tombe PFM" />
             </figure>
           </div>
         </div>
@@ -161,4 +157,5 @@ function NettoyageFleurissementPage() {
 }
 
 export default NettoyageFleurissementPage
+
 
