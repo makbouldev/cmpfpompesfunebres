@@ -167,7 +167,7 @@ function AssistancePage() {
                 <span>Disponibilite continue</span>
               </article>
               <article>
-                <strong>12</strong>
+                <strong>13+</strong>
                 <span>Agences actives</span>
               </article>
               <article>

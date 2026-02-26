@@ -421,6 +421,36 @@ function Layout({ children }) {
               <Link to="/qui-sommes-nous">Qui sommes-nous</Link>
               <Link to="/contact">Contact</Link>
             </div>
+
+            <div className="footer-card">
+              <h4>Reseaux sociaux</h4>
+              <div className="footer-social-icons">
+                <a href="#" aria-label="Facebook" className="social-icon-link">
+                  <span className="social-icon social-facebook" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                      <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.4v8h3.1Z" />
+                    </svg>
+                  </span>
+                  <span>Facebook</span>
+                </a>
+                <a href="#" aria-label="Instagram" className="social-icon-link">
+                  <span className="social-icon social-instagram" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                      <path d="M7.8 3h8.4A4.8 4.8 0 0 1 21 7.8v8.4a4.8 4.8 0 0 1-4.8 4.8H7.8A4.8 4.8 0 0 1 3 16.2V7.8A4.8 4.8 0 0 1 7.8 3Zm8.2 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8a3.2 3.2 0 0 0 3.2-3.2V8A3.2 3.2 0 0 0 16 4.8Zm-4 2.7A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.8A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm4.9-2.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z" />
+                    </svg>
+                  </span>
+                  <span>Instagram</span>
+                </a>
+                <a href="#" aria-label="LinkedIn" className="social-icon-link">
+                  <span className="social-icon social-linkedin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                      <path d="M6.2 8.6A1.8 1.8 0 1 1 6.2 5a1.8 1.8 0 0 1 0 3.6ZM4.7 9.9h3v9.4h-3V9.9Zm5 0h2.8v1.3h.1a3.1 3.1 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7v5h-3v-4.4c0-1.1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.5h-3V9.9Z" />
+                    </svg>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="footer-bottom-note">
