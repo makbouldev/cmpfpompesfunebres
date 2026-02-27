@@ -15,11 +15,11 @@ function PricingPage() {
             </ul>
           </article>
           <article className="price-card featured">
-            <h3>Formule Complete</h3>
+            <h3>Formule complète</h3>
             <p className="price">A partir de 2 390 EUR</p>
             <ul>
               <li>Tout le pack Essentielle</li>
-              <li>Ceremonie organisee</li>
+              <li>cérémonie organisee</li>
               <li>Coordination avec lieu de culte</li>
             </ul>
           </article>

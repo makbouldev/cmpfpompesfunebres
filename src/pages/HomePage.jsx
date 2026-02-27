@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import heroSlide1 from '../assets/hero/1.png'
 import heroSlide2 from '../assets/hero/2.png'
@@ -8,63 +8,66 @@ import heroSlide5 from '../assets/hero/5.png'
 import heroSlide6 from '../assets/hero/6.png'
 import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
-import imageNettoyage from '../assets/images/13.jpg'
 import imageTransportMusulman from '../assets/images/10.jpeg'
 import imageInterieurCorbillard from '../assets/images/11.jpg'
 import imageFlottePFM from '../assets/images/1.png'
 import imageFleursConvoi from '../assets/images/13.jpg'
-import imageCimetiere from '../assets/images/2.png'
+import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import imageTransportCercueil from '../assets/images/18.jpg'
 import imagePreparationEquipe from '../assets/images/1.png'
 import { agencies } from '../data/agencies'
-import logoAxa from '../assets/partners/AXA_Logo.svg.png'
-import logoRma from '../assets/partners/rma.png'
-import logoSaham from '../assets/partners/Saham_assurance.png'
-import logoSanlam from '../assets/partners/sanlam-logo-vector-removebg-preview.png'
-import logoWafaIma from '../assets/partners/wafaima.png'
 
 const heroSlides = [
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Fun\u00E8bres Musulmanes Avec Accompagnement Complet',
+    titleMain: 'Rapatriement de corps',
     description:
-      'Prise en charge complete des rites musulmans avec accompagnement humain et discret.',
+      'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
+    cta: 'Demander un rapatriement',
+    to: '/assistance',
+    image: imageRapatriement,
+  },
+  {
+    titleTop: 'Nos services',
+    titleMain: 'Pompes Funèbres Musulmanes',
+    description:
+      'Prise en charge complète des rites musulmans avec accompagnement humain et discret.',
     cta: 'Service Musulman',
     to: '/pompes-funebres/musulmanes',
     image: heroSlide1,
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Fun\u00E8bres non Musulmanes Avec Accompagnement Complet',
+    titleMain: 'Pompes Funèbres non Musulmanes',
     description:
-      'Organisation de ceremonies civiles et religieuses avec un interlocuteur unique.',
+      'Organisation de cérémonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
     to: '/pompes-funebres/non-musulmanes',
     image: heroSlide2,
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Fleurs Funeraires Et Compositions Personnalisees',
+    titleMain: 'Fleurs Funéraires Et Compositions Personnalisées',
     description:
-      'Compositions florales, gerbes et couronnes adaptees a toutes les ceremonies.',
+      'Compositions florales, gerbes et couronnes adaptées à toutes les cérémonies.',
     cta: 'Voir Fleurs',
     to: '/produits/fleurs',
     image: heroSlide4,
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Marbrerie Musulmanes Avec Finitions Sur Mesure',
+    titleMain: 'Marbrerie Musulmanes',
     description:
-      'Realisation de monuments funeraires musulmans dans le respect des normes et des rites.',
+      'Réalisation de monuments funéraires musulmans dans le respect des normes et des rites.',
     cta: 'Marbrerie musulmane',
     to: '/produits/marbrerie-musulmane',
     image: heroSlide6,
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Marbrerie non Musulmanes Pour Ceremonies Civiles',
+    titleMain: 'Marbrerie non Musulmanes',
     description:
-      'Solutions de marbrerie sur mesure pour ceremonies non musulmanes et civiles.',
+      'Solutions de marbrerie sur mesure pour cérémonies non musulmanes et civiles.',
     cta: 'Marbrerie non musulmane',
     to: '/produits/marbrerie-non-musulmane',
     image: heroSlide3,
@@ -74,25 +77,25 @@ const heroSlides = [
 const servicesHighlights = [
   {
     title: 'Intervention rapide 24h/24',
-    text: "Nous repondons vite a votre appel et nous lancons l'intervention sans attendre.",
+    text: "Nous répondons vite à votre appel et nous lançons l'intervention sans attendre.",
     image: imageFlottePFM,
     to: '/assistance',
   },
   {
     title: 'Respect des rites et de la famille',
-    text: 'Nous organisons les ceremonies avec respect, discretion et serieux.',
+    text: 'Nous organisons les cérémonies avec respect, discrétion et sérieux.',
     image: imageTransportMusulman,
     to: '/pompes-funebres/musulmanes',
   },
   {
     title: 'Prix clairs et devis simple',
-    text: 'Vous recevez un devis clair, avec des explications faciles a comprendre.',
+    text: 'Vous recevez un devis détaillé, avec des explications faciles à comprendre.',
     image: imageEquipeB,
     to: '/contact',
   },
   {
-    title: 'Un seul contact du debut a la fin',
-    text: 'Un conseiller suit votre dossier a chaque etape, jusqu a la fin.',
+    title: 'Un seul contact du début à la fin',
+    text: "Un conseiller suit votre dossier à chaque étape, jusqu'à la fin.",
     image: imageEquipeA,
     to: '/contact',
   },
@@ -101,171 +104,141 @@ const servicesHighlights = [
 const servicesOverview = [
   {
     icon: 'pulse',
-    title: 'Organisation complete des obseques',
-    text: "Prise en charge administrative, coordination des intervenants et suivi detaille de chaque etape.",
+    title: 'Organisation complète des obsèques ',
+    text: "Prise en charge administrative, coordination des intervenants et suivi détaillé de chaque étape.",
   },
   {
     icon: 'timer',
-    title: 'Ceremonies musulmanes et non musulmanes',
-    text: 'Preparation et execution dans le respect des rites, des valeurs familiales et des obligations legales.',
+    title: 'Cérémonies musulmanes et non musulmanes',
+    text: 'Préparation et exécution dans le respect des rites, des valeurs familiales et des obligations légales.',
   },
   {
     icon: 'shield',
-    title: 'Catalogue funeraire personnalise',
-    text: 'Fleurs, marbrerie et services funeraires avec des solutions adaptees a votre budget.',
+    title: 'Catalogue funéraire personnalisé',
+    text: 'Fleurs, marbrerie et services funéraires avec des solutions adaptées à votre budget.',
   },
   {
     icon: 'team',
     title: 'Assistance immédiate 24h/24',
-    text: 'Un conseiller disponible a tout moment pour orienter la famille et lancer les procedures sans delai.',
+    text: 'Un conseiller disponible à tout moment pour orienter la famille et lancer les procédures sans délai.',
   },
 ]
 
 const careProcessSteps = [
   {
-    title: '1. Appel et orientation immediate',
-    text: "Un conseiller PFM repond tout de suite, evalue l'urgence et declenche la prise en charge 24h/24.",
+    title: '1. Appel et orientation immédiate',
+    text: "Un conseiller PFM répond tout de suite, évalue l'urgence et déclenche la prise en charge 24h/24.",
   },
   {
     title: '2. Dossier et coordination administrative',
-    text: 'Nous rassemblons les pieces, gerons les formalites et coordonnons assurance, consulat et administrations.',
+    text: 'Nous rassemblons les pièces, gérons les formalités et coordonnons assurance, consulat et administrations.',
   },
   {
-    title: '3. Transport, rituels et ceremonie',
-    text: 'Organisation du transport, cercueil adapte et preparation complete de la ceremonie.',
+    title: '3. Transport, rituels et cérémonie',
+    text: 'Organisation du transport, cercueil  adapté et préparation complète de la cérémonie.',
   },
   {
     title: '4. Inhumation et suivi famille',
-    text: 'Presence sur le terrain jusqu a l inhumation, puis suivi post-obseques avec un interlocuteur unique.',
+    text: "Présence sur le terrain jusqu'à l'inhumation, puis suivi post-obsèques avec un interlocuteur unique.",
   },
 ]
 
 const repatriementPillars = [
   {
-    title: 'Equipe de coordination disponible 24h/24',
-    text: 'Back-office PFM mobilise en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
+    title: 'Équipe de coordination disponible 24h/24',
+    text: 'Back-office PFM mobilisé en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
     image: imageEquipeA,
   },
   {
-    title: 'Suivi administratif en temps reel',
-    text: 'Gestion des pieces, echanges avec consulat, assurance et autorites pour accelerer la prise en charge.',
+    title: 'Suivi administratif en temps réel',
+    text: 'Gestion des pièces, échanges avec consulat, assurance et autorités pour accélérer la prise en charge.',
     image: imageEquipeB,
   },
   {
     title: 'Transport mortuaire national et international',
-    text: 'Organisation du transfert du defunt par voie terrestre ou aerienne, avec preparation complete du dossier de rapatriement.',
+    text: 'Organisation du transfert du défunt par voie terrestre ou aérienne, avec préparation complète du dossier de rapatriement.',
     image: imageTransportMusulman,
   },
-]
-
-const trustedCompanies = [
-  {
-    logoUrl: logoAxa,
-    name: 'AXA Assistance',
-  },
-  {
-    logoUrl: logoRma,
-    name: 'RMA Assistance',
-  },
-  {
-    logoUrl: logoSaham,
-    name: 'SAHAM Assistance',
-  },
-  {
-    logoUrl: logoSanlam,
-    name: 'SANLAM Assistance',
-  },
-  {
-    logoUrl: logoWafaIma,
-    name: 'Wafa IMA Assistance',
-  },
-]
-
-const homeMetrics = [
-  { value: '24/7', label: 'Disponibilite continue', icon: 'clock', target: 24, suffix: '/7' },
-  { value: '13+', label: 'Villes au Maroc', icon: 'pin', target: 13, suffix: '+' },
-  { value: '75ans+', label: "Annees d'experience", icon: 'calendar', target: 75, suffix: 'ans+' },
-  { value: '300+', label: 'Transferts de depouilles', icon: 'transport', target: 300, suffix: '+' },
 ]
 
 const clientReviews = [
   {
     name: 'Yassine',
     city: 'Casablanca',
-    text: "Service tres professionnel, equipe respectueuse et disponible a tout moment. Tout a ete bien organise.",
+    text: 'Service très professionnel, équipe respectueuse et disponible à tout moment. Tout a été bien organisé.',
     avatar: 'https://i.pravatar.cc/160?img=11',
   },
   {
     name: 'Amina',
     city: 'Rabat',
-    text: "Intervention rapide et accompagnement humain. Les demarches ont ete simplifiees du debut a la fin.",
+    text: 'Intervention rapide et accompagnement humain. Les démarches ont été simplifiées du début à la fin.',
     avatar: 'https://i.pravatar.cc/160?img=47',
   },
   {
     name: 'Soukaina',
     city: 'Marrakech',
-    text: "Un grand merci a PFM Assistance pour la qualite du suivi et le respect complet de nos volontes.",
+    text: 'Un grand merci à PFM pour la qualité du suivi et le respect complet de nos volontés.',
     avatar: 'https://i.pravatar.cc/160?img=44',
   },
   {
     name: 'Anas',
     city: 'Agadir',
-    text: "Accueil tres humain, assistance rapide et equipe serieuse. Nous avons ete bien accompagnes.",
+    text: 'Accueil très humain, assistance rapide et équipe sérieuse. Nous avons été bien accompagnés.',
     avatar: 'https://i.pravatar.cc/160?img=14',
   },
   {
     name: 'Hajar',
     city: 'Tanger',
-    text: "Un service de qualite, tres bien organise et transparent. Merci pour votre professionnalisme.",
+    text: 'Un service de qualité, très bien organisé et transparent. Merci pour votre professionnalisme.',
     avatar: 'https://i.pravatar.cc/160?img=32',
   },
   {
     name: 'Mehdi',
-    city: 'Fes',
-    text: "PFM a gere toutes les formalites avec clarte et respect. Equipe tres disponible.",
+    city: 'Fès',
+    text: 'PFM a géré toutes les formalités avec clarté et respect. Équipe très disponible.',
     avatar: 'https://i.pravatar.cc/160?img=8',
   },
 ]
 
 const homeFaqItems = [
   {
-    question: 'Quel est le delai pour organiser les obseques ?',
+    question: 'Quel est le délai pour organiser les obsèques ?',
     answer:
-      'Generalement entre 24h et 6 jours selon les obligations legales, administratives et familiales.',
+      'Généralement entre 24h et 6 jours selon les obligations légales, administratives et familiales.',
   },
   {
-    question: 'Pouvez-vous intervenir immediatement en cas d urgence ?',
+    question: "Pouvez-vous intervenir immédiatement en cas d'urgence ?",
     answer:
-      'Oui, nos equipes sont disponibles 24h/24 et 7j/7 pour lancer la prise en charge des le premier appel.',
+      'Oui, nos équipes sont disponibles 24h/24 et 7j/7 pour lancer la prise en charge dès le premier appel.',
   },
   {
-    question: 'Organisez-vous les obseques musulmanes et non musulmanes ?',
+    question: 'Organisez-vous les obsèques musulmanes et non musulmanes ?',
     answer:
-      'Oui, nous accompagnons les familles pour les rites musulmans et non musulmans dans le respect des volontes.',
+      'Oui, nous accompagnons les familles pour les rites musulmans et non musulmans dans le respect des volontés.',
   },
   {
-    question: 'Prenez-vous en charge les formalites administratives ?',
+    question: 'Prenez-vous en charge les formalités administratives ?',
     answer:
-      'Oui, nous gerons les declarations, autorisations et documents necessaires avec un suivi clair.',
+      'Oui, nous gérons les déclarations, autorisations et documents nécessaires avec un suivi détaillé.',
   },
   {
     question: 'Proposez-vous des fleurs et services de marbrerie ?',
     answer:
-      'Oui, notre catalogue inclut Fleurs, marbrerie et services funeraires avec plusieurs options de personnalisation.',
+      'Oui, notre catalogue inclut fleurs, marbrerie et services funéraires avec plusieurs options de personnalisation.',
   },
   {
     question: 'Intervenez-vous dans toutes les villes du Maroc ?',
     answer:
-      'Nous couvrons les principales villes du Maroc via notre reseau d agences et de coordination locale.',
+      "Nous couvrons les principales villes du Maroc via notre réseau d'agences et de coordination locale.",
   },
   {
     question: 'Peut-on vous contacter par WhatsApp ?',
-    answer: 'Oui, vous pouvez nous joindre rapidement par WhatsApp pour une orientation immediate.',
+    answer: 'Oui, vous pouvez nous joindre rapidement par WhatsApp pour une orientation immédiate.',
   },
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
+      'Contactez PFM par téléphone, WhatsApp ou formulaire: nous vous envoyons un devis détaillé rapidement.',
   },
 ]
 
@@ -275,11 +248,11 @@ const homeGuideTabs = [
     label: 'Coordination 24/7',
     title: 'Une cellule active 24h/24 pour piloter chaque intervention',
     intro:
-      "Des le premier appel, notre equipe de coordination organise les priorites, active les intervenants et suit chaque etape en temps reel.",
+      'Dès le premier appel, notre équipe de coordination organise les priorités, active les intervenants et suit chaque étape en temps réel.',
     points: [
-      'Dispatch immediat des equipes selon urgence et localisation.',
-      'Suivi en continu des dossiers administratifs et operationnels.',
-      'Communication claire avec la famille a chaque phase.',
+      'Dispatch immédiat des équipes selon urgence et localisation.',
+      'Suivi en continu des dossiers administratifs et opérationnels.',
+      'Communication avec la famille à chaque phase.',
     ],
     to: '/contact',
     cta: 'Contact PFM',
@@ -287,14 +260,14 @@ const homeGuideTabs = [
   },
   {
     key: 'transport',
-    label: 'Transport geolocalise',
-    title: 'Transport securise avec suivi GPS et tracabilite',
+    label: 'Transport géolocalisé',
+    title: 'Transport sécurisé avec suivi GPS et traçabilité',
     intro:
-      "Nos moyens logistiques permettent d'assurer les transferts avec precision, ponctualite et respect total de la dignite.",
+      "Nos moyens logistiques permettent d'assurer les transferts avec précision, ponctualité et respect total de la dignité.",
     points: [
-      'Suivi geolocalise des trajets pour une meilleure coordination.',
+      'Suivi géolocalisé des trajets pour une meilleure coordination.',
       'Transport local, national et international selon le besoin.',
-      'Preparation logistique complete avant ceremonie et inhumation.',
+      'Préparation logistique complète avant cérémonie et inhumation.',
     ],
     to: '/contact',
     cta: 'Contact PFM',
@@ -305,44 +278,44 @@ const homeGuideTabs = [
     label: 'Assurance et dossiers',
     title: 'Gestion assurance, assistance et consulat sans blocage',
     intro:
-      "Nos conseillers prennent en charge les echanges techniques et documentaires pour accelerer la prise en charge globale.",
+      'Nos conseillers prennent en charge les échanges techniques et documentaires pour accélérer la prise en charge globale.',
     points: [
       'Coordination avec assurance, assistance et institutions partenaires.',
-      'Verification des pieces et suivi des autorisations necessaires.',
-      'Interface unique entre famille, administration et operateurs terrain.',
+      'Vérification des pièces et suivi des autorisations nécessaires.',
+      'Interface unique entre famille, administration et opérateurs terrain.',
     ],
     to: '/contact',
     cta: 'Contact PFM',
     image: imageEquipeB,
   },
 ]
-
+// ----------
 const homeExpertiseTabs = [
   {
     key: 'company',
-    label: 'A propos PFM',
-    title: 'Une entreprise structuree pour accompagner chaque famille',
+    label: 'À propos PFM',
+    title: 'Une entreprise structurée pour accompagner chaque famille',
     intro:
-      "PFM s'appuie sur une organisation claire, des equipes formees et un pilotage terrain permanent pour garantir un service fiable.",
+      "PFM s'appuie sur une organisation structurée, des équipes formées et un pilotage terrain permanent pour garantir un service fiable.",
     points: [
-      'Presence nationale avec coordination locale dans les principales villes.',
-      'Un seul interlocuteur dedie du premier appel jusqu a la cloture du dossier.',
-      'Standards de qualite appliques pour chaque intervention.',
+      'Présence nationale avec coordination locale dans les principales villes.',
+      'Un seul interlocuteur dédié du premier appel jusqu’à la clôture du dossier.',
+      'Standards de qualité appliqués pour chaque intervention.',
     ],
     to: '/qui-sommes-nous',
-    cta: 'Decouvrir la societe',
+    cta: 'Découvrir la société',
     image: imageEquipeB,
   },
   {
     key: 'muslim',
-    label: 'Pompes Funebres Musulmanes',
-    title: 'Organisation complete des obseques musulmanes avec respect des rites',
+    label: 'Pompes Funèbres Musulmanes',
+    title: 'Organisation complète des obsèques musulmanes avec respect des rites',
     intro:
-      'Nos equipes assurent la prise en charge complete en conformite avec les rites islamiques et les attentes de la famille.',
+      'Nos équipes assurent la prise en charge complète en conformité avec les rites islamiques et les attentes de la famille.',
     points: [
-      'Preparation rituelle et accompagnement de la famille avec discretion.',
+      'Préparation rituelle et accompagnement de la famille avec discrétion.',
       'Coordination administrative, transport et inhumation.',
-      'Disponibilite 24h/24 pour les urgences au Maroc et a l international.',
+      "Disponibilité 24h/24 pour les urgences au Maroc et à l'international.",
     ],
     to: '/service/pompes-funebres-musulmanes',
     cta: 'Voir le service musulman',
@@ -350,14 +323,14 @@ const homeExpertiseTabs = [
   },
   {
     key: 'non-muslim',
-    label: 'Pompes Funebres non Musulmanes',
-    title: 'Ceremonies non musulmanes organisees avec dignite et precision',
+    label: 'Pompes Funèbres non Musulmanes',
+    title: 'Cérémonies non musulmanes organisées avec dignité et précision',
     intro:
-      'PFM organise les ceremonies civiles et confessionnelles non musulmanes avec une preparation detaillee a chaque etape.',
+      'PFM organise les cérémonies civiles et confessionnelles non musulmanes avec une préparation détaillée à chaque étape.',
     points: [
-      'Coordination complete de la ceremonie selon les volontes familiales.',
-      'Logistique, transport et formalites prises en charge.',
-      'Suivi constant avec un conseiller unique et reactif.',
+      'Coordination complète de la cérémonie selon les volontés familiales.',
+      'Logistique, transport et formalités prises en charge.',
+      'Suivi constant avec un conseiller unique et réactif.',
     ],
     to: '/service/pompes-funebres-non-musulmanes',
     cta: 'Voir le service non musulman',
@@ -367,71 +340,12 @@ const homeExpertiseTabs = [
 
 function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0)
-  const [animatedMetrics, setAnimatedMetrics] = useState(() => homeMetrics.map(() => 0))
-  const [metricsStarted, setMetricsStarted] = useState(false)
   const [selectedAgencySlug, setSelectedAgencySlug] = useState(agencies[0].slug)
   const [isAgencyModalOpen, setIsAgencyModalOpen] = useState(false)
   const [openHomeFaqIndex, setOpenHomeFaqIndex] = useState(0)
   const [reviewsStartIndex, setReviewsStartIndex] = useState(0)
   const [activeGuideTab, setActiveGuideTab] = useState(homeGuideTabs[0].key)
   const [activeExpertiseTab, setActiveExpertiseTab] = useState(homeExpertiseTabs[0].key)
-  const metricsSectionRef = useRef(null)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % heroSlides.length)
-    }, 5000)
-
-    return () => clearInterval(timer)
-  }, [])
-
-  useEffect(() => {
-    if (!metricsSectionRef.current || metricsStarted) {
-      return undefined
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0]
-        if (entry?.isIntersecting) {
-          setMetricsStarted(true)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.35 },
-    )
-
-    observer.observe(metricsSectionRef.current)
-    return () => observer.disconnect()
-  }, [metricsStarted])
-
-  useEffect(() => {
-    if (!metricsStarted) {
-      return undefined
-    }
-
-    const duration = 1400
-    const startTime = performance.now()
-
-    const tick = (now) => {
-      const progress = Math.min((now - startTime) / duration, 1)
-      const easeOut = 1 - (1 - progress) ** 3
-
-      setAnimatedMetrics(homeMetrics.map((metric) => Math.round(metric.target * easeOut)))
-
-      if (progress < 1) {
-        requestAnimationFrame(tick)
-      }
-    }
-
-    const rafId = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(rafId)
-  }, [metricsStarted])
-
-  const formatMetricValue = (metric, index) => {
-    const count = animatedMetrics[index] ?? 0
-    return `${count}${metric.suffix ?? ''}`
-  }
 
   const currentSlide = heroSlides[activeSlide]
   const goToPrevSlide = () => {
@@ -459,7 +373,7 @@ function HomePage() {
     ? `212${selectedAgencyMobileDigits.slice(1)}`
     : selectedAgencyMobileDigits
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
-    `Bonjour PFM, je souhaite une assistance a ${selectedAgency.label}.`,
+    `Bonjour PFM, je souhaite une assistance à ${selectedAgency.label}.`,
   )}`
   const renderServiceIcon = (icon) => {
     if (icon === 'pulse') {
@@ -511,7 +425,7 @@ function HomePage() {
               <p className="hero-info-text">{currentSlide.description}</p>
               <div className="hero-highlight hero-info-badge">
                 <span className="hero-highlight-icon">!</span>
-                Service d urgence 24h/24 - Intervention immediate
+                Service d'urgence 24h/24 - Intervention immédiate
               </div>
 
               <div className="hero-actions hero-actions-main hero-info-actions">
@@ -522,7 +436,7 @@ function HomePage() {
                         <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
                       </svg>
                     </span>
-                    <span>Appel immediat</span>
+                    <span>Appel immédiat</span>
                   </span>
                 </a>
                 <a href="https://wa.me/212661502763" className="btn hero-btn-wa">
@@ -532,7 +446,7 @@ function HomePage() {
                         <path d="M12 3.3a8.7 8.7 0 0 0-7.5 13l-1 4 4.1-1a8.7 8.7 0 1 0 4.4-16Zm0 15.8a7.1 7.1 0 0 1-3.6-1l-.3-.2-2.5.6.7-2.4-.2-.4a7.1 7.1 0 1 1 5.9 3.4Zm3.9-5.3-.5-.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.6-1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.3-.4.2-.3c.1-.1.1-.3 0-.4l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.2 3.6 2.5 1 2.5.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z" />
                       </svg>
                     </span>
-                    <span>WhatsApp immediat</span>
+                    <span>WhatsApp immédiat</span>
                   </span>
                 </a>
               </div>
@@ -543,7 +457,7 @@ function HomePage() {
                 <button
                   type="button"
                   className="hero-nav-btn"
-                  aria-label="Slide precedente"
+                  aria-label="Slide précédente"
                   onClick={goToPrevSlide}
                 >
                   &#8249;
@@ -581,14 +495,12 @@ function HomePage() {
             <div className="home-services-intro-copy reveal-on-scroll">
               <div className="home-services-intro-head">
                 <span>Nos services</span>
-                <h2>Un accompagnement funeraire clair, humain et professionnel</h2>
+                <h2>Un accompagnement funéraire, humain et professionnel</h2>
                 <p>
-                  PFM Assistance propose une prise en charge complete pour soulager les familles,
-                  avec une organisation rapide et une qualite de service constante.
+                  PFM propose une prise en charge complète pour soulager les familles, avec une organisation rapide et une qualité de service constante.
                 </p>
                 <p>
-                  Notre equipe coordonne chaque intervention avec rigueur, discretion et reactivite
-                  pour garantir un service fiable a chaque famille.
+                  Notre équipe coordonne chaque intervention avec rigueur, discrétion et réactivité pour garantir un service fiable à chaque famille.
                 </p>
               </div>
 
@@ -605,7 +517,7 @@ function HomePage() {
 
             <div className="home-services-intro-images reveal-on-scroll">
               <div className="home-services-intro-image home-services-intro-image-main reveal-on-scroll">
-                <img src={imagePreparationEquipe} alt="Services funeraires PFM" />
+                <img src={imagePreparationEquipe} alt="Services funéraires PFM" />
               </div>
             </div>
           </div>
@@ -616,7 +528,7 @@ function HomePage() {
         <div className="container home-process-wrap reveal-on-scroll">
           <div className="home-process-head">
             <span>Parcours PFM</span>
-            <h2>Une methode claire, rapide et rassurante pour chaque famille</h2>
+            <h2>Une méthode rapide et rassurante pour chaque famille</h2>
           </div>
           <div className="home-process-stage">
             <div className="home-process-track" aria-hidden="true" />
@@ -632,7 +544,7 @@ function HomePage() {
                     style={{ '--step-index': index }}
                   >
                     <span className="home-process-step-badge">{stepNumber}</span>
-                    <span className="home-process-step-label">Etape {stepNumber}</span>
+                    <span className="home-process-step-label">Étape {stepNumber}</span>
                     <h3>{stepTitle}</h3>
                     <p>{step.text}</p>
                   </article>
@@ -647,15 +559,15 @@ function HomePage() {
         <div className="container home-guide-wrap reveal-on-scroll">
           <div className="home-guide-head">
             <h2>
-              Les coulisses PFM: <em>precision, reactivite et controle terrain</em>
+              Les coulisses PFM: <em>précision, réactivité et contrôle terrain</em>
             </h2>
             <p>
-              Coordination interne, transport geolocalise, gestion assurance et suivi dossier:
-              toute la chaine operationnelle est pilotee en continu.
+              Coordination interne, transport géolocalisé, gestion de l’assurance et suivi du dossier :
+              toute la chaîne opérationnelle est pilotée en continu.
             </p>
           </div>
 
-          <div className="home-guide-tabs" role="tablist" aria-label="Guides funeraires">
+          <div className="home-guide-tabs" role="tablist" aria-label="Guides funéraires">
             {homeGuideTabs.map((tab) => (
               <button
                 key={tab.key}
@@ -695,11 +607,11 @@ function HomePage() {
         <div className="container home-services-wrap">
           <div className="home-creative-grid">
             <div className="home-creative-content reveal-on-scroll">
-              <h2>Rapatriement de corps et accompagnement des familles de A a Z</h2>
+              <h2>Rapatriement de corps et accompagnement des familles</h2>
               <p className="home-creative-lead">
-                PFM prend en charge exclusivement le rapatriement de corps: formalites consulaires,
-                autorisations administratives, coordination aeroportuaire et transfert du defunt vers
-                la destination finale dans les meilleurs delais.
+                PFM prend en charge exclusivement le rapatriement de corps : formalités consulaires,
+                autorisations administratives, coordination aéroportuaire et transfert du défunt vers
+                la destination finale dans les meilleurs délais.
               </p>
               <div className="home-creative-cards">
                 {repatriementPillars.map((item) => (
@@ -723,60 +635,19 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section home-partners-section">
-        <div className="container home-services-wrap">
-          <div className="home-partners-head reveal-on-scroll">
-            <span>Partenariats de confiance</span>
-            <h2>Des compagnies majeures font confiance a PFM</h2>
-            <p>
-              Notre equipe collabore quotidiennement avec des compagnies d assurance et d assistance
-              pour executer les rapatriements de corps avec rapidite, conformite et transparence.
-            </p>
-          </div>
-
-          <div className="home-partners-stats reveal-on-scroll">
-            <article>
-              <strong>25+</strong>
-              <span>Compagnies partenaires actives</span>
-            </article>
-            <article>
-              <strong>24h/24</strong>
-              <span>Interface operationnelle continue</span>
-            </article>
-            <article>
-              <strong>13+</strong>
-              <span>Villes couvertes au Maroc</span>
-            </article>
-          </div>
-
-          <div className="home-partners-grid">
-            {trustedCompanies.map((company) => (
-              <article key={company.name} className="home-partner-card reveal-on-scroll">
-                <div className="home-partner-logo" aria-hidden="true">
-                  <img src={company.logoUrl} alt={`Embleme ${company.name}`} loading="lazy" />
-                </div>
-                <div className="home-partner-copy">
-                  <h3>{company.name}</h3>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section home-services-showcase">
         <div className="container home-services-wrap">
-          <h2>Pourquoi choisir PFM Assistance</h2>
+          <h2>Pourquoi choisir PFM</h2>
           <p className="home-services-intro">
-            Des services essentiels presentes de maniere claire pour aider les familles a choisir rapidement.
+            Des services essentiels présentés de manière claire pour aider les familles à choisir rapidement.
           </p>
           <div className="home-services-layout">
             <div className="home-services-visual">
               <div className="home-services-visual-main">
-                <img src={imageTransportMusulman} alt="Intervention PFM" />
+                <img src={imageFleursConvoi} alt="Services funéraires" />
               </div>
               <div className="home-services-visual-side">
-                <img src={imageFleursConvoi} alt="Services funeraires" />
+                <img src={imageTransportMusulman} alt="Intervention PFM" />
               </div>
             </div>
 
@@ -804,7 +675,7 @@ function HomePage() {
             <span>Nos agences</span>
             <h2>Nos villes de couverture</h2>
             <p>
-              Selectionnez votre ville pour afficher ses informations et localiser l'agence.
+              Sélectionnez votre ville pour afficher ses informations et localiser l'agence.
             </p>
           </div>
 
@@ -835,7 +706,7 @@ function HomePage() {
             <aside className="home-agency-details card">
               <h3>{selectedAgency.code} - {selectedAgency.label}</h3>
               <p>
-                <strong>Region:</strong> {selectedAgency.region}
+                <strong>Région:</strong> {selectedAgency.region}
               </p>
               <p>
                 <strong>Adresse:</strong> {selectedAgency.address}
@@ -847,7 +718,7 @@ function HomePage() {
               <ul>
                 {selectedAgency.phones.map((phone) => (
                   <li key={phone}>
-                    <strong>Tel:</strong> {phone}
+                    <strong>Tél:</strong> {phone}
                   </li>
                 ))}
                 <li>
@@ -865,7 +736,7 @@ function HomePage() {
                 >
                   Localiser
                 </a>
-                <Link to={`/villes/${selectedAgency.slug}`}>Voir les details</Link>
+                <Link to={`/villes/${selectedAgency.slug}`}>Voir les détails</Link>
               </div>
             </aside>
           </div>
@@ -890,8 +761,8 @@ function HomePage() {
 
                 <h3>PFM Agence {selectedAgency.code} - {selectedAgency.label}</h3>
                 <p>
-                  Notre equipe locale a {selectedAgency.label} est disponible 24h/24 et 7j/7 pour
-                  accompagner les familles avec rapidite et discretion.
+                  Notre équipe locale à {selectedAgency.label} est disponible 24h/24 et 7j/7 pour
+                  accompagner les familles avec rapidité et discrétion.
                 </p>
 
                 <ul>
@@ -909,10 +780,7 @@ function HomePage() {
                   <li>
                     <strong>Mobile:</strong> {selectedAgency.mobile}
                   </li>
-                  <li>
-                    <strong>Message:</strong> Bonjour PFM, je souhaite une assistance a{' '}
-                    {selectedAgency.label}.
-                  </li>
+
                 </ul>
 
                 <div className="agency-modal-actions">
@@ -921,7 +789,7 @@ function HomePage() {
                 </div>
 
                 <p className="agency-modal-note">
-                  Chaque minute compte. PFM repond avec rapidite, qualite et humanite.
+                  Chaque minute compte. PFM répond avec rapidité, qualité et humanité.
                 </p>
               </div>
             </div>
@@ -929,101 +797,13 @@ function HomePage() {
         </div>
       </section>
 
-      <section ref={metricsSectionRef} className="section home-metrics-section">
-        <div className="container home-metrics-grid">
-          {homeMetrics.map((item, index) => (
-            <article key={item.label} className="home-metric-item">
-              <span className="home-metric-icon" aria-hidden="true">
-                {item.icon === 'clock' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <circle cx="12" cy="12" r="8" />
-                    <path d="M12 8v5l3 2" />
-                  </svg>
-                )}
-                {item.icon === 'pin' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M12 21s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10Z" />
-                    <circle cx="12" cy="11" r="2.3" />
-                  </svg>
-                )}
-                {item.icon === 'team' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <circle cx="9" cy="10" r="2.4" />
-                    <circle cx="15.4" cy="10.8" r="2" />
-                    <path d="M4.8 17c0-2.1 1.8-3.8 4.2-3.8s4.2 1.7 4.2 3.8" />
-                    <path d="M13.1 17c.1-1.5 1.3-2.8 3.2-2.8 1.8 0 3 1.2 3 2.8" />
-                  </svg>
-                )}
-                {item.icon === 'shield' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M12 3.8 6 6v4.7c0 4 2.4 7.4 6 8.9 3.6-1.5 6-4.9 6-8.9V6l-6-2.2Z" />
-                    <path d="m9.3 12.1 1.9 1.9 3.4-3.6" />
-                  </svg>
-                )}
-                {item.icon === 'calendar' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <rect x="4" y="5.8" width="16" height="14" rx="2" />
-                    <path d="M8 4v3M16 4v3M4 10h16" />
-                  </svg>
-                )}
-                {item.icon === 'transport' && (
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path d="M3.5 7.5h11v8.5h-11zM14.5 10h3.6l2.4 2.7v3.3h-6z" />
-                    <circle cx="7" cy="18" r="1.8" />
-                    <circle cx="17.6" cy="18" r="1.8" />
-                  </svg>
-                )}
-              </span>
-              <strong>{formatMetricValue(item, index)}</strong>
-              <span>{item.label}</span>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section home-concept-section">
-        <div className="container home-concept-layout">
-          <div className="home-concept-text home-concept-text-card">
-            <span className="home-concept-eyebrow">Qualite de service</span>
-            <h2>Une methode claire pour accompagner chaque famille</h2>
-            <p>
-              Notre priorite est la qualite de service: ecoute, rapidite d'execution, respect des rites
-              et suivi humain a chaque etape.
-            </p>
-            <p>
-              Nous appliquons une organisation rigoureuse pour garantir une prise en charge
-              professionnelle, transparente et rassurante.
-            </p>
-            <div className="home-concept-points">
-              <span>Qualite de service controlee</span>
-              <span>Equipe experimentee et coordonnee</span>
-              <span>Intervention rapide et securisee</span>
-            </div>
-            <div className="home-concept-actions">
-              <Link to="/assistance" className="btn btn-primary">
-                Demander une intervention
-              </Link>
-              <Link to="/contact" className="btn home-trust-btn-secondary">
-                Contacter PFM
-              </Link>
-            </div>
-          </div>
-
-          <div className="home-concept-images">
-            <div className="home-concept-image home-concept-image-bottom">
-              <img src={imageNettoyage} alt="Nettoyage et entretien des sepultures" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section home-testimonials-section">
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
             <span>Clients satisfaits</span>
-            <h2>Ce que disent les familles accompagnees par PFM</h2>
+            <h2>Ce que disent les familles accompagnées par PFM</h2>
             <p>
-              Des retours reels sur la qualite de notre accompagnement funeraire.
+              Des retours réels sur la qualité de notre accompagnement funéraire.
             </p>
           </div>
           <div className="home-testimonials-nav">
@@ -1033,7 +813,7 @@ function HomePage() {
               onClick={() =>
                 setReviewsStartIndex((prev) => (prev <= 0 ? reviewsMaxStart : prev - 1))
               }
-              aria-label="Avis precedents"
+              aria-label="Avis précédents"
             >
               ‹
             </button>
@@ -1072,7 +852,7 @@ function HomePage() {
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
             <span>FAQ</span>
-            <h2>Questions frequentes</h2>
+            <h2>Questions fréquentes</h2>
           </div>
           <div className="faq-list">
             {homeFaqItems.map((item, index) => {
@@ -1099,32 +879,10 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section home-cta-section">
-        <div className="container home-cta-wrap reveal-on-scroll">
-          <div className="home-cta-media">
-            <img src={imageCimetiere} alt="Qualite de service PFM" />
-          </div>
-          <div className="home-cta-content">
-            <span>Engagement PFM</span>
-            <h2>Qualite de service, dignite et respect total des volontes familiales</h2>
-            <p>
-              Nous unifions assistance funeraire musulmane et non musulmane, marbrerie, fleurs et
-              coordination administrative dans un meme niveau de qualite.
-            </p>
-            <div className="home-cta-actions">
-              <Link to="/contact" className="btn hero-btn-call">
-                Demander un conseiller
-              </Link>
-              <a href="tel:+212522491616" className="btn hero-btn-view">
-                Appeler PFM
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </div>
   )
 }
 
 export default HomePage
+
+

@@ -6,123 +6,65 @@ import image19 from '../assets/images/19.webp'
 import image20 from '../assets/images/20.jpg'
 import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import EditorialShowcase from '../components/EditorialShowcase'
-import logoAxa from '../assets/partners/AXA_Logo.svg.png'
-import logoRma from '../assets/partners/rma.png'
-import logoSaham from '../assets/partners/Saham_assurance.png'
-import logoSanlam from '../assets/partners/sanlam-logo-vector-removebg-preview.png'
-import logoWafaIma from '../assets/partners/wafaima.png'
 
 const businessAreas = [
   {
     title: 'Rapatriement International',
-    text: 'Organisation complete du rapatriement depuis et vers le Maroc.',
+    text: 'Organisation complète du rapatriement depuis et vers le Maroc.',
   },
   {
-    title: 'Pompes Funèbres Non Musulmanes',
-    text: 'Ceremonies civiles et religieuses avec coordination complete.',
-  },
-  {
-    title: 'Pompes Funèbres Musulmanes',
-    text: 'Prise en charge conforme aux rites et aux volontes familiales.',
-  },
-  {
-    title: 'Ambulance et Assistance Medicale',
-    text: 'Intervention rapide et transport medicalise 24h/24.',
-  },
-  {
-    title: 'Depannage et Remorquage',
-    text: 'Assistance technique et remorquage selon les besoins urgents.',
+    title: 'Pompes Funèbres Musulmanes et Non Musulmanes',
+    text: 'Prise en charge des cérémonies musulmanes et non musulmanes avec coordination complète.',
   },
   {
     title: 'Fleurs',
-    text: 'Compositions florales et hommages personnalises.',
+    text: 'Compositions florales et hommages personnalisés.',
   },
   {
-    title: 'Marbrerie Non Musulmane',
-    text: 'Monuments funeraires sur mesure avec finitions de qualite.',
-  },
-  {
-    title: 'Marbrerie Musulmane',
-    text: 'Realisation de tombes et marbrerie selon les normes religieuses.',
+    title: 'Marbrerie Musulmane et Non Musulmane',
+    text: 'Réalisation de monuments et tombes avec finitions soignées, selon les besoins des familles.',
   },
   {
     title: 'Nettoyage et fleurissement',
-    text: 'Entretien regulier des sepultures avec bilan photo.',
-  },
-  {
-    title: 'Renovation de sepultures',
-    text: 'Restauration des monuments anciens avec devis prealable.',
+    text: 'Entretien régulier des sépultures avec bilan photo.',
   },
 ]
 
 const pillars = [
   {
-    title: 'Organisation precise',
-    text: "Coordination complete des demarches, du premier appel jusqu'a la finalisation du dossier.",
+    title: 'Organisation précise',
+    text: "Coordination complète des démarches, du premier appel jusqu'à la finalisation du dossier.",
   },
   {
     title: 'Intervention rapide',
-    text: 'Mobilisation immediate des equipes sur le terrain partout au Maroc, 24h/24 et 7j/7.',
+    text: 'Mobilisation immédiate des équipes sur le terrain partout au Maroc, 24h/24 et 7j/7.',
   },
   {
-    title: 'Qualite constante',
-    text: 'Procedures maitrisees, suivi continu et haut niveau de service pour chaque famille.',
+    title: 'Qualité constante',
+    text: 'Procédures maîtrisées, suivi continu et haut niveau de service pour chaque famille.',
   },
   {
     title: 'Accompagnement humain',
-    text: 'Ecoute, discretion et respect des volontes dans les moments les plus sensibles.',
-  },
-]
-
-const partnerTrustItems = [
-  {
-    logoUrl: logoAxa,
-    company: 'AXA Assistance',
-    detail:
-      'Partenaire operationnel pour la gestion des dossiers de rapatriement et la coordination terrain.',
-  },
-  {
-    logoUrl: logoRma,
-    company: 'RMA Assistance',
-    detail:
-      'Confiance continue sur les interventions urgentes et le suivi administratif de bout en bout.',
-  },
-  {
-    logoUrl: logoSaham,
-    company: 'SAHAM Assistance',
-    detail:
-      'Collaboration sur les formalites consulaires, la logistique aeroportuaire et le transfert final.',
-  },
-  {
-    logoUrl: logoSanlam,
-    company: 'SANLAM Assistance',
-    detail:
-      'Pilotage commun des dossiers internationaux avec suivi clair et delais maitrises.',
-  },
-  {
-    logoUrl: logoWafaIma,
-    company: 'Wafa IMA Assistance',
-    detail:
-      'Dispositif de confiance pour les dossiers sensibles avec coordination administrative et operationnelle.',
+    text: 'Écoute, discrétion et respect des volontés dans les moments les plus sensibles.',
   },
 ]
 
 const aboutShowcasePoints = [
   {
-    title: 'Presence nationale continue',
+    title: 'Présence nationale continue',
     text: 'PFM intervient dans les principales villes du Maroc avec une organisation stable.',
   },
   {
     title: 'Experience historique',
-    text: 'Plus de 75 annees de savoir-faire au service des familles et des entreprises.',
+    text: 'Plus de 75 années de savoir-faire au service des familles et des entreprises.',
   },
   {
     title: 'Confiance des compagnies',
-    text: 'Les acteurs majeurs de l assistance s appuient sur notre execution terrain.',
+    text: "Les acteurs majeurs de l'assistance s'appuient sur notre exécution terrain.",
   },
   {
-    title: 'Qualite professionnelle',
-    text: 'Des procedures claires, un suivi humain et une coordination rigoureuse.',
+    title: 'Qualité professionnelle',
+    text: 'Des procédures et un suivi humain et une coordination rigoureuse.',
   },
 ]
 
@@ -139,15 +81,15 @@ function AboutPage() {
         <div className="container about-hero reveal-on-scroll">
           <div className="about-hero-copy">
             <span className="about-eyebrow">Qui sommes-nous</span>
-            <h1>PFM, reference africaine des services funeraires professionnels</h1>
+            <h1>PFM, référence africaine des services funéraires professionnels</h1>
             <p>
-              PFM est le premier organisme en Afrique specialise dans les services funeraires.
-              Forte de 75 annees d experience, elle occupe une position eminente grace a la
-              diversite et a la qualite de ses prestations.
+              PFM est le premier organisme en Afrique spécialisé dans les services funéraires.
+              Forte de 75 années d'expérience, elle occupe une position éminente grâce à la
+              diversité et à la qualité de ses prestations.
             </p>
             <p>
-              Initialement active dans le secteur funeraire, PFM a progressivement elargi son
-              champ d action avec de nouveaux creneaux de services au service des familles et des
+              Initialement active dans le secteur funéraire, PFM a progressivement élargi son
+              champ d'action avec de nouveaux créneaux de services au service des familles et des
               partenaires.
             </p>
             <div className="about-hero-actions">
@@ -162,7 +104,7 @@ function AboutPage() {
 
           <div className="about-hero-media">
             <div className="about-hero-image-single">
-              <img src={image20} alt="Equipe PFM" />
+              <img src={image20} alt="Équipe PFM" />
             </div>
           </div>
         </div>
@@ -172,30 +114,30 @@ function AboutPage() {
         <div className="container about-story-grid reveal-on-scroll">
           <div className="about-story-media-wrap">
             <div className="about-story-media about-story-media-main">
-              <img src={image18} alt="Transport funeraire PFM" />
+              <img src={image18} alt="Transport funéraire PFM" />
             </div>
           </div>
 
           <div className="about-story-copy">
-            <span className="about-eyebrow">Notre evolution</span>
-            <h2>75 ans d experience au service des familles</h2>
+            <span className="about-eyebrow">Notre évolution</span>
+            <h2>75 ans d'expérience au service des familles</h2>
             <p>
-              La force de PFM repose sur une methode claire: disponibilite permanente, coordination
+              La force de PFM repose sur une méthode : disponibilité permanente, coordination
               rigoureuse et accompagnement complet. Notre organisation permet une prise en charge
-              rapide, humaine et parfaitement structuree.
+              rapide, humaine et parfaitement structurée.
             </p>
             <p>
               Nous adaptons chaque intervention aux attentes des familles, aux obligations
-              administratives et aux exigences de qualite qui font la reputation de PFM.
+              administratives et aux exigences de qualité qui font la réputation de PFM.
             </p>
             <div className="about-story-stats">
               <article>
                 <strong>75+</strong>
-                <span>Annees d experience</span>
+                <span>Années d'expérience</span>
               </article>
               <article>
                 <strong>24/7</strong>
-                <span>Disponibilite nationale</span>
+                <span>Disponibilité nationale</span>
               </article>
               <article>
                 <strong>13+</strong>
@@ -214,38 +156,11 @@ function AboutPage() {
         cards={aboutShowcaseCards}
       />
 
-      <section className="section about-trust-section">
-        <div className="container about-trust-wrap reveal-on-scroll">
-          <div className="about-trust-head">
-            <span className="about-eyebrow">Confiance des entreprises</span>
-            <h2>Des compagnies de reference font confiance a PFM</h2>
-            <p>
-              Notre credibilite operationnelle est renforcee par des partenariats durables avec des
-              compagnies d assurance et d assistance qui nous confient la gestion de dossiers sensibles.
-            </p>
-          </div>
-
-          <div className="about-trust-grid">
-            {partnerTrustItems.map((item) => (
-              <article key={item.company} className="about-trust-card">
-                <div className="about-trust-logo" aria-hidden="true">
-                  <img src={item.logoUrl} alt={`Embleme ${item.company}`} loading="lazy" />
-                </div>
-                <div>
-                  <h3>{item.company}</h3>
-                  <p>{item.detail}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section about-areas-section">
         <div className="container about-areas-wrap reveal-on-scroll">
           <div className="about-areas-head">
-            <span className="about-eyebrow">Domaines d activite</span>
-            <h2>Des prestations completes pour tous les besoins</h2>
+            <span className="about-eyebrow">Domaines d'activité</span>
+            <h2>Des prestations complètes pour tous les besoins</h2>
           </div>
 
           <div className="about-areas-grid">
@@ -263,15 +178,15 @@ function AboutPage() {
       <section className="section about-pillars-section">
         <div className="container about-pillars-wrap reveal-on-scroll">
           <div className="about-pillars-media">
-            <img src={image7} alt="Qualite de service PFM" />
+            <img src={image7} alt="Qualité de service PFM" />
             <div className="about-pillars-media-overlay">
-              <img src={image8} alt="Equipe terrain PFM" />
+              <img src={image8} alt="Équipe terrain PFM" />
             </div>
           </div>
 
           <div className="about-pillars-copy">
-            <span className="about-eyebrow">L engagement PFM</span>
-            <h2>Une methode exigeante, fiable et rassurante</h2>
+            <span className="about-eyebrow">L'engagement PFM</span>
+            <h2>Une méthode exigeante, fiable et rassurante</h2>
             <div className="about-pillars-grid">
               {pillars.map((item) => (
                 <article key={item.title} className="about-pillar-card">

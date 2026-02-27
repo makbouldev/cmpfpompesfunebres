@@ -1,6 +1,6 @@
 ﻿import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { agencies, agenciesBySlug } from '../data/agencies'
+import { agencies, agenciesBySlug, normalizeAgencySlug } from '../data/agencies'
 import img7 from '../assets/images/7.webp'
 import img8 from '../assets/images/8.jpg'
 import img10 from '../assets/images/10.jpeg'
@@ -10,115 +10,115 @@ import imgRapatriement from '../assets/images/Rapatriement.jpeg'
 const cityThemes = {
   agadir: {
     eyebrow: 'Agence Atlantique',
-    pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complete.',
-    highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dedie'],
+    pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complète.',
+    highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dédié'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
     images: [imgRapatriement, img10, img8],
-    mood: 'Flux oceanique et accompagnement fluide',
+    mood: 'Flux océanique et accompagnement fluide',
   },
   casablanca: {
     eyebrow: 'Agence Metropole',
-    pitch: 'Equipe senior basee a Casablanca pour les urgences, ceremonies et transferts immediats.',
-    highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hopitaux et cliniques', 'Assistance familles locales et expatriees'],
+    pitch: 'Équipe senior basée à Casablanca pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hôpitaux et cliniques', 'Assistance familles locales et expatriées'],
     tones: ['#2f3854', '#4a7ab7', '#edf3ff'],
     images: [img10, img2, img7],
-    mood: 'Rythme urbain, execution rapide',
+    mood: 'Rythme urbain, exécution rapide',
   },
   fes: {
     eyebrow: 'Agence Patrimoine',
-    pitch: 'Service de proximite a Fes avec respect des rites et organisation personnalisee.',
-    highlights: ['Preparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
+    pitch: 'Service de proximité à Fès avec respect des rites et organisation personnalisée.',
+    highlights: ['Préparation du dossier funéraire', 'Transport mortuaire sécurisé', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
     images: [img8, imgRapatriement, img2],
-    mood: 'Elegance sobre et traditions preservees',
+    mood: 'Élégance sobre et traditions préservées',
   },
   laayoune: {
     eyebrow: 'Agence Saharienne',
     pitch: 'Couverture de Laayoune et des provinces du sud avec logistique longue distance.',
-    highlights: ['Gestion des formalites locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
+    highlights: ['Gestion des formalités locales', 'Coordination aéroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
     images: [img7, img10, imgRapatriement],
-    mood: 'Logistique etendue, precision terrain',
+    mood: 'Logistique étendue, précision terrain',
   },
   marrakech: {
     eyebrow: 'Agence Gueliz',
-    pitch: 'Accompagnement premium a Marrakech pour ceremonies, transfert et assistance administrative.',
-    highlights: ['Interlocuteur unique de la famille', 'Prise en charge ceremonie complete', 'Support administratif integral'],
+    pitch: 'Accompagnement premium à Marrakech pour cérémonies, transfert et assistance administrative.',
+    highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif intégral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
     images: [img2, img8, img7],
-    mood: 'Presence humaine et coordination complete',
+    mood: 'Présence humaine et coordination complète',
   },
   meknes: {
     eyebrow: 'Agence Centre',
-    pitch: 'Agence Meknes active 24h/24 pour intervention domicile, hopital et cimetiere.',
+    pitch: 'Agence Meknès active 24h/24 pour intervention domicile, hôpital et cimetière.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
     images: [imgRapatriement, img2, img10],
-    mood: 'Disponibilite immediate et maitrise locale',
+    mood: 'Disponibilité immédiate et maîtrise locale',
   },
   nador: {
     eyebrow: 'Agence Oriental Nord',
-    pitch: 'Equipe locale a Nador avec prise en charge des demarches et transport specialise.',
-    highlights: ['Support deces et inhumation', 'Coordination administrative regionale', 'Disponibilite permanente'],
+    pitch: 'Équipe locale à Nador avec prise en charge des démarches et transport spécialisé.',
+    highlights: ['Support décès et inhumation', 'Coordination administrative régionale', 'Disponibilité permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
     images: [img8, img7, imgRapatriement],
     mood: 'Service de proximite sur toute la zone nord-est',
   },
   ouarzazate: {
     eyebrow: 'Agence Draa-Tafilalet',
-    pitch: 'Solutions funeraires a Ouarzazate avec couverture des zones etendues de la region.',
-    highlights: ['Organisation logistique longue distance', 'Transport adapte a chaque destination', 'Suivi humain et transparent'],
+    pitch: 'Solutions funéraires à Ouarzazate avec couverture des zones étendues de la région.',
+    highlights: ['Organisation logistique longue distance', 'Transport adapté à chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
     images: [img10, img8, img2],
-    mood: 'Grandes distances, meme exigence',
+    mood: 'Grandes distances, même exigence',
   },
   oujda: {
     eyebrow: 'Agence Oriental Est',
-    pitch: 'Agence Oujda pour assistance immediate, transfert et coordination des formalites.',
-    highlights: ['Prise en charge administrative complete', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
+    pitch: 'Agence Oujda pour assistance immédiate, transfert et coordination des formalités.',
+    highlights: ['Prise en charge administrative complète', 'Accompagnement des proches à chaque étape', 'Intervention rapide en ville et périphérie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
     images: [img7, imgRapatriement, img10],
-    mood: 'Reactif, organise, accessible',
+    mood: 'Réactif, organisé, accessible',
   },
   rabat: {
     eyebrow: 'Agence Capitale',
-    pitch: 'Intervention professionnelle a Rabat avec reactivite, discretion et suivi permanent.',
-    highlights: ['Assistance deces 24h/24', 'Gestion de ceremonie sur mesure', 'Relation continue avec la famille'],
+    pitch: 'Intervention professionnelle a Rabat avec réactivité, discretion et suivi permanent.',
+    highlights: ['Assistance décès 24h/24', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
     images: [img2, img7, img8],
-    mood: 'Standard eleve et execution rigoureuse',
+    mood: 'Standard élevé et exécution rigoureuse',
   },
   tanger: {
     eyebrow: 'Agence Detroit',
-    pitch: 'PFM Tanger accompagne les familles avec un dispositif adapte aux flux nationaux et internationaux.',
-    highlights: ['Coordination portuaire et aeroportuaire', 'Prise en charge rapide des urgences', 'Equipe disponible en continu'],
+    pitch: 'PFM Tanger accompagne les familles avec un dispositif adapté aux flux nationaux et internationaux.',
+    highlights: ['Coordination portuaire et aéroportuaire', 'Prise en charge rapide des urgences', 'Équipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
     images: [imgRapatriement, img8, img2],
     mood: 'Connexion nationale et internationale',
   },
   tetouan: {
-    eyebrow: 'Agence Rif Mediterranee',
-    pitch: 'Service funeraires a Tetouan avec respect, precision et assistance humaine de proximite.',
-    highlights: ['Accompagnement des formalites officielles', 'Transport et inhumation organises', 'Suivi 7j/7'],
+    eyebrow: 'Agence Rif Méditerranée',
+    pitch: 'Services funéraires à Tétouan avec respect, précision et assistance humaine de proximité.',
+    highlights: ['Accompagnement des formalités officielles', 'Transport et inhumation organisés', 'Suivi 7j/7'],
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
     images: [img10, img7, imgRapatriement],
-    mood: 'Accompagnement detaille et rassurant',
+    mood: 'Accompagnement détaillé et rassurant',
   },
 }
 
 const unifiedMainServices = [
-  'Organisation complete des obseques (musulmanes et non musulmanes)',
+  'Organisation complète des obsèques  (musulmanes et non musulmanes)',
   'Rapatriement national et international',
-  'Transport mortuaire et logistique funeraire',
-  'Assistance administrative et formalites officielles',
-  'Coordination avec hopitaux, consulats et assurances',
-  'Marbrerie, plaques funeraires et personnalisation',
-  'Fleurs, entretien et fleurissement des sepultures',
-  'Disponibilite immediate 24h/24 et 7j/7',
+  'Transport mortuaire et logistique funéraire',
+  'Assistance administrative et formalités officielles',
+  'Coordination avec hôpitaux, consulats et assurances',
+  'Marbrerie, plaques funéraires et personnalisation',
+  'Fleurs, entretien et fleurissement des sépultures',
+  'Disponibilité immédiate 24h/24 et 7j/7',
 ]
 
 const unifiedAssistanceText =
-  'PFM assure une prise en charge complete et coordonnee: declaration, formalites, transport, ceremonie, inhumation et suivi de la famille. Nos equipes interviennent avec la meme exigence de qualite dans toutes les villes.'
+  "PFM assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
 
 function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
@@ -150,8 +150,17 @@ function MapIcon() {
 
 function CityAgencyPage() {
   const { slug } = useParams()
-  const agency = useMemo(() => agenciesBySlug[slug], [slug])
-  const theme = cityThemes[slug]
+  const normalizedSlug = useMemo(() => normalizeAgencySlug(slug), [slug])
+  const agency = useMemo(() => {
+    const exactAgency = agenciesBySlug[normalizedSlug]
+    if (exactAgency) return exactAgency
+
+    return (
+      agencies.find((item) => normalizeAgencySlug(item.slug) === normalizedSlug) ||
+      agencies.find((item) => normalizeAgencySlug(item.label) === normalizedSlug)
+    )
+  }, [normalizedSlug])
+  const theme = cityThemes[normalizedSlug]
   const [heroImage, collageA] = theme?.images || [imgRapatriement, img10, img8]
   const sameRegionAgencies = useMemo(
     () => agencies.filter((item) => item.region === agency?.region && item.slug !== agency?.slug),
@@ -163,11 +172,11 @@ function CityAgencyPage() {
       <section className="section city-agency-page">
         <div className="container">
           <div className="city-not-found">
-            <h1>Agence non trouvee</h1>
-            <p>La page demandee n'existe pas encore. Vous pouvez revenir a l'accueil ou choisir une ville.</p>
+            <h1>Agence non trouvée</h1>
+            <p>La page demandée n'existe pas encore. Vous pouvez revenir à l'accueil ou choisir une ville.</p>
             <div className="city-not-found-actions">
               <Link className="btn btn-primary" to="/">
-                Retour a l'accueil
+                Retour à l'accueil
               </Link>
               <Link className="btn btn-secondary" to="/contact">
                 Contacter PFM
@@ -200,9 +209,9 @@ function CityAgencyPage() {
             </h1>
             <p className="city-hero-intro">
               {theme?.pitch ||
-                `Notre agence intervient rapidement a ${agency.label} avec une prise en charge complete des obseques.`}
+                `Notre agence intervient rapidement à ${agency.label} avec une prise en charge complète des obsèques.`}
             </p>
-            <p className="city-mood">{theme?.mood || 'Service humain et maitrise des formalites'}</p>
+            <p className="city-mood">{theme?.mood || 'Service humain et maîtrise des formalités'}</p>
             <div className="city-hero-actions">
               <a className="btn btn-primary" href={`tel:${normalizeTel(leadPhone)}`}>
                 Appeler l'agence
@@ -214,7 +223,7 @@ function CityAgencyPage() {
             <div className="city-metrics">
               <article>
                 <strong>{agency.region}</strong>
-                <span>Region couverte</span>
+                <span>Région couverte</span>
               </article>
               <article>
                 <strong>24h/24</strong>
@@ -233,7 +242,7 @@ function CityAgencyPage() {
         <div className="city-agency-content">
           <div className="city-main-grid">
             <article className="city-card">
-              <h3>Coordonnees de l'agence</h3>
+              <h3>Coordonnées de l'agence</h3>
               <p>{agency.address}</p>
               <ul className="city-phone-list">
                 {agency.phones.map((phone) => (
@@ -276,14 +285,14 @@ function CityAgencyPage() {
 
             <article className="city-card city-banner-card">
               <div>
-                <h3>Assistance complete et coordonnee</h3>
+                <h3>Assistance complète et coordonnée</h3>
                 <p>{unifiedAssistanceText}</p>
               </div>
               <img src={collageA} alt={`Equipe assistance ${agency.label}`} />
             </article>
 
             <article className="city-card">
-              <h3>Localisation precise</h3>
+              <h3>Localisation précise</h3>
               <iframe
                 className="city-map-frame"
                 src={embeddedMap}
@@ -300,7 +309,7 @@ function CityAgencyPage() {
               <strong>Ville:</strong> {agency.label}
             </p>
             <p>
-              <strong>Region:</strong> {agency.region}
+              <strong>Région:</strong> {agency.region}
             </p>
             <a className="city-contact-link" href={`tel:${normalizeTel(leadPhone)}`}>
               <span className="city-contact-icon">
@@ -324,12 +333,12 @@ function CityAgencyPage() {
               <span className="city-contact-icon">
                 <MapIcon />
               </span>
-              <span>Itineraire</span>
+              <span>Itinéraire</span>
             </a>
 
             {sameRegionAgencies.length > 0 && (
               <div className="city-nearby">
-                <h4>Agences de la meme region</h4>
+                <h4>Agences de la même région</h4>
                 <ul>
                   {sameRegionAgencies.map((item) => (
                     <li key={item.slug}>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { agencies } from '../data/agencies'
 
 function ContactPage() {
@@ -99,7 +99,7 @@ function ContactPage() {
       }
 
       if (isSent) {
-        setStatus('Votre demande a ete envoyee avec succes. Notre equipe vous recontactera rapidement.')
+        setStatus('Votre demande a été envoyée avec succès. Notre équipe vous recontactera rapidement.')
         setFormData({
           fullName: '',
           phone: '',
@@ -109,10 +109,10 @@ function ContactPage() {
           message: '',
         })
       } else {
-        setStatus("Echec d envoi. Verifiez la configuration e-mail et reessayez.")
+        setStatus("Échec d'envoi. Vérifiez la configuration e-mail et réessayez.")
       }
     } catch (error) {
-      setStatus('Erreur reseau. Reessayez dans quelques instants.')
+      setStatus('Erreur réseau. Réessayez dans quelques instants.')
     }
   }
   
@@ -121,10 +121,10 @@ function ContactPage() {
       <div className="container contact-creative-wrap">
         <div className="contact-hero-head reveal-on-scroll">
           <span>Contact PFM</span>
-          <h1>Parlez a notre equipe, nous vous rappelons rapidement</h1>
+          <h1>Parlez à notre équipe, nous vous rappelons rapidement</h1>
           <p>
-            Une equipe dediee repond 24h/24 et 7j/7 pour organiser les interventions,
-            informer la famille et lancer les demarches administratives sans delai.
+            Une équipe dédiée répond 24h/24 et 7j/7 pour organiser les interventions,
+            informer la famille et lancer les démarches administratives sans délai.
           </p>
         </div>
 
@@ -183,7 +183,7 @@ function ContactPage() {
                 ) : null}
                 {selectedAgency.mapUrl ? (
                   <a href={selectedAgency.mapUrl} className="contact-agency-map" target="_blank" rel="noreferrer">
-                    Localiser l agence
+                    Localiser l'agence
                   </a>
                 ) : null}
               </div>
@@ -194,7 +194,7 @@ function ContactPage() {
           <div className="contact-form-panel reveal-on-scroll">
             <h2>Demande de devis ou d'assistance</h2>
             <p className="contact-form-note">
-              Completez ce formulaire. Un conseiller PFM vous contacte tres rapidement.
+              Complétez ce formulaire. Un conseiller PFM vous contacte très rapidement.
             </p>
             <form className="contact-form contact-creative-form" onSubmit={handleSubmit}>
               <label>
@@ -209,7 +209,7 @@ function ContactPage() {
                 />
               </label>
               <label>
-                Telephone
+                Téléphone
                 <input
                   type="tel"
                   name="phone"
@@ -252,7 +252,7 @@ function ContactPage() {
                   <option value="" disabled>
                     Choisissez un sujet
                   </option>
-                  <option value="Demande d assistance urgente">Demande d assistance urgente</option>
+                  <option value="Demande d'assistance urgente">Demande d'assistance urgente</option>
                   <option value="Demande de devis">Demande de devis</option>
                   <option value="Information sur une agence">Information sur une agence</option>
                   <option value="Suivi de dossier">Suivi de dossier</option>
@@ -282,3 +282,4 @@ function ContactPage() {
 }
 
 export default ContactPage
+

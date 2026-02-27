@@ -2,70 +2,69 @@
 import imageHeroOne from '../assets/images/1.png'
 import imageOperation from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
-import EditorialShowcase from '../components/EditorialShowcase'
 
 const keyServices = [
   {
     icon: '☎',
-    title: 'Reponse immediate 24h/24',
-    text: "Un conseiller PFM repond immediatement et declenche la procedure adaptee a votre situation.",
+    title: 'Réponse immédiate 24h/24',
+    text: 'Un conseiller PFM répond immédiatement et déclenche la procédure adaptée à votre situation.',
   },
   {
     icon: '🧭',
-    title: 'Coordination complete',
-    text: 'Nous gerons assurances, consulats, autorites et partenaires pour fluidifier toutes les etapes.',
+    title: 'Coordination complète',
+    text: 'Nous gérons assurances, consulats, autorités et partenaires pour fluidifier toutes les étapes.',
   },
   {
     icon: '🤝',
     title: 'Suivi humain et discret',
-    text: 'Un interlocuteur unique accompagne la famille du premier appel jusqu a la cloture du dossier.',
+    text: "Un interlocuteur unique accompagne la famille du premier appel jusqu'à la clôture du dossier.",
   },
 ]
 
 const interventionSteps = [
   {
     icon: '01',
-    title: 'Evaluation de la situation',
-    text: 'Analyse de l urgence, verification des informations et orientation immediate de la famille.',
+    title: 'Évaluation de la situation',
+    text: "Analyse de l'urgence, vérification des informations et orientation immédiate de la famille.",
   },
   {
     icon: '02',
-    title: 'Activation des equipes',
+    title: 'Activation des équipes',
     text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative PFM.',
   },
   {
     icon: '03',
-    title: 'Formalites et logistique',
+    title: 'formalités et logistique',
     text: 'Constitution du dossier, coordination documentaire et organisation des transferts.',
   },
   {
     icon: '04',
-    title: 'Accompagnement jusqu a la cloture',
-    text: 'Suivi de la ceremonie, inhumation ou transfert, puis assistance post intervention.',
+    title: "Accompagnement jusqu'à la clôture",
+    text: 'Suivi de la cérémonie, inhumation ou transfert, puis assistance post-intervention.',
   },
 ]
 
 const requiredDocuments = [
-  "Piece d identite du defunt",
-  'Certificat de deces (si disponible)',
-  'Coordonnees du proche referent',
-  'Coordonnees assurance / assistance',
-  'Coordonnees consulat / ambassade (en cas de rapatriement)',
+  "Pièce d'identité du défunt",
+  'Certificat de décès (si disponible)',
+  'Coordonnées du proche référent',
+  'Coordonnées assurance / assistance',
+  'Coordonnées consulat / ambassade (en cas de rapatriement)',
 ]
 
 const enterpriseServices = [
-  'Permanence telephonique dediee aux entreprises et institutions',
-  'Assistance medicale pour evenements et congres',
-  'Dispositif d ambulance pour sites industriels',
-  'Coordination de transport medical et evacuation',
-  'Cellule de supervision et suivi operationnel',
+  'Permanence téléphonique dédiée aux entreprises et institutions',
+  'Assistance médicale pour événements et congrès',
+  "Dispositif d'ambulance pour sites industriels",
+  'Coordination de transport médical et évacuation',
+  'Cellule de supervision et suivi opérationnel',
 ]
 
 const commitments = [
-  'Disponibilite continue 24h/24 et 7j/7, sans interruption.',
-  'Respect strict des rites, des volontes familiales et de la dignite du defunt.',
-  'Transparence des etapes, des delais et des procedures administratives.',
-  'Intervention structuree, rapide et controlee sur l ensemble du Maroc.',
+  'Disponibilité continue 24h/24 et 7j/7, sans interruption.',
+  'Respect strict des rites, des volontés familiales et de la dignité du défunt.',
+  'Transparence des étapes, des délais et des procédures administratives.',
+  "Intervention structurée, rapide et contrôlée sur l'ensemble du Maroc.",
 ]
 
 const coverageCities = [
@@ -74,7 +73,7 @@ const coverageCities = [
   'Fes',
   'Laayoune',
   'Marrakech',
-  'Meknes',
+  'Meknès',
   'Nador',
   'Ouarzazate',
   'Oujda',
@@ -83,54 +82,18 @@ const coverageCities = [
   'Tetouan',
 ]
 
-const assistanceShowcasePoints = [
-  {
-    title: 'Toujours disponible pour vous',
-    items: [
-      'Cellule active 24h/24 et 7j/7.',
-      'Intervention lancee sans delai.',
-    ],
-  },
-  {
-    title: 'Intervention claire et rapide',
-    items: [
-      'Plan d action simple et structure.',
-      'Blocages reduits, famille rassuree.',
-    ],
-  },
-  {
-    title: 'Conseils professionnels',
-    items: [
-      'Explication claire de chaque etape.',
-      'Aide a la decision en temps utile.',
-    ],
-  },
-  {
-    title: 'Respect de chaque situation',
-    items: [
-      'Approche humaine et discrete.',
-      'Adaptation aux rites et volontes familiales.',
-    ],
-  },
-]
-
-const assistanceShowcaseCards = [
-  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation PFM' },
-  { title: 'Transfert', image: imageOperation, alt: 'Transfert de corps PFM' },
-  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement des familles PFM' },
-]
 
 function AssistancePage() {
   const location = useLocation()
   const isEnterpriseView = location.pathname === '/services-entreprises'
 
   const pageTitle = isEnterpriseView
-    ? 'Services aux entreprises - Assistance immédiate et coordination operationnelle'
+    ? 'Services aux entreprises - Assistance immédiate et coordination opérationnelle'
     : 'Assistance immédiate 24h/24 - 7j/7'
 
   const pageIntro = isEnterpriseView
-    ? 'PFM met en place des dispositifs rapides pour les entreprises: assistance medicale, coordination terrain et suivi continu.'
-    : "En cas d urgence, un conseiller vous repond immediatement et declenche la prise en charge funeraire, le transfert ou le rapatriement."
+    ? 'PFM met en place des dispositifs rapides pour les entreprises : assistance médicale, coordination terrain et suivi continu.'
+    : "En cas d'urgence, un conseiller vous répond immédiatement et déclenche la prise en charge funéraire, le transfert ou le rapatriement."
 
   return (
     <div className="ai-page">
@@ -141,10 +104,10 @@ function AssistancePage() {
             <h1>{pageTitle}</h1>
             <p>{pageIntro}</p>
             <p>
-              Notre equipe applique une methode claire pour securiser chaque intervention: orientation
-              immediate, verification des pieces, coordination administrative, organisation du
-              transport et suivi permanent avec la famille. L objectif est de reduire les delais,
-              d eviter les blocages et de maintenir un haut niveau de qualite de service.
+              Notre équipe applique une méthode pour sécuriser chaque intervention : orientation
+              immédiate, vérification des pièces, coordination administrative, organisation du
+              transport et suivi permanent avec la famille. L'objectif est de réduire les délais,
+              d'éviter les blocages et de maintenir un haut niveau de qualité de service.
             </p>
 
             <div className="ai-hotline">
@@ -164,7 +127,7 @@ function AssistancePage() {
             <div className="ai-hero-metrics">
               <article>
                 <strong>24/7</strong>
-                <span>Disponibilite continue</span>
+                <span>Disponibilité continue</span>
               </article>
               <article>
                 <strong>13+</strong>
@@ -172,7 +135,7 @@ function AssistancePage() {
               </article>
               <article>
                 <strong>75+</strong>
-                <span>Annees d experience</span>
+                <span>Années d'expérience</span>
               </article>
             </div>
           </div>
@@ -197,21 +160,13 @@ function AssistancePage() {
         </div>
       </section>
 
-      <EditorialShowcase
-        className="editorial-showcase-assistance"
-        heading="Inhumation, transfert, accompagnement :"
-        accent="notre eclairage immediate"
-        points={assistanceShowcasePoints}
-        cards={assistanceShowcaseCards}
-      />
-
       <section className="section ai-commitments-section">
         <div className="container ai-commitments reveal-on-scroll">
           <div className="ai-section-head">
             <span className="ai-eyebrow">Engagements</span>
-            <h2>Une assistance organisee avec exigence et clarte</h2>
+            <h2>Une assistance organisée avec exigence et clarté</h2>
             <p>
-              PFM maintient des standards eleves de qualite operationnelle afin de garantir une
+              PFM maintient des standards élevés de qualité opérationnelle afin de garantir une
               prise en charge fiable dans toutes les situations.
             </p>
           </div>
@@ -227,10 +182,10 @@ function AssistancePage() {
         <div className="container ai-process reveal-on-scroll">
           <div className="ai-section-head">
             <span className="ai-eyebrow">Intervention terrain</span>
-            <h2>Une methode claire pour agir vite et bien</h2>
+            <h2>Une méthode pour agir vite et bien</h2>
             <p>
-              Chaque intervention suit un schema operationnel precis afin de proteger les familles
-              contre les retards et les incomprehensions.
+              Chaque intervention suit un schéma opérationnel précis afin de protéger les familles
+              contre les retards et les incompréhensions.
             </p>
           </div>
 
@@ -255,10 +210,10 @@ function AssistancePage() {
       <section className="section ai-docs-section">
         <div className="container ai-docs reveal-on-scroll">
           <div className="ai-docs-card">
-            <h2>Documents a preparer</h2>
+            <h2>Documents à préparer</h2>
             <p>
-              Pour accelerer le traitement du dossier, notre equipe recommande de preparer ces
-              elements. PFM vous accompagne ensuite pour valider et completer chaque piece.
+              Pour accélérer le traitement du dossier, notre équipe recommande de préparer ces
+              éléments. PFM vous accompagne ensuite pour valider et compléter chaque pièce.
             </p>
             <ul>
               {requiredDocuments.map((doc) => (
@@ -268,16 +223,16 @@ function AssistancePage() {
           </div>
 
           <div className="ai-team-card">
-            <img src={imageTeam} alt="Equipe de coordination PFM" />
+            <img src={imageTeam} alt="Équipe de coordination PFM" />
             <div>
               <h3>Coordination continue</h3>
               <p>
-                Nos equipes suivent chaque dossier en temps reel pour garantir qualite, securite et
-                rapidite d execution.
+                Nos équipes suivent chaque dossier en temps réel pour garantir qualité, sécurité et
+                rapidité d'exécution.
               </p>
               <p>
-                Un referent PFM reste disponible pour informer la famille et confirmer les etapes
-                valides.
+                Un référent PFM reste disponible pour informer la famille et confirmer les étapes
+                validées.
               </p>
             </div>
           </div>
@@ -288,7 +243,7 @@ function AssistancePage() {
         <div className="container ai-enterprise reveal-on-scroll">
           <div className="ai-section-head">
             <span className="ai-eyebrow">Services aux entreprises</span>
-            <h2>Dispositifs operationnels pour sites, evenements et institutions</h2>
+            <h2>Dispositifs opérationnels pour sites, événements et institutions</h2>
           </div>
           <div className="ai-enterprise-grid">
             {enterpriseServices.map((service) => (
@@ -304,7 +259,7 @@ function AssistancePage() {
         <div className="container ai-coverage reveal-on-scroll">
           <div className="ai-section-head">
             <h2>Couverture nationale</h2>
-            <p>Nos equipes interviennent dans les principales villes du Maroc.</p>
+            <p>Nos équipes interviennent dans les principales villes du Maroc.</p>
           </div>
 
           <div className="ai-cities">

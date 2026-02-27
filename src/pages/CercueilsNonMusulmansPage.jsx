@@ -40,7 +40,7 @@ const products = [
   { title: 'CAPITON COULEUR BLANCHE', image: n16 },
   { title: 'CAPITON COULEUR GRISE', image: n17 },
   { title: 'DRAP MORTUAIRE NOIR AVEC CROIX', image: n18 },
-  { title: 'DRAP MORTUAIRE DRAPEAU FRANCAIS', image: n19 },
+  { title: 'DRAP MORTUAIRE DRAPEAU FRANÇAIS', image: n19 },
 ]
 
 function CercueilsNonMusulmansPage() {
@@ -58,15 +58,15 @@ function CercueilsNonMusulmansPage() {
           <span>Catalogue PFM</span>
           <h1>Cercueils non musulmans</h1>
           <p>
-            Collection de cercueils non musulmans adaptee aux ceremonies civiles et religieuses,
-            avec une presentation soignee et des finitions variees.
+            Collection de cercueils non musulmans adaptée aux cérémonies civiles et religieuses,
+            avec une présentation soignée et des finitions variées.
           </p>
         </div>
 
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
             Affichage de {products.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} resultats
+            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} résultats
           </p>
         </div>
 
@@ -115,7 +115,7 @@ function CercueilsNonMusulmansPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
@@ -127,5 +127,3 @@ function CercueilsNonMusulmansPage() {
 }
 
 export default CercueilsNonMusulmansPage
-
-

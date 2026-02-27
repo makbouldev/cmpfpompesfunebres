@@ -31,7 +31,7 @@
     code: '03',
     slug: 'fes',
     label: 'Fes',
-    region: 'Fes-Meknes',
+    region: 'Fes-Meknès',
     address: '1, Bd Moulay Rachid Route De Sefrou - Fes',
     phones: ['+212 5 35 73 42 38', '+212 5 35 76 66 32'],
     mobile: '+212 6 61 79 95 69',
@@ -68,9 +68,9 @@
   {
     code: '06',
     slug: 'meknes',
-    label: 'Meknes',
-    region: 'Fes-Meknes',
-    address: '8, Rue Antsirabe Hamria - Meknes',
+    label: 'Meknès',
+    region: 'Fes-Meknès',
+    address: '8, Rue Antsirabe Hamria - Meknès',
     phones: ['+212 5 35 52 09 14', '+212 5 35 51 73 87', '+212 5 35 52 01 94'],
     mobile: '+212 6 62 03 14 97',
     email: 'cmpfcasa@cmpfassistance.ma',
@@ -161,5 +161,13 @@
   },
 ]
 
-export const agenciesBySlug = Object.fromEntries(agencies.map((agency) => [agency.slug, agency]))
+export const normalizeAgencySlug = (value) =>
+  String(value || '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
 
+export const agenciesBySlug = Object.fromEntries(
+  agencies.map((agency) => [normalizeAgencySlug(agency.slug), agency]),
+)

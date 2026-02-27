@@ -4,21 +4,21 @@ import imageTeam from '../assets/images/20.jpg'
 import imageCimetiere from '../assets/images/14.jpg'
 
 const servicesList = [
-  'Nettoyage complet de sepultures et abords.',
-  'Fleurissement ponctuel ou regulier selon vos demandes.',
-  'Entretien de tombes pour dates commemoratives et fetes religieuses.',
-  'Desherbage, arrangement floral et bilan photos avant/apres.',
+  'Nettoyage complet de sépultures et abords.',
+  'Fleurissement ponctuel ou régulier selon vos demandes.',
+  'Entretien de tombes pour dates commémoratives et fêtes religieuses.',
+  'Désherbage, arrangement floral et bilan photos avant/après.',
 ]
 
 const classiquePlans = [
   {
-    title: 'Nettoyage et desherbage 1 fois par an',
+    title: 'Nettoyage et désherbage 1 fois par an',
     text: 'Avant la Toussaint, avec fourniture de deux pots de chrysanthemums.',
     price: '700,00 DH',
   },
   {
-    title: 'Nettoyage et desherbage 2 fois par an',
-    text: 'Un passage avant la Toussaint et un second au debut de l ete.',
+    title: 'Nettoyage et désherbage 2 fois par an',
+    text: "Un passage avant la Toussaint et un second au début de l'été.",
     price: '900,00 DH',
   },
 ]
@@ -26,22 +26,22 @@ const classiquePlans = [
 const contractPlans = [
   {
     title: 'Contrat 10 ans - entretien annuel',
-    text: 'Un passage de nettoyage et fleurissement chaque annee.',
+    text: 'Un passage de nettoyage et fleurissement chaque année.',
     price: '4 500,00 DH',
   },
   {
     title: 'Contrat 30 ans - entretien annuel',
-    text: 'Un passage de nettoyage et fleurissement chaque annee.',
+    text: 'Un passage de nettoyage et fleurissement chaque année.',
     price: '13 480,00 DH',
   },
   {
     title: 'Contrat 10 ans - entretien biannuel',
-    text: 'Deux passages par an, selon calendrier defini.',
+    text: 'Deux passages par an, selon calendrier défini.',
     price: '6 310,00 DH',
   },
   {
     title: 'Contrat 30 ans - entretien biannuel',
-    text: 'Deux passages par an, selon calendrier defini.',
+    text: 'Deux passages par an, selon calendrier défini.',
     price: '18 920,00 DH',
   },
 ]
@@ -55,26 +55,26 @@ function NettoyageFleurissementPage() {
             <span className="mf-eyebrow">Nettoyage et fleurissement</span>
             <h1>Nettoyage et Fleurissement</h1>
             <p>
-              PFM vous accompagne et vous aide a rendre le plus bel hommage a votre proche en vous
+              PFM vous accompagne et vous aide à rendre le plus bel hommage à votre proche en vous
               proposant le service nettoyage et fleurissement.
             </p>
             <p>
-              Choisissez le nombre de passages: nous proposons un nettoyage complet de la tombe, un
-              desherbage, un arrangement floral, et un bilan photos avant/apres.
+              Choisissez le nombre de passages : nous proposons un nettoyage complet de la tombe, un
+              désherbage, un arrangement floral, et un bilan photos avant/après.
             </p>
             <div className="mf-hero-actions">
               <a href="tel:+212522491616" className="btn btn-primary">
                 Demander intervention
               </a>
               <Link to="/contact" className="btn btn-secondary">
-                Parler a un conseiller
+                Parler à un conseiller
               </Link>
             </div>
           </div>
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Nettoyage de sepulture PFM" />
+              <img src={imageHero} alt="Nettoyage de sépulture PFM" />
             </figure>
           </div>
         </div>
@@ -83,15 +83,15 @@ function NettoyageFleurissementPage() {
       <section className="section mf-rich-section">
         <div className="container mf-rich-wrap reveal-on-scroll">
           <span className="mf-eyebrow">Prestations</span>
-          <h2>Un service d entretien funeraire complet</h2>
+          <h2>Un service d'entretien funéraire complet</h2>
           <ul className="mf-rich-list">
             {servicesList.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <p>
-            Ce service permet aux familles, meme a distance, de confier l entretien des tombes a une
-            equipe professionnelle et attentive.
+            Ce service permet aux familles, même à distance, de confier l'entretien des tombes à une
+            équipe professionnelle et attentive.
           </p>
         </div>
       </section>
@@ -113,7 +113,7 @@ function NettoyageFleurissementPage() {
             ))}
           </div>
 
-          <h2>Contrat d entretien (10 ans a 30 ans)</h2>
+          <h2>Contrat d'entretien (10 ans à 30 ans)</h2>
           <div className="nf-plan-grid">
             {contractPlans.map((plan) => (
               <article key={plan.title} className="nf-plan-card">
@@ -132,14 +132,14 @@ function NettoyageFleurissementPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Equipe entretien PFM" />
-            <img src={imageCimetiere} alt="Entretien cimetiere PFM" />
+            <img src={imageTeam} alt="Équipe entretien PFM" />
+            <img src={imageCimetiere} alt="Entretien cimetière PFM" />
           </div>
           <div className="mf-banner-copy">
             <h2>Un hommage durable, propre et respectueux</h2>
             <p>
-              PFM vous accompagne pour maintenir les sepultures propres, fleuries et dignes tout au
-              long de l annee.
+              PFM vous accompagne pour maintenir les sépultures propres, fleuries et dignes tout au
+              long de l'année.
             </p>
             <div className="mf-hero-actions">
               <Link to="/#nos-agences" className="btn btn-secondary">

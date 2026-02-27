@@ -15,18 +15,18 @@ import n11 from '../assets/marbrerie-non-musulmanes/2-300x283.png'
 import n12 from '../assets/marbrerie-non-musulmanes/3-300x283.png'
 
 const products = [
-  { title: 'Mosaïque – 1 Pièce', image: n1 },
-  { title: 'Marbre Gris – 1 Pièce', image: n2 },
-  { title: 'Marbre Blanc – 1 Pièce', image: n3 },
-  { title: 'Mosaïque – 2 Pièces', image: n4 },
-  { title: 'Marbre Gris – 2 Pièces', image: n5 },
-  { title: 'Marbre Blanc – 2 Pièces', image: n6 },
-  { title: 'Mosaïque – 3 Pièces', image: n7 },
-  { title: 'Marbre Gris – 3 Pièces', image: n8 },
-  { title: 'Marbre Blanc – 3 Pièces', image: n9},
-  { title: 'Granite Gris – 1 Pièce', image: n10},
-  { title: 'Granite Gris – 2 Pièces', image: n11},
-  { title: 'Granite Gris – 3 Pièces', image: n12},
+  { title: 'Mosaïque - 1 Pièce', image: n1 },
+  { title: 'Marbre Gris - 1 Pièce', image: n2 },
+  { title: 'Marbre Blanc - 1 Pièce', image: n3 },
+  { title: 'Mosaïque - 2 Pièces', image: n4 },
+  { title: 'Marbre Gris - 2 Pièces', image: n5 },
+  { title: 'Marbre Blanc - 2 Pièces', image: n6 },
+  { title: 'Mosaïque - 3 Pièces', image: n7 },
+  { title: 'Marbre Gris - 3 Pièces', image: n8 },
+  { title: 'Marbre Blanc - 3 Pièces', image: n9 },
+  { title: 'Granite Gris - 1 Pièce', image: n10 },
+  { title: 'Granite Gris - 2 Pièces', image: n11 },
+  { title: 'Granite Gris - 3 Pièces', image: n12 },
 ]
 
 function MarbrerieNonMusulmanePage() {
@@ -42,17 +42,17 @@ function MarbrerieNonMusulmanePage() {
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
           <span>Catalogue PFM</span>
-          <h1>Marbrerie non Musulmanes</h1>
+          <h1>Marbrerie non musulmane</h1>
           <p>
-            Selection de monuments et de marbreries non musulmanes avec finitions soignee,
-            gravures personnalisees et pose professionnelle.
+            Sélection de monuments et de marbreries non musulmanes avec finitions soignées,
+            gravures personnalisées et pose professionnelle.
           </p>
         </div>
 
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
             Affichage de {products.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} resultats
+            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} résultats
           </p>
         </div>
 
@@ -101,7 +101,7 @@ function MarbrerieNonMusulmanePage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
@@ -113,4 +113,3 @@ function MarbrerieNonMusulmanePage() {
 }
 
 export default MarbrerieNonMusulmanePage
-

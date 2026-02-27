@@ -13,7 +13,7 @@ function BlogPage() {
     {
       title: 'Inhumation ou cremation : points a connaitre',
       summary:
-        'Comparer les aspects religieux, legaux, financiers et les delais pour prendre une decision claire.',
+        'Comparer les aspects religieux, legaux, financiers et les delais pour prendre une decision.',
     },
   ]
 

@@ -20,7 +20,7 @@ import img20Webp from '../assets/20.webp'
 const cityThemes = {
   agadir: {
     eyebrow: 'Agence Atlantique',
-    pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complete.',
+    pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complète.',
     highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dedie'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
     images: [img8, img12, img19],
@@ -28,7 +28,7 @@ const cityThemes = {
   },
   casablanca: {
     eyebrow: 'Agence Metropole',
-    pitch: 'Equipe senior basee a Casablanca pour les urgences, ceremonies et transferts immediats.',
+    pitch: 'Equipe senior basee a Casablanca pour les urgences, cérémonies et transferts immediats.',
     highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hopitaux et cliniques', 'Assistance familles locales et expatriees'],
     tones: ['#2f3854', '#4a7ab7', '#edf3ff'],
     images: [img10, img13, img18],
@@ -37,7 +37,7 @@ const cityThemes = {
   fes: {
     eyebrow: 'Agence Patrimoine',
     pitch: 'Service de proximite a Fes avec respect des rites et organisation personnalisee.',
-    highlights: ['Preparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
+    highlights: ['préparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
     images: [img11, img14, img20Webp],
     mood: 'Elegance sobre et traditions preservees',
@@ -45,26 +45,26 @@ const cityThemes = {
   laayoune: {
     eyebrow: 'Agence Saharienne',
     pitch: 'Couverture de Laayoune et des provinces du sud avec logistique longue distance.',
-    highlights: ['Gestion des formalites locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
+    highlights: ['Gestion des formalités locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
     images: [img15, img9, img17],
-    mood: 'Logistique etendue, precision terrain',
+    mood: 'Logistique etendue, précision terrain',
   },
   marrakech: {
     eyebrow: 'Agence Gueliz',
-    pitch: 'Accompagnement premium a Marrakech pour ceremonies, transfert et assistance administrative.',
-    highlights: ['Interlocuteur unique de la famille', 'Prise en charge ceremonie complete', 'Support administratif integral'],
+    pitch: 'Accompagnement premium a Marrakech pour cérémonies, transfert et assistance administrative.',
+    highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif integral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
     images: [img12, img16, img20],
-    mood: 'Presence humaine et coordination complete',
+    mood: 'Présence humaine et coordination complète',
   },
-  meknes: {
+  meknés: {
     eyebrow: 'Agence Centre',
-    pitch: 'Agence Meknes active 24h/24 pour intervention domicile, hopital et cimetiere.',
+    pitch: 'Agence Meknès active 24h/24 pour intervention domicile, hopital et cimetiere.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
     images: [img7, img13, img18],
-    mood: 'Disponibilite immediate et maitrise locale',
+    mood: 'Disponibilite immédiate et maitrise locale',
   },
   nador: {
     eyebrow: 'Agence Oriental Nord',
@@ -77,30 +77,30 @@ const cityThemes = {
   ouarzazate: {
     eyebrow: 'Agence Draa-Tafilalet',
     pitch: 'Solutions funeraires a Ouarzazate avec couverture des zones etendues de la region.',
-    highlights: ['Organisation logistique longue distance', 'Transport adapte a chaque destination', 'Suivi humain et transparent'],
+    highlights: ['Organisation logistique longue distance', 'Transport  adapté a chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
     images: [img15, img20, img8],
     mood: 'Grandes distances, meme exigence',
   },
   oujda: {
     eyebrow: 'Agence Oriental Est',
-    pitch: 'Agence Oujda pour assistance immediate, transfert et coordination des formalites.',
-    highlights: ['Prise en charge administrative complete', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
+    pitch: 'Agence Oujda pour assistance immédiate, transfert et coordination des formalites.',
+    highlights: ['Prise en charge administrative complète', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
     images: [img17, img19, img9],
     mood: 'Reactif, organise, accessible',
   },
   rabat: {
     eyebrow: 'Agence Capitale',
-    pitch: 'Intervention professionnelle a Rabat avec reactivite, discretion et suivi permanent.',
-    highlights: ['Assistance deces 24h/24', 'Gestion de ceremonie sur mesure', 'Relation continue avec la famille'],
+    pitch: 'Intervention professionnelle a Rabat avec réactivité, discretion et suivi permanent.',
+    highlights: ['Assistance deces 24h/24', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
     images: [img18, img10, img12],
     mood: 'Standard eleve et execution rigoureuse',
   },
   tanger: {
     eyebrow: 'Agence Detroit',
-    pitch: 'PFM Tanger accompagne les familles avec un dispositif adapte aux flux nationaux et internationaux.',
+    pitch: 'PFM Tanger accompagne les familles avec un dispositif  adapté aux flux nationaux et internationaux.',
     highlights: ['Coordination portuaire et aeroportuaire', 'Prise en charge rapide des urgences', 'Equipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
     images: [img20Webp, img16, img8],
@@ -108,8 +108,8 @@ const cityThemes = {
   },
   tetouan: {
     eyebrow: 'Agence Rif Mediterranee',
-    pitch: 'Service funeraires a Tetouan avec respect, precision et assistance humaine de proximite.',
-    highlights: ['Accompagnement des formalites officielles', 'Transport et inhumation organises', 'Suivi 7j/7'],
+    pitch: 'Service funeraires a Tetouan avec respect, précision et assistance humaine de proximite.',
+    highlights: ['Accompagnement des formalités officielles', 'Transport et inhumation organises', 'Suivi 7j/7'],
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
     images: [img14, img7, img13],
     mood: 'Accompagnement detaille et rassurant',
@@ -172,7 +172,7 @@ function CityAgencyPage() {
             </h1>
             <p className="city-hero-intro">
               {theme?.pitch ||
-                `Notre agence intervient rapidement a ${agency.label} avec une prise en charge complete des obseques.`}
+                `Notre agence intervient rapidement a ${agency.label} avec une prise en charge complète des obseques.`}
             </p>
             <p className="city-mood">{theme?.mood || 'Service humain et maitrise des formalites'}</p>
             <div className="city-hero-actions">
@@ -235,9 +235,9 @@ function CityAgencyPage() {
                 ))}
                 {!theme?.highlights?.length && (
                   <>
-                    <li>Organisation complete des obseques</li>
+                    <li>Organisation complète des obsèques </li>
                     <li>Assistance administrative et formalites</li>
-                    <li>Disponibilite immediate 7j/7</li>
+                    <li>Disponibilite immédiate 7j/7</li>
                   </>
                 )}
               </ul>
@@ -245,10 +245,10 @@ function CityAgencyPage() {
 
             <article className="city-card city-banner-card">
               <div>
-                <h3>Assistance creative et complete</h3>
+                <h3>Assistance creative et complète</h3>
                 <p>
-                  Notre equipe de {agency.label} coordonne formalites, transport, ceremonie et
-                  accompagnement familial avec un suivi clair a chaque etape.
+                  Notre equipe de {agency.label} coordonne formalites, transport, cérémonie et
+                  accompagnement familial avec un suivi a chaque etape.
                 </p>
               </div>
               <img src={collageA} alt={`Equipe assistance ${agency.label}`} />

@@ -87,7 +87,7 @@ function MarbrerieMusulmanePage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>

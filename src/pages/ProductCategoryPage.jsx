@@ -38,7 +38,7 @@
             <h3>Conseil personnalise</h3>
             <p>
               Nos conseillers vous orientent selon votre budget, vos attentes esthetiques
-              et les exigences du cimetiere ou de la ceremonie.
+              et les exigences du cimetiere ou de la cérémonie.
             </p>
           </div>
         </div>

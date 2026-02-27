@@ -11,17 +11,17 @@ function MarbrerieNonMusulmanePage() {
         <div className="container mf-hero reveal-on-scroll">
           <div className="mf-hero-copy">
             <span className="mf-eyebrow">Marbrerie non musulmane</span>
-            <h1>Marbrerie Non Musulmanes</h1>
+            <h1>Marbrerie Non Musulmane</h1>
             <p>
-              Le monument funeraire constitue un element essentiel pour preserver la memoire de vos
+              Le monument funéraire constitue un élément essentiel pour préserver la mémoire de vos
               proches.
             </p>
             <p>
-              A la PFM, nous vous proposons une large selection de monuments de haute qualite,
-              concus pour resister au temps.
+              À la PFM, nous vous proposons une large sélection de monuments de haute qualité,
+              conçus pour résister au temps.
             </p>
             <p>
-              Vous pouvez compter sur l expertise de nos conseillers funeraires pour vous accompagner
+              Vous pouvez compter sur l'expertise de nos conseillers funéraires pour vous accompagner
               dans ce choix important.
             </p>
             <div className="mf-hero-actions">
@@ -47,14 +47,14 @@ function MarbrerieNonMusulmanePage() {
 
       <section className="section mf-rich-section">
         <div className="container mf-rich-wrap reveal-on-scroll">
-          <span className="mf-eyebrow">Choix accompagne</span>
-          <h2>Un accompagnement clair pour un monument durable</h2>
+          <span className="mf-eyebrow">Choix accompagné</span>
+          <h2>Un accompagnement pour un monument durable</h2>
           <p>
-            Notre equipe vous guide dans la selection du monument, de la forme et de la finition, en
+            Notre équipe vous guide dans la sélection du monument, de la forme et de la finition, en
             respectant vos attentes familiales et votre budget.
           </p>
           <p>
-            Chaque projet est traite avec rigueur pour garantir une realisation soignee, elegante et
+            Chaque projet est traité avec rigueur pour garantir une réalisation soignée, élégante et
             durable.
           </p>
         </div>
@@ -67,10 +67,10 @@ function MarbrerieNonMusulmanePage() {
             <img src={imageWorkshop} alt="Atelier marbrerie PFM" />
           </div>
           <div className="mf-banner-copy">
-            <h2>PFM vous accompagne du conseil a la realisation</h2>
+            <h2>PFM vous accompagne du conseil à la réalisation</h2>
             <p>
-              De la premiere orientation jusqu a la pose finale, notre equipe reste a vos cotes pour
-              garantir qualite, clarte et respect.
+              De la première orientation jusqu&apos;à la pose finale, notre équipe reste à vos côtés pour
+              garantir qualité, clarté et respect.
             </p>
             <div className="mf-hero-actions">
               <Link to="/#nos-agences" className="btn btn-secondary">

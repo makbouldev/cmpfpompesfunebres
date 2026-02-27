@@ -26,29 +26,29 @@ import plaque22 from '../assets/plaques/Plaque-funeraire-Bronze-bouquet-epis-de-
 import plaque23 from '../assets/plaques/Plaque-funeraire-Bonze-nuage-300x249.png'
 
 const plaquesData = [
-  { title: 'PLAQUE FUNERAIRE BRONZE « FEUILLE FLEUR »', price: '980,00 DH', image: plaque1 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE COLOMBES »', price: '2.000,00 DH', image: plaque2 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « PENSEE FLEUR »', price: '1.780,00 DH', image: plaque3 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « DUO FLEURS »', price: '1.050,00 DH', image: plaque4 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE EPIS DE BLE »', price: '800,00 DH', image: plaque5 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « NUAGE FLEUR »', price: '1.250,00 DH', image: plaque6 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « PARCHEMIN FLEUR »', price: '980,00 DH', image: plaque7 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « MAIN COLOMBE »', price: '1.400,00 DH', image: plaque8 },
-  { title: 'PLAQUE FUNERAIRE « BRONZE OISEAU »', price: '1.650,00 DH', image: plaque9 },
-  { title: 'PLAQUE FUNERAIRE » BRONZE LIVRE FLEURI »', price: '1.180,00 DH', image: plaque10 },
-  { title: 'PLAQUE FUNERAIRE » BRONZE FEUILLE PAPILLON »', price: '980,00 DH', image: plaque11 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « CARRE EPIS DE BLE »', price: '550,00 DH', image: plaque12 },
-  { title: 'PLAQUE FUNERAIRE « COEUR SUR PRESENTOIRE »', price: '1.350,00 DH', image: plaque13 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « LIVRE AVEC FLEUR »', price: '1.600,00 DH', image: plaque14 },
-  { title: 'PLAQUE FUNERAIRE « BRONZE BOUQUET GARNI »', price: '1.250,00 DH', image: plaque15 },
-  { title: 'PLAQUE FUNERAIRE « BRONZE BOUQUET FLEURI »', price: '1.500,00 DH', image: plaque16 },
-  { title: 'PLAQUE FUNERAIRE « FEUILLE MUSIQUE »', price: '1.780,00 DH', image: plaque17 },
-  { title: 'PLAQUE FUNERAIRE « BRONZE COLOMBE »', price: '980,00 DH', image: plaque18 },
-  { title: 'PLAQUE FUNERAIRE « BRONZE FLEUR »', price: '790,00 DH', image: plaque19 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « NUAGE VIERGE MARIE »', price: '1.170,00 DH', image: plaque20 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « VIERGE MARIE »', price: '900,00 DH', image: plaque21 },
-  { title: 'PLAQUE FUNERAIRE BRONZE « BOUQUET EPIS DE BLE »', price: '800,00 DH', image: plaque22 },
-  { title: 'PLAQUE FUNERAIRE BONZE « NUAGE »', price: '1.480,00 DH', image: plaque23 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « FEUILLE FLEUR »', price: '980,00 DH', image: plaque1 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « LIVRE COLOMBES »', price: '2.000,00 DH', image: plaque2 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « PENSÉE FLEUR »', price: '1.780,00 DH', image: plaque3 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « DUO FLEURS »', price: '1.050,00 DH', image: plaque4 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « LIVRE ÉPIS DE BLÉ »', price: '800,00 DH', image: plaque5 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « NUAGE FLEUR »', price: '1.250,00 DH', image: plaque6 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « PARCHEMIN FLEUR »', price: '980,00 DH', image: plaque7 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « MAIN COLOMBE »', price: '1.400,00 DH', image: plaque8 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE OISEAU »', price: '1.650,00 DH', image: plaque9 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE LIVRE FLEURI »', price: '1.180,00 DH', image: plaque10 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE FEUILLE PAPILLON »', price: '980,00 DH', image: plaque11 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « CARRÉ ÉPIS DE BLÉ »', price: '550,00 DH', image: plaque12 },
+  { title: 'PLAQUE FUNÉRAIRE « CŒUR SUR PRÉSENTOIRE »', price: '1.350,00 DH', image: plaque13 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « LIVRE AVEC FLEUR »', price: '1.600,00 DH', image: plaque14 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE BOUQUET GARNI »', price: '1.250,00 DH', image: plaque15 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE BOUQUET FLEURI »', price: '1.500,00 DH', image: plaque16 },
+  { title: 'PLAQUE FUNÉRAIRE « FEUILLE MUSIQUE »', price: '1.780,00 DH', image: plaque17 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE COLOMBE »', price: '980,00 DH', image: plaque18 },
+  { title: 'PLAQUE FUNÉRAIRE « BRONZE FLEUR »', price: '790,00 DH', image: plaque19 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « NUAGE VIERGE MARIE »', price: '1.170,00 DH', image: plaque20 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « VIERGE MARIE »', price: '900,00 DH', image: plaque21 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « BOUQUET ÉPIS DE BLÉ »', price: '800,00 DH', image: plaque22 },
+  { title: 'PLAQUE FUNÉRAIRE BRONZE « NUAGE »', price: '1.480,00 DH', image: plaque23 },
 ]
 
 function PlaquesPage() {
@@ -65,14 +65,14 @@ function PlaquesPage() {
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
           <span>Catalogue PFM</span>
-          <h1>Plaques funeraires</h1>
-          <p>Selection de plaques funeraires en bronze et granit avec gravures et finitions variees.</p>
+          <h1>Plaques funéraires</h1>
+          <p>Sélection de plaques funéraires en bronze et granit avec gravures et finitions variées.</p>
         </div>
 
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
             Affichage de {plaquesData.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visiblePlaques.length, plaquesData.length)} sur {plaquesData.length} resultats
+            {Math.min(startIndex + visiblePlaques.length, plaquesData.length)} sur {plaquesData.length} résultats
           </p>
         </div>
 
@@ -96,7 +96,7 @@ function PlaquesPage() {
               ))}
             </div>
 
-            <div className="plaques-pagination reveal-on-scroll" aria-label="Pagination plaques funeraires">
+            <div className="plaques-pagination reveal-on-scroll" aria-label="Pagination plaques funéraires">
               {Array.from({ length: totalPages }, (_, index) => {
                 const pageNumber = index + 1
                 return (
@@ -122,7 +122,7 @@ function PlaquesPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <a className="plaques-side-btn" href="/contact">Demander un devis</a>
@@ -134,5 +134,3 @@ function PlaquesPage() {
 }
 
 export default PlaquesPage
-
-

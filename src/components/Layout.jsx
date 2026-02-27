@@ -6,8 +6,8 @@ const groupedLinks = [
     label: 'Nos services',
     items: [
       { to: '/service/services-entreprises', label: 'Services aux Entreprises', featured: true },
-      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Fun\u00E8bres Musulmanes' },
-      { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes Fun\u00E8bres Non Musulmanes' },
+      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Funébres Musulmanes' },
+      { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes Funébres Non Musulmanes' },
       { to: '/service/fleurs', label: 'Fleurs' },
       { to: '/service/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
       { to: '/service/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
@@ -33,7 +33,7 @@ const groupedLinks = [
       { to: '/villes/fes', label: 'Fes' },
       { to: '/villes/laayoune', label: 'Laayoune' },
       { to: '/villes/marrakech', label: 'Marrakech' },
-      { to: '/villes/meknes', label: 'Meknes' },
+      { to: '/villes/meknes', label: 'Meknès' },
       { to: '/villes/nador', label: 'Nador' },
       { to: '/villes/ouarzazate', label: 'Ouarzazate' },
       { to: '/villes/oujda', label: 'Oujda' },
@@ -194,7 +194,7 @@ function Layout({ children }) {
 
                 <div className="brand-block">
                   <span className="brand-name">PFM</span>
-                  <span className="brand-sub">{'Pompes fun\u00E9bres Marocaine'}</span>
+                  <span className="brand-sub">{'Pompes funébres Marocaine'}</span>
                 </div>
               </Link>
             </div>
@@ -382,8 +382,8 @@ function Layout({ children }) {
             <div className="footer-topline-brand">
 
               <div>
-                <h3>PFM Assistance</h3>
-                <p>Service funeraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
+                <h3>PFM</h3>
+                <p>Service funéraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
               </div>
             </div>
             <div className="footer-topline-actions">
@@ -396,8 +396,7 @@ function Layout({ children }) {
             <div className="footer-card footer-card-brand">
               <h4>A propos</h4>
               <p>
-                PFM accompagne chaque famille avec respect des rites, qualite de service et organisation
-                complete.
+                PFM accompagne chaque famille avec respect des rites, qualité de service et organisation complète
               </p>
             </div>
 
@@ -454,8 +453,8 @@ function Layout({ children }) {
           </div>
 
           <div className="footer-bottom-note">
-            <span>PFM Assistance</span>
-            <span>Respect - Discretion - Disponibilite immediate</span>
+            <span>PFM</span>
+            <span>Respect - Discretion - Disponibilite immédiate</span>
           </div>
         </div>
       </footer>

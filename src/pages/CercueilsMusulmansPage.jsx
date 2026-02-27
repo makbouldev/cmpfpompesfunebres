@@ -46,15 +46,15 @@ function CercueilsMusulmansPage() {
           <span>Catalogue PFM</span>
           <h1>Cercueils musulmans</h1>
           <p>
-            Une gamme de cercueils musulmans adaptes aux exigences du transport, au respect des rites
-            et a la qualite de presentation.
+            Une gamme de cercueils musulmans adaptés aux exigences du transport, au respect des rites
+            et à la qualité de présentation.
           </p>
         </div>
 
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
             Affichage de {products.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} resultats
+            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} résultats
           </p>
         </div>
 
@@ -103,7 +103,7 @@ function CercueilsMusulmansPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
@@ -115,5 +115,3 @@ function CercueilsMusulmansPage() {
 }
 
 export default CercueilsMusulmansPage
-
-

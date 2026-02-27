@@ -33,36 +33,36 @@ import f29 from '../assets/fleurs/COM-02-300x179.jpg.webp'
 import f30 from '../assets/fleurs/Amour-eternel-300x263.jpg.webp'
 
 const products = [
-  { title: 'MEMOIRE', image: f01 },
+  { title: 'MÉMOIRE', image: f01 },
   { title: 'TENDREMENT', image: f02 },
-  { title: 'AMITIES SINCERES', image: f03 },
-  { title: 'HONORE', image: f04 },
+  { title: 'AMITIÉS SINCÈRES', image: f03 },
+  { title: 'HONORÉ', image: f04 },
   { title: 'TEMPS INFINI', image: f05 },
   { title: 'COURONNE DE RESPECT', image: f06 },
-  { title: 'ADIEU A JAMAIS', image: f07 },
-  { title: 'ADIEU ETERNEL', image: f08 },
-  { title: 'SERENITE', image: f09 },
-  { title: 'FLEUR DE MEMOIRE', image: f10 },
-  { title: 'COURONNE DE LUMIERE', image: f11 },
-  { title: 'ADIEU A JAMAIS', image: f12 },
-  { title: 'RECONFORT ETERNEL', image: f13 },
-  { title: 'COUSSIN DE MEMOIRE', image: f14 },
-  { title: 'PAIX ETERNELLE', image: f15 },
+  { title: 'ADIEU À JAMAIS', image: f07 },
+  { title: 'ADIEU ÉTERNEL', image: f08 },
+  { title: 'SÉRÉNITÉ', image: f09 },
+  { title: 'FLEUR DE MÉMOIRE', image: f10 },
+  { title: 'COURONNE DE LUMIÈRE', image: f11 },
+  { title: 'ADIEU À JAMAIS', image: f12 },
+  { title: 'RÉCONFORT ÉTERNEL', image: f13 },
+  { title: 'COUSSIN DE MÉMOIRE', image: f14 },
+  { title: 'PAIX ÉTERNELLE', image: f15 },
   { title: 'POUR TOUJOURS', image: f16 },
-  { title: 'PAIX INTERIEURE', image: f17 },
+  { title: 'PAIX INTÉRIEURE', image: f17 },
   { title: 'COURONNE DE SYMPATHIE', image: f18 },
   { title: 'SOUVENIR DOUX', image: f19 },
   { title: 'FLEUR DE GRATITUDE', image: f20 },
-  { title: 'BOUQUET DE CONDOLEANCE', image: f21 },
-  { title: 'BOUQUET DE LUMIERE', image: f22 },
+  { title: 'BOUQUET DE CONDOLÉANCE', image: f21 },
+  { title: 'BOUQUET DE LUMIÈRE', image: f22 },
   { title: 'FLEUR DE GRATITUDE', image: f23 },
   { title: 'DOUCE COMPASSION', image: f24 },
   { title: 'TEMPS INFINI', image: f25 },
-  { title: 'FLEUR DE PRIERE', image: f26 },
+  { title: 'FLEUR DE PRIÈRE', image: f26 },
   { title: "CROIX D'AMOUR", image: f27 },
   { title: 'BEL HOMMAGE', image: f28 },
-  { title: 'DELICATE PENSEE', image: f29 },
-  { title: 'AMOUR ETERNEL', image: f30 },
+  { title: 'DÉLICATE PENSÉE', image: f29 },
+  { title: 'AMOUR ÉTERNEL', image: f30 },
 ]
 
 function FleursPage() {
@@ -78,9 +78,9 @@ function FleursPage() {
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
           <span>Catalogue PFM</span>
-          <h1>Fleurs funeraires</h1>
+          <h1>Fleurs funéraires</h1>
           <p>
-            Une selection de compositions florales pour obseques, hommage et souvenir,
+            Une sélection de compositions florales pour obsèques, hommage et souvenir,
             avec livraison rapide et personnalisation selon vos souhaits.
           </p>
         </div>
@@ -88,7 +88,7 @@ function FleursPage() {
         <div className="plaques-toolbar reveal-on-scroll">
           <p>
             Affichage de {products.length === 0 ? 0 : startIndex + 1}-
-            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} resultats
+            {Math.min(startIndex + visibleProducts.length, products.length)} sur {products.length} résultats
           </p>
         </div>
 
@@ -111,7 +111,7 @@ function FleursPage() {
               ))}
             </div>
 
-            <div className="plaques-pagination reveal-on-scroll" aria-label="Pagination fleurs funeraires">
+            <div className="plaques-pagination reveal-on-scroll" aria-label="Pagination fleurs funéraires">
               {Array.from({ length: totalPages }, (_, index) => {
                 const pageNumber = index + 1
                 return (
@@ -137,7 +137,7 @@ function FleursPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition claire selon votre besoin et votre budget.</p>
+            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
           </aside>

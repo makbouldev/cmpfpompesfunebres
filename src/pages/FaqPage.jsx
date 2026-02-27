@@ -2,24 +2,24 @@
 
 const faqItems = [
   {
-    question: 'Quel est le delai pour organiser les obseques ?',
+    question: 'Quel est le delai pour organiser les obsèques ?',
     answer:
       'Generalement entre 24h et 6 jours selon les obligations legales, administratives et familiales.',
   },
   {
-    question: 'Pouvez-vous intervenir immediatement en cas d urgence ?',
+    question: 'Pouvez-vous intervenir immédiatement en cas d urgence ?',
     answer:
       'Oui, nos equipes sont disponibles 24h/24 et 7j/7 pour lancer la prise en charge des le premier appel.',
   },
   {
-    question: 'Organisez-vous les obseques musulmanes et non musulmanes ?',
+    question: 'Organisez-vous les obsèques musulmanes et non musulmanes ?',
     answer:
       'Oui, nous accompagnons les familles pour les rites musulmans et non musulmans dans le respect des volontes.',
   },
   {
-    question: 'Prenez-vous en charge les formalites administratives ?',
+    question: 'Prenez-vous en charge les formalités administratives ?',
     answer:
-      'Oui, nous gerons les declarations, autorisations et documents necessaires avec un suivi clair.',
+      'Oui, nous gérons les declarations, autorisations et documents necessaires avec un suivi detaille.',
   },
   {
     question: 'Proposez-vous des fleurs et services de marbrerie ?',
@@ -34,12 +34,12 @@ const faqItems = [
   {
     question: 'Peut-on vous contacter par WhatsApp ?',
     answer:
-      'Oui, vous pouvez nous joindre rapidement par WhatsApp pour une orientation immediate.',
+      'Oui, vous pouvez nous joindre rapidement par WhatsApp pour une orientation immédiate.',
   },
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis clair et detaille rapidement.',
+      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis detaille rapidement.',
   },
 ]
 
