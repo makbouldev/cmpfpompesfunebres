@@ -193,7 +193,7 @@ function Layout({ children }) {
               <Link to="/" className="brand-home-link" onClick={closeMenu}>
 
                 <div className="brand-block">
-                  <span className="brand-name">PFM</span>
+                  <span className="brand-name">pfm </span>
                   <span className="brand-sub">{'Pompes funébres Marocaine'}</span>
                 </div>
               </Link>
@@ -382,7 +382,7 @@ function Layout({ children }) {
             <div className="footer-topline-brand">
 
               <div>
-                <h3>PFM</h3>
+                <h3>pfm </h3>
                 <p>Service funéraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
               </div>
             </div>
@@ -396,7 +396,7 @@ function Layout({ children }) {
             <div className="footer-card footer-card-brand">
               <h4>A propos</h4>
               <p>
-                PFM accompagne chaque famille avec respect des rites, qualité de service et organisation complète
+                pfm accompagne chaque famille avec respect des rites, qualité de service et organisation complète
               </p>
             </div>
 
@@ -453,7 +453,7 @@ function Layout({ children }) {
           </div>
 
           <div className="footer-bottom-note">
-            <span>PFM</span>
+            <span>pfm </span>
             <span>Respect - Discretion - Disponibilite immédiate</span>
           </div>
         </div>

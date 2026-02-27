@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez PFM par telephone, WhatsApp ou formulaire: nous vous envoyons un devis detaille rapidement.',
+      'Contactez pfm par telephone, WhatsApp ou formulaire: nous vous envoyons un devis detaille rapidement.',
   },
 ]
 

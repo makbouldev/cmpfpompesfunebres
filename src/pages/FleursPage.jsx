@@ -40,19 +40,19 @@ function FleursPage() {
       <section className="section mf-hero-section">
         <div className="container mf-hero reveal-on-scroll">
           <div className="mf-hero-copy">
-            <span className="mf-eyebrow">PFM Fleurs</span>
+            <span className="mf-eyebrow">pfm Fleurs</span>
             <h1>Fleurs</h1>
             <p>
               Une large gamme florale, livraison totalement gratuite, ruban avec inscription
               personnalisée.
             </p>
             <p>
-              Pour répondre au souhait des familles et de ses partenaires, la PFM a créé PFM
+              Pour répondre au souhait des familles et de ses partenaires, la pfm a créé pfm 
               FLEURS avec un service professionnel, humain et soigné.
             </p>
             <p>
               Depuis la centralisation des commandes jusqu&apos;au transport des fleurs à toutes les
-              étapes du convoi funéraire, PFM traduit avec élégance l&apos;émotion, le souvenir et
+              étapes du convoi funéraire, pfm traduit avec élégance l&apos;émotion, le souvenir et
               l&apos;hommage rendu au défunt.
             </p>
             <div className="mf-hero-actions">
@@ -67,10 +67,10 @@ function FleursPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={fleurImage1} alt="Service floral PFM" />
+              <img src={fleurImage1} alt="Service floral pfm " />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={fleurImage2} alt="Compositions florales PFM" />
+              <img src={fleurImage2} alt="Compositions florales pfm " />
             </figure>
           </div>
         </div>
@@ -81,12 +81,12 @@ function FleursPage() {
           <span className="mf-eyebrow">Service floral</span>
           <h2>Fleurs naturelles, artificielles et plantes</h2>
           <p>
-            Sachant que les fleurs sont un élément essentiel du souvenir et de l&apos;hommage, PFM
+            Sachant que les fleurs sont un élément essentiel du souvenir et de l&apos;hommage, pfm 
             FLEURS met à disposition une gamme variée pour accompagner les moments les plus marquants
             des obsèques et du recueillement.
           </p>
           <p>
-            PFM  dispose de magasins pour la confection et la livraison et offre aux familles
+            pfm  dispose de magasins pour la confection et la livraison et offre aux familles
             la possibilité de composer les modèles et les couleurs de leur choix.
           </p>
           <ul className="mf-rich-list">
@@ -114,7 +114,7 @@ function FleursPage() {
             ))}
           </ul>
           <p>
-            PFM peut également fournir des compositions en fleurs artificielles, avec une
+            pfm peut également fournir des compositions en fleurs artificielles, avec une
             gamme variée disponible et prête à porter pour tombes, sépultures et espaces de
             recueillement.
           </p>
@@ -149,8 +149,8 @@ function FleursPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={fleurImage5} alt="Équipe PFM " />
-            <img src={fleurImage6} alt="Livraison PFM " />
+            <img src={fleurImage5} alt="Équipe pfm " />
+            <img src={fleurImage6} alt="Livraison pfm " />
           </div>
           <div className="mf-banner-copy">
             <h2> un service floral complet</h2>

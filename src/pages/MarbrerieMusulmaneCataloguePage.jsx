@@ -25,7 +25,7 @@ function MarbrerieMusulmanePage() {
     <section className="section plaques-section marbrerie-musulmane-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
-          <span>Catalogue PFM</span>
+          <span>Catalogue pfm </span>
           <h1>Marbrerie Musulmanes</h1>
           <p>
             Selection de monuments et de marbreries musulmanes avec finitions soignes,
@@ -87,7 +87,7 @@ function MarbrerieMusulmanePage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
+            <p>Contactez pfm pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>

@@ -52,7 +52,7 @@ const pillars = [
 const aboutShowcasePoints = [
   {
     title: 'Présence nationale continue',
-    text: 'PFM intervient dans les principales villes du Maroc avec une organisation stable.',
+    text: 'pfm intervient dans les principales villes du Maroc avec une organisation stable.',
   },
   {
     title: 'Experience historique',
@@ -69,9 +69,9 @@ const aboutShowcasePoints = [
 ]
 
 const aboutShowcaseCards = [
-  { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps PFM' },
-  { title: 'Intervention', image: image19, alt: 'Intervention terrain PFM' },
-  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles PFM' },
+  { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps pfm ' },
+  { title: 'Intervention', image: image19, alt: 'Intervention terrain pfm ' },
+  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles pfm ' },
 ]
 
 function AboutPage() {
@@ -81,20 +81,20 @@ function AboutPage() {
         <div className="container about-hero reveal-on-scroll">
           <div className="about-hero-copy">
             <span className="about-eyebrow">Qui sommes-nous</span>
-            <h1>PFM, référence africaine des services funéraires professionnels</h1>
+            <h1>pfm , référence africaine des services funéraires professionnels</h1>
             <p>
-              PFM est le premier organisme en Afrique spécialisé dans les services funéraires.
+              pfm est le premier organisme en Afrique spécialisé dans les services funéraires.
               Forte de 75 années d'expérience, elle occupe une position éminente grâce à la
               diversité et à la qualité de ses prestations.
             </p>
             <p>
-              Initialement active dans le secteur funéraire, PFM a progressivement élargi son
+              Initialement active dans le secteur funéraire, pfm a progressivement élargi son
               champ d'action avec de nouveaux créneaux de services au service des familles et des
               partenaires.
             </p>
             <div className="about-hero-actions">
               <Link to="/contact" className="btn btn-primary">
-                Contacter PFM
+                Contacter pfm 
               </Link>
               <Link to="/#nos-agences" className="btn btn-secondary about-btn-agences">
                 Nos agences
@@ -104,7 +104,7 @@ function AboutPage() {
 
           <div className="about-hero-media">
             <div className="about-hero-image-single">
-              <img src={image20} alt="Équipe PFM" />
+              <img src={image20} alt="Équipe pfm " />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ function AboutPage() {
         <div className="container about-story-grid reveal-on-scroll">
           <div className="about-story-media-wrap">
             <div className="about-story-media about-story-media-main">
-              <img src={image18} alt="Transport funéraire PFM" />
+              <img src={image18} alt="Transport funéraire pfm " />
             </div>
           </div>
 
@@ -122,13 +122,13 @@ function AboutPage() {
             <span className="about-eyebrow">Notre évolution</span>
             <h2>75 ans d'expérience au service des familles</h2>
             <p>
-              La force de PFM repose sur une méthode : disponibilité permanente, coordination
+              La force de pfm repose sur une méthode : disponibilité permanente, coordination
               rigoureuse et accompagnement complet. Notre organisation permet une prise en charge
               rapide, humaine et parfaitement structurée.
             </p>
             <p>
               Nous adaptons chaque intervention aux attentes des familles, aux obligations
-              administratives et aux exigences de qualité qui font la réputation de PFM.
+              administratives et aux exigences de qualité qui font la réputation de pfm .
             </p>
             <div className="about-story-stats">
               <article>
@@ -151,7 +151,7 @@ function AboutPage() {
       <EditorialShowcase
         className="editorial-showcase-about"
         heading="Rapatriement, intervention, accompagnement :"
-        accent="la signature PFM"
+        accent="la signature pfm "
         points={aboutShowcasePoints}
         cards={aboutShowcaseCards}
       />
@@ -178,14 +178,14 @@ function AboutPage() {
       <section className="section about-pillars-section">
         <div className="container about-pillars-wrap reveal-on-scroll">
           <div className="about-pillars-media">
-            <img src={image7} alt="Qualité de service PFM" />
+            <img src={image7} alt="Qualité de service pfm " />
             <div className="about-pillars-media-overlay">
-              <img src={image8} alt="Équipe terrain PFM" />
+              <img src={image8} alt="Équipe terrain pfm " />
             </div>
           </div>
 
           <div className="about-pillars-copy">
-            <span className="about-eyebrow">L'engagement PFM</span>
+            <span className="about-eyebrow">L'engagement pfm </span>
             <h2>Une méthode exigeante, fiable et rassurante</h2>
             <div className="about-pillars-grid">
               {pillars.map((item) => (

@@ -55,7 +55,7 @@ function NettoyageFleurissementPage() {
             <span className="mf-eyebrow">Nettoyage et fleurissement</span>
             <h1>Nettoyage et Fleurissement</h1>
             <p>
-              PFM vous accompagne et vous aide à rendre le plus bel hommage à votre proche en vous
+              pfm vous accompagne et vous aide à rendre le plus bel hommage à votre proche en vous
               proposant le service nettoyage et fleurissement.
             </p>
             <p>
@@ -74,7 +74,7 @@ function NettoyageFleurissementPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Nettoyage de sépulture PFM" />
+              <img src={imageHero} alt="Nettoyage de sépulture pfm " />
             </figure>
           </div>
         </div>
@@ -132,13 +132,13 @@ function NettoyageFleurissementPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Équipe entretien PFM" />
-            <img src={imageCimetiere} alt="Entretien cimetière PFM" />
+            <img src={imageTeam} alt="Équipe entretien pfm " />
+            <img src={imageCimetiere} alt="Entretien cimetière pfm " />
           </div>
           <div className="mf-banner-copy">
             <h2>Un hommage durable, propre et respectueux</h2>
             <p>
-              PFM vous accompagne pour maintenir les sépultures propres, fleuries et dignes tout au
+              pfm vous accompagne pour maintenir les sépultures propres, fleuries et dignes tout au
               long de l'année.
             </p>
             <div className="mf-hero-actions">

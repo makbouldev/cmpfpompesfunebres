@@ -34,7 +34,7 @@ function NonMuslimFuneralPage() {
             <span className="mf-eyebrow">Pompes Funèbres non musulmanes</span>
             <h1>Pompes Funèbres Non Musulmanes</h1>
             <p>
-              Dans le domaine des pompes funèbres non musulmanes, PFM propose une prise en charge
+              Dans le domaine des pompes funèbres non musulmanes, pfm propose une prise en charge
               complète, rassurante et professionnelle.
             </p>
             <p>
@@ -53,10 +53,10 @@ function NonMuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres non musulmanes PFM" />
+              <img src={imageHero} alt="Pompes Funèbres non musulmanes pfm " />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageRite} alt="Cérémonie non musulmane PFM" />
+              <img src={imageRite} alt="Cérémonie non musulmane pfm " />
             </figure>
           </div>
         </div>
@@ -84,7 +84,7 @@ function NonMuslimFuneralPage() {
           <span className="mf-eyebrow">Rapatriement de corps</span>
           <h2>Une assistance essentielle et structurée</h2>
           <p>
-            En cas de décès à l&apos;étranger, PFM organise le rapatriement avec méthode, rigueur
+            En cas de décès à l&apos;étranger, pfm organise le rapatriement avec méthode, rigueur
             et coordination internationale.
           </p>
           <ul className="mf-rich-list">
@@ -104,13 +104,13 @@ function NonMuslimFuneralPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Équipe PFM non musulmane" />
+            <img src={imageTeam} alt="Équipe pfm non musulmane" />
             <img src={imageTransport} alt="Transport funéraire non musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>PFM, partenaire fiable pour les Pompes Funèbres Non Musulmanes</h2>
+            <h2>pfm , partenaire fiable pour les Pompes Funèbres Non Musulmanes</h2>
             <p>
-              Avec une présence nationale et une organisation rigoureuse, PFM accompagne les familles
+              Avec une présence nationale et une organisation rigoureuse, pfm accompagne les familles
               avec réactivité, clarté et respect.
             </p>
             <div className="mf-hero-actions">

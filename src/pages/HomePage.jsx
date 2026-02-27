@@ -10,7 +10,7 @@ import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
 import imageTransportMusulman from '../assets/images/10.jpeg'
 import imageInterieurCorbillard from '../assets/images/11.jpg'
-import imageFlottePFM from '../assets/images/20.webp'
+import imageFlottepfm  from '../assets/images/20.webp'
 import imageFleursConvoi from '../assets/images/13.jpg'
 import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import imageTransportCercueil from '../assets/images/18.jpg'
@@ -78,7 +78,7 @@ const servicesHighlights = [
   {
     title: 'Intervention rapide 24h/24',
     text: "Nous répondons vite à votre appel et nous lançons l'intervention sans attendre.",
-    image: imageFlottePFM,
+    image: imageFlottepfm ,
     to: '/assistance',
   },
   {
@@ -88,7 +88,7 @@ const servicesHighlights = [
     to: '/pompes-funebres/musulmanes',
   },
   {
-    title: 'Prix clairs et devis simple',
+    title: 'Prix compétitifs et devis simple',
     text: 'Vous recevez un devis détaillé, avec des explications faciles à comprendre.',
     image: imageEquipeB,
     to: '/contact',
@@ -127,7 +127,7 @@ const servicesOverview = [
 const careProcessSteps = [
   {
     title: '1. Appel et orientation immédiate',
-    text: "Un conseiller PFM répond tout de suite, évalue l'urgence et déclenche la prise en charge 24h/24.",
+    text: "Un conseiller pfm répond tout de suite, évalue l'urgence et déclenche la prise en charge 24h/24.",
   },
   {
     title: '2. Dossier et coordination administrative',
@@ -146,7 +146,7 @@ const careProcessSteps = [
 const repatriementPillars = [
   {
     title: 'Équipe de coordination disponible 24h/24',
-    text: 'Back-office PFM mobilisé en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
+    text: 'Back-office pfm mobilisé en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
     image: imageEquipeA,
   },
   {
@@ -177,7 +177,7 @@ const clientReviews = [
   {
     name: 'Soukaina',
     city: 'Marrakech',
-    text: 'Un grand merci à PFM pour la qualité du suivi et le respect complet de nos volontés.',
+    text: 'Un grand merci à pfm pour la qualité du suivi et le respect complet de nos volontés.',
     avatar: 'https://i.pravatar.cc/160?img=44',
   },
   {
@@ -195,7 +195,7 @@ const clientReviews = [
   {
     name: 'Mehdi',
     city: 'Fès',
-    text: 'PFM a géré toutes les formalités avec clarté et respect. Équipe très disponible.',
+    text: 'pfm a géré toutes les formalités avec clarté et respect. Équipe très disponible.',
     avatar: 'https://i.pravatar.cc/160?img=8',
   },
 ]
@@ -238,7 +238,7 @@ const homeFaqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez PFM par téléphone, WhatsApp ou formulaire: nous vous envoyons un devis détaillé rapidement.',
+      'Contactez pfm par téléphone, WhatsApp ou formulaire: nous vous envoyons un devis détaillé rapidement.',
   },
 ]
 
@@ -255,7 +255,7 @@ const homeGuideTabs = [
       'Communication avec la famille à chaque phase.',
     ],
     to: '/contact',
-    cta: 'Contact PFM',
+    cta: 'Contact pfm ',
     image: imageEquipeA,
   },
   {
@@ -270,7 +270,7 @@ const homeGuideTabs = [
       'Préparation logistique complète avant cérémonie et inhumation.',
     ],
     to: '/contact',
-    cta: 'Contact PFM',
+    cta: 'Contact pfm ',
     image: imageTransportCercueil,
   },
   {
@@ -285,7 +285,7 @@ const homeGuideTabs = [
       'Interface unique entre famille, administration et opérateurs terrain.',
     ],
     to: '/contact',
-    cta: 'Contact PFM',
+    cta: 'Contact pfm ',
     image: imageEquipeB,
   },
 ]
@@ -293,10 +293,10 @@ const homeGuideTabs = [
 const homeExpertiseTabs = [
   {
     key: 'company',
-    label: 'À propos PFM',
+    label: 'À propos pfm ',
     title: 'Une entreprise structurée pour accompagner chaque famille',
     intro:
-      "PFM s'appuie sur une organisation structurée, des équipes formées et un pilotage terrain permanent pour garantir un service fiable.",
+      "pfm s'appuie sur une organisation structurée, des équipes formées et un pilotage terrain permanent pour garantir un service fiable.",
     points: [
       'Présence nationale avec coordination locale dans les principales villes.',
       'Un seul interlocuteur dédié du premier appel jusqu’à la clôture du dossier.',
@@ -326,7 +326,7 @@ const homeExpertiseTabs = [
     label: 'Pompes Funèbres non Musulmanes',
     title: 'Cérémonies non musulmanes organisées avec dignité et précision',
     intro:
-      'PFM organise les cérémonies civiles et confessionnelles non musulmanes avec une préparation détaillée à chaque étape.',
+      'pfm organise les cérémonies civiles et confessionnelles non musulmanes avec une préparation détaillée à chaque étape.',
     points: [
       'Coordination complète de la cérémonie selon les volontés familiales.',
       'Logistique, transport et formalités prises en charge.',
@@ -373,7 +373,7 @@ function HomePage() {
     ? `212${selectedAgencyMobileDigits.slice(1)}`
     : selectedAgencyMobileDigits
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
-    `Bonjour PFM, je souhaite une assistance à ${selectedAgency.label}.`,
+    `Bonjour pfm , je souhaite une assistance à ${selectedAgency.label}.`,
   )}`
   const renderServiceIcon = (icon) => {
     if (icon === 'pulse') {
@@ -497,7 +497,7 @@ function HomePage() {
                 <span>Nos services</span>
                 <h2>Un accompagnement funéraire, humain et professionnel</h2>
                 <p>
-                  PFM propose une prise en charge complète pour soulager les familles, avec une organisation rapide et une qualité de service constante.
+                  pfm propose une prise en charge complète pour soulager les familles, avec une organisation rapide et une qualité de service constante.
                 </p>
                 <p>
                   Notre équipe coordonne chaque intervention avec rigueur, discrétion et réactivité pour garantir un service fiable à chaque famille.
@@ -517,7 +517,7 @@ function HomePage() {
 
             <div className="home-services-intro-images reveal-on-scroll">
               <div className="home-services-intro-image home-services-intro-image-main reveal-on-scroll">
-                <img src={imagePreparationEquipe} alt="Services funéraires PFM" />
+                <img src={imagePreparationEquipe} alt="Services funéraires pfm " />
               </div>
             </div>
           </div>
@@ -527,7 +527,7 @@ function HomePage() {
       <section className="section home-process-section">
         <div className="container home-process-wrap reveal-on-scroll">
           <div className="home-process-head">
-            <span>Parcours PFM</span>
+            <span>Parcours pfm </span>
             <h2>Une méthode rapide et rassurante pour chaque famille</h2>
           </div>
           <div className="home-process-stage">
@@ -559,7 +559,7 @@ function HomePage() {
         <div className="container home-guide-wrap reveal-on-scroll">
           <div className="home-guide-head">
             <h2>
-              Les coulisses PFM: <em>précision, réactivité et contrôle terrain</em>
+              Les coulisses pfm : <em>précision, réactivité et contrôle terrain</em>
             </h2>
             <p>
               Coordination interne, transport géolocalisé, gestion de l’assurance et suivi du dossier :
@@ -609,7 +609,7 @@ function HomePage() {
             <div className="home-creative-content reveal-on-scroll">
               <h2>Rapatriement de corps et accompagnement des familles</h2>
               <p className="home-creative-lead">
-                PFM prend en charge exclusivement le rapatriement de corps : formalités consulaires,
+                pfm prend en charge exclusivement le rapatriement de corps : formalités consulaires,
                 autorisations administratives, coordination aéroportuaire et transfert du défunt vers
                 la destination finale dans les meilleurs délais.
               </p>
@@ -628,7 +628,7 @@ function HomePage() {
 
             <div className="home-creative-visual reveal-on-scroll">
               <div className="home-creative-main-image">
-                <img src={imageEquipeB} alt="Bureau administratif PFM" />
+                <img src={imageEquipeB} alt="Bureau administratif pfm " />
               </div>
             </div>
           </div>
@@ -637,9 +637,9 @@ function HomePage() {
 
       <section className="section home-services-showcase">
         <div className="container home-services-wrap">
-          <h2>Pourquoi choisir PFM</h2>
+          <h2>Pourquoi choisir pfm </h2>
           <p className="home-services-intro">
-            Des services essentiels présentés de manière claire pour aider les familles à choisir rapidement.
+            Des services essentiels présentés de manière pour aider les familles à choisir rapidement.
           </p>
           <div className="home-services-layout">
             <div className="home-services-visual">
@@ -647,7 +647,7 @@ function HomePage() {
                 <img src={imageFleursConvoi} alt="Services funéraires" />
               </div>
               <div className="home-services-visual-side">
-                <img src={imageTransportMusulman} alt="Intervention PFM" />
+                <img src={imageTransportMusulman} alt="Intervention pfm " />
               </div>
             </div>
 
@@ -759,7 +759,7 @@ function HomePage() {
                   x
                 </button>
 
-                <h3>PFM Agence {selectedAgency.code} - {selectedAgency.label}</h3>
+                <h3>pfm Agence {selectedAgency.code} - {selectedAgency.label}</h3>
                 <p>
                   Notre équipe locale à {selectedAgency.label} est disponible 24h/24 et 7j/7 pour
                   accompagner les familles avec rapidité et discrétion.
@@ -789,7 +789,7 @@ function HomePage() {
                 </div>
 
                 <p className="agency-modal-note">
-                  Chaque minute compte. PFM répond avec rapidité, qualité et humanité.
+                  Chaque minute compte. pfm répond avec rapidité, qualité et humanité.
                 </p>
               </div>
             </div>
@@ -801,7 +801,7 @@ function HomePage() {
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
             <span>Clients satisfaits</span>
-            <h2>Ce que disent les familles accompagnées par PFM</h2>
+            <h2>Ce que disent les familles accompagnées par pfm </h2>
             <p>
               Des retours réels sur la qualité de notre accompagnement funéraire.
             </p>

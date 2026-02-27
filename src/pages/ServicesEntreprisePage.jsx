@@ -23,7 +23,7 @@ const enterpriseOffers = [
   {
     tag: 'Référent',
     title: 'Interface opérationnelle unique',
-    text: 'Un référent PFM pour fluidifier les échanges entre entreprise, assistance, famille et autorités.',
+    text: 'Un référent pfm pour fluidifier les échanges entre entreprise, assistance, famille et autorités.',
   },
 ]
 
@@ -62,9 +62,9 @@ const enterpriseSectors = [
 const enterpriseShowcasePoints = []
 
 const enterpriseShowcaseCards = [
-  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation entreprise PFM' },
-  { title: 'Rapatriement', image: imageHeroTwo, alt: 'Rapatriement entreprise PFM' },
-  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement famille et entreprise PFM' },
+  { title: 'Inhumation', image: imageHeroOne, alt: 'Inhumation entreprise pfm ' },
+  { title: 'Rapatriement', image: imageHeroTwo, alt: 'Rapatriement entreprise pfm ' },
+  { title: 'Accompagnement', image: imageTeam, alt: 'Accompagnement famille et entreprise pfm ' },
 ]
 
 function ServicesEntreprisePage() {
@@ -74,14 +74,14 @@ function ServicesEntreprisePage() {
         <div className="container se-hero reveal-on-scroll">
           <div className="se-hero-copy">
             <span className="se-eyebrow">Services-entreprises</span>
-            <h1>Dispositif PFM pour entreprises, institutions et assureurs</h1>
+            <h1>Dispositif pfm pour entreprises, institutions et assureurs</h1>
             <p>
               Page dédiée exclusivement aux services-entreprises : coordination opérationnelle,
               gestion des rapatriements, formalités administratives et exécution terrain sous
               pilotage professionnel.
             </p>
             <p>
-              Reconnue parmi les structures funéraires les plus implantées au Maroc, PFM s'appuie
+              Reconnue parmi les structures funéraires les plus implantées au Maroc, pfm s'appuie
               sur une expérience historique, un réseau national et une capacité de mobilisation
               immédiate pour les dossiers sensibles des entreprises.
             </p>
@@ -137,7 +137,7 @@ function ServicesEntreprisePage() {
             <span className="se-eyebrow">Offre opérationnelle</span>
             <h2>Services-entreprises structurés pour exécution rapide</h2>
             <p>
-              PFM propose une organisation professionnelle orientée résultat : traitement des urgences,
+              pfm propose une organisation professionnelle orientée résultat : traitement des urgences,
               maîtrise administrative, coordination multi-intervenants et standard de qualité constant.
             </p>
           </div>
@@ -180,7 +180,7 @@ function ServicesEntreprisePage() {
             <span className="se-eyebrow">Secteurs accompagnés</span>
             <h2>Couverture multi-secteurs pour les besoins des entreprises</h2>
             <p>
-              De l'assurance au secteur public, PFM intervient avec le même niveau d'exigence :
+              De l'assurance au secteur public, pfm intervient avec le même niveau d'exigence :
               réactivité, conformité, traçabilité et qualité de service.
             </p>
           </div>
@@ -197,7 +197,7 @@ function ServicesEntreprisePage() {
           <div className="se-banner-copy">
             <h2>Besoin d'un dispositif services-entreprises adapté à votre structure ?</h2>
             <p>
-              PFM construit avec vous un mode opératoire avec référent unique, engagement
+              pfm construit avec vous un mode opératoire avec référent unique, engagement
               de délai de réponse, suivi régulier et engagement qualité mesurable.
             </p>
             <p>

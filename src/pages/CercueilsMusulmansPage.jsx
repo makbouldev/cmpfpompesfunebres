@@ -43,7 +43,7 @@ function CercueilsMusulmansPage() {
     <section className="section plaques-section cercueils-musulmans-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
-          <span>Catalogue PFM</span>
+          <span>Catalogue pfm </span>
           <h1>Cercueils musulmans</h1>
           <p>
             Une gamme de cercueils musulmans adaptés aux exigences du transport, au respect des rites
@@ -103,7 +103,7 @@ function CercueilsMusulmansPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
+            <p>Contactez pfm pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>

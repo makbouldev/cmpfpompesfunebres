@@ -7,7 +7,7 @@ const keyServices = [
   {
     icon: '☎',
     title: 'Réponse immédiate 24h/24',
-    text: 'Un conseiller PFM répond immédiatement et déclenche la procédure adaptée à votre situation.',
+    text: 'Un conseiller pfm répond immédiatement et déclenche la procédure adaptée à votre situation.',
   },
   {
     icon: '🧭',
@@ -30,7 +30,7 @@ const interventionSteps = [
   {
     icon: '02',
     title: 'Activation des équipes',
-    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative PFM.',
+    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative pfm .',
   },
   {
     icon: '03',
@@ -92,7 +92,7 @@ function AssistancePage() {
     : 'Assistance immédiate 24h/24 - 7j/7'
 
   const pageIntro = isEnterpriseView
-    ? 'PFM met en place des dispositifs rapides pour les entreprises : assistance médicale, coordination terrain et suivi continu.'
+    ? 'pfm met en place des dispositifs rapides pour les entreprises : assistance médicale, coordination terrain et suivi continu.'
     : "En cas d'urgence, un conseiller vous répond immédiatement et déclenche la prise en charge funéraire, le transfert ou le rapatriement."
 
   return (
@@ -100,7 +100,7 @@ function AssistancePage() {
       <section className="section ai-hero-section">
         <div className="container ai-hero reveal-on-scroll">
           <div className="ai-hero-copy">
-            <span className="ai-eyebrow">Assistance PFM</span>
+            <span className="ai-eyebrow">Assistance pfm </span>
             <h1>{pageTitle}</h1>
             <p>{pageIntro}</p>
             <p>
@@ -166,7 +166,7 @@ function AssistancePage() {
             <span className="ai-eyebrow">Engagements</span>
             <h2>Une assistance organisée avec exigence et clarté</h2>
             <p>
-              PFM maintient des standards élevés de qualité opérationnelle afin de garantir une
+              pfm maintient des standards élevés de qualité opérationnelle afin de garantir une
               prise en charge fiable dans toutes les situations.
             </p>
           </div>
@@ -191,7 +191,7 @@ function AssistancePage() {
 
           <div className="ai-process-layout">
             <div className="ai-process-image">
-              <img src={imageOperation} alt="Intervention rapide PFM" />
+              <img src={imageOperation} alt="Intervention rapide pfm " />
             </div>
 
             <div className="ai-process-steps">
@@ -213,7 +213,7 @@ function AssistancePage() {
             <h2>Documents à préparer</h2>
             <p>
               Pour accélérer le traitement du dossier, notre équipe recommande de préparer ces
-              éléments. PFM vous accompagne ensuite pour valider et compléter chaque pièce.
+              éléments. pfm vous accompagne ensuite pour valider et compléter chaque pièce.
             </p>
             <ul>
               {requiredDocuments.map((doc) => (
@@ -223,7 +223,7 @@ function AssistancePage() {
           </div>
 
           <div className="ai-team-card">
-            <img src={imageTeam} alt="Équipe de coordination PFM" />
+            <img src={imageTeam} alt="Équipe de coordination pfm " />
             <div>
               <h3>Coordination continue</h3>
               <p>
@@ -231,7 +231,7 @@ function AssistancePage() {
                 rapidité d'exécution.
               </p>
               <p>
-                Un référent PFM reste disponible pour informer la famille et confirmer les étapes
+                Un référent pfm reste disponible pour informer la famille et confirmer les étapes
                 validées.
               </p>
             </div>

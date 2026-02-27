@@ -77,7 +77,7 @@ function FleursPage() {
     <section className="section plaques-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
-          <span>Catalogue PFM</span>
+          <span>Catalogue pfm </span>
           <h1>Fleurs funéraires</h1>
           <p>
             Une sélection de compositions florales pour obsèques, hommage et souvenir,
@@ -137,7 +137,7 @@ function FleursPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez PFM pour recevoir une proposition selon votre besoin et votre budget.</p>
+            <p>Contactez pfm pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
           </aside>

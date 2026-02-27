@@ -118,7 +118,7 @@ const unifiedMainServices = [
 ]
 
 const unifiedAssistanceText =
-  "PFM assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
+  "pfm assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
 
 function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
@@ -179,7 +179,7 @@ function CityAgencyPage() {
                 Retour à l'accueil
               </Link>
               <Link className="btn btn-secondary" to="/contact">
-                Contacter PFM
+                Contacter pfm 
               </Link>
             </div>
           </div>
