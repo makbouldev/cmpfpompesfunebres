@@ -1406,10 +1406,16 @@ h2 {
 }
 
 .contact-info-link {
-  display: inline-flex !important;
+  display: flex !important;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.35rem;
   transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.contact-info-link span:last-child {
+  word-break: break-word;
 }
 
 .contact-info-link:hover {
