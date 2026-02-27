@@ -20,7 +20,7 @@ import img20Webp from '../assets/20.webp'
 const cityThemes = {
   agadir: {
     eyebrow: 'Agence Atlantique',
-    pitch: 'Intervention rapide sur Agadir et le Grand Sud avec coordination administrative complète.',
+    pitch: 'Équipe senior basée à Casablanca pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dedie'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
     images: [img8, img12, img19],
@@ -36,7 +36,7 @@ const cityThemes = {
   },
   fes: {
     eyebrow: 'Agence Patrimoine',
-    pitch: 'Service de proximite a Fes avec respect des rites et organisation personnalisee.',
+    pitch: 'Équipe senior basée à fes pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['préparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
     images: [img11, img14, img20Webp],
@@ -44,7 +44,7 @@ const cityThemes = {
   },
   laayoune: {
     eyebrow: 'Agence Saharienne',
-    pitch: 'Couverture de Laayoune et des provinces du sud avec logistique longue distance.',
+    pitch: 'Équipe senior basée à laayoune pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Gestion des formalités locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
     images: [img15, img9, img17],
@@ -52,7 +52,7 @@ const cityThemes = {
   },
   marrakech: {
     eyebrow: 'Agence Gueliz',
-    pitch: 'Accompagnement premium a Marrakech pour cérémonies, transfert et assistance administrative.',
+    pitch: 'Équipe senior basée à marrakech pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif integral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
     images: [img12, img16, img20],
@@ -60,7 +60,7 @@ const cityThemes = {
   },
   meknés: {
     eyebrow: 'Agence Centre',
-    pitch: 'Agence Meknès active 24h/24 pour intervention domicile, hopital et cimetiere.',
+    pitch: 'Équipe senior basée à Meknès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
     images: [img7, img13, img18],
@@ -68,7 +68,7 @@ const cityThemes = {
   },
   nador: {
     eyebrow: 'Agence Oriental Nord',
-    pitch: 'Equipe locale a Nador avec prise en charge des demarches et transport specialise.',
+    pitch: 'Équipe senior basée à nador pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Support deces et inhumation', 'Coordination administrative regionale', 'Disponibilite permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
     images: [img19, img11, img14],
@@ -76,7 +76,7 @@ const cityThemes = {
   },
   ouarzazate: {
     eyebrow: 'Agence Draa-Tafilalet',
-    pitch: 'Solutions funeraires a Ouarzazate avec couverture des zones etendues de la region.',
+    pitch: 'Équipe senior basée à ouarzazate pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Organisation logistique longue distance', 'Transport  adapté a chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
     images: [img15, img20, img8],
@@ -84,7 +84,7 @@ const cityThemes = {
   },
   oujda: {
     eyebrow: 'Agence Oriental Est',
-    pitch: 'Agence Oujda pour assistance immédiate, transfert et coordination des formalites.',
+    pitch: 'Équipe senior basée à oujda pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Prise en charge administrative complète', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
     images: [img17, img19, img9],
@@ -92,7 +92,7 @@ const cityThemes = {
   },
   rabat: {
     eyebrow: 'Agence Capitale',
-    pitch: 'Intervention professionnelle a Rabat avec réactivité, discretion et suivi permanent.',
+    pitch: 'Équipe senior basée à rabat pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Assistance deces 24h/24', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
     images: [img18, img10, img12],
@@ -100,7 +100,7 @@ const cityThemes = {
   },
   tanger: {
     eyebrow: 'Agence Detroit',
-    pitch: 'PFM Tanger accompagne les familles avec un dispositif  adapté aux flux nationaux et internationaux.',
+    pitch: 'Équipe senior basée à tanger pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Coordination portuaire et aeroportuaire', 'Prise en charge rapide des urgences', 'Equipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
     images: [img20Webp, img16, img8],
@@ -108,8 +108,7 @@ const cityThemes = {
   },
   tetouan: {
     eyebrow: 'Agence Rif Mediterranee',
-    pitch: 'Service funeraires a Tetouan avec respect, précision et assistance humaine de proximite.',
-    highlights: ['Accompagnement des formalités officielles', 'Transport et inhumation organises', 'Suivi 7j/7'],
+    pitch: 'Équipe senior basée à tetouan pour les urgences, cérémonies et transferts immédiats.',
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
     images: [img14, img7, img13],
     mood: 'Accompagnement detaille et rassurant',

@@ -10,11 +10,11 @@ import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
 import imageTransportMusulman from '../assets/images/10.jpeg'
 import imageInterieurCorbillard from '../assets/images/11.jpg'
-import imageFlottePFM from '../assets/images/1.png'
+import imageFlottePFM from '../assets/images/20.webp'
 import imageFleursConvoi from '../assets/images/13.jpg'
 import imageRapatriement from '../assets/images/Rapatriement.jpeg'
 import imageTransportCercueil from '../assets/images/18.jpg'
-import imagePreparationEquipe from '../assets/images/1.png'
+import imagePreparationEquipe from '../assets/images/20.webp'
 import { agencies } from '../data/agencies'
 
 const heroSlides = [

@@ -1,5 +1,5 @@
 ﻿import { Link, useLocation } from 'react-router-dom'
-import imageHeroOne from '../assets/images/1.png'
+import imageHeroOne from '../assets/images/20.webp'
 import imageOperation from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
 
