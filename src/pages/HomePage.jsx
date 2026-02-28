@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import heroSlide1 from '../assets/hero/1.png'
 import heroSlide2 from '../assets/hero/2.png'
@@ -346,6 +346,8 @@ function HomePage() {
   const [reviewsStartIndex, setReviewsStartIndex] = useState(0)
   const [activeGuideTab, setActiveGuideTab] = useState(homeGuideTabs[0].key)
   const [activeExpertiseTab, setActiveExpertiseTab] = useState(homeExpertiseTabs[0].key)
+  const heroTouchStartXRef = useRef(null)
+  const heroTouchEndXRef = useRef(null)
 
   const currentSlide = heroSlides[activeSlide]
   const goToPrevSlide = () => {
@@ -353,6 +355,28 @@ function HomePage() {
   }
   const goToNextSlide = () => {
     setActiveSlide((prev) => (prev + 1) % heroSlides.length)
+  }
+  const HERO_SWIPE_THRESHOLD = 50
+  const handleHeroTouchStart = (event) => {
+    heroTouchStartXRef.current = event.touches[0]?.clientX ?? null
+    heroTouchEndXRef.current = null
+  }
+  const handleHeroTouchMove = (event) => {
+    heroTouchEndXRef.current = event.touches[0]?.clientX ?? null
+  }
+  const handleHeroTouchEnd = () => {
+    const startX = heroTouchStartXRef.current
+    const endX = heroTouchEndXRef.current
+    if (startX === null || endX === null) return
+
+    const swipeDistance = startX - endX
+    if (Math.abs(swipeDistance) < HERO_SWIPE_THRESHOLD) return
+
+    if (swipeDistance > 0) {
+      goToNextSlide()
+    } else {
+      goToPrevSlide()
+    }
   }
   const REVIEWS_VISIBLE = 3
   const reviewsMaxStart = Math.max(0, clientReviews.length - REVIEWS_VISIBLE)
@@ -419,6 +443,9 @@ function HomePage() {
             style={{
               backgroundImage: `url('${currentSlide.image}')`,
             }}
+            onTouchStart={handleHeroTouchStart}
+            onTouchMove={handleHeroTouchMove}
+            onTouchEnd={handleHeroTouchEnd}
           >
             <div className="hero-banner-content">
               <h1 className="hero-info-title">{currentSlide.titleMain}</h1>
@@ -880,6 +907,8 @@ function HomePage() {
 }
 
 export default HomePage
+
+
 
 
 
