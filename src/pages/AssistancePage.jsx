@@ -1,4 +1,4 @@
-﻿import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import imageHeroOne from '../assets/images/20.webp'
 import imageOperation from '../assets/images/18.jpg'
 import imageTeam from '../assets/images/20.jpg'
@@ -261,7 +261,7 @@ function AssistancePage() {
             <Link to="/#nos-agences" className="btn btn-secondary">
               Voir toutes les agences
             </Link>
-            <Link to="/contact" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary ai-coverage-contact-btn">
               Contacter un conseiller
             </Link>
           </div>
