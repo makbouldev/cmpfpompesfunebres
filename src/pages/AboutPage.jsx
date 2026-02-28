@@ -3,8 +3,8 @@ import image7 from '../assets/images/7.webp'
 import image8 from '../assets/images/8.jpg'
 import image18 from '../assets/images/18.jpg'
 import image19 from '../assets/images/19.webp'
-import image20 from '../assets/images/20.jpg'
-import imageRapatriement from '../assets/images/Rapatriement.jpeg'
+import image20 from '../assets/images/7.webp'
+import imageRapatriement from '../assets/images/avionrapat.webp'
 import EditorialShowcase from '../components/EditorialShowcase'
 
 const businessAreas = [
@@ -52,11 +52,11 @@ const pillars = [
 const aboutShowcasePoints = [
   {
     title: 'Présence nationale continue',
-    text: 'pfm intervient dans les principales villes du Maroc avec une organisation stable.',
+    text: 'Universal PF intervient dans les principales villes du Maroc avec une organisation stable.',
   },
   {
     title: 'Experience historique',
-    text: 'Plus de 75 années de savoir-faire au service des familles et des entreprises.',
+    text: 'Plus de 60 années de savoir-faire au service des familles et des entreprises.',
   },
   {
     title: 'Confiance des compagnies',
@@ -69,9 +69,9 @@ const aboutShowcasePoints = [
 ]
 
 const aboutShowcaseCards = [
-  { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps pfm ' },
-  { title: 'Intervention', image: image19, alt: 'Intervention terrain pfm ' },
-  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles pfm ' },
+  { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps Universal PF ' },
+  { title: 'Intervention', image: image19, alt: 'Intervention terrain Universal PF ' },
+  { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles Universal PF ' },
 ]
 
 function AboutPage() {
@@ -81,20 +81,18 @@ function AboutPage() {
         <div className="container about-hero reveal-on-scroll">
           <div className="about-hero-copy">
             <span className="about-eyebrow">Qui sommes-nous</span>
-            <h1>pfm , référence africaine des services funéraires professionnels</h1>
+            <h1>Universal PF est spécialisée dans les services funéraires</h1>
             <p>
-              pfm est le premier organisme en Afrique spécialisé dans les services funéraires.
-              Forte de 75 années d'expérience, elle occupe une position éminente grâce à la
-              diversité et à la qualité de ses prestations.
+              Universal PF est le premier organisme en Afrique spécialisé dans les services funéraires. Forte de plusieurs années d’expérience, elle occupe une position éminente grâce à la diversité et à la qualité de ses prestations.
             </p>
             <p>
-              Initialement active dans le secteur funéraire, pfm a progressivement élargi son
+              Initialement active dans le secteur funéraire, Universal PF a progressivement élargi son
               champ d'action avec de nouveaux créneaux de services au service des familles et des
               partenaires.
             </p>
             <div className="about-hero-actions">
               <Link to="/contact" className="btn btn-primary">
-                Contacter pfm 
+                Contacter Universal PF 
               </Link>
               <Link to="/#nos-agences" className="btn btn-secondary about-btn-agences">
                 Nos agences
@@ -104,7 +102,7 @@ function AboutPage() {
 
           <div className="about-hero-media">
             <div className="about-hero-image-single">
-              <img src={image20} alt="Équipe pfm " />
+              <img src={image20} alt="Équipe Universal PF " />
             </div>
           </div>
         </div>
@@ -114,25 +112,25 @@ function AboutPage() {
         <div className="container about-story-grid reveal-on-scroll">
           <div className="about-story-media-wrap">
             <div className="about-story-media about-story-media-main">
-              <img src={image18} alt="Transport funéraire pfm " />
+              <img src={image18} alt="Transport funéraire Universal PF " />
             </div>
           </div>
 
           <div className="about-story-copy">
             <span className="about-eyebrow">Notre évolution</span>
-            <h2>75 ans d'expérience au service des familles</h2>
+            <h2>Un savoir-faire dédié aux familles.</h2>
             <p>
-              La force de pfm repose sur une méthode : disponibilité permanente, coordination
+              La force de Universal PF repose sur une méthode : disponibilité permanente, coordination
               rigoureuse et accompagnement complet. Notre organisation permet une prise en charge
               rapide, humaine et parfaitement structurée.
             </p>
             <p>
               Nous adaptons chaque intervention aux attentes des familles, aux obligations
-              administratives et aux exigences de qualité qui font la réputation de pfm .
+              administratives et aux exigences de qualité qui font la réputation de Universal PF .
             </p>
             <div className="about-story-stats">
               <article>
-                <strong>75+</strong>
+                <strong>60+</strong>
                 <span>Années d'expérience</span>
               </article>
               <article>
@@ -140,7 +138,7 @@ function AboutPage() {
                 <span>Disponibilité nationale</span>
               </article>
               <article>
-                <strong>13+</strong>
+                <strong>15+</strong>
                 <span>Villes au Maroc</span>
               </article>
             </div>
@@ -151,7 +149,7 @@ function AboutPage() {
       <EditorialShowcase
         className="editorial-showcase-about"
         heading="Rapatriement, intervention, accompagnement :"
-        accent="la signature pfm "
+        accent="la signature Universal PF "
         points={aboutShowcasePoints}
         cards={aboutShowcaseCards}
       />
@@ -178,14 +176,14 @@ function AboutPage() {
       <section className="section about-pillars-section">
         <div className="container about-pillars-wrap reveal-on-scroll">
           <div className="about-pillars-media">
-            <img src={image7} alt="Qualité de service pfm " />
+            <img src={image7} alt="Qualité de service Universal PF " />
             <div className="about-pillars-media-overlay">
-              <img src={image8} alt="Équipe terrain pfm " />
+              <img src={image8} alt="Équipe terrain Universal PF " />
             </div>
           </div>
 
           <div className="about-pillars-copy">
-            <span className="about-eyebrow">L'engagement pfm </span>
+            <span className="about-eyebrow">L'engagement Universal PF </span>
             <h2>Une méthode exigeante, fiable et rassurante</h2>
             <div className="about-pillars-grid">
               {pillars.map((item) => (
@@ -203,6 +201,7 @@ function AboutPage() {
 }
 
 export default AboutPage
+
 
 
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/images/9.webp'
 import imageTeam from '../assets/images/20.jpg'
 import imageCimetiere from '../assets/images/14.jpg'
@@ -55,7 +55,7 @@ function NettoyageFleurissementPage() {
             <span className="mf-eyebrow">Nettoyage et fleurissement</span>
             <h1>Nettoyage et Fleurissement</h1>
             <p>
-              pfm vous accompagne et vous aide à rendre le plus bel hommage à votre proche en vous
+              Universal PF vous accompagne et vous aide à rendre le plus bel hommage à votre proche en vous
               proposant le service nettoyage et fleurissement.
             </p>
             <p>
@@ -74,7 +74,7 @@ function NettoyageFleurissementPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Nettoyage de sépulture pfm " />
+              <img src={imageHero} alt="Nettoyage de sépulture Universal PF " />
             </figure>
           </div>
         </div>
@@ -132,13 +132,13 @@ function NettoyageFleurissementPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Équipe entretien pfm " />
-            <img src={imageCimetiere} alt="Entretien cimetière pfm " />
+            <img src={imageTeam} alt="Équipe entretien Universal PF " />
+            <img src={imageCimetiere} alt="Entretien cimetière Universal PF " />
           </div>
           <div className="mf-banner-copy">
             <h2>Un hommage durable, propre et respectueux</h2>
             <p>
-              pfm vous accompagne pour maintenir les sépultures propres, fleuries et dignes tout au
+              Universal PF vous accompagne pour maintenir les sépultures propres, fleuries et dignes tout au
               long de l'année.
             </p>
             <div className="mf-hero-actions">
@@ -157,5 +157,7 @@ function NettoyageFleurissementPage() {
 }
 
 export default NettoyageFleurissementPage
+
+
 
 

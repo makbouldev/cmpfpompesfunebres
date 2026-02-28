@@ -1,5 +1,87 @@
 ﻿import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import brandLogo from '../assets/images/logo-clean.png'
+import { agenciesBySlug, normalizeAgencySlug } from '../data/agencies'
+
+const DEFAULT_SEO = {
+  title: 'Universal PF | Pompes funèbres au Maroc',
+  description:
+    'Universal PF accompagne les familles 24h/24 et 7j/7 : organisation des obsèques, rapatriement, marbrerie, fleurs et assistance complète au Maroc.',
+}
+
+const SEO_BY_PATH = {
+  '/': {
+    title: 'Universal PF | Pompes funèbres au Maroc',
+    description:
+      'Pompes funèbres 24h/24 et 7j/7 : assistance immédiate, rapatriement, marbrerie, fleurs et accompagnement complet des familles.',
+  },
+  '/qui-sommes-nous': {
+    title: 'Qui sommes-nous | Universal PF',
+    description:
+      'Découvrez Universal PF : équipe funéraire professionnelle, organisation rigoureuse et accompagnement humain des familles partout au Maroc.',
+  },
+  '/assistance': {
+    title: 'Assistance immédiate 24/7 | Universal PF',
+    description:
+      "Assistance décès 24h/24 et 7j/7 avec intervention rapide, coordination administrative et suivi continu par l'équipe Universal PF.",
+  },
+  '/faq': {
+    title: 'FAQ | Universal PF',
+    description:
+      'Réponses aux questions fréquentes : démarches, délais, rapatriement, tarifs et organisation des obsèques avec Universal PF.',
+  },
+  '/contact': {
+    title: 'Contact | Universal PF',
+    description:
+      'Contactez Universal PF pour une assistance immédiate, un devis ou des informations sur nos services funéraires au Maroc.',
+  },
+}
+
+const toTitleCase = (value) =>
+  value
+    .split(' ')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ')
+
+const slugToLabel = (slug) => toTitleCase(String(slug || '').replace(/-/g, ' '))
+
+const getPageSeo = (pathname) => {
+  const cleanPath = String(pathname || '/').split('?')[0]
+
+  if (SEO_BY_PATH[cleanPath]) return SEO_BY_PATH[cleanPath]
+
+  if (cleanPath.startsWith('/villes/')) {
+    const citySlug = cleanPath.replace('/villes/', '').trim()
+    const normalized = normalizeAgencySlug(citySlug)
+    const cityLabel = agenciesBySlug[normalized]?.label || slugToLabel(citySlug)
+    return {
+      title: `Pompes funèbres ${cityLabel} | Universal PF`,
+      description: `Pompes funèbres ${cityLabel} : assistance 24h/24, organisation des obsèques, formalités, transport et accompagnement des familles avec Universal PF.`,
+    }
+  }
+
+  if (cleanPath.startsWith('/service/') || cleanPath.startsWith('/produits/')) {
+    const serviceSlug = cleanPath.split('/').filter(Boolean).pop()
+    const serviceLabel = slugToLabel(serviceSlug)
+    return {
+      title: `${serviceLabel} | Universal PF`,
+      description: `${serviceLabel} avec Universal PF : accompagnement professionnel, coordination complète et disponibilité 24h/24.`,
+    }
+  }
+
+  return DEFAULT_SEO
+}
+
+const setMetaTag = (selector, attrs, content) => {
+  let tag = document.head.querySelector(selector)
+  if (!tag) {
+    tag = document.createElement('meta')
+    Object.entries(attrs).forEach(([key, value]) => tag.setAttribute(key, value))
+    document.head.appendChild(tag)
+  }
+  tag.setAttribute('content', content)
+}
 
 const groupedLinks = [
   {
@@ -15,31 +97,21 @@ const groupedLinks = [
     ],
   },
   {
-    label: 'Catalogues',
-    items: [
-      { to: '/catalogues/plaques', label: 'Plaques' },
-      { to: '/catalogues/cercueils-musulmans', label: 'Cercueils musulmans' },
-      { to: '/catalogues/cercueils-non-musulmans', label: 'Cercueils non musulmans' },
-      { to: '/catalogues/fleurs', label: 'Fleurs' },
-      { to: '/catalogues/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
-      { to: '/catalogues/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
-    ],
-  },
-  {
     label: 'Nos agences',
     items: [
-      { to: '/villes/agadir', label: 'Agadir' },
-      { to: '/villes/casablanca', label: 'Casablanca' },
-      { to: '/villes/fes', label: 'Fes' },
-      { to: '/villes/laayoune', label: 'Laayoune' },
-      { to: '/villes/marrakech', label: 'Marrakech' },
-      { to: '/villes/meknes', label: 'Meknès' },
-      { to: '/villes/nador', label: 'Nador' },
-      { to: '/villes/ouarzazate', label: 'Ouarzazate' },
-      { to: '/villes/oujda', label: 'Oujda' },
-      { to: '/villes/rabat', label: 'Rabat' },
-      { to: '/villes/tanger', label: 'Tanger' },
-      { to: '/villes/tetouan', label: 'Tetouan' },
+      { to: '/villes/agadir', label: 'Pompes funèbres Agadir' },
+      { to: '/villes/casablanca', label: 'Pompes funèbres Casablanca' },
+      { to: '/villes/dakhla', label: 'Pompes funèbres Dakhla' },
+      { to: '/villes/fes', label: 'Pompes funèbres Fes' },
+      { to: '/villes/laayoune', label: 'Pompes funèbres Laayoune' },
+      { to: '/villes/marrakech', label: 'Pompes funèbres Marrakech' },
+      { to: '/villes/meknes', label: 'Pompes funèbres Meknès' },
+      { to: '/villes/nador', label: 'Pompes funèbres Nador' },
+      { to: '/villes/ouarzazate', label: 'Pompes funèbres Ouarzazate' },
+      { to: '/villes/oujda', label: 'Pompes funèbres Oujda' },
+      { to: '/villes/rabat', label: 'Pompes funèbres Rabat' },
+      { to: '/villes/tanger', label: 'Pompes funèbres Tanger' },
+      { to: '/villes/tetouan', label: 'Pompes funèbres Tetouan' },
     ],
   },
 ]
@@ -50,6 +122,27 @@ function Layout({ children }) {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const headerRef = useRef(null)
   const location = useLocation()
+
+  useEffect(() => {
+    const seo = getPageSeo(location.pathname)
+    const canonicalUrl = `${window.location.origin}${location.pathname}`
+
+    document.title = seo.title
+    setMetaTag('meta[name="description"]', { name: 'description' }, seo.description)
+    setMetaTag('meta[property="og:title"]', { property: 'og:title' }, seo.title)
+    setMetaTag('meta[property="og:description"]', { property: 'og:description' }, seo.description)
+    setMetaTag('meta[property="og:url"]', { property: 'og:url' }, canonicalUrl)
+    setMetaTag('meta[name="twitter:title"]', { name: 'twitter:title' }, seo.title)
+    setMetaTag('meta[name="twitter:description"]', { name: 'twitter:description' }, seo.description)
+
+    let canonical = document.head.querySelector('link[rel="canonical"]')
+    if (!canonical) {
+      canonical = document.createElement('link')
+      canonical.setAttribute('rel', 'canonical')
+      document.head.appendChild(canonical)
+    }
+    canonical.setAttribute('href', canonicalUrl)
+  }, [location.pathname])
 
   const closeMenu = () => {
     setIsNavOpen(false)
@@ -192,9 +285,8 @@ function Layout({ children }) {
             <div className="top-brand">
               <Link to="/" className="brand-home-link" onClick={closeMenu}>
 
-                <div className="brand-block">
-                  <span className="brand-name">pfm </span>
-                  <span className="brand-sub">{'Pompes funébres Marocaine'}</span>
+                <div className="brand-logo">
+                  <img src={brandLogo} alt="Universal PF" className="brand-logo-img" />
                 </div>
               </Link>
             </div>
@@ -302,7 +394,12 @@ function Layout({ children }) {
 
               {groupedLinks.map((group) => (
                 <div
-                  className={openGroupKey === group.label ? 'nav-group is-open' : 'nav-group'}
+                  className={[
+                    'nav-group',
+                    openGroupKey === group.label ? 'is-open' : '',
+                  ]
+                    .filter(Boolean)
+                    .join(' ')}
                   key={group.label}
                 >
                   <button
@@ -380,11 +477,8 @@ function Layout({ children }) {
         <div className="container footer-creative">
           <div className="footer-topline">
             <div className="footer-topline-brand">
-
-              <div>
-                <h3>pfm </h3>
-                <p>Service funéraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
-              </div>
+              <img src={brandLogo} alt="Universal PF" />
+              <p>Service funéraire professionnel, humain et disponible 24h/24 et 7j/7.</p>
             </div>
             <div className="footer-topline-actions">
               <a href="tel:+212522491616">Appel immediat</a>
@@ -396,7 +490,7 @@ function Layout({ children }) {
             <div className="footer-card footer-card-brand">
               <h4>A propos</h4>
               <p>
-                pfm accompagne chaque famille avec respect des rites, qualité de service et organisation complète
+                Universal PF accompagne chaque famille avec respect des rites, qualité de service et organisation complète
               </p>
             </div>
 
@@ -453,7 +547,7 @@ function Layout({ children }) {
           </div>
 
           <div className="footer-bottom-note">
-            <span>pfm </span>
+            <span>Universal PF </span>
             <span>Respect - Discretion - Disponibilite immédiate</span>
           </div>
         </div>
@@ -463,4 +557,9 @@ function Layout({ children }) {
 }
 
 export default Layout
+
+
+
+
+
 

@@ -93,7 +93,7 @@ const cityThemes = {
   rabat: {
     eyebrow: 'Agence Capitale',
     pitch: 'Équipe senior basée à rabat pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Assistance deces 24h/24', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
+    highlights: ['Assistance deces 24/7', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
     images: [img18, img10, img12],
     mood: 'Standard eleve et execution rigoureuse',
@@ -141,7 +141,7 @@ function CityAgencyPage() {
                 Retour a l'accueil
               </Link>
               <Link className="btn btn-secondary" to="/contact">
-                Contacter pfm 
+                Contacter Universal PF 
               </Link>
             </div>
           </div>
@@ -188,7 +188,7 @@ function CityAgencyPage() {
                 <span>Region couverte</span>
               </article>
               <article>
-                <strong>24h/24</strong>
+                <strong>24/7</strong>
                 <span>Assistance urgente</span>
               </article>
             </div>

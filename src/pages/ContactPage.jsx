@@ -35,7 +35,7 @@ function ContactPage() {
 
     setStatus('Envoi en cours...')
 
-    const emailSubject = `[${formData.contactSubject}] Nouvelle demande depuis le site pfm `
+    const emailSubject = `[${formData.contactSubject}] Nouvelle demande depuis le site Universal PF `
     const basePayload = {
       fullName: formData.fullName,
       phone: formData.phone,
@@ -79,7 +79,7 @@ function ContactPage() {
         const web3Payload = {
           access_key: accessKey,
           subject: emailSubject,
-          from_name: 'Formulaire Contact pfm ',
+          from_name: 'Formulaire Contact Universal PF ',
           replyto: formData.email,
           ...basePayload,
         }
@@ -120,7 +120,7 @@ function ContactPage() {
     <section className="section contact-creative-section">
       <div className="container contact-creative-wrap">
         <div className="contact-hero-head reveal-on-scroll">
-          <span>Contact pfm </span>
+          <span>Contact Universal PF </span>
           <h1>Parlez à notre équipe, nous vous rappelons rapidement</h1>
           <p>
             Une équipe dédiée répond 24h/24 et 7j/7 pour organiser les interventions,
@@ -194,7 +194,7 @@ function ContactPage() {
           <div className="contact-form-panel reveal-on-scroll">
             <h2>Demande de devis ou d'assistance</h2>
             <p className="contact-form-note">
-              Complétez ce formulaire. Un conseiller pfm vous contacte très rapidement.
+              Complétez ce formulaire. Un conseiller Universal PF vous contacte très rapidement.
             </p>
             <form className="contact-form contact-creative-form" onSubmit={handleSubmit}>
               <label>
@@ -282,4 +282,5 @@ function ContactPage() {
 }
 
 export default ContactPage
+
 

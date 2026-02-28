@@ -159,6 +159,20 @@
     lat: 35.5654548,
     lng: -5.3472886,
   },
+  {
+    code: '13',
+    slug: 'dakhla',
+    label: 'Dakhla',
+    region: 'Dakhla-Oued Ed-Dahab',
+    address: 'Avenue Al Walae, Dakhla',
+    phones: ['+212 5 22 49 16 16'],
+    mobile: '+212 6 61 50 27 63',
+    email: 'cmpfcasa@cmpfassistance.ma',
+    mapUrl:
+      'https://www.google.com/maps/search/?api=1&query=Dakhla+Morocco',
+    lat: 23.6848,
+    lng: -15.957,
+  },
 ]
 
 export const normalizeAgencySlug = (value) =>

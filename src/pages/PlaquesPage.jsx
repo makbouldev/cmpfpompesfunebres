@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import QuickContactLinks from '../components/QuickContactLinks'
 
 import plaque1 from '../assets/plaques/Plaque-funeraire-bronze-feuille-fleur-300x237.png'
@@ -64,7 +64,7 @@ function PlaquesPage() {
     <section className="section plaques-section plaques-catalogue-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
-          <span>Catalogue pfm </span>
+          <span>Catalogue Universal PF </span>
           <h1>Plaques funéraires</h1>
           <p>Sélection de plaques funéraires en bronze et granit avec gravures et finitions variées.</p>
         </div>
@@ -122,7 +122,7 @@ function PlaquesPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez pfm pour recevoir une proposition selon votre besoin et votre budget.</p>
+            <p>Contactez Universal PF pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <a className="plaques-side-btn" href="/contact">Demander un devis</a>
@@ -134,3 +134,5 @@ function PlaquesPage() {
 }
 
 export default PlaquesPage
+
+

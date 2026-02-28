@@ -16,9 +16,6 @@ import ContactPage from './pages/ContactPage'
 import PlaquesPage from './pages/PlaquesPage'
 import CercueilsMusulmansPage from './pages/CercueilsMusulmansPage'
 import CercueilsNonMusulmansPage from './pages/CercueilsNonMusulmansPage'
-import FleursCataloguePage from './pages/FleursCataloguePage'
-import MarbrerieMusulmaneCataloguePage from './pages/MarbrerieMusulmaneCataloguePage'
-import MarbrerieNonMusulmaneCataloguePage from './pages/MarbrerieNonMusulmaneCataloguePage'
 
 function App() {
   return (
@@ -35,24 +32,13 @@ function App() {
 
         <Route path="/produits/fleurs" element={<FleursPage />} />
         <Route path="/service/fleurs" element={<FleursPage />} />
-        <Route path="/catalogue/fleurs" element={<FleursCataloguePage />} />
-        <Route path="/catalogues/fleurs" element={<FleursCataloguePage />} />
         <Route path="/produits/plaques" element={<PlaquesPage />} />
-        <Route path="/catalogues/plaques" element={<PlaquesPage />} />
         <Route
           path="/produits/cercueils-musulmans"
           element={<CercueilsMusulmansPage />}
         />
         <Route
-          path="/catalogues/cercueils-musulmans"
-          element={<CercueilsMusulmansPage />}
-        />
-        <Route
           path="/produits/cercueils-non-musulmans"
-          element={<CercueilsNonMusulmansPage />}
-        />
-        <Route
-          path="/catalogues/cercueils-non-musulmans"
           element={<CercueilsNonMusulmansPage />}
         />
         <Route
@@ -72,10 +58,6 @@ function App() {
           path="/service/marbrerie-musulmane"
           element={<MarbrerieMusulmanePage />}
         />
-        <Route
-          path="/catalogues/marbrerie-musulmane"
-          element={<MarbrerieMusulmaneCataloguePage />}
-        />
 
         <Route
           path="/produits/marbrerie-non-musulmane"
@@ -84,10 +66,6 @@ function App() {
         <Route
           path="/service/marbrerie-non-musulmane"
           element={<MarbrerieNonMusulmanePage />}
-        />
-        <Route
-          path="/catalogues/marbrerie-non-musulmane"
-          element={<MarbrerieNonMusulmaneCataloguePage />}
         />
 
         <Route path="/villes/:slug" element={<CityAgencyPage />} />

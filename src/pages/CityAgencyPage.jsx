@@ -13,7 +13,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Agadir pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dédié'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
-    images: [imgRapatriement, img10, img8],
+    images: [img7, img8],
     mood: 'Flux océanique et accompagnement fluide',
   },
   casablanca: {
@@ -21,7 +21,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Casablanca pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hôpitaux et cliniques', 'Assistance familles locales et expatriées'],
     tones: ['#2f3854', '#4a7ab7', '#edf3ff'],
-    images: [img10, img2, img7],
+    images: [img7, img8],
     mood: 'Rythme urbain, exécution rapide',
   },
   fes: {
@@ -29,7 +29,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Fès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Préparation du dossier funéraire', 'Transport mortuaire sécurisé', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
-    images: [img8, imgRapatriement, img2],
+    images: [img7, img8],
     mood: 'Élégance sobre et traditions préservées',
   },
   laayoune: {
@@ -37,7 +37,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Laâyoune pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Gestion des formalités locales', 'Coordination aéroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
-    images: [img7, img10, imgRapatriement],
+    images: [img7, img8],
     mood: 'Logistique étendue, précision terrain',
   },
   marrakech: {
@@ -45,7 +45,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Marrakech pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif intégral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
-    images: [img2, img8, img7],
+    images: [img7, img8],
     mood: 'Présence humaine et coordination complète',
   },
   meknes: {
@@ -53,7 +53,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Meknès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
-    images: [imgRapatriement, img2, img10],
+    images: [img7, img8],
     mood: 'Disponibilité immédiate et maîtrise locale',
   },
   nador: {
@@ -61,7 +61,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Nador pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Support décès et inhumation', 'Coordination administrative régionale', 'Disponibilité permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
-    images: [img8, img7, imgRapatriement],
+    images: [img7, img8],
     mood: 'Service de proximite sur toute la zone nord-est',
   },
   ouarzazate: {
@@ -69,7 +69,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Ouarzazate pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Organisation logistique longue distance', 'Transport adapté à chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
-    images: [img10, img8, img2],
+    images: [img7, img8],
     mood: 'Grandes distances, même exigence',
   },
   oujda: {
@@ -77,15 +77,15 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Oujda pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Prise en charge administrative complète', 'Accompagnement des proches à chaque étape', 'Intervention rapide en ville et périphérie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
-    images: [img7, imgRapatriement, img10],
+    images: [img7, img8],
     mood: 'Réactif, organisé, accessible',
   },
   rabat: {
     eyebrow: 'Agence Capitale',
     pitch: 'Équipe senior basée à Rabat pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Assistance décès 24h/24', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
+    highlights: ['Assistance décès 24/7', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
-    images: [img2, img7, img8],
+    images: [img7, img8],
     mood: 'Standard élevé et exécution rigoureuse',
   },
   tanger: {
@@ -93,7 +93,7 @@ const cityThemes = {
     pitch: 'Équipe senior basée à tanger pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Coordination portuaire et aéroportuaire', 'Prise en charge rapide des urgences', 'Équipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
-    images: [imgRapatriement, img8, img2],
+    images: [img7, img8],
     mood: 'Connexion nationale et internationale',
   },
   tetouan: {
@@ -101,8 +101,16 @@ const cityThemes = {
     pitch: 'Équipe senior basée à Tetouan pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Accompagnement des formalités officielles', 'Transport et inhumation organisés', 'Suivi 7j/7'],
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
-    images: [img10, img7, imgRapatriement],
+    images: [img7, img8],
     mood: 'Accompagnement détaillé et rassurant',
+  },
+  dakhla: {
+    eyebrow: 'Agence Grand Sud',
+    pitch: 'Équipe senior basée à Dakhla pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Intervention rapide sur Dakhla et environs', 'Coordination administrative complète', 'Disponibilité continue 24h/24'],
+    tones: ['#1f4d5d', '#2f8ea5', '#e9fbff'],
+    images: [img7, img8],
+    mood: 'Couverture sud, accompagnement continu',
   },
 }
 
@@ -118,7 +126,7 @@ const unifiedMainServices = [
 ]
 
 const unifiedAssistanceText =
-  "pfm assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
+  "Universal PF assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
 
 function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
@@ -179,7 +187,7 @@ function CityAgencyPage() {
                 Retour à l'accueil
               </Link>
               <Link className="btn btn-secondary" to="/contact">
-                Contacter pfm 
+                Contacter Universal PF 
               </Link>
             </div>
           </div>
@@ -205,7 +213,7 @@ function CityAgencyPage() {
         <div className="city-agency-hero">
           <div className="city-hero-copy">
             <h1>
-              Agence {agency.code} - {agency.label}
+              Pompes funèbres {agency.label}
             </h1>
             <p className="city-hero-intro">
               {theme?.pitch ||
@@ -226,7 +234,7 @@ function CityAgencyPage() {
                 <span>Région couverte</span>
               </article>
               <article>
-                <strong>24h/24</strong>
+                <strong>24/7</strong>
                 <span>Assistance urgente</span>
               </article>
             </div>
@@ -342,7 +350,7 @@ function CityAgencyPage() {
                 <ul>
                   {sameRegionAgencies.map((item) => (
                     <li key={item.slug}>
-                      <Link to={`/villes/${item.slug}`}>Agence {item.label}</Link>
+                      <Link to={`/villes/${item.slug}`}>Pompes funèbres {item.label}</Link>
                     </li>
                   ))}
                 </ul>
@@ -356,5 +364,6 @@ function CityAgencyPage() {
 }
 
 export default CityAgencyPage
+
 
 

@@ -8,7 +8,7 @@ import heroSlide5 from '../assets/hero/5.png'
 import heroSlide6 from '../assets/hero/6.png'
 import imageEquipeA from '../assets/images/7.webp'
 import imageEquipeB from '../assets/images/8.jpg'
-import imageTransportMusulman from '../assets/images/10.jpeg'
+import imageTransportMusulman from '../assets/images/avionrapat.webp'
 import imageInterieurCorbillard from '../assets/images/11.jpg'
 import imageFlottepfm  from '../assets/images/20.webp'
 import imageFleursConvoi from '../assets/images/13.jpg'
@@ -76,7 +76,7 @@ const heroSlides = [
 
 const servicesHighlights = [
   {
-    title: 'Intervention rapide 24h/24',
+    title: 'Intervention rapide 24/7',
     text: "Nous répondons vite à votre appel et nous lançons l'intervention sans attendre.",
     image: imageFlottepfm ,
     to: '/assistance',
@@ -119,7 +119,7 @@ const servicesOverview = [
   },
   {
     icon: 'team',
-    title: 'Assistance immédiate 24h/24',
+    title: 'Assistance immédiate 24/7',
     text: 'Un conseiller disponible à tout moment pour orienter la famille et lancer les procédures sans délai.',
   },
 ]
@@ -127,7 +127,7 @@ const servicesOverview = [
 const careProcessSteps = [
   {
     title: '1. Appel et orientation immédiate',
-    text: "Un conseiller pfm répond tout de suite, évalue l'urgence et déclenche la prise en charge 24h/24.",
+    text: "Un conseiller Universal PF répond tout de suite, évalue l'urgence et déclenche la prise en charge 24/7.",
   },
   {
     title: '2. Dossier et coordination administrative',
@@ -145,8 +145,8 @@ const careProcessSteps = [
 
 const repatriementPillars = [
   {
-    title: 'Équipe de coordination disponible 24h/24',
-    text: 'Back-office pfm mobilisé en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
+    title: 'Équipe de coordination disponible 24/7',
+    text: 'Back-office Universal PF mobilisé en continu pour traiter les dossiers urgents et coordonner chaque intervention.',
     image: imageEquipeA,
   },
   {
@@ -177,7 +177,7 @@ const clientReviews = [
   {
     name: 'Soukaina',
     city: 'Marrakech',
-    text: 'Un grand merci à pfm pour la qualité du suivi et le respect complet de nos volontés.',
+    text: 'Un grand merci à Universal PF pour la qualité du suivi et le respect complet de nos volontés.',
     avatar: 'https://i.pravatar.cc/160?img=44',
   },
   {
@@ -195,7 +195,7 @@ const clientReviews = [
   {
     name: 'Mehdi',
     city: 'Fès',
-    text: 'pfm a géré toutes les formalités avec clarté et respect. Équipe très disponible.',
+    text: 'Universal PF a géré toutes les formalités avec clarté et respect. Équipe très disponible.',
     avatar: 'https://i.pravatar.cc/160?img=8',
   },
 ]
@@ -238,7 +238,7 @@ const homeFaqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez pfm par téléphone, WhatsApp ou formulaire: nous vous envoyons un devis détaillé rapidement.',
+      'Contactez Universal PF par téléphone, WhatsApp ou formulaire: nous vous envoyons un devis détaillé rapidement.',
   },
 ]
 
@@ -246,7 +246,7 @@ const homeGuideTabs = [
   {
     key: 'coordination',
     label: 'Coordination 24/7',
-    title: 'Une cellule active 24h/24 pour piloter chaque intervention',
+    title: 'Une cellule active 24/7 pour piloter chaque intervention',
     intro:
       'Dès le premier appel, notre équipe de coordination organise les priorités, active les intervenants et suit chaque étape en temps réel.',
     points: [
@@ -255,7 +255,7 @@ const homeGuideTabs = [
       'Communication avec la famille à chaque phase.',
     ],
     to: '/contact',
-    cta: 'Contact pfm ',
+    cta: 'Contact Universal PF ',
     image: imageEquipeA,
   },
   {
@@ -270,13 +270,13 @@ const homeGuideTabs = [
       'Préparation logistique complète avant cérémonie et inhumation.',
     ],
     to: '/contact',
-    cta: 'Contact pfm ',
+    cta: 'Contact Universal PF ',
     image: imageTransportCercueil,
   },
   {
     key: 'assurance',
     label: 'Assurance et dossiers',
-    title: 'Gestion assurance, assistance et consulat sans blocage',
+    title: 'Gestion assurance, assistance, consulat, Ambassades',
     intro:
       'Nos conseillers prennent en charge les échanges techniques et documentaires pour accélérer la prise en charge globale.',
     points: [
@@ -285,7 +285,7 @@ const homeGuideTabs = [
       'Interface unique entre famille, administration et opérateurs terrain.',
     ],
     to: '/contact',
-    cta: 'Contact pfm ',
+    cta: 'Contact Universal PF ',
     image: imageEquipeB,
   },
 ]
@@ -293,10 +293,10 @@ const homeGuideTabs = [
 const homeExpertiseTabs = [
   {
     key: 'company',
-    label: 'À propos pfm ',
+    label: 'À propos Universal PF ',
     title: 'Une entreprise structurée pour accompagner chaque famille',
     intro:
-      "pfm s'appuie sur une organisation structurée, des équipes formées et un pilotage terrain permanent pour garantir un service fiable.",
+      "Universal PF s'appuie sur une organisation structurée, des équipes formées et un pilotage terrain permanent pour garantir un service fiable.",
     points: [
       'Présence nationale avec coordination locale dans les principales villes.',
       'Un seul interlocuteur dédié du premier appel jusqu’à la clôture du dossier.',
@@ -315,7 +315,7 @@ const homeExpertiseTabs = [
     points: [
       'Préparation rituelle et accompagnement de la famille avec discrétion.',
       'Coordination administrative, transport et inhumation.',
-      "Disponibilité 24h/24 pour les urgences au Maroc et à l'international.",
+      "Disponibilité 24/7 pour les urgences au Maroc et à l'international.",
     ],
     to: '/service/pompes-funebres-musulmanes',
     cta: 'Voir le service musulman',
@@ -326,7 +326,7 @@ const homeExpertiseTabs = [
     label: 'Pompes Funèbres non Musulmanes',
     title: 'Cérémonies non musulmanes organisées avec dignité et précision',
     intro:
-      'pfm organise les cérémonies civiles et confessionnelles non musulmanes avec une préparation détaillée à chaque étape.',
+      'Universal PF organise les cérémonies civiles et confessionnelles non musulmanes avec une préparation détaillée à chaque étape.',
     points: [
       'Coordination complète de la cérémonie selon les volontés familiales.',
       'Logistique, transport et formalités prises en charge.',
@@ -373,7 +373,7 @@ function HomePage() {
     ? `212${selectedAgencyMobileDigits.slice(1)}`
     : selectedAgencyMobileDigits
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
-    `Bonjour pfm , je souhaite une assistance à ${selectedAgency.label}.`,
+    `Bonjour Universal PF , je souhaite une assistance à ${selectedAgency.label}.`,
   )}`
   const renderServiceIcon = (icon) => {
     if (icon === 'pulse') {
@@ -425,7 +425,7 @@ function HomePage() {
               <p className="hero-info-text">{currentSlide.description}</p>
               <div className="hero-highlight hero-info-badge">
                 <span className="hero-highlight-icon">!</span>
-                Service d'urgence 24h/24 - Intervention immédiate
+                Service d'urgence 24/7 - Intervention immédiate
               </div>
 
               <div className="hero-actions hero-actions-main hero-info-actions">
@@ -497,7 +497,7 @@ function HomePage() {
                 <span>Nos services</span>
                 <h2>Un accompagnement funéraire, humain et professionnel</h2>
                 <p>
-                  pfm propose une prise en charge complète pour soulager les familles, avec une organisation rapide et une qualité de service constante.
+                  Universal PF propose une prise en charge complète pour soulager les familles, avec une organisation rapide et une qualité de service constante.
                 </p>
                 <p>
                   Notre équipe coordonne chaque intervention avec rigueur, discrétion et réactivité pour garantir un service fiable à chaque famille.
@@ -517,7 +517,7 @@ function HomePage() {
 
             <div className="home-services-intro-images reveal-on-scroll">
               <div className="home-services-intro-image home-services-intro-image-main reveal-on-scroll">
-                <img src={imagePreparationEquipe} alt="Services funéraires pfm " />
+                <img src={imagePreparationEquipe} alt="Services funéraires Universal PF " />
               </div>
             </div>
           </div>
@@ -527,7 +527,7 @@ function HomePage() {
       <section className="section home-process-section">
         <div className="container home-process-wrap reveal-on-scroll">
           <div className="home-process-head">
-            <span>Parcours pfm </span>
+            <span>Parcours Universal PF </span>
             <h2>Une méthode rapide et rassurante pour chaque famille</h2>
           </div>
           <div className="home-process-stage">
@@ -559,7 +559,7 @@ function HomePage() {
         <div className="container home-guide-wrap reveal-on-scroll">
           <div className="home-guide-head">
             <h2>
-              Les coulisses pfm : <em>précision, réactivité et contrôle terrain</em>
+              Les coulisses Universal PF : <em>précision, réactivité et contrôle terrain</em>
             </h2>
             <p>
               Coordination interne, transport géolocalisé, gestion de l’assurance et suivi du dossier :
@@ -609,7 +609,7 @@ function HomePage() {
             <div className="home-creative-content reveal-on-scroll">
               <h2>Rapatriement de corps et accompagnement des familles</h2>
               <p className="home-creative-lead">
-                pfm prend en charge exclusivement le rapatriement de corps : formalités consulaires,
+                Universal PF prend en charge exclusivement le rapatriement de corps : formalités consulaires,
                 autorisations administratives, coordination aéroportuaire et transfert du défunt vers
                 la destination finale dans les meilleurs délais.
               </p>
@@ -628,7 +628,7 @@ function HomePage() {
 
             <div className="home-creative-visual reveal-on-scroll">
               <div className="home-creative-main-image">
-                <img src={imageEquipeB} alt="Bureau administratif pfm " />
+                <img src={imageEquipeB} alt="Bureau administratif Universal PF " />
               </div>
             </div>
           </div>
@@ -637,7 +637,7 @@ function HomePage() {
 
       <section className="section home-services-showcase">
         <div className="container home-services-wrap">
-          <h2>Pourquoi choisir pfm </h2>
+          <h2>Pourquoi choisir Universal PF </h2>
           <p className="home-services-intro">
             Des services essentiels présentés de manière pour aider les familles à choisir rapidement.
           </p>
@@ -645,9 +645,6 @@ function HomePage() {
             <div className="home-services-visual">
               <div className="home-services-visual-main">
                 <img src={imageFleursConvoi} alt="Services funéraires" />
-              </div>
-              <div className="home-services-visual-side">
-                <img src={imageTransportMusulman} alt="Intervention pfm " />
               </div>
             </div>
 
@@ -704,7 +701,7 @@ function HomePage() {
             </div>
 
             <aside className="home-agency-details card">
-              <h3>{selectedAgency.code} - {selectedAgency.label}</h3>
+              <h3>Pompes funèbres {selectedAgency.label}</h3>
               <p>
                 <strong>Région:</strong> {selectedAgency.region}
               </p>
@@ -759,7 +756,7 @@ function HomePage() {
                   x
                 </button>
 
-                <h3>pfm Agence {selectedAgency.code} - {selectedAgency.label}</h3>
+                <h3>Pompes funèbres {selectedAgency.label}</h3>
                 <p>
                   Notre équipe locale à {selectedAgency.label} est disponible 24h/24 et 7j/7 pour
                   accompagner les familles avec rapidité et discrétion.
@@ -789,7 +786,7 @@ function HomePage() {
                 </div>
 
                 <p className="agency-modal-note">
-                  Chaque minute compte. pfm répond avec rapidité, qualité et humanité.
+                  Chaque minute compte. Universal PF répond avec rapidité, qualité et humanité.
                 </p>
               </div>
             </div>
@@ -801,7 +798,7 @@ function HomePage() {
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
             <span>Clients satisfaits</span>
-            <h2>Ce que disent les familles accompagnées par pfm </h2>
+            <h2>les avis des familles accompagnées par Universal PF</h2>
             <p>
               Des retours réels sur la qualité de notre accompagnement funéraire.
             </p>
@@ -851,7 +848,6 @@ function HomePage() {
       <section className="section home-faq-section">
         <div className="container home-testimonials-wrap">
           <div className="home-testimonials-head">
-            <span>FAQ</span>
             <h2>Questions fréquentes</h2>
           </div>
           <div className="faq-list">
@@ -884,5 +880,6 @@ function HomePage() {
 }
 
 export default HomePage
+
 
 

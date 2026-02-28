@@ -71,8 +71,8 @@ img {
 }
 
 .brand-logo {
-  width: 168px;
-  height: 54px;
+  width: 220px;
+  height: 80px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -366,6 +366,7 @@ img {
   background: #f1e6fa;
 }
 
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -381,8 +382,7 @@ img {
   z-index: 2000;
 }
 
-.nav-group:hover .dropdown-menu,
-.nav-group:focus-within .dropdown-menu {
+.nav-group.is-open .dropdown-menu {
   display: grid;
 }
 
@@ -390,6 +390,7 @@ img {
 .nav-group:focus-within .nav-caret {
   border-top-color: #5f317e;
 }
+
 
 .dropdown-item {
   color: #6f3e8f;
@@ -2065,15 +2066,21 @@ textarea {
 
 .footer-topline-brand {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
 }
 
 .footer-topline-brand img {
-  width: 176px;
-  height: 56px;
+  width: 188px;
+  height: 72px;
   object-fit: contain;
   filter: none;
+}
+
+.footer-topline-brand p {
+  margin: 0;
+  max-width: 420px;
 }
 
 .footer-topline h3 {
@@ -2404,7 +2411,7 @@ textarea {
 }
 
 .home-services-visual-main {
-  inset: 0 20% 12% 0;
+  inset: 0;
 }
 
 .home-services-visual-side {
@@ -3194,7 +3201,7 @@ textarea {
 
 .home-guide-head h2 em {
   font-style: italic;
-  color: #e24d4d;
+  color: #16324a;
   font-weight: 700;
 }
 
@@ -4197,8 +4204,8 @@ textarea {
   }
 
   .brand-logo {
-    width: 144px;
-    height: 44px;
+    width: 184px;
+    height: 66px;
   }
 
   .top-contact,
@@ -4554,7 +4561,7 @@ textarea {
   }
 
   .home-services-visual-main {
-    inset: 0 25% 10% 0;
+    inset: 0;
   }
 
   .home-services-visual-side {
@@ -4596,8 +4603,8 @@ textarea {
   }
 
   .brand-logo {
-    width: 128px;
-    height: 40px;
+    width: 168px;
+    height: 60px;
   }
 
   .brand-name {

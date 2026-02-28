@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: 'Comment obtenir un devis rapide ?',
     answer:
-      'Contactez pfm par telephone, WhatsApp ou formulaire: nous vous envoyons un devis detaille rapidement.',
+      'Contactez Universal PF par telephone, WhatsApp ou formulaire: nous vous envoyons un devis detaille rapidement.',
   },
 ]
 
@@ -78,5 +78,6 @@ function FaqPage() {
 }
 
 export default FaqPage
+
 
 

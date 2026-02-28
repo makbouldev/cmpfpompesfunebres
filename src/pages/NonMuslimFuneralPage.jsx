@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/nonmuslimanes/4.jpg'
 import imageRite from '../assets/hero/2.png'
 import imageTeam from '../assets/images/20.jpg'
-import imageTransport from '../assets/images/Rapatriement.jpeg'
+import imageTransport from '../assets/images/avionrapat.webp'
 import imageStone from '../assets/images/14.jpg'
 
 const nonMuslimServiceCards = [
@@ -34,7 +34,7 @@ function NonMuslimFuneralPage() {
             <span className="mf-eyebrow">Pompes Funèbres non musulmanes</span>
             <h1>Pompes Funèbres Non Musulmanes</h1>
             <p>
-              Dans le domaine des pompes funèbres non musulmanes, pfm propose une prise en charge
+              Dans le domaine des pompes funèbres non musulmanes, Universal PF propose une prise en charge
               complète, rassurante et professionnelle.
             </p>
             <p>
@@ -43,7 +43,7 @@ function NonMuslimFuneralPage() {
             </p>
             <div className="mf-hero-actions">
               <a href="tel:+212522491616" className="btn btn-primary">
-                Appel urgence 24h/24
+                Appel urgence 24/7
               </a>
               <Link to="/contact" className="btn btn-secondary">
                 Parler à un conseiller
@@ -53,10 +53,10 @@ function NonMuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres non musulmanes pfm " />
+              <img src={imageHero} alt="Pompes Funèbres non musulmanes Universal PF " />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageRite} alt="Cérémonie non musulmane pfm " />
+              <img src={imageRite} alt="Cérémonie non musulmane Universal PF " />
             </figure>
           </div>
         </div>
@@ -84,7 +84,7 @@ function NonMuslimFuneralPage() {
           <span className="mf-eyebrow">Rapatriement de corps</span>
           <h2>Une assistance essentielle et structurée</h2>
           <p>
-            En cas de décès à l&apos;étranger, pfm organise le rapatriement avec méthode, rigueur
+            En cas de décès à l&apos;étranger, Universal PF organise le rapatriement avec méthode, rigueur
             et coordination internationale.
           </p>
           <ul className="mf-rich-list">
@@ -104,13 +104,13 @@ function NonMuslimFuneralPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Équipe pfm non musulmane" />
+            <img src={imageTeam} alt="Équipe Universal PF non musulmane" />
             <img src={imageTransport} alt="Transport funéraire non musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>pfm , partenaire fiable pour les Pompes Funèbres Non Musulmanes</h2>
+            <h2>Universal PF , partenaire fiable pour les Pompes Funèbres Non Musulmanes</h2>
             <p>
-              Avec une présence nationale et une organisation rigoureuse, pfm accompagne les familles
+              Avec une présence nationale et une organisation rigoureuse, Universal PF accompagne les familles
               avec réactivité, clarté et respect.
             </p>
             <div className="mf-hero-actions">
@@ -129,3 +129,5 @@ function NonMuslimFuneralPage() {
 }
 
 export default NonMuslimFuneralPage
+
+

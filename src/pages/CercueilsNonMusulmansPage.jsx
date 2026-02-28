@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import QuickContactLinks from '../components/QuickContactLinks'
 import n1 from '../assets/cercueils-non-musulmans/TOUVOIS1-300x158.png'
@@ -55,7 +55,7 @@ function CercueilsNonMusulmansPage() {
     <section className="section plaques-section cercueils-non-musulmans-section">
       <div className="container plaques-wrap">
         <div className="plaques-head reveal-on-scroll">
-          <span>Catalogue pfm </span>
+          <span>Catalogue Universal PF </span>
           <h1>Cercueils non musulmans</h1>
           <p>
             Collection de cercueils non musulmans adaptée aux cérémonies civiles et religieuses,
@@ -115,7 +115,7 @@ function CercueilsNonMusulmansPage() {
 
           <aside className="plaques-side-panel reveal-on-scroll">
             <h3>Demande rapide</h3>
-            <p>Contactez pfm pour recevoir une proposition selon votre besoin et votre budget.</p>
+            <p>Contactez Universal PF pour recevoir une proposition selon votre besoin et votre budget.</p>
             <QuickContactLinks />
 
             <Link className="plaques-side-btn" to="/contact">Demander un devis</Link>
@@ -127,3 +127,5 @@ function CercueilsNonMusulmansPage() {
 }
 
 export default CercueilsNonMusulmansPage
+
+

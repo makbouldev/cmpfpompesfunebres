@@ -17,7 +17,7 @@ function MarbrerieMusulmanePage() {
               proches.
             </p>
             <p>
-              À la pfm , nous vous proposons une large sélection de monuments de haute qualité,
+              À la Universal PF , nous vous proposons une large sélection de monuments de haute qualité,
               conçus pour résister au temps.
             </p>
             <p>
@@ -36,10 +36,10 @@ function MarbrerieMusulmanePage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Monument marbrerie musulmane pfm " />
+              <img src={imageHero} alt="Monument marbrerie musulmane Universal PF " />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={imageOverlay} alt="Finition et gravure marbrerie musulmane pfm " />
+              <img src={imageOverlay} alt="Finition et gravure marbrerie musulmane Universal PF " />
             </figure>
           </div>
         </div>
@@ -63,11 +63,11 @@ function MarbrerieMusulmanePage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Conseillers marbrerie pfm " />
-            <img src={imageWorkshop} alt="Atelier marbrerie pfm " />
+            <img src={imageTeam} alt="Conseillers marbrerie Universal PF " />
+            <img src={imageWorkshop} alt="Atelier marbrerie Universal PF " />
           </div>
           <div className="mf-banner-copy">
-            <h2>pfm vous accompagne du conseil à la réalisation</h2>
+            <h2>Universal PF vous accompagne du conseil à la réalisation</h2>
             <p>
               De la première orientation jusqu&apos;à la pose finale, notre équipe reste à vos côtés pour
               garantir qualité, clarté et respect.
@@ -88,4 +88,5 @@ function MarbrerieMusulmanePage() {
 }
 
 export default MarbrerieMusulmanePage
+
 

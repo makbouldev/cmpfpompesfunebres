@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/hero/1.png'
 import imageTeam from '../assets/images/7.webp'
-import imageTransport from '../assets/images/Rapatriement.jpeg'
+import imageTransport from '../assets/images/avionrapat.webp'
 import imageInhumationCard from '../assets/hero/1.png'
 import imageMarbrerieCard from '../assets/hero/6.png'
 
@@ -34,7 +34,7 @@ function MuslimFuneralPage() {
             <span className="mf-eyebrow">Pompes Funèbres musulmanes</span>
             <h1>Pompes Funèbres Musulmanes</h1>
             <p>
-              <strong>pfm répond à tous vos besoins.</strong>
+              <strong>Universal PF répond à tous vos besoins.</strong>
             </p>
             <p>
               Les rituels des funérailles se déroulent dans le plus grand respect des rites islamiques.
@@ -46,7 +46,7 @@ function MuslimFuneralPage() {
             </p>
             <div className="mf-hero-actions">
               <a href="tel:+212522491616" className="btn btn-primary">
-                Appel urgence 24h/24
+                Appel urgence 24/7
               </a>
               <Link to="/contact" className="btn btn-secondary">
                 Parler à un conseiller
@@ -56,7 +56,7 @@ function MuslimFuneralPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={imageHero} alt="Pompes Funèbres musulmanes pfm " />
+              <img src={imageHero} alt="Pompes Funèbres musulmanes Universal PF " />
             </figure>
           </div>
         </div>
@@ -85,7 +85,7 @@ function MuslimFuneralPage() {
           <span className="mf-eyebrow">Rapatriement de corps</span>
           <h2>Une assistance funéraire essentielle et structurée</h2>
           <p>
-            La perte d&apos;un proche à l&apos;étranger demande une organisation rapide et fiable. pfm assure
+            La perte d&apos;un proche à l&apos;étranger demande une organisation rapide et fiable. Universal PF assure
             la coordination complète du rapatriement avec rigueur, discrétion et accompagnement humain.
           </p>
           <ul className="mf-rich-list">
@@ -105,13 +105,13 @@ function MuslimFuneralPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={imageTeam} alt="Équipe pfm musulmane" />
+            <img src={imageTeam} alt="Équipe Universal PF musulmane" />
             <img src={imageTransport} alt="Transport funéraire musulman" />
           </div>
           <div className="mf-banner-copy">
-            <h2>pfm , une référence majeure des Pompes Funèbres Musulmanes au Maroc</h2>
+            <h2>Universal PF , une référence majeure des Pompes Funèbres Musulmanes au Maroc</h2>
             <p>
-              Avec une présence nationale et une disponibilité 24h/24, pfm accompagne les familles
+              Avec une présence nationale et une disponibilité 24/7, Universal PF accompagne les familles
               musulmanes avec un service professionnel et respectueux.
             </p>
             <div className="mf-hero-actions">
@@ -130,3 +130,5 @@ function MuslimFuneralPage() {
 }
 
 export default MuslimFuneralPage
+
+

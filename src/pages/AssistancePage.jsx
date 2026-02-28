@@ -6,8 +6,8 @@ import imageTeam from '../assets/images/20.jpg'
 const keyServices = [
   {
     icon: '☎',
-    title: 'Réponse immédiate 24h/24',
-    text: 'Un conseiller pfm répond immédiatement et déclenche la procédure adaptée à votre situation.',
+    title: 'Réponse immédiate 24/7',
+    text: 'Un conseiller Universal PF répond immédiatement et déclenche la procédure adaptée à votre situation.',
   },
   {
     icon: '🧭',
@@ -30,7 +30,7 @@ const interventionSteps = [
   {
     icon: '02',
     title: 'Activation des équipes',
-    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative pfm .',
+    text: 'Mobilisation du transport, du personnel terrain et de la cellule administrative Universal PF .',
   },
   {
     icon: '03',
@@ -92,7 +92,7 @@ function AssistancePage() {
     : 'Assistance immédiate 24h/24 - 7j/7'
 
   const pageIntro = isEnterpriseView
-    ? 'pfm met en place des dispositifs rapides pour les entreprises : assistance médicale, coordination terrain et suivi continu.'
+    ? 'Universal PF met en place des dispositifs rapides pour les entreprises : assistance médicale, coordination terrain et suivi continu.'
     : "En cas d'urgence, un conseiller vous répond immédiatement et déclenche la prise en charge funéraire, le transfert ou le rapatriement."
 
   return (
@@ -100,7 +100,7 @@ function AssistancePage() {
       <section className="section ai-hero-section">
         <div className="container ai-hero reveal-on-scroll">
           <div className="ai-hero-copy">
-            <span className="ai-eyebrow">Assistance pfm </span>
+            <span className="ai-eyebrow">Assistance Universal PF </span>
             <h1>{pageTitle}</h1>
             <p>{pageIntro}</p>
             <p>
@@ -130,11 +130,11 @@ function AssistancePage() {
                 <span>Disponibilité continue</span>
               </article>
               <article>
-                <strong>13+</strong>
+                <strong>15+</strong>
                 <span>Agences actives</span>
               </article>
               <article>
-                <strong>75+</strong>
+                <strong>60+</strong>
                 <span>Années d'expérience</span>
               </article>
             </div>
@@ -166,7 +166,7 @@ function AssistancePage() {
             <span className="ai-eyebrow">Engagements</span>
             <h2>Une assistance organisée avec exigence et clarté</h2>
             <p>
-              pfm maintient des standards élevés de qualité opérationnelle afin de garantir une
+              Universal PF maintient des standards élevés de qualité opérationnelle afin de garantir une
               prise en charge fiable dans toutes les situations.
             </p>
           </div>
@@ -191,7 +191,7 @@ function AssistancePage() {
 
           <div className="ai-process-layout">
             <div className="ai-process-image">
-              <img src={imageOperation} alt="Intervention rapide pfm " />
+              <img src={imageOperation} alt="Intervention rapide Universal PF " />
             </div>
 
             <div className="ai-process-steps">
@@ -209,21 +209,10 @@ function AssistancePage() {
 
       <section className="section ai-docs-section">
         <div className="container ai-docs reveal-on-scroll">
-          <div className="ai-docs-card">
-            <h2>Documents à préparer</h2>
-            <p>
-              Pour accélérer le traitement du dossier, notre équipe recommande de préparer ces
-              éléments. pfm vous accompagne ensuite pour valider et compléter chaque pièce.
-            </p>
-            <ul>
-              {requiredDocuments.map((doc) => (
-                <li key={doc}>{doc}</li>
-              ))}
-            </ul>
-          </div>
+
 
           <div className="ai-team-card">
-            <img src={imageTeam} alt="Équipe de coordination pfm " />
+            <img src={imageTeam} alt="Équipe de coordination Universal PF " />
             <div>
               <h3>Coordination continue</h3>
               <p>
@@ -231,7 +220,7 @@ function AssistancePage() {
                 rapidité d'exécution.
               </p>
               <p>
-                Un référent pfm reste disponible pour informer la famille et confirmer les étapes
+                Un référent Universal PF reste disponible pour informer la famille et confirmer les étapes
                 validées.
               </p>
             </div>
@@ -283,6 +272,7 @@ function AssistancePage() {
 }
 
 export default AssistancePage
+
 
 
 

@@ -40,19 +40,19 @@ function FleursPage() {
       <section className="section mf-hero-section">
         <div className="container mf-hero reveal-on-scroll">
           <div className="mf-hero-copy">
-            <span className="mf-eyebrow">pfm Fleurs</span>
+            <span className="mf-eyebrow">Universal PF Fleurs</span>
             <h1>Fleurs</h1>
             <p>
               Une large gamme florale, livraison totalement gratuite, ruban avec inscription
               personnalisée.
             </p>
             <p>
-              Pour répondre au souhait des familles et de ses partenaires, la pfm a créé pfm 
+              Pour répondre au souhait des familles et de ses partenaires, la Universal PF a créé Universal PF 
               FLEURS avec un service professionnel, humain et soigné.
             </p>
             <p>
               Depuis la centralisation des commandes jusqu&apos;au transport des fleurs à toutes les
-              étapes du convoi funéraire, pfm traduit avec élégance l&apos;émotion, le souvenir et
+              étapes du convoi funéraire, Universal PF traduit avec élégance l&apos;émotion, le souvenir et
               l&apos;hommage rendu au défunt.
             </p>
             <div className="mf-hero-actions">
@@ -67,10 +67,10 @@ function FleursPage() {
 
           <div className="mf-hero-visual">
             <figure className="mf-hero-photo mf-hero-photo-main">
-              <img src={fleurImage1} alt="Service floral pfm " />
+              <img src={fleurImage1} alt="Service floral Universal PF " />
             </figure>
             <figure className="mf-hero-photo mf-hero-photo-overlay">
-              <img src={fleurImage2} alt="Compositions florales pfm " />
+              <img src={fleurImage2} alt="Compositions florales Universal PF " />
             </figure>
           </div>
         </div>
@@ -81,12 +81,12 @@ function FleursPage() {
           <span className="mf-eyebrow">Service floral</span>
           <h2>Fleurs naturelles, artificielles et plantes</h2>
           <p>
-            Sachant que les fleurs sont un élément essentiel du souvenir et de l&apos;hommage, pfm 
+            Sachant que les fleurs sont un élément essentiel du souvenir et de l&apos;hommage, Universal PF 
             FLEURS met à disposition une gamme variée pour accompagner les moments les plus marquants
             des obsèques et du recueillement.
           </p>
           <p>
-            pfm  dispose de magasins pour la confection et la livraison et offre aux familles
+            Universal PF  dispose de magasins pour la confection et la livraison et offre aux familles
             la possibilité de composer les modèles et les couleurs de leur choix.
           </p>
           <ul className="mf-rich-list">
@@ -114,7 +114,7 @@ function FleursPage() {
             ))}
           </ul>
           <p>
-            pfm peut également fournir des compositions en fleurs artificielles, avec une
+            Universal PF peut également fournir des compositions en fleurs artificielles, avec une
             gamme variée disponible et prête à porter pour tombes, sépultures et espaces de
             recueillement.
           </p>
@@ -149,8 +149,8 @@ function FleursPage() {
       <section className="section mf-banner-section">
         <div className="container mf-banner reveal-on-scroll">
           <div className="mf-banner-media">
-            <img src={fleurImage5} alt="Équipe pfm " />
-            <img src={fleurImage6} alt="Livraison pfm " />
+            <img src={fleurImage5} alt="Équipe Universal PF " />
+            <img src={fleurImage6} alt="Livraison Universal PF " />
           </div>
           <div className="mf-banner-copy">
             <h2> un service floral complet</h2>
@@ -174,4 +174,5 @@ function FleursPage() {
 }
 
 export default FleursPage
+
 
