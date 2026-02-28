@@ -4262,6 +4262,10 @@ textarea {
   .main-nav.is-open {
     display: flex;
     animation: none;
+    max-height: calc(100dvh - 88px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-link {
@@ -4338,6 +4342,9 @@ textarea {
 
   .nav-group.is-open .dropdown-menu {
     display: grid;
+    max-height: min(52dvh, 360px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-group.is-open .nav-group-trigger {
@@ -4666,6 +4673,10 @@ textarea {
   .main-nav.is-open {
     display: flex;
     animation: none;
+    max-height: calc(100dvh - 88px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-link {
@@ -4742,6 +4753,9 @@ textarea {
 
   .nav-group.is-open .dropdown-menu {
     display: grid;
+    max-height: min(52dvh, 360px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-group.is-open .nav-group-trigger {
@@ -8582,10 +8596,15 @@ textarea {
 
 @media (max-width: 760px) {
   .home-page .hero-section {
-    min-height: clamp(560px, calc(90svh - var(--header-offset, 0px)), 760px);
+    min-height: calc(100vh - var(--header-offset, 0px));
+    min-height: calc(100dvh - var(--header-offset, 0px));
+    height: calc(100vh - var(--header-offset, 0px));
+    height: calc(100dvh - var(--header-offset, 0px));
   }
 
   .home-page .hero-banner {
+    min-height: 100%;
+    height: 100%;
     border-bottom-left-radius: 50% 5.5% !important;
     border-bottom-right-radius: 50% 5.5% !important;
   }
@@ -8615,6 +8634,11 @@ textarea {
     background-size: cover !important;
     background-position: center center !important;
     image-rendering: auto;
+  }
+
+  .home-page .hero-slider-controls {
+    bottom: 1.15rem;
+    padding: 0.56rem 0.82rem;
   }
 }
 

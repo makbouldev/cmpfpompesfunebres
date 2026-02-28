@@ -1,4 +1,5 @@
-﻿import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import heroSlide1 from '../assets/hero/1.png'
 import heroSlide2 from '../assets/hero/2.png'
@@ -765,7 +766,7 @@ function HomePage() {
             </aside>
           </div>
 
-          {isAgencyModalOpen && (
+          {isAgencyModalOpen && createPortal(
             <div
               className="agency-modal-backdrop"
               role="dialog"
@@ -816,7 +817,8 @@ function HomePage() {
                   Chaque minute compte. Universal PF répond avec rapidité, qualité et humanité.
                 </p>
               </div>
-            </div>
+            </div>,
+            document.body,
           )}
         </div>
       </section>
