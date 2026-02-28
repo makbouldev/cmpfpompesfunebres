@@ -1642,6 +1642,53 @@ h2 {
   animation: contactStatusIn 0.35s ease;
 }
 
+.contact-status-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(8, 28, 45, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.contact-status-modal {
+  width: min(92vw, 520px);
+  border-radius: 16px;
+  padding: 1.1rem 1rem;
+  background: #ffffff;
+  border: 1px solid #d1e3f2;
+  box-shadow: 0 22px 48px rgba(10, 40, 66, 0.24);
+  animation: contactStatusIn 0.24s ease;
+}
+
+.contact-status-modal h3 {
+  margin: 0;
+  color: #153a56;
+}
+
+.contact-status-modal p {
+  margin: 0.6rem 0 1rem;
+  color: #365870;
+  line-height: 1.6;
+}
+
+.contact-status-modal .btn {
+  min-height: 42px;
+}
+
+.contact-status-modal.is-success {
+  border-color: #b8e2c3;
+  background: linear-gradient(180deg, #ffffff, #f4fff7);
+}
+
+.contact-status-modal.is-error {
+  border-color: #f2c2c2;
+  background: linear-gradient(180deg, #ffffff, #fff5f5);
+}
+
 @keyframes contactStatusIn {
   from {
     opacity: 0;

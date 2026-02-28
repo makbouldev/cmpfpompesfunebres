@@ -11,6 +11,8 @@ function ContactPage() {
     message: '',
   })
   const [status, setStatus] = useState('')
+  const [isStatusOpen, setIsStatusOpen] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [selectedAgencySlug, setSelectedAgencySlug] = useState('casablanca')
   const selectedAgency = agencies.find((agency) => agency.slug === selectedAgencySlug) ?? agencies[0]
 
@@ -33,7 +35,9 @@ function ContactPage() {
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
     const targetEmail = 'noureddinemakboul03@gmail.com'
 
-    setStatus('Envoi en cours...')
+    setIsSubmitting(true)
+    setIsStatusOpen(false)
+    setStatus('')
 
     const emailSubject = `[${formData.contactSubject}] Nouvelle demande depuis le site Universal PF `
     const basePayload = {
@@ -100,6 +104,7 @@ function ContactPage() {
 
       if (isSent) {
         setStatus('Votre demande a été envoyée avec succès. Notre équipe vous recontactera rapidement.')
+        setIsStatusOpen(true)
         setFormData({
           fullName: '',
           phone: '',
@@ -110,9 +115,13 @@ function ContactPage() {
         })
       } else {
         setStatus("Échec d'envoi. Vérifiez la configuration e-mail et réessayez.")
+        setIsStatusOpen(true)
       }
     } catch (error) {
       setStatus('Erreur réseau. Réessayez dans quelques instants.')
+      setIsStatusOpen(true)
+    } finally {
+      setIsSubmitting(false)
     }
   }
   
@@ -208,8 +217,9 @@ function ContactPage() {
                   required
                 />
               </label>
-              <button type="submit" className="btn btn-primary">Envoyer la demande</button>
-              {status ? <p className="contact-status">{status}</p> : null}
+              <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+                {isSubmitting ? 'Envoi en cours...' : 'Envoyer la demande'}
+              </button>
             </form>
             <iframe name="formsubmit_iframe" title="FormSubmit transport" style={{ display: 'none' }} />
           </div>
@@ -276,6 +286,25 @@ function ContactPage() {
           </aside>
         </div>
       </div>
+      {isStatusOpen ? (
+        <div className="contact-status-modal-backdrop" onClick={() => setIsStatusOpen(false)}>
+          <div
+            className={`contact-status-modal ${status.includes('succès') ? 'is-success' : 'is-error'}`}
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="contact-status-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h3 id="contact-status-title">
+              {status.includes('succès') ? 'Message envoyé' : "Échec de l'envoi"}
+            </h3>
+            <p>{status}</p>
+            <button type="button" className="btn btn-primary" onClick={() => setIsStatusOpen(false)}>
+              Fermer
+            </button>
+          </div>
+        </div>
+      ) : null}
     </section>
   )
 }
