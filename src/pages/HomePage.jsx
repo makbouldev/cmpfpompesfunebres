@@ -19,15 +19,7 @@ import imagePreparationEquipe from '../assets/images/20.webp'
 import { agencies } from '../data/agencies'
 
 const heroSlides = [
-  {
-    titleTop: 'Nos services',
-    titleMain: 'Rapatriement de corps',
-    description:
-      'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
-    cta: 'Demander un rapatriement',
-    to: '/assistance',
-    image: imageRapatriement,
-  },
+  
   {
     titleTop: 'Nos services',
     titleMain: 'Pompes Funèbres Musulmanes',
@@ -45,6 +37,15 @@ const heroSlides = [
     cta: 'Service non musulman',
     to: '/pompes-funebres/non-musulmanes',
     image: heroSlide2,
+  },
+  {
+    titleTop: 'Nos services',
+    titleMain: 'Rapatriement de corps',
+    description:
+      'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
+    cta: 'Demander un rapatriement',
+    to: '/assistance',
+    image: imageRapatriement,
   },
   {
     titleTop: 'Nos services',
