@@ -102,8 +102,8 @@
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
       'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%A5%D8%B3%D8%B9%D8%A7%D9%81+%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%AF+-+CMPF%E2%80%AD/@30.9221169,-6.9193998,17z/data=!3m1!4b1!4m6!3m5!1s0xdbb11a17b88be91:0x9e9b6b4b3257805d!8m2!3d30.9221169!4d-6.9193998!16s%2Fg%2F11n5hljl03?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D',
-    lat: 33.899277,
-    lng: -5.5494586,
+    lat: 30.9221169,
+    lng: -6.9193998,
   },
   {
     code: '09',
