@@ -50,8 +50,10 @@
     phones: ['+212 5 28 99 76 01', '+212 5 28 89 25 04'],
     mobile: '+212 6 78 98 90 04',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 27.1253,
-    lng: -13.1625,
+    mapUrl:
+      'https://www.google.com/maps?q=27.141357,-13.188670&t=m&hl=fr',
+    lat: 27.141357,
+    lng: -13.18867,
   },
   {
     code: '05',
@@ -62,8 +64,10 @@
     phones: ['+212 5 24 44 84 51', '+212 5 24 43 18 55', '+212 5 24 37 90 57'],
     mobile: '+212 6 62 01 81 98',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 31.6295,
-    lng: -7.9811,
+    mapUrl:
+      'https://www.google.com/maps?q=31.636585,-8.011960&t=m&hl=fr',
+    lat: 31.636585,
+    lng: -8.01196,
   },
   {
     code: '06',
@@ -88,8 +92,10 @@
     phones: ['+212 5 36 32 08 77', '+212 5 36 33 01 28'],
     mobile: '+212 6 62 03 01 79',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 35.1688,
-    lng: -2.9335,
+    mapUrl:
+      'https://www.google.com/maps/place/35%C2%B007%2719.6%22N+2%C2%B055%2754.2%22W/@35.1220947,-2.9316991,21z/data=!4m4!3m3!8m2!3d35.122112!4d-2.931724?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D',
+    lat: 35.122112,
+    lng: -2.931724,
   },
   {
     code: '08',
@@ -114,8 +120,10 @@
     phones: ['+212 5 36 70 30 25', '+212 5 36 70 30 21'],
     mobile: '+212 6 61 08 84 13',
     email: 'cmpfcasa@cmpfassistance.ma',
-    lat: 34.6814,
-    lng: -1.9086,
+    mapUrl:
+      'https://www.google.com/maps/search/34.684880,+-1.920894?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=f7b122f8-cc29-4eb6-bfd0-c2a4e2de5688',
+    lat: 34.68488,
+    lng: -1.920894,
   },
   {
     code: '10',
@@ -127,9 +135,9 @@
     mobile: '+212 6 61 08 84 44',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
-      'https://www.google.com/maps/place/CMPF/@33.8443799,-6.3366141,10z/data=!4m6!3m5!1s0xda0e80374846203:0x570bdcf2b9e41fd0!8m2!3d33.8347912!4d-6.0638441!16s%2Fg%2F11cn7rn4gs?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
-    lat: 33.8347912,
-    lng: -6.0638441,
+      'https://www.google.com/maps/search/34.017879,+-6.832772?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=17fa62d3-bbfd-4571-b6f7-fd0dc60902e4',
+    lat: 34.017879,
+    lng: -6.832772,
   },
   {
     code: '11',
