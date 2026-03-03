@@ -121,6 +121,7 @@ function Layout({ children }) {
   const [openGroupKey, setOpenGroupKey] = useState('')
   const [showScrollTop, setShowScrollTop] = useState(false)
   const headerRef = useRef(null)
+  const navRef = useRef(null)
   const location = useLocation()
 
   useEffect(() => {
@@ -182,6 +183,23 @@ function Layout({ children }) {
 
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
   }, [location.pathname, location.hash])
+
+  useEffect(() => {
+    if (!openGroupKey) return undefined
+
+    const handlePointerDown = (event) => {
+      if (!(event.target instanceof HTMLElement)) return
+      if (event.target.closest('.nav-group')) return
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpenGroupKey('')
+        return
+      }
+      setOpenGroupKey('')
+    }
+
+    document.addEventListener('pointerdown', handlePointerDown)
+    return () => document.removeEventListener('pointerdown', handlePointerDown)
+  }, [openGroupKey])
 
   useEffect(() => {
     const revealSelectors = [
@@ -366,6 +384,7 @@ function Layout({ children }) {
           <div className="container">
             <nav
               id="main-navigation"
+              ref={navRef}
               className={isNavOpen ? 'main-nav is-open' : 'main-nav'}
               aria-label="Navigation principale"
             >
