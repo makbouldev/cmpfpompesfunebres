@@ -9,9 +9,9 @@
     mobile: '+212 6 62 02 82 49',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
-      'https://www.google.com/maps/place/الشركة+المغربية+لنقل+اموات+المسلمين%E2%80%AD/@30.4223426,-11.9020827,8z/data=!4m10!1m2!2m1!1scmpf+agadir!3m6!1s0xdb3b7e34d78cc81:0x24dc1feb7f2f9641!8m2!3d30.4223426!4d-9.5949538!15sCgtjbXBmIGFnYWRpcpIBEGNvcnBvcmF0ZV9vZmZpY2XgAQA!16s%2Fg%2F11g10gr6k2?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
-    lat: 30.4223426,
-    lng: -9.5949538,
+      'https://google.com/maps?q=30.425582,-9.614168&t=m&hl=fr',
+    lat: 30.425582,
+    lng: -9.614168,
   },
   {
     code: '02',
@@ -163,9 +163,9 @@
     mobile: '+212 6 62 02 21 08',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
-      'https://www.google.com/maps/place/RABIE+CMPF+Assistance+Ambulance+Tetouan/@35.5654548,-5.3498635,17z/data=!3m1!4b1!4m6!3m5!1s0xd0b43dc2796ef95:0x928a21fd1412be28!8m2!3d35.5654548!4d-5.3472886!16s%2Fg%2F11zjb5_qzz?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
-    lat: 35.5654548,
-    lng: -5.3472886,
+      'https://www.google.com/maps/place/35%C2%B034%2717.3%22N+5%C2%B021%2717.7%22W/@35.5715944,-5.3549272,20z/data=!4m4!3m3!8m2!3d35.571464!4d-5.354927?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D',
+    lat: 35.571464,
+    lng: -5.354927,
   },
   {
     code: '13',
