@@ -88,12 +88,12 @@ const groupedLinks = [
     label: 'Nos services',
     items: [
       { to: '/service/services-entreprises', label: 'Services aux Entreprises', featured: true },
-      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Funébres Musulmanes' },
       { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes Funébres Non Musulmanes' },
+      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Funébres Musulmanes' },
       { to: '/service/fleurs', label: 'Fleurs' },
       { to: '/service/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
-      { to: '/service/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
       { to: '/service/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
+      { to: '/service/marbrerie-musulmane', label: 'Marbrerie Musulmane' },
     ],
   },
   {
@@ -388,12 +388,20 @@ function Layout({ children }) {
               className={isNavOpen ? 'main-nav is-open' : 'main-nav'}
               aria-label="Navigation principale"
             >
+              
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
                 onClick={closeMenu}
               >
                 Accueil
+              </NavLink>
+              <NavLink
+                to="/qui-sommes-nous"
+                className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
+                onClick={closeMenu}
+              >
+                Qui sommes-nous
               </NavLink>
               <NavLink
                 to="/assistance"
@@ -403,13 +411,7 @@ function Layout({ children }) {
                 Assistance immédiate
               </NavLink>
 
-              <NavLink
-                to="/qui-sommes-nous"
-                className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
-                onClick={closeMenu}
-              >
-                Qui sommes-nous
-              </NavLink>
+              
 
               {groupedLinks.map((group) => (
                 <div

@@ -19,15 +19,14 @@ import imagePreparationEquipe from '../assets/images/20.webp'
 import { agencies } from '../data/agencies'
 
 const heroSlides = [
-  
   {
     titleTop: 'Nos services',
-    titleMain: 'Pompes Funèbres Musulmanes',
+    titleMain: 'Rapatriement de corps',
     description:
-      'Prise en charge complète des rites musulmans avec accompagnement humain et discret.',
-    cta: 'Service Musulman',
-    to: '/pompes-funebres/musulmanes',
-    image: heroSlide1,
+      'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
+    cta: 'Demander un rapatriement',
+    to: '/assistance',
+    image: imageRapatriement,
   },
   {
     titleTop: 'Nos services',
@@ -40,13 +39,15 @@ const heroSlides = [
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Rapatriement de corps',
+    titleMain: 'Pompes Funèbres Musulmanes',
     description:
-      'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
-    cta: 'Demander un rapatriement',
-    to: '/assistance',
-    image: imageRapatriement,
+      'Prise en charge complète des rites musulmans avec accompagnement humain et discret.',
+    cta: 'Service Musulman',
+    to: '/pompes-funebres/musulmanes',
+    image: heroSlide1,
   },
+  
+  
   {
     titleTop: 'Nos services',
     titleMain: 'Fleurs Funéraires Et Compositions Personnalisées',
@@ -58,15 +59,6 @@ const heroSlides = [
   },
   {
     titleTop: 'Nos services',
-    titleMain: 'Marbrerie Musulmanes',
-    description:
-      'Réalisation de monuments funéraires musulmans dans le respect des normes et des rites.',
-    cta: 'Marbrerie musulmane',
-    to: '/produits/marbrerie-musulmane',
-    image: heroSlide6,
-  },
-  {
-    titleTop: 'Nos services',
     titleMain: 'Marbrerie non Musulmanes',
     description:
       'Solutions de marbrerie sur mesure pour cérémonies non musulmanes et civiles.',
@@ -74,6 +66,16 @@ const heroSlides = [
     to: '/produits/marbrerie-non-musulmane',
     image: heroSlide3,
   },
+  {
+    titleTop: 'Nos services',
+    titleMain: 'Marbrerie Musulmanes',
+    description:
+      'Réalisation de monuments funéraires musulmans dans le respect des normes et des rites.',
+    cta: 'Marbrerie musulmane',
+    to: '/produits/marbrerie-musulmane',
+    image: heroSlide6,
+  },
+  
 ]
 
 const servicesHighlights = [
