@@ -1,8 +1,6 @@
 ﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/muslimanes/1.png'
 import imageOverlay from '../assets/muslimanes/2.webp'
-import imageTeam from '../assets/muslimanes/3.webp'
-import imageWorkshop from '../assets/muslimanes/4.webp'
 
 function MarbrerieMusulmanePage() {
   return (
@@ -61,11 +59,7 @@ function MarbrerieMusulmanePage() {
       </section>
 
       <section className="section mf-banner-section">
-        <div className="container mf-banner reveal-on-scroll">
-          <div className="mf-banner-media">
-            <img src={imageTeam} alt="Conseillers marbrerie Universal PF " />
-            <img src={imageWorkshop} alt="Atelier marbrerie Universal PF " />
-          </div>
+        <div className="container mf-banner mf-banner-copy-only reveal-on-scroll">
           <div className="mf-banner-copy">
             <h2>Universal PF vous accompagne du conseil à la réalisation</h2>
             <p>

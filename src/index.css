@@ -7403,6 +7403,10 @@ textarea {
   padding: 0.9rem;
 }
 
+.mf-banner-copy-only {
+  grid-template-columns: 1fr;
+}
+
 .mf-banner-media {
   display: grid;
   grid-template-columns: 1fr 1fr;
