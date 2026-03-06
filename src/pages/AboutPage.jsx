@@ -2,7 +2,7 @@
 import image7 from '../assets/images/7.webp'
 import image8 from '../assets/images/8.jpg'
 import image18 from '../assets/images/18.jpg'
-import image19 from '../assets/images/19.webp'
+import image19 from '../assets/images/19.jpeg'
 import image20 from '../assets/images/7.webp'
 import imageRapatriement from '../assets/images/avionrapat.webp'
 import EditorialShowcase from '../components/EditorialShowcase'
@@ -70,7 +70,7 @@ const aboutShowcasePoints = [
 
 const aboutShowcaseCards = [
   { title: 'Rapatriement', image: imageRapatriement, alt: 'Rapatriement de corps Universal PF ' },
-  { title: 'Intervention', image: image19, alt: 'Intervention terrain Universal PF ' },
+  { title: 'obsèques', image: image19, alt: 'Intervention terrain Universal PF ' },
   { title: 'Accompagnement', image: image20, alt: 'Accompagnement des familles Universal PF ' },
 ]
 
@@ -148,7 +148,7 @@ function AboutPage() {
 
       <EditorialShowcase
         className="editorial-showcase-about"
-        heading="Rapatriement, intervention, accompagnement :"
+        heading="Rapatriement, obsèques, accompagnement :"
         accent="la signature Universal PF "
         points={aboutShowcasePoints}
         cards={aboutShowcaseCards}

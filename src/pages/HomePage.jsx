@@ -403,40 +403,6 @@ function HomePage() {
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
     `Bonjour Universal PF , je souhaite une assistance à ${selectedAgency.label}.`,
   )}`
-  const renderServiceIcon = (icon) => {
-    if (icon === 'pulse') {
-      return (
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path d="M3 12h4l2-4 3 8 2-4h7" />
-        </svg>
-      )
-    }
-    if (icon === 'timer') {
-      return (
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <circle cx="12" cy="13" r="7" />
-          <path d="M12 13V9m0-5h3M9 4h6" />
-        </svg>
-      )
-    }
-    if (icon === 'shield') {
-      return (
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-          <path d="M12 4 6 6.3v5c0 3.8 2.4 6.9 6 8.4 3.6-1.5 6-4.6 6-8.4v-5L12 4Z" />
-          <path d="m9.5 12.1 1.8 1.8 3.3-3.4" />
-        </svg>
-      )
-    }
-    return (
-      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-        <circle cx="9" cy="10" r="2.2" />
-        <circle cx="15.2" cy="10.8" r="1.8" />
-        <path d="M5.2 17c0-2.1 1.8-3.7 4-3.7s4 1.6 4 3.7" />
-        <path d="M13 17c.2-1.4 1.2-2.6 3-2.6 1.6 0 2.8 1.1 2.8 2.6" />
-      </svg>
-    )
-  }
-
   return (
     <div className="home-page">
       <section className="hero-section">
@@ -538,7 +504,6 @@ function HomePage() {
               <div className="home-services-intro-cards">
                 {servicesOverview.map((item) => (
                   <article key={item.title} className="home-services-intro-card card">
-                    <span className="home-services-intro-card-icon">{renderServiceIcon(item.icon)}</span>
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
                   </article>

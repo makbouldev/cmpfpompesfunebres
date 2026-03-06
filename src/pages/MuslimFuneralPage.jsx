@@ -1,7 +1,7 @@
 ﻿import { Link } from 'react-router-dom'
 import imageHero from '../assets/hero/1.png'
 import imageTeam from '../assets/images/7.webp'
-import imageTransport from '../assets/images/avionrapat.webp'
+import imageTransport from '../assets/images/avionrapatmusulmanes.png'
 import imageInhumationCard from '../assets/hero/1.png'
 import imageMarbrerieCard from '../assets/hero/6.png'
 

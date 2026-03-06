@@ -14,12 +14,10 @@ const classiquePlans = [
   {
     title: 'Nettoyage et désherbage 1 fois par an',
     text: 'Avant la Toussaint, avec fourniture de deux pots de chrysanthemums.',
-    price: '700,00 DH',
   },
   {
     title: 'Nettoyage et désherbage 2 fois par an',
     text: "Un passage avant la Toussaint et un second au début de l'été.",
-    price: '900,00 DH',
   },
 ]
 
@@ -27,22 +25,18 @@ const contractPlans = [
   {
     title: 'Contrat 10 ans - entretien annuel',
     text: 'Un passage de nettoyage et fleurissement chaque année.',
-    price: '4 500,00 DH',
   },
   {
     title: 'Contrat 30 ans - entretien annuel',
     text: 'Un passage de nettoyage et fleurissement chaque année.',
-    price: '13 480,00 DH',
   },
   {
     title: 'Contrat 10 ans - entretien biannuel',
     text: 'Deux passages par an, selon calendrier défini.',
-    price: '6 310,00 DH',
   },
   {
     title: 'Contrat 30 ans - entretien biannuel',
     text: 'Deux passages par an, selon calendrier défini.',
-    price: '18 920,00 DH',
   },
 ]
 
@@ -105,10 +99,6 @@ function NettoyageFleurissementPage() {
               <article key={plan.title} className="nf-plan-card">
                 <h3>{plan.title}</h3>
                 <p>{plan.text}</p>
-                <strong>{plan.price}</strong>
-                <Link to="/contact" className="btn btn-primary">
-                  Commander
-                </Link>
               </article>
             ))}
           </div>
@@ -119,10 +109,6 @@ function NettoyageFleurissementPage() {
               <article key={plan.title} className="nf-plan-card">
                 <h3>{plan.title}</h3>
                 <p>{plan.text}</p>
-                <strong>{plan.price}</strong>
-                <Link to="/contact" className="btn btn-primary">
-                  Commander
-                </Link>
               </article>
             ))}
           </div>
