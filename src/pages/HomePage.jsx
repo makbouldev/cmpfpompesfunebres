@@ -21,7 +21,7 @@ import { agencies } from '../data/agencies'
 const heroSlides = [
   {
     titleTop: 'Nos services',
-    titleMain: 'Rapatriement de corps',
+    titleMain: 'Rapatriement des corps',
     description:
       'Prise en charge complète du rapatriement au Maroc et à l’international, avec coordination administrative et logistique.',
     cta: 'Demander un rapatriement',
