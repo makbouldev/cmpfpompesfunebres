@@ -119,7 +119,7 @@ function AssistancePage() {
               <a href="tel:+212522491616" className="btn btn-primary">
                 Appeler maintenant
               </a>
-              <a href="https://wa.me/212661502763" className="btn btn-secondary">
+              <a href="https://wa.me/212666826724" className="btn btn-secondary">
                 WhatsApp direct
               </a>
             </div>

@@ -5,8 +5,8 @@
     label: 'Agadir',
     region: 'Souss-Massa',
     address: '4, Bd Mohammed V - Immeuble Mauritania - Agadir',
-    phones: ['+212 5 28 84 06 26', '+212 5 28 82 44 96', '+212 5 28 84 78 94'],
-    mobile: '+212 6 62 02 82 49',
+    phones: ['+212 5 28 84 06 26', '+212 6 62 02 82 49', '+212 6 61 79 95 69'],
+    mobile: '',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
       'https://google.com/maps?q=30.425582,-9.614168&t=m&hl=fr',
@@ -19,7 +19,7 @@
     label: 'Casablanca',
     region: 'Casablanca-Settat',
     address: '56, Avenue Mers Sultan - Casablanca',
-    phones: ['+212 5 22 49 16 16'],
+    phones: ['+212 522491437', '+212 666-826724', '+212 666-826724'],
     mobile: '+212 6 61 50 27 63',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -33,7 +33,7 @@
     label: 'Fes',
     region: 'Fes-Meknès',
     address: '1, Bd Moulay Rachid Route De Sefrou - Fes',
-    phones: ['+212 5 35 73 42 38', '+212 5 35 76 66 32'],
+    phones: ['+212 5 35 76 66 32', '+212 5 35 61 39 63', '+212 6 61 79 95 69'],
     mobile: '+212 6 61 79 95 69',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -47,7 +47,7 @@
     label: 'Laayoune',
     region: 'Laayoune-Sakia El Hamra',
     address: '19, Bd Brahim El Mazini Hay El Fath - Laayoune',
-    phones: ['+212 5 28 99 76 01', '+212 5 28 89 25 04'],
+    phones: ['+212 5 28 99 76 01', '+212 6 78 98 90 04', '+212 6 62 03 63 57'],
     mobile: '+212 6 78 98 90 04',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -61,7 +61,7 @@
     label: 'Marrakech',
     region: 'Marrakech-Safi',
     address: '18, Rue Tarek Ibnou Zyad Gueliz - Marrakech',
-    phones: ['+212 5 24 44 84 51', '+212 5 24 43 18 55', '+212 5 24 37 90 57'],
+    phones: ['+212 5 24 44 84 51', '+212 6 62 01 81 98', '+212 6 62 17 36 79'],
     mobile: '+212 6 62 01 81 98',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -75,7 +75,7 @@
     label: 'Meknès',
     region: 'Fes-Meknès',
     address: '8, Rue Antsirabe Hamria - Meknès',
-    phones: ['+212 5 35 52 09 14', '+212 5 35 51 73 87', '+212 5 35 52 01 94'],
+    phones: ['+212 5 35 51 73 87', '+212 6 62 03 14 97', '+212 6 62 02 87 27'],
     mobile: '+212 6 62 03 14 97',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -89,7 +89,7 @@
     label: 'Nador',
     region: 'Oriental',
     address: '6, Rte Zghanghane Quartier Ouled Mimoun',
-    phones: ['+212 5 36 32 08 77', '+212 5 36 33 01 28'],
+    phones: ['+212 5 36 32 08 77', '+212 6 62 03 01 79', '+212 6 62 03 44 09'],
     mobile: '+212 6 62 03 01 79',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -103,7 +103,7 @@
     label: 'Ouarzazate',
     region: 'Draa-Tafilalet',
     address: '60, Lot Centre - Ouarzazate',
-    phones: ['+212 5 24 88 56 67', '+212 5 24 88 44 31', '+212 5 24 88 56 68'],
+    phones: ['+212 5 24 88 56 67', '+212 6 71 80 88 50', '+212 6 61 85 65 13'],
     mobile: '+212 6 61 85 65 13',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -117,7 +117,7 @@
     label: 'Oujda',
     region: 'Oriental',
     address: '5, Rue Ibnou Nafiss - OUJDA',
-    phones: ['+212 5 36 70 30 25', '+212 5 36 70 30 21'],
+    phones: ['+212 5 36 70 30 25', '+212 6 61 08 84 13', '+212 6 62 17 39 06'],
     mobile: '+212 6 61 08 84 13',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -131,7 +131,7 @@
     label: 'Rabat',
     region: 'Rabat-Sale-Kenitra',
     address: '5, Rue Soussa - Rabat',
-    phones: ['+212 5 37 70 60 17', '+212 5 37 73 61 01', '+212 5 37 73 47 02'],
+    phones: ['+212 5 37 70 60 17', '+212 6 61 08 84 44', '+212 6 67 54 35 75'],
     mobile: '+212 6 61 08 84 44',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -145,7 +145,7 @@
     label: 'Tanger',
     region: 'Tanger-Tetouan-Al Hoceima',
     address: '42, Rue Al Mansour Addahbi - Tanger',
-    phones: ['+212 5 39 94 10 27', '+212 5 39 94 11 97'],
+    phones: ['+212 5 39 94 10 27', '+212 6 61 08 84 40', '+212 6 61 97 03 86'],
     mobile: '+212 6 60 88 44 40',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:
@@ -159,7 +159,7 @@
     label: 'Tetouan',
     region: 'Tanger-Tetouan-Al Hoceima',
     address: '30, Residence Ennasr Rue Saadia Hay Touta - Tetouan',
-    phones: ['+212 5 39 97 40 88', '+212 5 39 99 18 18', '+212 5 39 97 14 82'],
+    phones: ['+212 5 39 99 18 18', '+212 6 61 79 32 57', '+212 6 62 16 51 23'],
     mobile: '+212 6 62 02 21 08',
     email: 'cmpfcasa@cmpfassistance.ma',
     mapUrl:

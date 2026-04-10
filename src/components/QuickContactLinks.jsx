@@ -34,9 +34,9 @@ function QuickContactLinks() {
         <span className="plaques-contact-icon" aria-hidden="true"><PhoneIcon /></span>
         <span>+212 522 20 71 11</span>
       </a>
-      <a className="plaques-contact-link" href="https://wa.me/212661502763" target="_blank" rel="noreferrer">
+      <a className="plaques-contact-link" href="https://wa.me/212666826724" target="_blank" rel="noreferrer">
         <span className="plaques-contact-icon" aria-hidden="true"><WhatsAppIcon /></span>
-        <span>WhatsApp: +212 661 502 763</span>
+        <span>WhatsApp: +212 666 826 724</span>
       </a>
       <a className="plaques-contact-link" href="mailto:cmpfcasa@cmpfassistance.ma">
         <span className="plaques-contact-icon" aria-hidden="true"><MailIcon /></span>

@@ -396,13 +396,24 @@ function HomePage() {
     homeExpertiseTabs.find((tab) => tab.key === activeExpertiseTab) ?? homeExpertiseTabs[0]
   const selectedAgencyMainPhone = selectedAgency.phones[0] ?? '+212 5 22 49 16 16'
   const selectedAgencyPhoneHref = `tel:${selectedAgencyMainPhone.replace(/\s+/g, '')}`
-  const selectedAgencyMobileDigits = selectedAgency.mobile.replace(/\D/g, '')
-  const selectedAgencyWhatsappNumber = selectedAgencyMobileDigits.startsWith('0')
-    ? `212${selectedAgencyMobileDigits.slice(1)}`
-    : selectedAgencyMobileDigits
+  const selectedAgencyWhatsappSource =
+    selectedAgency.phones[2] ?? selectedAgency.mobile ?? selectedAgencyMainPhone
+  const selectedAgencyWhatsappDigits = selectedAgencyWhatsappSource.replace(/\D/g, '')
+  const selectedAgencyWhatsappNumber = selectedAgencyWhatsappDigits.startsWith('0')
+    ? `212${selectedAgencyWhatsappDigits.slice(1)}`
+    : selectedAgencyWhatsappDigits
   const selectedAgencyWhatsappHref = `https://wa.me/${selectedAgencyWhatsappNumber}?text=${encodeURIComponent(
     `Bonjour Universal PF , je souhaite une assistance à ${selectedAgency.label}.`,
   )}`
+  const getAgencyPhoneHref = (phone, index) => {
+    const digits = String(phone || '').replace(/\D/g, '')
+    if (!digits) return '#'
+    if (index === 2) {
+      const whatsappNumber = digits.startsWith('0') ? `212${digits.slice(1)}` : digits
+      return `https://wa.me/${whatsappNumber}`
+    }
+    return `tel:+${digits}`
+  }
   return (
     <div className="home-page">
       <section className="hero-section">
@@ -436,7 +447,7 @@ function HomePage() {
                     <span>Appel immédiat</span>
                   </span>
                 </a>
-                <a href="https://wa.me/212661502763" className="btn hero-btn-wa">
+                <a href="https://wa.me/212666826724" className="btn hero-btn-wa">
                   <span className="hero-btn-content">
                     <span className="hero-btn-icon" aria-hidden="true">
                       <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
@@ -709,14 +720,20 @@ function HomePage() {
                 <a href={`mailto:${selectedAgency.email}`}>{selectedAgency.email}</a>
               </p>
               <ul>
-                {selectedAgency.phones.map((phone) => (
+                {selectedAgency.phones.map((phone, index) => (
                   <li key={phone}>
-                    <strong>Tél:</strong> {phone}
+                    <strong>
+                      {index === 0 ? 'Fix:' : index === 2 ? 'WhatsApp:' : 'Tél:'}
+                    </strong>{' '}
+                    <a
+                      href={getAgencyPhoneHref(phone, index)}
+                      target={index === 2 ? '_blank' : undefined}
+                      rel={index === 2 ? 'noreferrer noopener' : undefined}
+                    >
+                      {phone}
+                    </a>
                   </li>
                 ))}
-                <li>
-                  <strong>Mobile:</strong> {selectedAgency.mobile}
-                </li>
               </ul>
               <div className="home-agency-details-actions">
                 <button type="button" onClick={() => setIsAgencyModalOpen(true)}>
@@ -759,9 +776,18 @@ function HomePage() {
                 </p>
 
                 <ul>
-                  {selectedAgency.phones.map((phone) => (
+                  {selectedAgency.phones.map((phone, index) => (
                     <li key={phone}>
-                      <strong>Telephone:</strong> {phone}
+                      <strong>
+                        {index === 0 ? 'Fix:' : index === 2 ? 'WhatsApp:' : 'Tél:'}
+                      </strong>{' '}
+                      <a
+                        href={getAgencyPhoneHref(phone, index)}
+                        target={index === 2 ? '_blank' : undefined}
+                        rel={index === 2 ? 'noreferrer noopener' : undefined}
+                      >
+                        {phone}
+                      </a>
                     </li>
                   ))}
                   <li>
@@ -770,10 +796,6 @@ function HomePage() {
                   <li>
                     <strong>Adresse:</strong> {selectedAgency.address}
                   </li>
-                  <li>
-                    <strong>Mobile:</strong> {selectedAgency.mobile}
-                  </li>
-
                 </ul>
 
                 <div className="agency-modal-actions">

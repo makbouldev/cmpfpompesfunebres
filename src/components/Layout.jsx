@@ -310,47 +310,47 @@ function Layout({ children }) {
             </div>
 
             <div className="top-contact">
-              <a href="tel:+212522491616">
+              <a href="tel:+212522491437">
                 <span className="phone-inline-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
                   </svg>
                 </span>
-                +212 522 49 16 16
+                +212 522491437
               </a>
-              <a href="tel:+212522207111">
+              <a href="tel:+212666826724">
                 <span className="phone-inline-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
                   </svg>
                 </span>
-                +212 522 20 71 11
+                +212 666-826724
               </a>
             </div>
 
             <div className="top-social">
-              <a href="#" aria-label="Facebook" className="social-icon-link">
+              <a href="https://www.facebook.com/CMPF.officiel?mibextid=ZbWKwL" target="_blank" rel="noreferrer noopener" aria-label="Facebook" className="social-icon-link">
                 <span className="social-icon social-facebook" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.4v8h3.1Z" />
                   </svg>
                 </span>
               </a>
-              <a href="#" aria-label="Instagram" className="social-icon-link">
+              <a href="https://www.instagram.com/cmpf.ma_ambulance_depannage/?igsh=MWh1NmZsbXZ1dHVsOQ#" target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="social-icon-link">
                 <span className="social-icon social-instagram" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M7.8 3h8.4A4.8 4.8 0 0 1 21 7.8v8.4a4.8 4.8 0 0 1-4.8 4.8H7.8A4.8 4.8 0 0 1 3 16.2V7.8A4.8 4.8 0 0 1 7.8 3Zm8.2 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8a3.2 3.2 0 0 0 3.2-3.2V8A3.2 3.2 0 0 0 16 4.8Zm-4 2.7A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.8A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm4.9-2.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z" />
                   </svg>
                 </span>
               </a>
-              <a href="#" aria-label="LinkedIn" className="social-icon-link">
+              <a href="https://www.linkedin.com/company/cmpfcmpf" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" className="social-icon-link">
                 <span className="social-icon social-linkedin" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M6.2 8.6A1.8 1.8 0 1 1 6.2 5a1.8 1.8 0 0 1 0 3.6ZM4.7 9.9h3v9.4h-3V9.9Zm5 0h2.8v1.3h.1a3.1 3.1 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7v5h-3v-4.4c0-1.1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.5h-3V9.9Z" />
                   </svg>
                 </span>
               </a>
-              <a href="https://wa.me/212661502763" aria-label="WhatsApp" className="social-icon-link">
+              <a href="https://wa.me/212666826724" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp" className="social-icon-link">
                 <span className="social-icon social-whatsapp" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M12 3.3a8.7 8.7 0 0 0-7.5 13l-1 4 4.1-1a8.7 8.7 0 1 0 4.4-16Zm0 15.8a7.1 7.1 0 0 1-3.6-1l-.3-.2-2.5.6.7-2.4-.2-.4a7.1 7.1 0 1 1 5.9 3.4Zm3.9-5.3-.5-.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.6-1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.3-.4.2-.3c.1-.1.1-.3 0-.4l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.2 3.6 2.5 1 2.5.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z" />
@@ -475,9 +475,11 @@ function Layout({ children }) {
           </svg>
         </button>
         <a
-          href="https://wa.me/212661502763"
+          href="https://wa.me/212666826724"
           className="floating-action floating-action-whatsapp"
           aria-label="WhatsApp"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
             <path d="M12 3.3a8.7 8.7 0 0 0-7.5 13l-1 4 4.1-1a8.7 8.7 0 1 0 4.4-16Zm0 15.8a7.1 7.1 0 0 1-3.6-1l-.3-.2-2.5.6.7-2.4-.2-.4a7.1 7.1 0 1 1 5.9 3.4Zm3.9-5.3-.5-.2c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.1-.3.2-.5.1-.2-.1-.9-.3-1.6-1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.3-.4.2-.3c.1-.1.1-.3 0-.4l-.7-1.8c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.2 3.6 2.5 1 2.5.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z" />
@@ -492,6 +494,18 @@ function Layout({ children }) {
             <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3 .4.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.1 2.8 3.5 3.3 3 4 3h3.4c.7 0 1.2.5 1.2 1.2 0 1 .1 2 .4 3 .1.4 0 .9-.3 1.2l-2.1 2.4Z" />
           </svg>
         </a>
+        <a
+          href="tel:+212522491437"
+          className="floating-action floating-action-fixed"
+          aria-label="Telephone fixe"
+        >
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path d="M4.2 7.6h15.6v2H4.2z" />
+            <path d="M6 5.6h12v1.4H6zM6 17h12v1.4H6z" />
+            <path d="M8.2 9.6h7.6l1.3 3.8V17H7v-3.6l1.2-3.8Zm2.1 1.5a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4Zm3.4 0a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4Zm-3.4 2.3a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4Zm3.4 0a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4Z" />
+            <path d="M6 6.3c.6-1.3 2.2-2.1 6-2.1s5.4.8 6 2.1h-1.8c-.4-.5-1.4-.9-4.2-.9-2.8 0-3.8.4-4.2.9H6Z" />
+          </svg>
+        </a>
       </div>
 
       <footer className="site-footer">
@@ -503,7 +517,7 @@ function Layout({ children }) {
             </div>
             <div className="footer-topline-actions">
               <a href="tel:+212522491616">Appel immediat</a>
-              <a href="https://wa.me/212661502763">WhatsApp</a>
+              <a href="https://wa.me/212666826724" target="_blank" rel="noreferrer noopener">WhatsApp</a>
             </div>
           </div>
 
@@ -519,13 +533,13 @@ function Layout({ children }) {
               <h4>Telephones</h4>
               <a href="tel:+212522491616">+212 522 49 16 16</a>
               <a href="tel:+212522207111">+212   522 20 71 11</a>
-              <a href="tel:+212661502763">+212 661 502 763</a>
+              <a href="tel:+212666826724">+212 666 826 724</a>
             </div>
 
             <div className="footer-card">
               <h4>Contact</h4>
               <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
-              <a href="https://wa.me/212661502763">WhatsApp direct</a>
+              <a href="https://wa.me/212666826724" target="_blank" rel="noreferrer noopener">WhatsApp direct</a>
               <Link to="/contact">Formulaire de contact</Link>
             </div>
 
@@ -539,7 +553,7 @@ function Layout({ children }) {
             <div className="footer-card">
               <h4>Reseaux sociaux</h4>
               <div className="footer-social-icons">
-                <a href="#" aria-label="Facebook" className="social-icon-link">
+                <a href="https://www.facebook.com/CMPF.officiel?mibextid=ZbWKwL" target="_blank" rel="noreferrer noopener" aria-label="Facebook" className="social-icon-link">
                   <span className="social-icon social-facebook" aria-hidden="true">
                     <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                       <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V10H8v3h2.4v8h3.1Z" />
@@ -547,7 +561,7 @@ function Layout({ children }) {
                   </span>
                   <span>Facebook</span>
                 </a>
-                <a href="#" aria-label="Instagram" className="social-icon-link">
+                <a href="https://www.instagram.com/cmpf.ma_ambulance_depannage/?igsh=MWh1NmZsbXZ1dHVsOQ#" target="_blank" rel="noreferrer noopener" aria-label="Instagram" className="social-icon-link">
                   <span className="social-icon social-instagram" aria-hidden="true">
                     <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                       <path d="M7.8 3h8.4A4.8 4.8 0 0 1 21 7.8v8.4a4.8 4.8 0 0 1-4.8 4.8H7.8A4.8 4.8 0 0 1 3 16.2V7.8A4.8 4.8 0 0 1 7.8 3Zm8.2 1.8H8A3.2 3.2 0 0 0 4.8 8v8A3.2 3.2 0 0 0 8 19.2h8a3.2 3.2 0 0 0 3.2-3.2V8A3.2 3.2 0 0 0 16 4.8Zm-4 2.7A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.8A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Zm4.9-2.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z" />
@@ -555,7 +569,7 @@ function Layout({ children }) {
                   </span>
                   <span>Instagram</span>
                 </a>
-                <a href="#" aria-label="LinkedIn" className="social-icon-link">
+                <a href="https://www.linkedin.com/company/cmpfcmpf" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" className="social-icon-link">
                   <span className="social-icon social-linkedin" aria-hidden="true">
                     <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                       <path d="M6.2 8.6A1.8 1.8 0 1 1 6.2 5a1.8 1.8 0 0 1 0 3.6ZM4.7 9.9h3v9.4h-3V9.9Zm5 0h2.8v1.3h.1a3.1 3.1 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7v5h-3v-4.4c0-1.1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.5h-3V9.9Z" />
@@ -564,6 +578,8 @@ function Layout({ children }) {
                   <span>LinkedIn</span>
                 </a>
               </div>
+              <a href="https://www.youtube.com/channel/UC92V4I_n53gBfTColHfXBlw" target="_blank" rel="noreferrer noopener">YouTube</a>
+              <a href="https://x.com/CMPF1950" target="_blank" rel="noreferrer noopener">X</a>
             </div>
           </div>
 

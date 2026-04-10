@@ -253,24 +253,19 @@ function CityAgencyPage() {
               <h3>Coordonnées de l'agence</h3>
               <p>{agency.address}</p>
               <ul className="city-phone-list">
-                {agency.phones.map((phone) => (
+                {agency.phones.map((phone, index) => (
                   <li key={phone}>
                     <a className="city-contact-link" href={`tel:${normalizeTel(phone)}`}>
                       <span className="city-contact-icon">
                         <PhoneIcon />
                       </span>
-                      <span>{phone}</span>
+                      <span>
+                        {index === 0 ? 'Fix: ' : index === 1 ? 'Tél: ' : 'WhatsApp: '}
+                        {phone}
+                      </span>
                     </a>
                   </li>
                 ))}
-                <li>
-                  <a className="city-contact-link" href={`tel:${normalizeTel(agency.mobile)}`}>
-                    <span className="city-contact-icon">
-                      <PhoneIcon />
-                    </span>
-                    <span>{agency.mobile}</span>
-                  </a>
-                </li>
                 <li>
                   <a className="city-contact-link" href={`mailto:${agency.email}`}>
                     <span className="city-contact-icon">
