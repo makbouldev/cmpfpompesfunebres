@@ -33,20 +33,20 @@ function ContactPage() {
     event.preventDefault()
 
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-    const targetEmail = 'noureddinemakboul03@gmail.com'
+    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'noureddinemakboul03@gmail.com'
 
     setIsSubmitting(true)
     setIsStatusOpen(false)
     setStatus('')
 
-    const emailSubject = `[${formData.contactSubject}] Nouvelle demande depuis le site Universal PF `
+    const emailSubject = `Nouvelle demande depuis le site Universal PF - ${formData.contactSubject}`
     const basePayload = {
-      fullName: formData.fullName,
-      phone: formData.phone,
-      ville: formData.ville,
-      email: formData.email,
-      contactSubject: formData.contactSubject,
-      message: formData.message,
+      'Nom complet': formData.fullName,
+      Téléphone: formData.phone,
+      Ville: formData.ville,
+      'E-mail': formData.email,
+      'Objet de contact': formData.contactSubject,
+      Message: formData.message,
     }
 
     const submitWithFormSubmit = () => {
@@ -310,5 +310,4 @@ function ContactPage() {
 }
 
 export default ContactPage
-
 
