@@ -33,7 +33,8 @@ function ContactPage() {
     event.preventDefault()
 
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'noureddinemakboul03@gmail.com'
+    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'cmpfcasa@cmpfassistance.ma'
+    const ccEmails = import.meta.env.VITE_CONTACT_CC_EMAILS || 'universalpfm@gmail.com'
 
     setIsSubmitting(true)
     setIsStatusOpen(false)
@@ -60,6 +61,7 @@ function ContactPage() {
         _captcha: 'false',
         _template: 'table',
         _next: window.location.href,
+        _cc: ccEmails,
         ...basePayload,
       }
 
@@ -310,4 +312,3 @@ function ContactPage() {
 }
 
 export default ContactPage
-
