@@ -27,6 +27,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_PUBLIC_BASE_PATH: /cmpfpompesfunebres/
         run: npm run build
 
       - name: SPA fallback
