@@ -33,7 +33,7 @@ function ContactPage() {
     event.preventDefault()
 
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'cmpfcasa@cmpfassistance.ma'
+    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'universalpfm@gmail.com'
     const ccEmails = import.meta.env.VITE_CONTACT_CC_EMAILS || 'universalpfm@gmail.com'
 
     setIsSubmitting(true)

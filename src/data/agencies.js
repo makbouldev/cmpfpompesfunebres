@@ -7,7 +7,7 @@
     address: '4, Bd Mohammed V - Immeuble Mauritania - Agadir',
     phones: ['+212 5 28 84 06 26', '+212 6 62 02 82 49', '+212 6 61 79 95 69'],
     mobile: '',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://google.com/maps?q=30.425582,-9.614168&t=m&hl=fr',
     lat: 30.425582,
@@ -21,7 +21,7 @@
     address: '56, Avenue Mers Sultan - Casablanca',
     phones: ['+212 522491437', '+212 666-826724', '+212 666-826724'],
     mobile: '+212 6 61 50 27 63',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/compagnie+marocaine+de+pompes+fun%C3%A8bres/@33.5892341,-7.6187862,19z/data=!4m10!1m2!2m1!1scmpf!3m6!1s0xda7d2f387ccca17:0x48d7090f4b71244f!8m2!3d33.5892341!4d-7.6187862!15sCgRjbXBmkgEMZnVuZXJhbF9ob21l4AEA!16s%2Fg%2F11b6hxdn57',
     lat: 33.5892341,
@@ -35,7 +35,7 @@
     address: '1, Bd Moulay Rachid Route De Sefrou - Fes',
     phones: ['+212 5 35 76 66 32', '+212 5 35 61 39 63', '+212 6 61 79 95 69'],
     mobile: '+212 6 61 79 95 69',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/CMPF+FES/@34.0143078,-4.9857601,17z/data=!3m1!4b1!4m6!3m5!1s0xd9f8b7be80d1827:0xda191e70e2143211!8m2!3d34.0143078!4d-4.9831852!16s%2Fg%2F11c2p9ph98?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
     lat: 34.0143078,
@@ -49,7 +49,7 @@
     address: '19, Bd Brahim El Mazini Hay El Fath - Laayoune',
     phones: ['+212 5 28 99 76 01', '+212 6 78 98 90 04', '+212 6 62 03 63 57'],
     mobile: '+212 6 78 98 90 04',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps?q=27.141357,-13.188670&t=m&hl=fr',
     lat: 27.141357,
@@ -63,7 +63,7 @@
     address: '18, Rue Tarek Ibnou Zyad Gueliz - Marrakech',
     phones: ['+212 5 24 44 84 51', '+212 6 62 01 81 98', '+212 6 62 17 36 79'],
     mobile: '+212 6 62 01 81 98',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps?q=31.636585,-8.011960&t=m&hl=fr',
     lat: 31.636585,
@@ -77,7 +77,7 @@
     address: '8, Rue Antsirabe Hamria - Meknès',
     phones: ['+212 5 35 51 73 87', '+212 6 62 03 14 97', '+212 6 62 02 87 27'],
     mobile: '+212 6 62 03 14 97',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA%E2%80%AD/@33.899277,-9.7682086,7z/data=!4m10!1m2!2m1!1scmpf+meknes!3m6!1s0xda045c26bd2c623:0x5291cfc32a3ec4a3!8m2!3d33.899277!4d-5.5494586!15sCgtjbXBmIG1la25lc5IBDGZ1bmVyYWxfaG9tZeABAA!16s%2Fg%2F11fnkvgsj0?hl=fr-FR&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
     lat: 33.899277,
@@ -91,7 +91,7 @@
     address: '6, Rte Zghanghane Quartier Ouled Mimoun',
     phones: ['+212 5 36 32 08 77', '+212 6 62 03 01 79', '+212 6 62 03 44 09'],
     mobile: '+212 6 62 03 01 79',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/35%C2%B007%2719.6%22N+2%C2%B055%2754.2%22W/@35.1220947,-2.9316991,21z/data=!4m4!3m3!8m2!3d35.122112!4d-2.931724?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D',
     lat: 35.122112,
@@ -105,7 +105,7 @@
     address: '60, Lot Centre - Ouarzazate',
     phones: ['+212 5 24 88 56 67', '+212 6 71 80 88 50', '+212 6 61 85 65 13'],
     mobile: '+212 6 61 85 65 13',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%A5%D8%B3%D8%B9%D8%A7%D9%81+%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D9%84%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%AF+-+CMPF%E2%80%AD/@30.9221169,-6.9193998,17z/data=!3m1!4b1!4m6!3m5!1s0xdbb11a17b88be91:0x9e9b6b4b3257805d!8m2!3d30.9221169!4d-6.9193998!16s%2Fg%2F11n5hljl03?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D',
     lat: 30.9221169,
@@ -119,7 +119,7 @@
     address: '5, Rue Ibnou Nafiss - OUJDA',
     phones: ['+212 5 36 70 30 25', '+212 6 61 08 84 13', '+212 6 62 17 39 06'],
     mobile: '+212 6 61 08 84 13',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/search/34.684880,+-1.920894?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=f7b122f8-cc29-4eb6-bfd0-c2a4e2de5688',
     lat: 34.68488,
@@ -133,7 +133,7 @@
     address: '5, Rue Soussa - Rabat',
     phones: ['+212 5 37 70 60 17', '+212 6 61 08 84 44', '+212 6 67 54 35 75'],
     mobile: '+212 6 61 08 84 44',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/search/34.017879,+-6.832772?entry=tts&g_ep=EgoyMDI2MDIyNS4wIPu8ASoASAFQAw%3D%3D&skid=17fa62d3-bbfd-4571-b6f7-fd0dc60902e4',
     lat: 34.017879,
@@ -147,7 +147,7 @@
     address: '42, Rue Al Mansour Addahbi - Tanger',
     phones: ['+212 5 39 94 10 27', '+212 6 61 08 84 40', '+212 6 61 97 03 86'],
     mobile: '+212 6 60 88 44 40',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/Compagnie+Marocaine+de+Pompes+Funebres+(CMPF)/@35.7764783,-5.8107673,17z/data=!3m1!4b1!4m6!3m5!1s0xd0c7f16c855cd93:0xef08df1b833f3f80!8m2!3d35.7764783!4d-5.8107673!16s%2Fg%2F11mmpdpl0c?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
     lat: 35.7764783,
@@ -161,7 +161,7 @@
     address: '30, Residence Ennasr Rue Saadia Hay Touta - Tetouan',
     phones: ['+212 5 39 99 18 18', '+212 6 61 79 32 57', '+212 6 62 16 51 23'],
     mobile: '+212 6 62 02 21 08',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/place/35%C2%B034%2717.3%22N+5%C2%B021%2717.7%22W/@35.5715944,-5.3549272,20z/data=!4m4!3m3!8m2!3d35.571464!4d-5.354927?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D',
     lat: 35.571464,
@@ -175,7 +175,7 @@
     address: 'Avenue Al Walae, Dakhla',
     phones: ['+212 5 22 49 16 16'],
     mobile: '+212 6 61 50 27 63',
-    email: 'cmpfcasa@cmpfassistance.ma',
+    email: 'universalpfm@gmail.com',
     mapUrl:
       'https://www.google.com/maps/search/?api=1&query=Dakhla+Morocco',
     lat: 23.6848,

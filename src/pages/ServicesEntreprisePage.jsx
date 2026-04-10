@@ -109,7 +109,7 @@ function ServicesEntreprisePage() {
               </p>
               <p>
                 <span>E-mail</span>
-                <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
+                <a href="mailto:universalpfm@gmail.com">universalpfm@gmail.com</a>
               </p>
               <p>
                 <span>Disponibilité</span>
@@ -220,6 +220,5 @@ function ServicesEntreprisePage() {
 }
 
 export default ServicesEntreprisePage
-
 
 

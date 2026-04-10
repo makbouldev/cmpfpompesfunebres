@@ -46,7 +46,7 @@
           <h3>Demande rapide</h3>
           <p>{contactNote}</p>
           <p><strong>Telephone:</strong> +212 522 49 16 16</p>
-          <p><strong>E-mail:</strong> cmpfcasa@cmpfassistance.ma</p>
+          <p><strong>E-mail:</strong> universalpfm@gmail.com</p>
         </aside>
       </div>
     </section>
@@ -54,5 +54,4 @@
 }
 
 export default ProductCategoryPage
-
 

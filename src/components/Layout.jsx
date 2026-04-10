@@ -538,7 +538,7 @@ function Layout({ children }) {
 
             <div className="footer-card">
               <h4>Contact</h4>
-              <a href="mailto:cmpfcasa@cmpfassistance.ma">cmpfcasa@cmpfassistance.ma</a>
+              <a href="mailto:universalpfm@gmail.com">universalpfm@gmail.com</a>
               <a href="https://wa.me/212666826724" target="_blank" rel="noreferrer noopener">WhatsApp direct</a>
               <Link to="/contact">Formulaire de contact</Link>
             </div>
@@ -594,7 +594,6 @@ function Layout({ children }) {
 }
 
 export default Layout
-
 
 
 

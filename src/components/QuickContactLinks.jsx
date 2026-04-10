@@ -38,13 +38,12 @@ function QuickContactLinks() {
         <span className="plaques-contact-icon" aria-hidden="true"><WhatsAppIcon /></span>
         <span>WhatsApp: +212 666 826 724</span>
       </a>
-      <a className="plaques-contact-link" href="mailto:cmpfcasa@cmpfassistance.ma">
+      <a className="plaques-contact-link" href="mailto:universalpfm@gmail.com">
         <span className="plaques-contact-icon" aria-hidden="true"><MailIcon /></span>
-        <span>cmpfcasa@cmpfassistance.ma</span>
+        <span>universalpfm@gmail.com</span>
       </a>
     </>
   )
 }
 
 export default QuickContactLinks
-
