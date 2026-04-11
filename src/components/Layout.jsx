@@ -531,9 +531,8 @@ function Layout({ children }) {
 
             <div className="footer-card">
               <h4>Telephones</h4>
-              <a href="tel:+212522491616">+212 522 49 16 16</a>
-              <a href="tel:+212522207111">+212   522 20 71 11</a>
-              <a href="tel:+212666826724">+212 666 826 724</a>
+              <a href="tel:+212522491437">+212 5 22 49 14 37</a>
+              <a href="tel:+212666826724">+212 6 66 82 67 24</a>
             </div>
 
             <div className="footer-card">
@@ -594,7 +593,6 @@ function Layout({ children }) {
 }
 
 export default Layout
-
 
 
 

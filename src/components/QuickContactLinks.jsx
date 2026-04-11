@@ -26,17 +26,17 @@ function MailIcon() {
 function QuickContactLinks() {
   return (
     <>
-      <a className="plaques-contact-link" href="tel:+212522491616">
+      <a className="plaques-contact-link" href="tel:+212522491437">
         <span className="plaques-contact-icon" aria-hidden="true"><PhoneIcon /></span>
-        <span>+212 522 49 16 16</span>
+        <span>+212 5 22 49 14 37</span>
       </a>
-      <a className="plaques-contact-link" href="tel:+212522207111">
+      <a className="plaques-contact-link" href="tel:+212666826724">
         <span className="plaques-contact-icon" aria-hidden="true"><PhoneIcon /></span>
-        <span>+212 522 20 71 11</span>
+        <span>+212 6 66 82 67 24</span>
       </a>
       <a className="plaques-contact-link" href="https://wa.me/212666826724" target="_blank" rel="noreferrer">
         <span className="plaques-contact-icon" aria-hidden="true"><WhatsAppIcon /></span>
-        <span>WhatsApp: +212 666 826 724</span>
+        <span>WhatsApp: +212 6 66 82 67 24</span>
       </a>
       <a className="plaques-contact-link" href="mailto:universalpfm@gmail.com">
         <span className="plaques-contact-icon" aria-hidden="true"><MailIcon /></span>
