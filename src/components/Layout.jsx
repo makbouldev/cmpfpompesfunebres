@@ -2,11 +2,24 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import brandLogo from '../assets/images/logo-clean.png'
 import { agenciesBySlug, normalizeAgencySlug } from '../data/agencies'
+import { citySeoBySlug, citySeoDefaults } from '../data/citySeo'
 
 const DEFAULT_SEO = {
   title: 'Universal PF | Pompes funèbres au Maroc',
   description:
     'Universal PF accompagne les familles 24h/24 et 7j/7 : organisation des obsèques, rapatriement, marbrerie, fleurs et assistance complète au Maroc.',
+}
+
+const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://pompesfunebresmaroc.com').replace(/\/+$/, '')
+
+const CANONICAL_PATHS = {
+  '/pompes-funebres/musulmanes': '/service/pompes-funebres-musulmanes',
+  '/pompes-funebres/non-musulmanes': '/service/pompes-funebres-non-musulmanes',
+  '/produits/fleurs': '/service/fleurs',
+  '/produits/nettoyage-fleurissement': '/service/nettoyage-fleurissement',
+  '/service/marbrerie-musulmane': '/produits/marbrerie-musulmane',
+  '/service/marbrerie-non-musulmane': '/produits/marbrerie-non-musulmane',
+  '/service/services-entreprises': '/services-entreprises',
 }
 
 const SEO_BY_PATH = {
@@ -48,21 +61,25 @@ const slugToLabel = (slug) => toTitleCase(String(slug || '').replace(/-/g, ' '))
 
 const getPageSeo = (pathname) => {
   const cleanPath = String(pathname || '/').split('?')[0]
+  const canonicalPath = CANONICAL_PATHS[cleanPath] || cleanPath
 
-  if (SEO_BY_PATH[cleanPath]) return SEO_BY_PATH[cleanPath]
+  if (SEO_BY_PATH[canonicalPath]) return SEO_BY_PATH[canonicalPath]
 
-  if (cleanPath.startsWith('/villes/')) {
-    const citySlug = cleanPath.replace('/villes/', '').trim()
+  if (canonicalPath.startsWith('/villes/')) {
+    const citySlug = canonicalPath.replace('/villes/', '').trim()
     const normalized = normalizeAgencySlug(citySlug)
     const cityLabel = agenciesBySlug[normalized]?.label || slugToLabel(citySlug)
+    const citySeo = citySeoBySlug[normalized]
     return {
-      title: `Pompes funèbres ${cityLabel} | Universal PF`,
-      description: `Pompes funèbres ${cityLabel} : assistance 24h/24, organisation des obsèques, formalités, transport et accompagnement des familles avec Universal PF.`,
+      title: citySeo?.title || `Pompes funèbres ${cityLabel}${citySeoDefaults.titleSuffix}`,
+      description:
+        citySeo?.description ||
+        `Pompes funèbres ${cityLabel} : assistance 24h/24, obsèques, rapatriement et accompagnement humain au Maroc.`,
     }
   }
 
-  if (cleanPath.startsWith('/service/') || cleanPath.startsWith('/produits/')) {
-    const serviceSlug = cleanPath.split('/').filter(Boolean).pop()
+  if (canonicalPath.startsWith('/service/') || canonicalPath.startsWith('/produits/')) {
+    const serviceSlug = canonicalPath.split('/').filter(Boolean).pop()
     const serviceLabel = slugToLabel(serviceSlug)
     return {
       title: `${serviceLabel} | Universal PF`,
@@ -125,8 +142,9 @@ function Layout({ children }) {
   const location = useLocation()
 
   useEffect(() => {
-    const seo = getPageSeo(location.pathname)
-    const canonicalUrl = `${window.location.origin}${location.pathname}`
+    const pathname = CANONICAL_PATHS[location.pathname] || location.pathname
+    const seo = getPageSeo(pathname)
+    const canonicalUrl = `${SITE_URL}${pathname}`
 
     document.title = seo.title
     setMetaTag('meta[name="description"]', { name: 'description' }, seo.description)
@@ -237,6 +255,11 @@ function Layout({ children }) {
       target.classList.add('reveal-ready')
       target.style.setProperty('--reveal-delay', `${(index % 6) * 45}ms`)
     })
+
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      revealTargets.forEach((target) => target.classList.add('reveal-visible'))
+      return undefined
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {

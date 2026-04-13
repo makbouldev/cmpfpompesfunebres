@@ -24,14 +24,20 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/qui-sommes-nous" element={<AboutPage />} />
 
-        <Route path="/pompes-funebres/musulmanes" element={<MuslimFuneralPage />} />
         <Route path="/service/pompes-funebres-musulmanes" element={<MuslimFuneralPage />} />
+        <Route
+          path="/pompes-funebres/musulmanes"
+          element={<Navigate to="/service/pompes-funebres-musulmanes" replace />}
+        />
 
-        <Route path="/pompes-funebres/non-musulmanes" element={<NonMuslimFuneralPage />} />
         <Route path="/service/pompes-funebres-non-musulmanes" element={<NonMuslimFuneralPage />} />
+        <Route
+          path="/pompes-funebres/non-musulmanes"
+          element={<Navigate to="/service/pompes-funebres-non-musulmanes" replace />}
+        />
 
-        <Route path="/produits/fleurs" element={<FleursPage />} />
         <Route path="/service/fleurs" element={<FleursPage />} />
+        <Route path="/produits/fleurs" element={<Navigate to="/service/fleurs" replace />} />
         <Route path="/produits/plaques" element={<PlaquesPage />} />
         <Route
           path="/produits/cercueils-musulmans"
@@ -42,12 +48,12 @@ function App() {
           element={<CercueilsNonMusulmansPage />}
         />
         <Route
-          path="/produits/nettoyage-fleurissement"
+          path="/service/nettoyage-fleurissement"
           element={<NettoyageFleurissementPage />}
         />
         <Route
-          path="/service/nettoyage-fleurissement"
-          element={<NettoyageFleurissementPage />}
+          path="/produits/nettoyage-fleurissement"
+          element={<Navigate to="/service/nettoyage-fleurissement" replace />}
         />
 
         <Route
@@ -56,7 +62,7 @@ function App() {
         />
         <Route
           path="/service/marbrerie-musulmane"
-          element={<MarbrerieMusulmanePage />}
+          element={<Navigate to="/produits/marbrerie-musulmane" replace />}
         />
 
         <Route
@@ -65,13 +71,16 @@ function App() {
         />
         <Route
           path="/service/marbrerie-non-musulmane"
-          element={<MarbrerieNonMusulmanePage />}
+          element={<Navigate to="/produits/marbrerie-non-musulmane" replace />}
         />
 
         <Route path="/villes/:slug" element={<CityAgencyPage />} />
         <Route path="/assistance" element={<AssistancePage />} />
         <Route path="/services-entreprises" element={<ServicesEntreprisePage />} />
-        <Route path="/service/services-entreprises" element={<ServicesEntreprisePage />} />
+        <Route
+          path="/service/services-entreprises"
+          element={<Navigate to="/services-entreprises" replace />}
+        />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
 

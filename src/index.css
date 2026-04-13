@@ -4155,6 +4155,9 @@ textarea {
 }
 
 .site-floating-actions {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
   pointer-events: none;
 }
 
@@ -8443,13 +8446,89 @@ textarea {
 .city-agency-content {
   display: grid;
   grid-template-columns: 1.5fr 0.9fr;
-  gap: 1rem;
+  gap: 0.9rem;
   align-items: start;
 }
 
 .city-main-grid {
   display: grid;
   gap: 1rem;
+}
+
+.city-main-column {
+  display: grid;
+  gap: 1rem;
+}
+
+.city-seo-block,
+.city-long-seo {
+  border: 1px solid rgba(171, 204, 228, 0.68);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.05rem;
+  box-shadow: 0 12px 24px rgba(19, 57, 87, 0.08);
+}
+
+.city-long-seo {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.city-seo-block h2,
+.city-long-seo h2 {
+  margin: 0 0 0.45rem;
+  color: #143f60;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+}
+
+.city-seo-block h3,
+.city-long-seo h3 {
+  margin: 0.55rem 0 0.25rem;
+  color: #1a4a6a;
+  font-size: 1.02rem;
+}
+
+.city-seo-block p,
+.city-long-seo p {
+  margin: 0;
+  color: #325c77;
+  line-height: 1.7;
+}
+
+.city-seo-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.city-seo-services,
+.city-seo-trust,
+.city-seo-contact {
+  margin-top: 0.35rem;
+}
+
+.city-seo-contact a {
+  color: #0d5d90;
+  font-weight: 700;
+}
+
+.city-faq {
+  margin-top: 0.35rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.city-faq-item {
+  border: 1px solid rgba(176, 206, 228, 0.6);
+  border-radius: 12px;
+  padding: 0.65rem 0.7rem;
+  background: #f7fcff;
+}
+
+.city-seo-keywords {
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  color: #456780;
 }
 
 .city-card,
@@ -8634,6 +8713,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .city-seo-columns {
+    grid-template-columns: 1fr;
+  }
+
   .city-side-panel {
     position: static;
   }
@@ -8671,6 +8754,12 @@ textarea {
 
   .city-card,
   .city-side-panel {
+    padding: 0.88rem 0.86rem;
+    border-radius: 14px;
+  }
+
+  .city-seo-block,
+  .city-long-seo {
     padding: 0.88rem 0.86rem;
     border-radius: 14px;
   }

@@ -1,6 +1,7 @@
 ﻿import { useMemo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { agencies, agenciesBySlug, normalizeAgencySlug } from '../data/agencies'
+import { citySeoBySlug } from '../data/citySeo'
 import img7 from '../assets/images/7.webp'
 import img8 from '../assets/images/8.jpg'
 import img10 from '../assets/images/10.jpeg'
@@ -128,6 +129,91 @@ const unifiedMainServices = [
 const unifiedAssistanceText =
   "Universal PF assure une prise en charge complète et coordonnée : déclaration, formalités, transport, cérémonie, inhumation et suivi de la famille. Nos équipes interviennent avec la même exigence de qualité dans toutes les villes."
 
+const semanticKeywords = [
+  'pompes funèbres',
+  'obsèques',
+  'service funéraire',
+  'rapatriement',
+  'transport funéraire',
+  'marbrerie',
+  'assistance 24/7',
+  'accompagnement des familles',
+]
+
+const internalLinkText = (label) => `Pompes funèbres ${label}`
+
+const buildCityLongSeo = ({ agency, theme, leadPhone }) => {
+  const city = agency.label
+  const region = agency.region
+  const address = agency.address
+  const localMood = theme?.mood || 'service humain et rigoureux'
+  const localEyebrow = theme?.eyebrow || `Agence locale de ${city}`
+  const highlights = theme?.highlights?.join(', ') || 'transport funeraire, formalites, ceremonies'
+  const keywordPrimary = `Pompes Funebres ${city}`
+  const keywordServices = `services funeraires ${city}`
+  const keywordAgency = 'agence funeraire Maroc'
+
+  return {
+    intro:
+      `${keywordPrimary} : lorsque survient un deces, les familles de ${city} doivent agir vite tout en ` +
+      `gardant la dignite et le respect. ${localEyebrow} signifie une presence reelle, proche du terrain. ` +
+      `Notre ${keywordAgency} accompagne chaque famille avec une approche ` +
+      `humaine, claire et professionnelle, en expliquant les etapes et en reduisant la pression. A ${city}, ` +
+      `nous intervenons des le premier appel pour coordonner les urgences et rassurer les proches. Notre mission ` +
+      `est d'assurer une prise en charge serieuse, respectueuse des rites, et adaptee a la realite du Maroc.`,
+    services:
+      `Les ${keywordServices} couvrent l'ensemble des besoins : transport funeraire local et national, ` +
+      `rapatriement, organisation des obseques, coordination avec hopitaux et cimetieres, assistance ` +
+      `administrative, marbrerie, plaques funeraires et fleurs. Chaque prestation est adaptee au contexte de ` +
+      `${city} et aux attentes des familles. Nous integrons les details locaux, la region ${region} et les ` +
+      `contraintes de delai pour offrir une ceremonie digne, organisee et sans surcharge pour les proches.`,
+    context:
+      `${city} impose un rythme particulier : familles parfois dispersees, urgences medicales, ` +
+      `deplacements rapides et formalites strictes. Notre equipe locale connait les procedures et les acteurs ` +
+      `du terrain, ce qui permet d'eviter les retards et de proteger la serenite des familles. Nous integrons ` +
+      `les informations essentielles comme l'adresse ${address} et la region ${region} pour une coordination ` +
+      `fluide et une organisation realiste. Notre approche est guidee par ${localMood}.`,
+    why:
+      `Choisir notre agence a ${city}, c'est compter sur une equipe experimentee, disponible 24/7 et ` +
+      `habituée aux urgences. Nous travaillons avec un interlocuteur unique pour eviter la confusion. ` +
+      `Notre approche est fondée sur la confiance, la transparence des delais, et un respect strict des rites. ` +
+      `Les familles de ${city} savent qu'elles peuvent compter sur un accompagnement humain et une organisation ` +
+      `rigoureuse, du debut a la fin.`,
+    trust:
+      `Nous mettons l'accent sur la qualite du service : explications claires, suivi constant, et ` +
+      `presence reelle sur le terrain. Notre ${keywordAgency} s'engage sur la discretion, la disponibilite ` +
+      `et la personnalisation des ceremonies. Les points forts a ${city} incluent ${highlights}, ainsi qu'un ` +
+      `soutien administratif fiable et une coordination complete des etapes.`,
+    availability:
+      `Disponibilite 24/7 a ${city} : nous repondons jour et nuit, y compris weekends et jours feries. ` +
+      `Qu'il s'agisse d'un transport urgent, d'une question administrative ou d'une ceremonie a organiser, ` +
+      `notre equipe agit rapidement et avec calme. Cette presence continue est essentielle pour les familles ` +
+      `du Maroc, et elle fait partie de notre engagement quotidien.`,
+    contact:
+      `Contact rapide a ${city} : appelez-nous des maintenant pour une assistance immediate. Nous vous ` +
+      `guidons pas a pas et coordonnons chaque etape avec respect. Pour un besoin urgent, vous pouvez appeler ` +
+      `${leadPhone || 'notre equipe'} ou contacter notre ${keywordAgency} via la page de contact.`,
+    faq: [
+      {
+        q: `Quels ${keywordServices} proposez-vous ?`,
+        a: 'Transport funeraire, obseques, rapatriement, formalites, marbrerie, plaques et fleurs.',
+      },
+      {
+        q: `Etes-vous disponibles 24/7 a ${city} ?`,
+        a: 'Oui, notre permanence est active jour et nuit pour les urgences.',
+      },
+      {
+        q: `Organisez-vous les ceremonies musulmanes et non musulmanes a ${city} ?`,
+        a: 'Oui, nous respectons les rites demandes par chaque famille.',
+      },
+      {
+        q: `Pourquoi choisir votre ${keywordAgency} ?`,
+        a: 'Pour notre experience, notre reactivite et notre accompagnement humain.',
+      },
+    ],
+  }
+}
+
 function normalizeTel(phone) {
   return `+${String(phone || '').replace(/[^\d]/g, '')}`
 }
@@ -201,6 +287,31 @@ function CityAgencyPage() {
     agency.mapUrl ||
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(agency.address)}`
   const embeddedMap = `https://www.google.com/maps?q=${agency.lat},${agency.lng}&z=14&output=embed`
+  const seoCopy = citySeoBySlug[normalizedSlug]
+  const siteUrl = (import.meta.env.VITE_SITE_URL || 'https://pompesfunebresmaroc.com').replace(/\/+$/, '')
+  const canonicalUrl = `${siteUrl}/villes/${agency.slug}`
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FuneralHome',
+    name: `Universal PF - Pompes funèbres ${agency.label}`,
+    url: canonicalUrl,
+    telephone: leadPhone ? normalizeTel(leadPhone) : undefined,
+    areaServed: ['MA', 'Morocco', agency.label, agency.region],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: agency.address,
+      addressLocality: agency.label,
+      addressRegion: agency.region,
+      addressCountry: 'MA',
+    },
+  }
+  const descriptionLine =
+    seoCopy?.description ||
+    `Pompes funèbres ${agency.label} au Maroc : assistance 24/7, obsèques, rapatriement et accompagnement humain.`
+  const secondaryLine = theme?.pitch || `Équipe locale à ${agency.label} disponible 24h/24 et 7j/7.`
+  const serviceLine = theme?.highlights?.length
+    ? theme.highlights.join(' · ')
+    : 'Obsèques, transport funéraire, marbrerie et assistance administrative.'
   const cssVars = {
     '--city-primary': theme?.tones?.[0] || '#1b4e7f',
     '--city-secondary': theme?.tones?.[1] || '#6f3e8f',
@@ -209,6 +320,7 @@ function CityAgencyPage() {
 
   return (
     <section className="section city-agency-page" style={cssVars}>
+      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       <div className="container city-agency-shell">
         <div className="city-agency-hero">
           <div className="city-hero-copy">
@@ -248,62 +360,132 @@ function CityAgencyPage() {
         </div>
 
         <div className="city-agency-content">
-          <div className="city-main-grid">
-            <article className="city-card">
-              <h3>Coordonnées de l'agence</h3>
-              <p>{agency.address}</p>
-              <ul className="city-phone-list">
-                {agency.phones.map((phone, index) => (
-                  <li key={phone}>
-                    <a className="city-contact-link" href={`tel:${normalizeTel(phone)}`}>
+          <div className="city-main-column">
+            <div className="city-seo-block">
+              <h2>{seoCopy?.h2 || `Pompes funèbres ${agency.label} : service local au Maroc`}</h2>
+              <p>
+                {descriptionLine} {secondaryLine}
+              </p>
+              <p className="city-seo-services">
+                <strong>Services clés à {agency.label} :</strong> {serviceLine}
+              </p>
+              <div className="city-seo-columns">
+                <div>
+                  <h3>{seoCopy?.h3a || `Organisation des obsèques à ${agency.label}`}</h3>
+                  <p>
+                    Notre équipe Universal PF à {agency.label} intervient sur place pour l'organisation des
+                    obsèques, les cérémonies musulmanes et non musulmanes, ainsi que la coordination complète
+                    avec les proches au Maroc.
+                  </p>
+                </div>
+                <div>
+                  <h3>{seoCopy?.h3b || `Rapatriement et assistance 24/7 à ${agency.label}`}</h3>
+                  <p>
+                    Assistance immédiate 24h/24 et 7j/7, transport funéraire, rapatriement national et
+                    international, avec un suivi administratif fiable et humain pour les familles de {agency.label}.
+                  </p>
+                </div>
+              </div>
+              <p className="city-seo-trust">
+                <strong>Pourquoi Universal PF :</strong> disponibilité continue, interlocuteur unique, respect
+                des rites et professionnalisme reconnu dans tout le Maroc.
+              </p>
+              <p className="city-seo-contact">
+                Besoin d'une assistance immédiate à {agency.label} ? Appelez le{' '}
+                <a href={`tel:${normalizeTel(leadPhone)}`}>{leadPhone}</a> ou contactez-nous via{' '}
+                <Link to="/contact">notre page contact</Link>.
+              </p>
+            </div>
+
+            {(() => {
+              const longSeo = buildCityLongSeo({ agency, theme, leadPhone })
+              return (
+                <div className="city-long-seo">
+                  <h2>Nos services funéraires à {agency.label}</h2>
+                  <p>{longSeo.intro}</p>
+                  <p>{longSeo.services}</p>
+                  <p>{longSeo.context}</p>
+
+                  <h2>Pourquoi choisir notre agence à {agency.label}</h2>
+                  <p>{longSeo.why}</p>
+                  <p>{longSeo.trust}</p>
+
+                  <h2>Disponibilité 24/7 à {agency.label}</h2>
+                  <p>{longSeo.availability}</p>
+
+                  <h2>Contact rapide à {agency.label}</h2>
+                  <p>{longSeo.contact}</p>
+
+                  <div className="city-faq">
+                    <h2>FAQ - Pompes funèbres {agency.label}</h2>
+                    {longSeo.faq?.map((item) => (
+                      <div key={item.q} className="city-faq-item">
+                        <h3>{item.q}</h3>
+                        <p>{item.a}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
+            })()}
+
+            <div className="city-main-grid">
+              <article className="city-card">
+                <h3>Coordonnées de l'agence</h3>
+                <p>{agency.address}</p>
+                <ul className="city-phone-list">
+                  {agency.phones.map((phone, index) => (
+                    <li key={phone}>
+                      <a className="city-contact-link" href={`tel:${normalizeTel(phone)}`}>
+                        <span className="city-contact-icon">
+                          <PhoneIcon />
+                        </span>
+                        <span>
+                          {index === 0 ? 'Fix: ' : index === 1 ? 'Tél: ' : 'WhatsApp: '}
+                          {phone}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                  <li>
+                    <a className="city-contact-link" href={`mailto:${agency.email}`}>
                       <span className="city-contact-icon">
-                        <PhoneIcon />
+                        <MailIcon />
                       </span>
-                      <span>
-                        {index === 0 ? 'Fix: ' : index === 1 ? 'Tél: ' : 'WhatsApp: '}
-                        {phone}
-                      </span>
+                      <span>{agency.email}</span>
                     </a>
                   </li>
-                ))}
-                <li>
-                  <a className="city-contact-link" href={`mailto:${agency.email}`}>
-                    <span className="city-contact-icon">
-                      <MailIcon />
-                    </span>
-                    <span>{agency.email}</span>
-                  </a>
-                </li>
-              </ul>
-            </article>
+                </ul>
+              </article>
 
-            <article className="city-card">
-              <h3>Prestations principales</h3>
-              <ul className="city-highlight-list">
-                {unifiedMainServices.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
+              <article className="city-card">
+                <h3>Prestations principales</h3>
+                <ul className="city-highlight-list">
+                  {unifiedMainServices.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
 
-            <article className="city-card city-banner-card">
-              <div>
-                <h3>Assistance complète et coordonnée</h3>
-                <p>{unifiedAssistanceText}</p>
-              </div>
-              <img src={collageA} alt={`Equipe assistance ${agency.label}`} />
-            </article>
+              <article className="city-card city-banner-card">
+                <div>
+                  <h3>Assistance complète et coordonnée</h3>
+                  <p>{unifiedAssistanceText}</p>
+                </div>
+                <img src={collageA} alt={`Equipe assistance ${agency.label}`} />
+              </article>
 
-            <article className="city-card">
-              <h3>Localisation précise</h3>
-              <iframe
-                className="city-map-frame"
-                src={embeddedMap}
-                title={`Carte de l'agence ${agency.label}`}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </article>
+              <article className="city-card">
+                <h3>Localisation précise</h3>
+                <iframe
+                  className="city-map-frame"
+                  src={embeddedMap}
+                  title={`Carte de l'agence ${agency.label}`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </article>
+            </div>
           </div>
 
           <aside className="city-side-panel">
@@ -314,6 +496,15 @@ function CityAgencyPage() {
             <p>
               <strong>Région:</strong> {agency.region}
             </p>
+            <p>
+              <strong>Maroc:</strong> Service funéraire local disponible 24/7.
+            </p>
+            <Link className="city-contact-link" to="/">
+              <span className="city-contact-icon">
+                <MapIcon />
+              </span>
+              <span>Pompes funèbres au Maroc</span>
+            </Link>
             <a className="city-contact-link" href={`tel:${normalizeTel(leadPhone)}`}>
               <span className="city-contact-icon">
                 <PhoneIcon />
@@ -345,12 +536,31 @@ function CityAgencyPage() {
                 <ul>
                   {sameRegionAgencies.map((item) => (
                     <li key={item.slug}>
-                      <Link to={`/villes/${item.slug}`}>Pompes funèbres {item.label}</Link>
+                      <Link to={`/villes/${item.slug}`}>{internalLinkText(item.label)}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
+
+            <div className="city-nearby">
+              <h4>Villes couvertes au Maroc</h4>
+              <ul>
+                {agencies
+                  .filter((item) => item.slug !== agency.slug)
+                  .map((item) => (
+                    <li key={item.slug}>
+                      <Link to={`/villes/${item.slug}`}>{internalLinkText(item.label)}</Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+
+            <p className="city-seo-keywords">
+              {semanticKeywords.map((term) => (
+                <span key={term}>{term} · </span>
+              ))}
+            </p>
           </aside>
         </div>
       </div>

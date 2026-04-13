@@ -1,6 +1,43 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/pompes-funebres/musulmanes",
+      "destination": "/service/pompes-funebres-musulmanes",
+      "permanent": true
+    },
+    {
+      "source": "/pompes-funebres/non-musulmanes",
+      "destination": "/service/pompes-funebres-non-musulmanes",
+      "permanent": true
+    },
+    {
+      "source": "/produits/fleurs",
+      "destination": "/service/fleurs",
+      "permanent": true
+    },
+    {
+      "source": "/produits/nettoyage-fleurissement",
+      "destination": "/service/nettoyage-fleurissement",
+      "permanent": true
+    },
+    {
+      "source": "/service/marbrerie-musulmane",
+      "destination": "/produits/marbrerie-musulmane",
+      "permanent": true
+    },
+    {
+      "source": "/service/marbrerie-non-musulmane",
+      "destination": "/produits/marbrerie-non-musulmane",
+      "permanent": true
+    },
+    {
+      "source": "/service/services-entreprises",
+      "destination": "/services-entreprises",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

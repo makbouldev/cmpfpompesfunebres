@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.universalpf.ma/sitemap.xml
+Sitemap: https://pompesfunebresmaroc.com/sitemap.xml
