@@ -161,6 +161,37 @@ function Layout({ children }) {
       document.head.appendChild(canonical)
     }
     canonical.setAttribute('href', canonicalUrl)
+
+    const existingSchema = document.getElementById('site-schema')
+    if (pathname === '/') {
+      const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'FuneralHome',
+        name: 'Universal PF',
+        url: SITE_URL,
+        logo: `${SITE_URL}/logo-clean.png`,
+        telephone: '+212522491437',
+        areaServed: 'MA',
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: 'MA',
+          addressRegion: 'Casablanca-Settat',
+          addressLocality: 'Casablanca',
+        },
+        serviceArea: {
+          '@type': 'Country',
+          name: 'Morocco',
+        },
+      }
+
+      const script = existingSchema || document.createElement('script')
+      script.id = 'site-schema'
+      script.type = 'application/ld+json'
+      script.textContent = JSON.stringify(schema)
+      if (!existingSchema) document.head.appendChild(script)
+    } else if (existingSchema) {
+      existingSchema.remove()
+    }
   }, [location.pathname])
 
   const closeMenu = () => {
