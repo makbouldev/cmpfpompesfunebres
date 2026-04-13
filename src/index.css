@@ -1158,13 +1158,27 @@ h4 {
   margin-top: 0;
 }
 
-.seo-h1 {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+.seo-static {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+  color: #1f2a44;
+}
+
+.seo-static h1 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  margin-bottom: 0.6rem;
+}
+
+.seo-static h2 {
+  margin: 1.2rem 0 0.4rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  color: #1f3144;
+}
+
+.seo-static p {
+  margin: 0 0 0.8rem;
+  color: #2b3d54;
 }
 
 h2 {
