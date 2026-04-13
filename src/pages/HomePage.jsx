@@ -430,6 +430,7 @@ function HomePage() {
           >
             <div className="hero-banner-content">
               <h1 className="hero-info-title">{currentSlide.titleMain}</h1>
+              <p className="hero-info-kicker">Universal PF, pompes funèbres au Maroc.</p>
               <p className="hero-info-text">{currentSlide.description}</p>
               <div className="hero-highlight hero-info-badge">
                 <span className="hero-highlight-icon">!</span>

@@ -596,6 +596,14 @@ img {
   animation: heroContentIn 0.75s ease 0.18s both;
 }
 
+.hero-info-kicker {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #1f2a44;
+  margin: 0 0 0.6rem;
+  animation: heroContentIn 0.75s ease 0.14s both;
+}
+
 .hero-info-badge {
   animation: heroContentIn 0.75s ease 0.26s both;
 }
