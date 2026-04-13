@@ -3,6 +3,17 @@
   "framework": "vite",
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.pompesfunebresmaroc.com"
+        }
+      ],
+      "destination": "https://pompesfunebresmaroc.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/pompes-funebres/musulmanes",
       "destination": "/service/pompes-funebres-musulmanes",
       "permanent": true
