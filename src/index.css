@@ -1191,6 +1191,15 @@ h4 {
   break-inside: avoid;
 }
 
+.seo-static a {
+  color: #1659b7;
+  font-weight: 600;
+}
+
+.seo-static a:hover {
+  color: #0f4490;
+}
+
 @media (min-width: 960px) {
   .seo-static {
     column-count: 2;
