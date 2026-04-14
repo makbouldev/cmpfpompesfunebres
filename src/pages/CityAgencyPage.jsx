@@ -556,6 +556,25 @@ function CityAgencyPage() {
               </ul>
             </div>
 
+            <div className="city-side-seo">
+              <h4>Pompes funèbres Maroc 24/7 - Universal PF</h4>
+              <p>
+                Universal PF accompagne les familles à {agency.label} et partout au Maroc pour les obsèques, le
+                rapatriement, la marbrerie et l'assistance administrative. Nos équipes sont disponibles 24h/24 et 7j/7
+                pour une prise en charge rapide, humaine et respectueuse.
+              </p>
+              <p>
+                Besoin d'un service funéraire local à {agency.label} ? Notre agence coordonne les cérémonies, le
+                transport et les formalités avec les autorités et les institutions pour garantir un service fiable et
+                transparent.
+              </p>
+              <p className="city-side-seo-links">
+                Liens utiles : <Link to="/qui-sommes-nous">Qui sommes-nous</Link>,{' '}
+                <Link to="/assistance">Assistance immédiate</Link>, <Link to="/contact">Contact</Link>,{' '}
+                <Link to="/services">Nos services</Link>.
+              </p>
+            </div>
+
             <p className="city-seo-keywords">
               {semanticKeywords.map((term) => (
                 <span key={term}>{term} · </span>
