@@ -8343,6 +8343,7 @@ textarea {
   gap: 1.1rem;
   border: 1px solid rgba(159, 197, 226, 0.7);
   border-radius: 22px;
+  background: linear-gradient(130deg, var(--city-soft), #ffffff 65%);
   background:
     linear-gradient(130deg, color-mix(in srgb, var(--city-soft) 78%, #ffffff 22%), #ffffff 65%),
     linear-gradient(160deg, color-mix(in srgb, var(--city-primary) 8%, transparent), transparent);
@@ -8380,6 +8381,7 @@ textarea {
 .city-mood {
   margin-top: 0.58rem;
   font-weight: 700;
+  color: var(--city-primary);
   color: color-mix(in srgb, var(--city-primary) 78%, #0c273d 22%);
 }
 
@@ -8646,6 +8648,7 @@ textarea {
 .city-side-panel {
   position: sticky;
   top: calc(var(--header-offset, 0px) + 1rem);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.88), rgba(237, 248, 255, 0.9));
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.88), rgba(237, 248, 255, 0.9)),
     linear-gradient(180deg, color-mix(in srgb, var(--city-primary) 8%, transparent), transparent);

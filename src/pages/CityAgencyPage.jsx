@@ -321,7 +321,7 @@ function CityAgencyPage() {
   return (
     <section className="section city-agency-page" style={cssVars}>
       <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
-      <div className="container city-agency-shell">
+      <div className="container city-agency-shell reveal-skip">
         <div className="city-agency-hero">
           <div className="city-hero-copy">
             <h1>
