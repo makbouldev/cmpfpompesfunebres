@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import brandLogo from '../assets/images/logo-clean.png'
 import { agenciesBySlug, normalizeAgencySlug } from '../data/agencies'
 import { citySeoBySlug, citySeoDefaults } from '../data/citySeo'
+import { getCanonicalPath as getSharedCanonicalPath, getPageSeo as getSharedPageSeo, getPageStructuredData, SITE_URL as SHARED_SITE_URL } from '../lib/seo.js'
 
 const DEFAULT_SEO = {
   title: 'Universal PF | Pompes funèbres au Maroc',
@@ -142,9 +143,9 @@ function Layout({ children }) {
   const location = useLocation()
 
   useEffect(() => {
-    const pathname = CANONICAL_PATHS[location.pathname] || location.pathname
-    const seo = getPageSeo(pathname)
-    const canonicalUrl = `${SITE_URL}${pathname}`
+    const pathname = getSharedCanonicalPath(location.pathname)
+    const seo = getSharedPageSeo(pathname)
+    const canonicalUrl = `${SHARED_SITE_URL}${pathname}`
 
     document.title = seo.title
     setMetaTag('meta[name="description"]', { name: 'description' }, seo.description)
@@ -163,34 +164,15 @@ function Layout({ children }) {
     canonical.setAttribute('href', canonicalUrl)
 
     const existingSchema = document.getElementById('site-schema')
-    if (pathname === '/') {
-      const schema = {
-        '@context': 'https://schema.org',
-        '@type': 'FuneralHome',
-        name: 'Universal PF',
-        url: SITE_URL,
-        logo: `${SITE_URL}/logo-clean.png`,
-        telephone: '+212522491437',
-        areaServed: 'MA',
-        address: {
-          '@type': 'PostalAddress',
-          addressCountry: 'MA',
-          addressRegion: 'Casablanca-Settat',
-          addressLocality: 'Casablanca',
-        },
-        serviceArea: {
-          '@type': 'Country',
-          name: 'Morocco',
-        },
-      }
+    if (existingSchema) existingSchema.remove()
 
-      const script = existingSchema || document.createElement('script')
+    const schemas = getPageStructuredData(pathname)
+    if (schemas?.length) {
+      const script = document.createElement('script')
       script.id = 'site-schema'
       script.type = 'application/ld+json'
-      script.textContent = JSON.stringify(schema)
-      if (!existingSchema) document.head.appendChild(script)
-    } else if (existingSchema) {
-      existingSchema.remove()
+      script.textContent = JSON.stringify(schemas)
+      document.head.appendChild(script)
     }
   }, [location.pathname])
 
@@ -305,7 +287,15 @@ function Layout({ children }) {
     )
 
     revealTargets.forEach((target) => observer.observe(target))
-    return () => observer.disconnect()
+    const safetyTimer = window.setTimeout(() => {
+      // Safari/Android can sometimes fail to fire intersection callbacks; never leave pages hidden.
+      revealTargets.forEach((target) => target.classList.add('reveal-visible'))
+    }, 2200)
+
+    return () => {
+      window.clearTimeout(safetyTimer)
+      observer.disconnect()
+    }
   }, [location.pathname])
 
   useEffect(() => {

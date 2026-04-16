@@ -8337,6 +8337,19 @@ textarea {
   gap: 1.1rem;
 }
 
+.city-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  font-size: 0.9rem;
+  color: #4b6981;
+}
+
+.city-breadcrumbs a {
+  color: #0d5d90;
+  font-weight: 600;
+}
+
 .city-agency-hero {
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;

@@ -7,10 +7,50 @@
       "has": [
         {
           "type": "host",
-          "value": "www.pompesfunebresmaroc.com"
+          "value": "pompesfunebresmaroc.com"
         }
       ],
-      "destination": "https://pompesfunebresmaroc.com/$1",
+      "destination": "https://www.pompesfunebresmaroc.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/assistance-immediate",
+      "destination": "/assistance",
+      "permanent": true
+    },
+    {
+      "source": "/services/pompes-funebres-musulmanes",
+      "destination": "/service/pompes-funebres-musulmanes",
+      "permanent": true
+    },
+    {
+      "source": "/services/pompes-funebres-non-musulmanes",
+      "destination": "/service/pompes-funebres-non-musulmanes",
+      "permanent": true
+    },
+    {
+      "source": "/services/fleurs",
+      "destination": "/service/fleurs",
+      "permanent": true
+    },
+    {
+      "source": "/services/nettoyage-et-fleurissement",
+      "destination": "/service/nettoyage-fleurissement",
+      "permanent": true
+    },
+    {
+      "source": "/services/marbrerie-musulmane",
+      "destination": "/produits/marbrerie-musulmane",
+      "permanent": true
+    },
+    {
+      "source": "/services/marbrerie-non-musulmane",
+      "destination": "/produits/marbrerie-non-musulmane",
+      "permanent": true
+    },
+    {
+      "source": "/agences/:slug",
+      "destination": "/villes/:slug",
       "permanent": true
     },
     {

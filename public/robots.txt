@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pompesfunebresmaroc.com/sitemap.xml
+Sitemap: https://www.pompesfunebresmaroc.com/sitemap.xml
