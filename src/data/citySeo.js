@@ -138,7 +138,7 @@ export const citySeoBySlug = {
     title: 'Pompes Funèbres Rabat | Obseques, formalites et assistance 24/7 - Universal PF',
     description: 'Pompes Funèbres a Rabat avec assistance 24/7, organisation des obseques, suivi administratif et coordination funeraire complete.',
     h1: 'Pompes Funèbres a Rabat',
-    intro: "A Rabat, les familles recherchent souvent un accompagnement tres structure, capable de gerer les formalites et l'organisation des obseques avec rigueur. Notre agence repond a cette attente avec un suivi professionnel et humain.",
+    intro: "A Rabat, les familles recherchent souvent un accompagnement très structure, capable de gérer les formalités et l'organisation des obsèques avec rigueur. Notre agence répond à cette attente avec un suivi professionnel et humain.",
     h2: 'Pompes Funèbres Rabat : rigueur administrative et presence rassurante',
     h3a: 'Organisation des ceremonies a Rabat',
     h3b: 'Formalites et coordination funeraire a Rabat',
