@@ -166,7 +166,7 @@ const buildCityNarrative = ({ agency, theme, leadPhone, seoCopy, selectedService
     context: `${localEyebrow} signifie une présence concrète à ${city} dans la région ${region}. Nos équipes connaissent les contraintes de terrain, ce qui aide à fluidifier les démarches et à préserver la sérénité des familles. Notre approche est guidée par ${localMood}.`,
     why: `Les familles choisissent notre agence à ${city} pour sa disponibilité, sa pédagogie et sa capacité à agir vite sans perdre le sens du détail. Nos points forts sur cette ville incluent ${highlights}.`,
     trust: `Nous privilégions des explications simples, un interlocuteur unique et un suivi constant du dossier. Cette méthode permet d'organiser les obsèques à ${city} avec plus de lisibilité et moins de pression pour les proches.`,
-    availability: `Notre permanence reste joignable 24h/24 et 7j/7 à ${city}, y compris les weekends et jours fériés, pour lancer un transport, traiter une urgence ou guider la famille sur les premières décisions.`,
+    availability: `Notre permanence reste joignable 24h/24 et 7j/7 à ${city}, y compris les week-ends et jours fériés, pour lancer un transport, traiter une urgence ou guider la famille sur les premières décisions.`,
     contact: `Pour une assistance immédiate à ${city}, appelez le ${leadPhone || 'numéro de l’agence'} : nous vous orientons dès le premier échange et nous coordonnons les étapes essentielles sans délai.`,
     faq: (seoCopy?.faq || []).map(([q, a]) => ({ q, a })),
   }
@@ -545,6 +545,5 @@ function CityAgencyPage() {
 }
 
 export default CityAgencyPage
-
 
 

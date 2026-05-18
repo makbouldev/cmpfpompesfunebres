@@ -36,8 +36,8 @@ const cityThemes = {
   },
   fes: {
     eyebrow: 'Agence Patrimoine',
-    pitch: 'Équipe senior basée à fes pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['préparation du dossier funeraire', 'Transport mortuaire securise', 'Accompagnement discret des familles'],
+    pitch: 'Équipe senior basée à Fès pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Préparation du dossier funéraire', 'Transport mortuaire sécurisé', 'Accompagnement discret des familles'],
     tones: ['#31512b', '#7ba65b', '#f0fae8'],
     images: [img11, img14, img20Webp],
     mood: 'Elegance sobre et traditions preservees',
@@ -299,4 +299,3 @@ function CityAgencyPage() {
 }
 
 export default CityAgencyPage
-

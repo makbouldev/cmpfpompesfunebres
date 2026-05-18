@@ -120,7 +120,7 @@ const groupedLinks = [
       { to: '/villes/agadir', label: 'Pompes funèbres Agadir' },
       { to: '/villes/casablanca', label: 'Pompes funèbres Casablanca' },
       { to: '/villes/dakhla', label: 'Pompes funèbres Dakhla' },
-      { to: '/villes/fes', label: 'Pompes funèbres Fes' },
+      { to: '/villes/fes', label: 'Pompes funèbres Fès' },
       { to: '/villes/laayoune', label: 'Pompes funèbres Laayoune' },
       { to: '/villes/marrakech', label: 'Pompes funèbres Marrakech' },
       { to: '/villes/Meknès', label: 'Pompes funèbres Meknès' },
@@ -637,7 +637,6 @@ function Layout({ children }) {
 }
 
 export default Layout
-
 
 
 

@@ -70,7 +70,7 @@ const commitments = [
 const coverageCities = [
   'Agadir',
   'Casablanca',
-  'Fes',
+  'Fès',
   'Laayoune',
   'Marrakech',
   'Meknès',
@@ -272,7 +272,6 @@ function AssistancePage() {
 }
 
 export default AssistancePage
-
 
 
 
