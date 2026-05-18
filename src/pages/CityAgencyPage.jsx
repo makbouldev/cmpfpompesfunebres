@@ -90,8 +90,8 @@ const cityThemes = {
     mood: 'Standard élevé et exécution rigoureuse',
   },
   tanger: {
-    eyebrow: 'Agence Detroit',
-    pitch: 'Équipe senior basée à tanger pour les urgences, cérémonies et transferts immédiats.',
+    eyebrow: 'Agence Détroit',
+    pitch: 'Équipe senior basée à Tanger pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Coordination portuaire et aéroportuaire', 'Prise en charge rapide des urgences', 'Équipe disponible en continu'],
     tones: ['#283655', '#5b85d8', '#f0f4ff'],
     images: [img7, img8],
