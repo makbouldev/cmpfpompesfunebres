@@ -66,7 +66,7 @@ const cityThemes = {
     mood: 'Service de proximité sur toute la zone nord-est',
   },
   ouarzazate: {
-    eyebrow: 'Agence Draa-Tafilalet',
+    eyebrow: 'Agence Drâa-Tafilalet',
     pitch: 'Équipe senior basée à Ouarzazate pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Organisation logistique longue distance', 'Transport adapté à chaque destination', 'Suivi humain et transparent'],
     tones: ['#5a3825', '#b8794b', '#fff0e6'],
