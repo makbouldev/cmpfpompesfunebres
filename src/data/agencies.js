@@ -44,9 +44,9 @@
   {
     code: '04',
     slug: 'laayoune',
-    label: 'Laayoune',
-    region: 'Laayoune-Sakia El Hamra',
-    address: '19, Bd Brahim El Mazini Hay El Fath - Laayoune',
+    label: 'Laâyoune',
+    region: 'Laâyoune-Sakia El Hamra',
+    address: '19, Bd Brahim El Mazini Hay El Fath - Laâyoune',
     phones: ['+212 5 28 99 76 01', '+212 6 78 98 90 04', '+212 6 62 03 63 57'],
     mobile: '+212 6 78 98 90 04',
     email: 'universalpfm@gmail.com',

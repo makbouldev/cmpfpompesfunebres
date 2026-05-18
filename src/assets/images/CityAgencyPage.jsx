@@ -44,8 +44,8 @@ const cityThemes = {
   },
   laayoune: {
     eyebrow: 'Agence Saharienne',
-    pitch: 'Équipe senior basée à laayoune pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Gestion des formalités locales', 'Coordination aeroportuaire et terrestre', 'Assistance continue jour et nuit'],
+    pitch: 'Équipe senior basée à Laâyoune pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Gestion des formalités locales', 'Coordination aéroportuaire et terrestre', 'Assistance continue jour et nuit'],
     tones: ['#6a451c', '#d49a4f', '#fff4de'],
     images: [img15, img9, img17],
     mood: 'Logistique etendue, précision terrain',

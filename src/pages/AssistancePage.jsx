@@ -71,7 +71,7 @@ const coverageCities = [
   'Agadir',
   'Casablanca',
   'Fès',
-  'Laayoune',
+  'Laâyoune',
   'Marrakech',
   'Meknès',
   'Nador',
@@ -272,6 +272,5 @@ function AssistancePage() {
 }
 
 export default AssistancePage
-
 
 

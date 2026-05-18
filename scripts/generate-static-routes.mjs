@@ -17,12 +17,6 @@ const escapeHtml = (value) =>
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#39;')
 
-const toAscii = (value) =>
-  String(value || '')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\x00-\x7F]/g, '')
-
 const extractRoutesFromSitemap = async () => {
   const sitemap = await fs.readFile(sitemapPath, 'utf8')
   const matches = [...sitemap.matchAll(/<loc>https:\/\/(?:www\.)?pompesFunèbresmaroc\.com([^<]*)<\/loc>/g)]
@@ -70,7 +64,7 @@ const buildPreRenderHtml = (routePath) => {
         <h1>${h1}</h1>
         <p>${intro}</p>
         <p>${description}</p>
-        ${agency?.address ? `<p><strong>Adresse:</strong> ${escapeHtml(toAscii(agency.address))}</p>` : ''}
+        ${agency?.address ? `<p><strong>Adresse:</strong> ${escapeHtml(agency.address)}</p>` : ''}
         <h2>Services liés</h2>
         <ul>
           ${serviceLinks.map((item) => `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a></li>`).join('')}
