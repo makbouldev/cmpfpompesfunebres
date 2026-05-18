@@ -20,11 +20,11 @@ import img20Webp from '../assets/20.webp'
 const cityThemes = {
   agadir: {
     eyebrow: 'Agence Atlantique',
-    pitch: 'Équipe senior basée à Casablanca pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dedie'],
+    pitch: 'Équipe senior basée à Agadir pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Rapatriement national et international', 'Accompagnement 24h/24, 7j/7', 'Suivi de dossier dédié'],
     tones: ['#0f4c81', '#1f9db6', '#d8f3ff'],
     images: [img8, img12, img19],
-    mood: 'Flux oceanique et accompagnement fluide',
+    mood: 'Flux océanique et accompagnement fluide',
   },
   casablanca: {
     eyebrow: 'Agence Metropole',

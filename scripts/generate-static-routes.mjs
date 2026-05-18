@@ -46,13 +46,13 @@ const buildPreRenderHtml = (routePath) => {
       .map((key) => {
         switch (key) {
           case 'assistance':
-            return { href: '/assistance', label: 'Assistance funeraire immediate' }
+            return { href: '/assistance', label: 'Assistance funéraire immédiate' }
           case 'musulmanes':
             return { href: '/service/pompes-Funèbres-musulmanes', label: 'Pompes Funèbres musulmanes' }
           case 'nonMusulmanes':
             return { href: '/service/pompes-Funèbres-non-musulmanes', label: 'Pompes Funèbres non musulmanes' }
           case 'fleurs':
-            return { href: '/service/fleurs', label: 'Fleurs et hommages funeraires' }
+            return { href: '/service/fleurs', label: 'Fleurs et hommages funéraires' }
           case 'nettoyage':
             return { href: '/service/nettoyage-fleurissement', label: 'Nettoyage et fleurissement' }
           case 'marbrerieMusulmane':
@@ -71,7 +71,7 @@ const buildPreRenderHtml = (routePath) => {
         <p>${intro}</p>
         <p>${description}</p>
         ${agency?.address ? `<p><strong>Adresse:</strong> ${escapeHtml(toAscii(agency.address))}</p>` : ''}
-        <h2>Services lies</h2>
+        <h2>Services liés</h2>
         <ul>
           ${serviceLinks.map((item) => `<li><a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a></li>`).join('')}
         </ul>
