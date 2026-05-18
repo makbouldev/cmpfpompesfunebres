@@ -84,11 +84,11 @@ const cityThemes = {
   },
   oujda: {
     eyebrow: 'Agence Oriental Est',
-    pitch: 'Équipe senior basée à oujda pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Prise en charge administrative complète', 'Accompagnement des proches a chaque etape', 'Intervention rapide en ville et peripherie'],
+    pitch: 'Équipe senior basée à Oujda pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Prise en charge administrative complète', 'Accompagnement des proches à chaque étape', 'Intervention rapide en ville et périphérie'],
     tones: ['#1f4f48', '#35a48f', '#e8fff8'],
     images: [img17, img19, img9],
-    mood: 'Reactif, organise, accessible',
+    mood: 'Réactif, organisé, accessible',
   },
   rabat: {
     eyebrow: 'Agence Capitale',
