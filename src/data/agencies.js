@@ -129,7 +129,7 @@
     code: '10',
     slug: 'rabat',
     label: 'Rabat',
-    region: 'Rabat-Sale-Kenitra',
+    region: 'Rabat-Salé-Kénitra',
     address: '5, Rue Soussa - Rabat',
     phones: ['+212 5 37 70 60 17', '+212 6 61 08 84 44', '+212 6 67 54 35 75'],
     mobile: '+212 6 61 08 84 44',

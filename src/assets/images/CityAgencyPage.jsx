@@ -92,11 +92,11 @@ const cityThemes = {
   },
   rabat: {
     eyebrow: 'Agence Capitale',
-    pitch: 'Équipe senior basée à rabat pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Assistance deces 24/7', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
+    pitch: 'Équipe senior basée à Rabat pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Assistance décès 24/7', 'Gestion de cérémonie sur mesure', 'Relation continue avec la famille'],
     tones: ['#143b63', '#3492c7', '#e9f5ff'],
     images: [img18, img10, img12],
-    mood: 'Standard eleve et execution rigoureuse',
+    mood: 'Standard élevé et exécution rigoureuse',
   },
   tanger: {
     eyebrow: 'Agence Detroit',
