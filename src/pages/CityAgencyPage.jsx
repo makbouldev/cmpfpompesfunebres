@@ -63,7 +63,7 @@ const cityThemes = {
     highlights: ['Support décès et inhumation', 'Coordination administrative régionale', 'Disponibilité permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
     images: [img7, img8],
-    mood: 'Service de proximite sur toute la zone nord-est',
+    mood: 'Service de proximité sur toute la zone nord-est',
   },
   ouarzazate: {
     eyebrow: 'Agence Draa-Tafilalet',

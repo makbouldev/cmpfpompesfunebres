@@ -68,11 +68,11 @@ const cityThemes = {
   },
   nador: {
     eyebrow: 'Agence Oriental Nord',
-    pitch: 'Équipe senior basée à nador pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Support deces et inhumation', 'Coordination administrative regionale', 'Disponibilite permanente'],
+    pitch: 'Équipe senior basée à Nador pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Support décès et inhumation', 'Coordination administrative régionale', 'Disponibilité permanente'],
     tones: ['#214f57', '#45a7b7', '#e8fcff'],
     images: [img19, img11, img14],
-    mood: 'Service de proximite sur toute la zone nord-est',
+    mood: 'Service de proximité sur toute la zone nord-est',
   },
   ouarzazate: {
     eyebrow: 'Agence Draa-Tafilalet',
