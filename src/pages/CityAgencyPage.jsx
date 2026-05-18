@@ -49,7 +49,7 @@ const cityThemes = {
     images: [img7, img8],
     mood: 'Présence humaine et coordination complète',
   },
-  Meknès: {
+  meknes: {
     eyebrow: 'Agence Centre',
     pitch: 'Équipe senior basée à Meknès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],

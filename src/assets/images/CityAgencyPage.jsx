@@ -58,13 +58,13 @@ const cityThemes = {
     images: [img12, img16, img20],
     mood: 'Présence humaine et coordination complète',
   },
-  meknés: {
+  meknes: {
     eyebrow: 'Agence Centre',
     pitch: 'Équipe senior basée à Meknès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
     tones: ['#2c3261', '#5f76d8', '#eef1ff'],
     images: [img7, img13, img18],
-    mood: 'Disponibilite immédiate et maitrise locale',
+    mood: 'Disponibilité immédiate et maîtrise locale',
   },
   nador: {
     eyebrow: 'Agence Oriental Nord',
