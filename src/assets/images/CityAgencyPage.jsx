@@ -51,9 +51,9 @@ const cityThemes = {
     mood: 'Logistique etendue, précision terrain',
   },
   marrakech: {
-    eyebrow: 'Agence Gueliz',
-    pitch: 'Équipe senior basée à marrakech pour les urgences, cérémonies et transferts immédiats.',
-    highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif integral'],
+    eyebrow: 'Agence Guéliz',
+    pitch: 'Équipe senior basée à Marrakech pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Interlocuteur unique de la famille', 'Prise en charge cérémonie complète', 'Support administratif intégral'],
     tones: ['#6a1f25', '#d44a4e', '#ffeef0'],
     images: [img12, img16, img20],
     mood: 'Présence humaine et coordination complète',

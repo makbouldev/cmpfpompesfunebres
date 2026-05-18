@@ -60,7 +60,7 @@
     slug: 'marrakech',
     label: 'Marrakech',
     region: 'Marrakech-Safi',
-    address: '18, Rue Tarek Ibnou Zyad Gueliz - Marrakech',
+    address: '18, Rue Tarek Ibnou Zyad Guéliz - Marrakech',
     phones: ['+212 5 24 44 84 51', '+212 6 62 01 81 98', '+212 6 62 17 36 79'],
     mobile: '+212 6 62 01 81 98',
     email: 'universalpfm@gmail.com',
