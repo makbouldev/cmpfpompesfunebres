@@ -27,12 +27,12 @@ const cityThemes = {
     mood: 'Flux océanique et accompagnement fluide',
   },
   casablanca: {
-    eyebrow: 'Agence Metropole',
-    pitch: 'Equipe senior basee a Casablanca pour les urgences, cérémonies et transferts immediats.',
-    highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hopitaux et cliniques', 'Assistance familles locales et expatriees'],
+    eyebrow: 'Agence Métropole',
+    pitch: 'Équipe senior basée à Casablanca pour les urgences, cérémonies et transferts immédiats.',
+    highlights: ['Prise en charge express en zone urbaine', 'Coordination avec hôpitaux et cliniques', 'Assistance familles locales et expatriées'],
     tones: ['#2f3854', '#4a7ab7', '#edf3ff'],
     images: [img10, img13, img18],
-    mood: 'Rythme urbain, execution rapide',
+    mood: 'Rythme urbain, exécution rapide',
   },
   fes: {
     eyebrow: 'Agence Patrimoine',
