@@ -8,12 +8,12 @@ export const DEFAULT_SEO = {
 }
 
 export const SITE_URL = (
-  import.meta.env?.VITE_SITE_URL || 'https://www.pompesfunebresmaroc.com'
+  import.meta.env?.VITE_SITE_URL || 'https://www.pompesFunèbresmaroc.com'
 ).replace(/\/+$/, '')
 
 export const CANONICAL_PATHS = {
-  '/pompes-funebres/musulmanes': '/service/pompes-funebres-musulmanes',
-  '/pompes-funebres/non-musulmanes': '/service/pompes-funebres-non-musulmanes',
+  '/pompes-Funèbres/musulmanes': '/service/pompes-Funèbres-musulmanes',
+  '/pompes-Funèbres/non-musulmanes': '/service/pompes-Funèbres-non-musulmanes',
   '/produits/fleurs': '/service/fleurs',
   '/produits/nettoyage-fleurissement': '/service/nettoyage-fleurissement',
   '/service/marbrerie-musulmane': '/produits/marbrerie-musulmane',
@@ -52,12 +52,12 @@ export const SEO_BY_PATH = {
     description:
       'Contactez Universal PF pour une assistance funéraire immédiate, un devis ou des informations sur nos services de pompes funèbres au Maroc.',
   },
-  '/service/pompes-funebres-musulmanes': {
+  '/service/pompes-Funèbres-musulmanes': {
     title: 'Pompes funèbres musulmanes au Maroc | Universal PF',
     description:
       'Organisation de pompes funèbres musulmanes au Maroc avec respect des rites, transport funéraire, rapatriement et accompagnement complet des familles.',
   },
-  '/service/pompes-funebres-non-musulmanes': {
+  '/service/pompes-Funèbres-non-musulmanes': {
     title: 'Pompes funèbres non musulmanes au Maroc | Universal PF',
     description:
       'Services de pompes funèbres non musulmanes au Maroc : cérémonies, transport funéraire, rapatriement de corps et coordination administrative sur mesure.',
@@ -106,8 +106,8 @@ const PAGE_LABELS = {
   '/services-entreprises': 'Services entreprises',
   '/faq': 'FAQ',
   '/contact': 'Contact',
-  '/service/pompes-funebres-musulmanes': 'Pompes funèbres musulmanes',
-  '/service/pompes-funebres-non-musulmanes': 'Pompes funèbres non musulmanes',
+  '/service/pompes-Funèbres-musulmanes': 'Pompes funèbres musulmanes',
+  '/service/pompes-Funèbres-non-musulmanes': 'Pompes funèbres non musulmanes',
   '/service/fleurs': 'Fleurs',
   '/service/nettoyage-fleurissement': 'Nettoyage et fleurissement',
   '/produits/marbrerie-musulmane': 'Marbrerie musulmane',

@@ -7,10 +7,10 @@
       "has": [
         {
           "type": "host",
-          "value": "pompesfunebresmaroc.com"
+          "value": "pompesFunèbresmaroc.com"
         }
       ],
-      "destination": "https://www.pompesfunebresmaroc.com/$1",
+      "destination": "https://www.pompesFunèbresmaroc.com/$1",
       "permanent": true
     },
     {
@@ -19,13 +19,13 @@
       "permanent": true
     },
     {
-      "source": "/services/pompes-funebres-musulmanes",
-      "destination": "/service/pompes-funebres-musulmanes",
+      "source": "/services/pompes-Funèbres-musulmanes",
+      "destination": "/service/pompes-Funèbres-musulmanes",
       "permanent": true
     },
     {
-      "source": "/services/pompes-funebres-non-musulmanes",
-      "destination": "/service/pompes-funebres-non-musulmanes",
+      "source": "/services/pompes-Funèbres-non-musulmanes",
+      "destination": "/service/pompes-Funèbres-non-musulmanes",
       "permanent": true
     },
     {
@@ -54,13 +54,13 @@
       "permanent": true
     },
     {
-      "source": "/pompes-funebres/musulmanes",
-      "destination": "/service/pompes-funebres-musulmanes",
+      "source": "/pompes-Funèbres/musulmanes",
+      "destination": "/service/pompes-Funèbres-musulmanes",
       "permanent": true
     },
     {
-      "source": "/pompes-funebres/non-musulmanes",
-      "destination": "/service/pompes-funebres-non-musulmanes",
+      "source": "/pompes-Funèbres/non-musulmanes",
+      "destination": "/service/pompes-Funèbres-non-musulmanes",
       "permanent": true
     },
     {

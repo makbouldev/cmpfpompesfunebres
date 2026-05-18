@@ -25,7 +25,7 @@ const toAscii = (value) =>
 
 const extractRoutesFromSitemap = async () => {
   const sitemap = await fs.readFile(sitemapPath, 'utf8')
-  const matches = [...sitemap.matchAll(/<loc>https:\/\/(?:www\.)?pompesfunebresmaroc\.com([^<]*)<\/loc>/g)]
+  const matches = [...sitemap.matchAll(/<loc>https:\/\/(?:www\.)?pompesFunèbresmaroc\.com([^<]*)<\/loc>/g)]
   return matches.map((match) => getCanonicalPath(match[1] || '/'))
 }
 
@@ -48,9 +48,9 @@ const buildPreRenderHtml = (routePath) => {
           case 'assistance':
             return { href: '/assistance', label: 'Assistance funeraire immediate' }
           case 'musulmanes':
-            return { href: '/service/pompes-funebres-musulmanes', label: 'Pompes funebres musulmanes' }
+            return { href: '/service/pompes-Funèbres-musulmanes', label: 'Pompes Funèbres musulmanes' }
           case 'nonMusulmanes':
-            return { href: '/service/pompes-funebres-non-musulmanes', label: 'Pompes funebres non musulmanes' }
+            return { href: '/service/pompes-Funèbres-non-musulmanes', label: 'Pompes Funèbres non musulmanes' }
           case 'fleurs':
             return { href: '/service/fleurs', label: 'Fleurs et hommages funeraires' }
           case 'nettoyage':

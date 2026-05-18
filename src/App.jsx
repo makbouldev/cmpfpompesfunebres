@@ -24,16 +24,16 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/qui-sommes-nous" element={<AboutPage />} />
 
-        <Route path="/service/pompes-funebres-musulmanes" element={<MuslimFuneralPage />} />
+        <Route path="/service/pompes-Funèbres-musulmanes" element={<MuslimFuneralPage />} />
         <Route
-          path="/pompes-funebres/musulmanes"
-          element={<Navigate to="/service/pompes-funebres-musulmanes" replace />}
+          path="/pompes-Funèbres/musulmanes"
+          element={<Navigate to="/service/pompes-Funèbres-musulmanes" replace />}
         />
 
-        <Route path="/service/pompes-funebres-non-musulmanes" element={<NonMuslimFuneralPage />} />
+        <Route path="/service/pompes-Funèbres-non-musulmanes" element={<NonMuslimFuneralPage />} />
         <Route
-          path="/pompes-funebres/non-musulmanes"
-          element={<Navigate to="/service/pompes-funebres-non-musulmanes" replace />}
+          path="/pompes-Funèbres/non-musulmanes"
+          element={<Navigate to="/service/pompes-Funèbres-non-musulmanes" replace />}
         />
 
         <Route path="/service/fleurs" element={<FleursPage />} />

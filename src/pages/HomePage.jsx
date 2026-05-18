@@ -34,7 +34,7 @@ const heroSlides = [
     description:
       'Organisation de cérémonies civiles et religieuses avec un interlocuteur unique.',
     cta: 'Service non musulman',
-    to: '/pompes-funebres/non-musulmanes',
+    to: '/pompes-Funèbres/non-musulmanes',
     image: heroSlide2,
   },
   {
@@ -43,7 +43,7 @@ const heroSlides = [
     description:
       'Prise en charge complète des rites musulmans avec accompagnement humain et discret.',
     cta: 'Service Musulman',
-    to: '/pompes-funebres/musulmanes',
+    to: '/pompes-Funèbres/musulmanes',
     image: heroSlide1,
   },
   
@@ -89,7 +89,7 @@ const servicesHighlights = [
     title: 'Respect des rites et de la famille',
     text: 'Nous organisons les cérémonies avec respect, discrétion et sérieux.',
     image: imageTransportMusulman,
-    to: '/pompes-funebres/musulmanes',
+    to: '/pompes-Funèbres/musulmanes',
   },
   {
     title: 'Prix compétitifs et devis simple',
@@ -321,7 +321,7 @@ const homeExpertiseTabs = [
       'Coordination administrative, transport et inhumation.',
       "Disponibilité 24/7 pour les urgences au Maroc et à l'international.",
     ],
-    to: '/service/pompes-funebres-musulmanes',
+    to: '/service/pompes-Funèbres-musulmanes',
     cta: 'Voir le service musulman',
     image: imageTransportMusulman,
   },
@@ -336,7 +336,7 @@ const homeExpertiseTabs = [
       'Logistique, transport et formalités prises en charge.',
       'Suivi constant avec un conseiller unique et réactif.',
     ],
-    to: '/service/pompes-funebres-non-musulmanes',
+    to: '/service/pompes-Funèbres-non-musulmanes',
     cta: 'Voir le service non musulman',
     image: imageInterieurCorbillard,
   },

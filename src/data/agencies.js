@@ -71,7 +71,7 @@
   },
   {
     code: '06',
-    slug: 'meknes',
+    slug: 'Meknès',
     label: 'Meknès',
     region: 'Fes-Meknès',
     address: '8, Rue Antsirabe Hamria - Meknès',
@@ -79,7 +79,7 @@
     mobile: '+212 6 62 03 14 97',
     email: 'universalpfm@gmail.com',
     mapUrl:
-      'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA%E2%80%AD/@33.899277,-9.7682086,7z/data=!4m10!1m2!2m1!1scmpf+meknes!3m6!1s0xda045c26bd2c623:0x5291cfc32a3ec4a3!8m2!3d33.899277!4d-5.5494586!15sCgtjbXBmIG1la25lc5IBDGZ1bmVyYWxfaG9tZeABAA!16s%2Fg%2F11fnkvgsj0?hl=fr-FR&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+      'https://www.google.com/maps/place/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D9%84%D9%86%D9%82%D9%84+%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D8%AA%E2%80%AD/@33.899277,-9.7682086,7z/data=!4m10!1m2!2m1!1scmpf+Meknès!3m6!1s0xda045c26bd2c623:0x5291cfc32a3ec4a3!8m2!3d33.899277!4d-5.5494586!15sCgtjbXBmIG1la25lc5IBDGZ1bmVyYWxfaG9tZeABAA!16s%2Fg%2F11fnkvgsj0?hl=fr-FR&entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
     lat: 33.899277,
     lng: -5.5494586,
   },
@@ -149,7 +149,7 @@
     mobile: '+212 6 60 88 44 40',
     email: 'universalpfm@gmail.com',
     mapUrl:
-      'https://www.google.com/maps/place/Compagnie+Marocaine+de+Pompes+Funebres+(CMPF)/@35.7764783,-5.8107673,17z/data=!3m1!4b1!4m6!3m5!1s0xd0c7f16c855cd93:0xef08df1b833f3f80!8m2!3d35.7764783!4d-5.8107673!16s%2Fg%2F11mmpdpl0c?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
+      'https://www.google.com/maps/place/Compagnie+Marocaine+de+Pompes+Funèbres+(CMPF)/@35.7764783,-5.8107673,17z/data=!3m1!4b1!4m6!3m5!1s0xd0c7f16c855cd93:0xef08df1b833f3f80!8m2!3d35.7764783!4d-5.8107673!16s%2Fg%2F11mmpdpl0c?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D',
     lat: 35.7764783,
     lng: -5.8107673,
   },

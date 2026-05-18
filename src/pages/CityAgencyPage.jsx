@@ -49,7 +49,7 @@ const cityThemes = {
     images: [img7, img8],
     mood: 'Présence humaine et coordination complète',
   },
-  meknes: {
+  Meknès: {
     eyebrow: 'Agence Centre',
     pitch: 'Équipe senior basée à Meknès pour les urgences, cérémonies et transferts immédiats.',
     highlights: ['Intervention rapide en centre-ville', 'Transport local et inter-villes', 'Soutien aux familles en deuil'],
@@ -144,8 +144,8 @@ const internalLinkText = (label) => `Pompes funèbres ${label}`
 
 const serviceLinkCatalog = {
   assistance: { to: '/assistance', label: 'Assistance funéraire immédiate' },
-  musulmanes: { to: '/service/pompes-funebres-musulmanes', label: 'Pompes funèbres musulmanes' },
-  nonMusulmanes: { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes funèbres non musulmanes' },
+  musulmanes: { to: '/service/pompes-Funèbres-musulmanes', label: 'Pompes funèbres musulmanes' },
+  nonMusulmanes: { to: '/service/pompes-Funèbres-non-musulmanes', label: 'Pompes funèbres non musulmanes' },
   fleurs: { to: '/service/fleurs', label: 'Fleurs et hommages funéraires' },
   nettoyage: { to: '/service/nettoyage-fleurissement', label: 'Nettoyage et fleurissement' },
   marbrerieMusulmane: { to: '/produits/marbrerie-musulmane', label: 'Marbrerie musulmane' },

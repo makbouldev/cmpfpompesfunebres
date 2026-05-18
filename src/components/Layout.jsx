@@ -11,11 +11,11 @@ const DEFAULT_SEO = {
     'Universal PF accompagne les familles 24h/24 et 7j/7 : organisation des obsèques, rapatriement, marbrerie, fleurs et assistance complète au Maroc.',
 }
 
-const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://pompesfunebresmaroc.com').replace(/\/+$/, '')
+const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://pompesFunèbresmaroc.com').replace(/\/+$/, '')
 
 const CANONICAL_PATHS = {
-  '/pompes-funebres/musulmanes': '/service/pompes-funebres-musulmanes',
-  '/pompes-funebres/non-musulmanes': '/service/pompes-funebres-non-musulmanes',
+  '/pompes-Funèbres/musulmanes': '/service/pompes-Funèbres-musulmanes',
+  '/pompes-Funèbres/non-musulmanes': '/service/pompes-Funèbres-non-musulmanes',
   '/produits/fleurs': '/service/fleurs',
   '/produits/nettoyage-fleurissement': '/service/nettoyage-fleurissement',
   '/service/marbrerie-musulmane': '/produits/marbrerie-musulmane',
@@ -106,8 +106,8 @@ const groupedLinks = [
     label: 'Nos services',
     items: [
       { to: '/service/services-entreprises', label: 'Services aux Entreprises', featured: true },
-      { to: '/service/pompes-funebres-non-musulmanes', label: 'Pompes Funébres Non Musulmanes' },
-      { to: '/service/pompes-funebres-musulmanes', label: 'Pompes Funébres Musulmanes' },
+      { to: '/service/pompes-Funèbres-non-musulmanes', label: 'Pompes Funébres Non Musulmanes' },
+      { to: '/service/pompes-Funèbres-musulmanes', label: 'Pompes Funébres Musulmanes' },
       { to: '/service/fleurs', label: 'Fleurs' },
       { to: '/service/nettoyage-fleurissement', label: 'Nettoyage et Fleurissement' },
       { to: '/service/marbrerie-non-musulmane', label: 'Marbrerie Non Musulmane' },
@@ -123,7 +123,7 @@ const groupedLinks = [
       { to: '/villes/fes', label: 'Pompes funèbres Fes' },
       { to: '/villes/laayoune', label: 'Pompes funèbres Laayoune' },
       { to: '/villes/marrakech', label: 'Pompes funèbres Marrakech' },
-      { to: '/villes/meknes', label: 'Pompes funèbres Meknès' },
+      { to: '/villes/Meknès', label: 'Pompes funèbres Meknès' },
       { to: '/villes/nador', label: 'Pompes funèbres Nador' },
       { to: '/villes/ouarzazate', label: 'Pompes funèbres Ouarzazate' },
       { to: '/villes/oujda', label: 'Pompes funèbres Oujda' },
