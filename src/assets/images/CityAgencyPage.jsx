@@ -107,11 +107,11 @@ const cityThemes = {
     mood: 'Connexion nationale et internationale',
   },
   tetouan: {
-    eyebrow: 'Agence Rif Mediterranee',
-    pitch: 'Équipe senior basée à tetouan pour les urgences, cérémonies et transferts immédiats.',
+    eyebrow: 'Agence Rif Méditerranée',
+    pitch: 'Équipe senior basée à Tétouan pour les urgences, cérémonies et transferts immédiats.',
     tones: ['#24435a', '#3f8cb8', '#e9f7ff'],
     images: [img14, img7, img13],
-    mood: 'Accompagnement detaille et rassurant',
+    mood: 'Accompagnement détaillé et rassurant',
   },
 }
 
