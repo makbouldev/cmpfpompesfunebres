@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { agencies } from '../data/agencies'
 
 function ContactPage() {
@@ -32,79 +32,20 @@ function ContactPage() {
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-    const targetEmail = import.meta.env.VITE_CONTACT_TARGET_EMAIL || 'universalpfm@gmail.com'
-    const ccEmails = import.meta.env.VITE_CONTACT_CC_EMAILS || 'universalpfm@gmail.com'
-
     setIsSubmitting(true)
     setIsStatusOpen(false)
     setStatus('')
 
-    const emailSubject = `Nouvelle demande depuis le site Universal PF - ${formData.contactSubject}`
-    const basePayload = {
-      'Nom complet': formData.fullName,
-      Téléphone: formData.phone,
-      Ville: formData.ville,
-      'E-mail': formData.email,
-      'Objet de contact': formData.contactSubject,
-      Message: formData.message,
-    }
-
-    const submitWithFormSubmit = () => {
-      const form = document.createElement('form')
-      form.method = 'POST'
-      form.action = `https://formsubmit.co/${encodeURIComponent(targetEmail)}`
-      form.target = 'formsubmit_iframe'
-
-      const fields = {
-        _subject: emailSubject,
-        _captcha: 'false',
-        _template: 'table',
-        _next: window.location.href,
-        _cc: ccEmails,
-        ...basePayload,
-      }
-
-      Object.entries(fields).forEach(([key, value]) => {
-        const input = document.createElement('input')
-        input.type = 'hidden'
-        input.name = key
-        input.value = String(value ?? '')
-        form.appendChild(input)
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       })
 
-      document.body.appendChild(form)
-      form.submit()
-      form.remove()
-    }
+      const result = await response.json()
 
-    try {
-      let isSent = false
-
-      if (accessKey) {
-        const web3Payload = {
-          access_key: accessKey,
-          subject: emailSubject,
-          from_name: 'Formulaire Contact Universal PF ',
-          replyto: formData.email,
-          ...basePayload,
-        }
-
-        const web3Response = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(web3Payload),
-        })
-        const web3Result = await web3Response.json()
-        isSent = Boolean(web3Result.success)
-      }
-
-      if (!isSent) {
-        submitWithFormSubmit()
-        isSent = true
-      }
-
-      if (isSent) {
+      if (response.ok && result.success) {
         setStatus('Votre demande a été envoyée avec succès. Notre équipe vous recontactera rapidement.')
         setIsStatusOpen(true)
         setFormData({
@@ -116,11 +57,11 @@ function ContactPage() {
           message: '',
         })
       } else {
-        setStatus("Échec d'envoi. Vérifiez la configuration e-mail et réessayez.")
+        setStatus(result.error || "Échec d'envoi. Veuillez vérifier la configuration de messagerie.")
         setIsStatusOpen(true)
       }
     } catch (error) {
-      setStatus('Erreur réseau. Réessayez dans quelques instants.')
+      setStatus("Erreur réseau ou serveur. Veuillez réessayer dans quelques instants.")
       setIsStatusOpen(true)
     } finally {
       setIsSubmitting(false)
@@ -223,7 +164,6 @@ function ContactPage() {
                 {isSubmitting ? 'Envoi en cours...' : 'Envoyer la demande'}
               </button>
             </form>
-            <iframe name="formsubmit_iframe" title="FormSubmit transport" style={{ display: 'none' }} />
           </div>
 
           <aside className="contact-creative-info">
