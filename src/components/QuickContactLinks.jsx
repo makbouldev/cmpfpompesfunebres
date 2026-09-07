@@ -1,4 +1,4 @@
-﻿function PhoneIcon() {
+function PhoneIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M6.62 10.79a15.06 15.06 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.36 2.28.56 3.5.56a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.4 22 2 13.6 2 3a1 1 0 0 1 1-1h4.5a1 1 0 0 1 1 1c0 1.22.19 2.4.56 3.5a1 1 0 0 1-.24 1.01l-2.2 2.28Z" />
@@ -23,22 +23,49 @@ function MailIcon() {
   )
 }
 
+const trackClick = (eventName, label) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, {
+      event_category: 'Contact',
+      event_label: label,
+    })
+  }
+}
+
 function QuickContactLinks() {
   return (
     <>
-      <a className="plaques-contact-link" href="tel:+212522491437">
+      <a
+        className="plaques-contact-link"
+        href="tel:+212522491437"
+        onClick={() => trackClick('click_call', '+212522491437')}
+      >
         <span className="plaques-contact-icon" aria-hidden="true"><PhoneIcon /></span>
         <span>+212 5 22 49 14 37</span>
       </a>
-      <a className="plaques-contact-link" href="tel:+212666826724">
+      <a
+        className="plaques-contact-link"
+        href="tel:+212666826724"
+        onClick={() => trackClick('click_call', '+212666826724')}
+      >
         <span className="plaques-contact-icon" aria-hidden="true"><PhoneIcon /></span>
         <span>+212 6 66 82 67 24</span>
       </a>
-      <a className="plaques-contact-link" href="https://wa.me/212666826724" target="_blank" rel="noreferrer">
+      <a
+        className="plaques-contact-link"
+        href="https://wa.me/212666826724"
+        target="_blank"
+        rel="noreferrer"
+        onClick={() => trackClick('click_whatsapp', '+212666826724')}
+      >
         <span className="plaques-contact-icon" aria-hidden="true"><WhatsAppIcon /></span>
         <span>WhatsApp: +212 6 66 82 67 24</span>
       </a>
-      <a className="plaques-contact-link" href="mailto:universalpfm@gmail.com">
+      <a
+        className="plaques-contact-link"
+        href="mailto:universalpfm@gmail.com"
+        onClick={() => trackClick('click_email', 'universalpfm@gmail.com')}
+      >
         <span className="plaques-contact-icon" aria-hidden="true"><MailIcon /></span>
         <span>universalpfm@gmail.com</span>
       </a>
